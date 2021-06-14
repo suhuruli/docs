@@ -4,5 +4,4 @@
 
 ## API
 
-* [Observations](api/untitled.md)
-
+* [Observations](api/observations.md)
