@@ -1,4 +1,8 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Spice](README.md)
+
+## API
+
+* [Untitled](api/untitled.md)
 
