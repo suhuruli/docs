@@ -5,4 +5,3 @@
 ## API
 
 * [Observations](api/observations.md)
-
