@@ -1,6 +1,6 @@
 # Observations
 
-{% api-method method="get" host="https://api.cakes.com" path="/v0.1/:org\_id/:app\_id/observations" %}
+{% api-method method="get" host="https://api.spiceai.io" path="/v0.1/:org\_id/:app\_id/observations" %}
 {% api-method-summary %}
 Get Observations
 {% endapi-method-summary %}
