@@ -1,5 +1,11 @@
 # Spice Cloud
 
+
+
+{% hint style="warning" %}
+Spice Cloud is currently in **Private Beta**. Request access at [https://forms.office.com/r/aYp8a7zEPs](https://forms.office.com/r/aYp8a7zEPs)
+{% endhint %}
+
 ## Getting Started
 
 Spice Cloud is currently in private beta. Request access at [https://forms.office.com/r/aYp8a7zEPs](https://forms.office.com/r/aYp8a7zEPs).
