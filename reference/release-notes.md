@@ -1,6 +1,6 @@
 # Release notes
 
-## 15.0.0 - 2042-12-03
+## July 2021 Update
 
 ### Fixed
 
@@ -10,7 +10,7 @@
 
 * Animals are now super cute, all of them.
 
-## 14.0.0 - 2042-10-06
+## June 2021 Update
 
 ### Added
 
