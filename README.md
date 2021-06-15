@@ -1,10 +1,10 @@
-# Spice
+# Spice Cloud
 
 ## Getting Started
 
-Spice is currently in private alpha, so to request an app tenant complete the form at [https://forms.office.com/r/aYp8a7zEPs](https://forms.office.com/r/aYp8a7zEPs).
+Spice is currently in private beta. Request access at [https://forms.office.com/r/aYp8a7zEPs](https://forms.office.com/r/aYp8a7zEPs).
 
-Once you have your app created, make some test calls on the sample data.
+Once you have access, try fetching some interpretations of the sample data, in this case, Bitcoin prices in USD.
 
 ```
 $ curl -u https://api.spiceai.io/v0.1/<orgId>/<appId>/decisions
