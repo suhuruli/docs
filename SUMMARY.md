@@ -1,7 +1,15 @@
 # Table of contents
 
 * [Spice Cloud](README.md)
-* [Core Concepts](core-concepts.md)
+* [Sign up](sign-up.md)
+* [Get started](get-started.md)
+* [Query Interpretations](query-interpretations.md)
+* [Record Observations](record-observations.md)
+
+## REFERENCE
+
+* [Release notes](reference/release-notes.md)
+* [Core Concepts](reference/core-concepts.md)
 
 ## API
 
