@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Spice is currently in private beta. Request access at [https://forms.office.com/r/aYp8a7zEPs](https://forms.office.com/r/aYp8a7zEPs).
+Spice Cloud is currently in private beta. Request access at [https://forms.office.com/r/aYp8a7zEPs](https://forms.office.com/r/aYp8a7zEPs).
 
 Once you have access, try fetching some interpretations of the sample data, in this case, Bitcoin prices in USD.
 
