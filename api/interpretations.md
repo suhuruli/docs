@@ -1,12 +1,12 @@
 # Interpretations
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+{% api-method method="get" host="https://api.spiceai.io" path="/v0.1/:org\_id/:app\_id/observations" %}
 {% api-method-summary %}
-Get Cakes
+Get Interpretations
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+This endpoint allows you to get interpretations.
 {% endapi-method-description %}
 
 {% api-method-spec %}

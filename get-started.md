@@ -1,25 +1,32 @@
+---
+description: Get started with Spice Cloud
+---
+
 # Get started
 
-## Getting Super Powers
-
-Becoming a super hero is a fairly straight forward process:
-
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+{% hint style="warning" %}
+Spice Cloud is currently in **Private Beta**. Request access at [**https://forms.office.com/r/aYp8a7zEPs**](https://forms.office.com/r/aYp8a7zEPs)\*\*\*\*
 {% endhint %}
 
-Once you're strong enough, save the world:
+After you've [**signed up**](sign-up.md) and received access to the Private Beta, follow this guide to get started with Spice Cloud.
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
+## Open the portal
 
+Click the link in your sign up email to open the Spice Cloud Portal.
 
+## Select your demo application
+
+Your Spice Cloud account is initially created with a demo application for you to try now. After logging in, select it on the main dashboard.
+
+## Visualize data
+
+The initial view shows the current environment.
+
+## Add Interpretations
+
+In Spice, an [**Interpretation**](reference/core-concepts.md#interpretations) ****is a time-windowed interpretation of the data. Spice will learn and generate interpretations of the environmental data automatically, however in addition, you can add your own.
+
+Do this on the demo application by clicking and dragging on the chart and then selecting the **Action**.
+
+Notice how the Spice generated Interpretations change as Spice learns from the interpretation you provided.
 

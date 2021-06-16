@@ -1,4 +1,12 @@
+---
+description: Record Observations into Spice
+---
+
 # Record Observations
+
+{% hint style="warning" %}
+Spice Cloud is currently in **Private Beta**. Request access at [**https://forms.office.com/r/aYp8a7zEPs**](https://forms.office.com/r/aYp8a7zEPs)\*\*\*\*
+{% endhint %}
 
 ## Getting Super Powers
 
