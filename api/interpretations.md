@@ -1,62 +1,36 @@
-# Interpretations
+---
+description: Gas Fees API documentation
+---
 
-{% api-method method="get" host="https://api.spiceai.io" path="/v0.1/:org\_id/:app\_id/observations" %}
-{% api-method-summary %}
-Get Interpretations
-{% endapi-method-summary %}
+# Gas Fees
 
-{% api-method-description %}
-This endpoint allows you to get interpretations.
-{% endapi-method-description %}
+{% swagger baseUrl="https://api.spiceai.io" path="/eth/v0.1/gasfees" method="get" summary="Get Get Fees" %}
+{% swagger-description %}
+This endpoint provides a prediction of the next block Ethereum gas fees.
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% swagger-parameter in="query" name="key" %}
+API key
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Gas fees successfully returned." %}
 ```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+{
+    "time": 123,
+    "slow": 64,
+    "normal": 64,
+    "fast": 64,
+    "instant": 64
+}
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="429: Too Many Requests" description="Rate limit exceeded. Higher rate limits can be obtained using an API key." %}
 ```
-{    "message": "Ain't no cake like that."}
+{
+    "message": "Rate limit exceeded."
+}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

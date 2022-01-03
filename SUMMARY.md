@@ -1,10 +1,8 @@
 # Table of contents
 
-* [Spice Cloud](README.md)
+* [Spice Data](README.md)
 * [Sign up](sign-up.md)
 * [Get started](get-started.md)
-* [Query Interpretations](query-interpretations.md)
-* [Record Observations](record-observations.md)
 
 ## REFERENCE
 
@@ -13,6 +11,5 @@
 
 ## API
 
-* [Interpretations](api/interpretations.md)
-* [Observations](api/observations.md)
-
+* [Health](api/health.md)
+* [Gas Fees](api/interpretations.md)

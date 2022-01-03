@@ -1,8 +1,6 @@
 ---
-description: Spice Cloud Documentation
+description: Spice Data Documentation
 ---
 
-# Spice Cloud
-
-[![Get started with Spice Cloud](.gitbook/assets/image%20%281%29.png)](https://docs.spiceai.io/get-started)
+# Spice Data
 
