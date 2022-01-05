@@ -4,9 +4,12 @@ description: Spice Data Release notes
 
 # Release notes
 
-## Feb 2022
+## Jan 2022
+
+The initial release of the Spice Data Private Beta!
 
 ### Changes
 
-* Initial release of the Spice Data Private Beta!
+* The Initial release of the Spice Data Private Beta!
+* Adds `/eth/v0.1/gasfees` API.
 
