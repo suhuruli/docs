@@ -12,4 +12,5 @@
 ## API
 
 * [Health](api/health.md)
-* [Gas Fees](api/interpretations.md)
+* [Ethereum](api/interpretations/README.md)
+  * [Gas Fees](api/interpretations/gas-fees.md)
