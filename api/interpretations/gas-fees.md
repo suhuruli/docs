@@ -4,9 +4,11 @@ description: Ethereum Gas Fees API documentation
 
 # Gas Fees
 
+The **`/eth/v0.1/gasfees`** API returns an estimate of the next block gas fees in Gwei.
 
+It determines this based on the calculated next block base fee and a linear regression prediction based on the last 5 blocks of fees.
 
-{% swagger baseUrl="https://data.spiceai.io" path="/eth/v0.1/gasfees" method="get" summary="Get Get Fee Estimates" %}
+{% swagger baseUrl="https://data.spiceai.io" path="/eth/v0.1/gasfees" method="get" summary="Get Gas Fee Estimates" %}
 {% swagger-description %}
 Returns an estimate of the next block Ethereum gas fees.
 
@@ -14,7 +16,7 @@ Returns an estimate of the next block Ethereum gas fees.
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="key" %}
-API key
+API key for higher rate limits.
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Gas fees successfully returned." %}
@@ -40,7 +42,7 @@ API key
 {% endswagger-response %}
 {% endswagger %}
 
-
+The **`/eth/v0.1/gasfees?price=usd`** API returns an estimate of the next block gas fees in Gwei and the current price in the specified currency or token.
 
 {% swagger method="get" path="/eth/v0.1/gasfees?price=usd" baseUrl="https://data.spiceai.io" summary="Get Gas Fee Estimates With Price" %}
 {% swagger-description %}
@@ -48,7 +50,7 @@ Returns an estimate of the next block Ethereum gas fees with price in the given 
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="key" %}
-API
+API key for higher rate limits.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="price" required="true" %}
@@ -83,6 +85,87 @@ Currently support USD.
 		"price": 1.1621249972558882
 	}
 }
+```
+{% endswagger-response %}
+
+{% swagger-response status="429: Too Many Requests" description="Rate limit exceeded. Higher rate limits can be obtained using an API key." %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+The **`/eth/v0.1/gasfees?period=1d` ** API returns **** the historical gas used ratio and gas fees over the specified time period. If a period is not specified, it will default to 24 hours.
+
+{% swagger method="get" path="/eth/v0.1/gasfees?period=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees" %}
+{% swagger-description %}
+Returns historical gas used and fees over time.
+
+One of `start` or `period` is required.
+{% endswagger-description %}
+
+{% swagger-parameter in="query" name="key" %}
+API key for higher rate limits.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="start" %}
+The beginning of the historical period.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="period" %}
+The period specified as a 
+
+[Duration Literal](../../core-concepts/duration-literals.md)
+
+. E.g. 5d.
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Gas fees successfully returned." %}
+```javascript
+[
+	{
+		"time": 1638389086,
+		"gasUsedRatio": 0.6453722692350096,
+		"slow": 7,
+		"normal": 32,
+		"fast": 41,
+		"instant": 68
+	},
+	{
+		"time": 1638389108,
+		"gasUsedRatio": 0.32565033107924796,
+		"slow": 7,
+		"normal": 24,
+		"fast": 40,
+		"instant": 205
+	},
+	{
+		"time": 1638389118,
+		"gasUsedRatio": 0.22219037765676844,
+		"slow": 7,
+		"normal": 38,
+		"fast": 40,
+		"instant": 72
+	},
+	{
+		"time": 1638389126,
+		"gasUsedRatio": 0.6348086333333334,
+		"slow": 9,
+		"normal": 35,
+		"fast": 41,
+		"instant": 51
+	},
+	{
+		"time": 1638389140,
+		"gasUsedRatio": 0.11676238513575173,
+		"slow": 11,
+		"normal": 11,
+		"fast": 22,
+		"instant": 79
+	}
+]
 ```
 {% endswagger-response %}
 

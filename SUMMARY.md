@@ -2,8 +2,9 @@
 
 * [👋 Welcome to Spice Data](README.md)
 * [Why use Spice Data?](sign-up.md)
-* [Get started](get-started.md)
-* [Core Concepts](core-concepts.md)
+* [Getting started](get-started.md)
+* [Core Concepts](core-concepts/README.md)
+  * [Duration Literals](core-concepts/duration-literals.md)
 
 ## 💻 API
 
