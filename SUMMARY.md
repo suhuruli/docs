@@ -1,16 +1,20 @@
 # Table of contents
 
-* [Spice Data](README.md)
-* [Sign up](sign-up.md)
+* [👋 Welcome to Spice Data](README.md)
+* [Why use Spice Data?](sign-up.md)
 * [Get started](get-started.md)
+* [Core Concepts](core-concepts.md)
 
-## REFERENCE
-
-* [Release notes](reference/release-notes.md)
-* [Core Concepts](reference/core-concepts.md)
-
-## API
+## 💻 API
 
 * [Health](api/health.md)
-* [Ethereum](api/interpretations/README.md)
+* [Ethereum API](api/interpretations/README.md)
   * [Gas Fees](api/interpretations/gas-fees.md)
+
+## 📚 REFERENCE
+
+* [Release notes](reference/release-notes.md)
+
+## 🆘 Support
+
+* [Support](support/support.md)

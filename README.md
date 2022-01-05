@@ -1,6 +1,6 @@
 ---
-description: Spice Data Documentation
+description: Welcome to the Spice Data Docs - documentation for
 ---
 
-# Spice Data
+# 👋 Welcome to Spice Data
 
