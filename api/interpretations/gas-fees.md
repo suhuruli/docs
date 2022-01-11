@@ -111,7 +111,7 @@ API key for higher rate limits.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="start" %}
-The beginning of the historical period.
+The beginning of the historical period. Will default to 24h ago if not provided.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="period" %}
@@ -119,7 +119,15 @@ The period specified as a
 
 [Duration Literal](../../core-concepts/duration-literals.md)
 
-. E.g. 5d.
+. E.g. 5d. If not specified, will default from start until now, or 24 hours if start is also not provided.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="granularity" %}
+The granularity of aggregation specified as a 
+
+[Duration Literal](../../core-concepts/duration-literals.md)
+
+. E.g. 1d. If not specified, fees per block will be provided.
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Gas fees successfully returned." %}
