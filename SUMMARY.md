@@ -8,6 +8,7 @@
 ## 💻 API
 
 * [Ethereum API](api/interpretations/README.md)
+  * [JSON RPC Methods](api/interpretations/json-rpc-methods.md)
   * [Contracts](api/interpretations/contracts.md)
   * [Gas Fees](api/interpretations/gas-fees.md)
 * [Prices API](api/prices-api.md)
