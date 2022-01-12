@@ -97,9 +97,9 @@ Currently support USD.
 {% endswagger-response %}
 {% endswagger %}
 
-The **`/eth/v0.1/gasfees?period=1d` ** API returns **** the historical gas used ratio and gas fees over the specified time period. If a period is not specified, it will default to 24 hours.
+The **`/eth/v0.1/gasfees?period=1d` ** API returns **** the historical gas used ratio and gas fees **by block** over the specified time period. If a period is not specified, it will default to 24 hours.
 
-{% swagger method="get" path="/eth/v0.1/gasfees?period=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees" %}
+{% swagger method="get" path="/eth/v0.1/gasfees?period=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees by Block" %}
 {% swagger-description %}
 Returns historical gas used and fees over time.
 
@@ -123,6 +123,95 @@ The period specified as a
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="granularity" %}
+The granularity of aggregation specified as a 
+
+[Duration Literal](../../core-concepts/duration-literals.md)
+
+. E.g. 1d. If not specified, fees per block will be provided.
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Gas fees successfully returned." %}
+```javascript
+[
+	{
+		"time": 1638389086,
+		"gasUsedRatio": 0.6453722692350096,
+		"slow": 7,
+		"normal": 32,
+		"fast": 41,
+		"instant": 68
+	},
+	{
+		"time": 1638389108,
+		"gasUsedRatio": 0.32565033107924796,
+		"slow": 7,
+		"normal": 24,
+		"fast": 40,
+		"instant": 205
+	},
+	{
+		"time": 1638389118,
+		"gasUsedRatio": 0.22219037765676844,
+		"slow": 7,
+		"normal": 38,
+		"fast": 40,
+		"instant": 72
+	},
+	{
+		"time": 1638389126,
+		"gasUsedRatio": 0.6348086333333334,
+		"slow": 9,
+		"normal": 35,
+		"fast": 41,
+		"instant": 51
+	},
+	{
+		"time": 1638389140,
+		"gasUsedRatio": 0.11676238513575173,
+		"slow": 11,
+		"normal": 11,
+		"fast": 22,
+		"instant": 79
+	}
+]
+```
+{% endswagger-response %}
+
+{% swagger-response status="429: Too Many Requests" description="Rate limit exceeded. Higher rate limits can be obtained using an API key." %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+The **`/eth/v0.1/gasfees?period=1w&granularity=1d` ** API returns **** the historical gas used ratio and gas fees **by time granularity** over the specified time period. If a period is not specified, it will default to 24 hours.
+
+{% swagger method="get" path="/eth/v0.1/gasfees?period=7d&granularity=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees by Time Granularity" %}
+{% swagger-description %}
+Returns historical gas used and fees over time.
+
+One of `start` or `period` is required. `granularity` is required.
+{% endswagger-description %}
+
+{% swagger-parameter in="query" name="key" %}
+API key for higher rate limits.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="start" %}
+The beginning of the historical period. Will default to 24h ago if not provided.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="period" %}
+The period specified as a 
+
+[Duration Literal](../../core-concepts/duration-literals.md)
+
+. E.g. 5d. If not specified, will default from start until now, or 24 hours if start is also not provided.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="granularity" required="true" %}
 The granularity of aggregation specified as a 
 
 [Duration Literal](../../core-concepts/duration-literals.md)

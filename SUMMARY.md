@@ -8,6 +8,7 @@
 ## 💻 API
 
 * [Ethereum API](api/interpretations/README.md)
+  * [Contracts](api/interpretations/contracts.md)
   * [Gas Fees](api/interpretations/gas-fees.md)
 * [Prices API](api/prices-api.md)
 * [Health API](api/health-api.md)
