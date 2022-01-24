@@ -24,4 +24,5 @@
 
 ## ⚖ Legal
 
-* [Privacy Policy](legal/privacy-policy.md)
+* [Privacy Policy](legal/privacy.md)
+* [Terms](legal/terms.md)

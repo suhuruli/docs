@@ -12,7 +12,7 @@ Spice Data is currently in **Beta**. To gain access to longer query ranges and h
 
 In addition to supporting standard web3 JSON RPC and WebSocket APIs, Spice Data provides querying for historical on-chain data available in both block-level and time-aggregated result sets.
 
-We're initially providing free [Ethereum Gas Fees](api/interpretations/gas-fees.md) and [Prices](api/prices-api.md) APIs.
+We're initially providing free [Ethereum Gas Fees](broken-reference) and [Prices](api/prices.md) APIs.
 
 Try them out starting with the [getting started guide](get-started.md).
 
