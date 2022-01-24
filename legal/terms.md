@@ -10,7 +10,7 @@ These are the terms of use (the “**Terms of Use**”) under which Spice AI agr
 
 Spice AI provides artificial intelligence and data solutions, by providing its customers with access to Spice AI’s online software applications and tools and, if applicable, by providing related professional services. Customer wishes to acquire a subscription-based license to the computer software applications and tools and, if applicable, to purchase professional services, all as specified in one or more “Sales Orders” under and subject to these Terms of Use.  Therefore, for good and valuable consideration, the receipt and sufficiency of which they each acknowledge, Spice AI and Customer agree to be bound by these Terms of Use.
 
-#### Section 1: Definitions
+### Section 1: Definitions
 
 For the purposes of these Terms of Use, the following initially capitalized words are ascribed the following meanings:
 
@@ -66,7 +66,7 @@ The following words will be interpreted as designated: (i) “or” connotes any
 
 **1.2  Construction**. These Terms of Use apply to the provision of all Services.  The parties will enter into one or more Sales Orders that contain additional terms and conditions applicable to the provision of certain Services.  Upon execution by the parties, each Sales Order will be incorporated into these Terms of Use.
 
-#### Section 2.  Provision and Use of Services
+### Section 2.  Provision and Use of Services
 
 **2.1  Provision of Spice AI Technology Subscription Services**. Customer may access and use the Spice AI Technology Subscription Services in accordance with these Terms of Use. Access to the Spice AI Technology Subscription Services is available through the Internet over an https connection, via a password-protected computer interface or access code and multi-factor authentication.
 
@@ -78,7 +78,7 @@ The following words will be interpreted as designated: (i) “or” connotes any
 
 **2.5  Customer’s Responsibilities**. Customer is solely responsible for the accuracy, quality and integrity of the Customer Data that Customer inputs or provides for input into the Spice AI Technology. Customer must comply with the Acceptable Use Policy referenced in Section 12 below. Customer will ensure that its Users, its Affiliates, its Third Party Service Providers, and its and their employees, agents and representatives comply with Customer’s obligations under these Terms of Use, and Customer is responsible for their acts and omissions relating to these Terms of Use as though they were Customer’s own.
 
-#### Section 3.  Proprietary Rights
+### Section 3.  Proprietary Rights
 
 **3.1  License by Spice AI**. Subject to the terms and conditions of these Terms of Use, Spice AI hereby grants to Customer a non-exclusive, non-transferable, limited license, without right to sub-license, for the Subscription Term, to access and use the Spice AI Technology Subscription Services in accordance with these Terms of Use, solely for Customer’s internal business operations, and subject to the license metrics and other scope limitations specified in the applicable Sales Order. Spice AI reserves all other rights not expressly granted in these Terms of Use.
 
@@ -94,7 +94,7 @@ The following words will be interpreted as designated: (i) “or” connotes any
 
 **3.5  Suggestions**. If Customer provides Spice AI with any suggested improvements or enhancements to the Services or Spice AI Technology (“**Suggestions**”), then Customer also grants Spice AI a non-exclusive, perpetual, irrevocable, paid-up, royalty-free, worldwide, transferable license, with right to sublicense, to make, have made, sell, offer for sale, use, import, reproduce, distribute, display, perform, and make derivative works of the Suggestions.
 
-#### Section 4.  Compensation
+### Section 4.  Compensation
 
 **4.1  Subscription Plans**. Customer’s subscription plan for the Subscription Services is specified in the applicable Sales Order. Customer may not reduce Customer’s commitment under the Subscription Services subscription plan specified in the Sales Order during the Services Subscription Term. Customer is not entitled to any refund of fees paid or relief from fees due if the volume of Subscription Services Customer actually uses is less than the volume Customer ordered, and Customer may not carry over any of the unused volume to Customer’s next Subscription Term. If Customer wishes to reduce the volume of a Subscription Services subscription plan for a Renewal Term, then Customer must notify Spice AI at least 60 days before the start of the Renewal Term for the applicable Subscription Services; the reduction will be effective at the start of the Renewal Term.
 
@@ -110,7 +110,7 @@ The following words will be interpreted as designated: (i) “or” connotes any
 
 **4.5.2  Audit Conditions**. Whenever a party or its designee conducts any audit or inspection under these Terms of Use, such party will comply, and will ensure that its appointed accountants comply with the following (collectively, the “**Audit Protection Conditions**”): audits and other inspections will be conducted at any time during the audited party’s regular business hours; the auditing party and its auditors will comply with the audited party’s reasonable security requirements in conducting the inspection, and will use commercially reasonable efforts to minimize disruption to the audited party’s business; the auditing party and its auditors will treat all information that they obtain from the inspection as Confidential Information of the audited party, except to the extent necessary for the auditing party to enforce its rights under the Terms of Use. In no circumstances will the auditing party or its auditors have access to any information protected by attorney client privilege or the “work product” doctrine nor, if Spice AI is the audited party, to any information pertaining to Spice AI’s other customers, nor to any information relating to the audited party’s margins. Unless an audit discloses a material non-compliance by the audited party with its obligations under these Terms of Use, the auditing party may exercise such audit rights no more than once during any twelve (12) month period. Unless the audit reveals a discrepancy in favor of the audited party of more than 10% of fees and expenses that should have been paid for the audited period, the auditing party will bear all costs and expenses relating to the audit, including compensation to Spice AI for personnel and materials provided to facilitate the audit, and Spice AI’s then current rates.
 
-#### Section 5.  Warranties
+### Section 5.  Warranties
 
 **5.1  Warranties**.   Spice AI warrants to Customer that:
 
@@ -126,7 +126,7 @@ The following words will be interpreted as designated: (i) “or” connotes any
 
 **5.6  Disclaimer Of Implied Warranties**. Spice AI makes no representation or warranty in connection with the Spice AI Technology or Services, except as expressly so set forth in this Section 5 or the Additional Terms of Service. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EXCEPT AS SPECIFICALLY WARRANTED IN THIS SECTION 5 OR THE ADDITIONAL TERMS OF SERVICE, EACH PARTY DISCLAIMS ALL IMPLIED WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, ANY IMPLIED WARRANTY OF NON-INFRINGEMENT OR IMPLIED OBLIGATION TO INDEMNIFY FOR INFRINGEMENT, ANY IMPLIED WARRANTY ARISING FROM COURSE OF PERFORMANCE, COURSE OF DEALING, OR USAGE OF TRADE, AND ANY STATUTORY REMEDY.
 
-#### Section 6.  Confidential Information; Personal Information; Data Protection
+### Section 6.  Confidential Information; Personal Information; Data Protection
 
 **6.1  Restrictions on use and Disclosure**. Neither Spice AI nor Customer will disclose to any third party any information provided by the other party pursuant to or in connection with these Terms of Use that the disclosing party identifies as being proprietary or confidential or that, by the nature of the circumstances surrounding the disclosure, ought in good faith to be treated as proprietary or confidential (such information, “Confidential Information”), and will make no use of such Confidential Information except under and in accordance with these Terms of Use. Confidential Information includes: information concerning Inventions, concepts, ideas, techniques, specifications, drawings, diagrams, models, samples, flow charts, computer programs and code and their associated documentation and programmer’s notes, network topography and network configuration and access information, security policies and processes, data, finances and plans, business plans, contracts, marketing plans, system implementation plans, business concepts, business procedures and business operations, pricing, market analysis, research, strategies, projections, forecasts and financial information and all materials related thereto; and Personal Information. Confidential Information also includes information disclosed by the disclosing party with permission from a third party, and combinations of or with publicly known information where the nature of the combination is not publicly known. Customer’s Confidential Information includes Customer Data. Spice AI’s Confidential Information includes any information regarding the Spice AI Technology, Spice AI Methodology, Spice AI service offerings, and Documentation.
 
@@ -152,11 +152,11 @@ The following words will be interpreted as designated: (i) “or” connotes any
 
 **6.6.6  Spice AI’s Processing of Customer Data**. Spice AI will be liable for any unauthorized access to Customer Data by third parties only to the extent resulting from Spice AI’s failure to adhere to the Spice AI Security Program, or from Spice AI’s gross negligence or willful misconduct. The provisions of this Section 6.6.6 apply notwithstanding any provision of these Terms of Use or any other agreement between Spice AI and Customer (or any Affiliate of Customer) to the contrary.
 
-#### Section 7. Testing
+### Section 7. Testing
 
 **7.1 Beta; Preview**. Customer understands and agrees that the Services and Products are provided with early access and there may be some issues and use cases that Spice AI will use best efforts to resolve in stride. In consideration of receiving the opportunity to test the Products and Services, Customer hereby releases and holds harmless the members, officers, agents and employees of Spice AI and its Affiliates, and all persons participating in the manufacturing or development of the Product (“**Released Parties**”) from any and all liability, claims, demands or causes of action that Customer may hereafter have for injuries or damages arising out of use of the Product. Customer specifically release the Released Parties from any responsibility for their negligence in the planning, conducting or supervising the use of the Product or Services.
 
-#### Section 8. Term; Termination of Sales Orders
+### Section 8. Term; Termination of Sales Orders
 
 These Terms of Use will commence on the Effective Date and will continue in effect until terminated in accordance with Section 8.1 or 8.2 below.
 
@@ -186,7 +186,7 @@ These Terms of Use will commence on the Effective Date and will continue in effe
 
 &#x20;
 
-#### Section 9.  Indemnification
+### Section 9.  Indemnification
 
 **9.1  Spice AI’s Infringement Indemnification**.
 
@@ -212,7 +212,7 @@ These Terms of Use will commence on the Effective Date and will continue in effe
 
 &#x20;
 
-#### Section 10.  Limitations and Exclusions of Liability
+### Section 10.  Limitations and Exclusions of Liability
 
 **10.1  Exclusion of Certain Claims**. SUBJECT TO SECTION 10.3, IN NO EVENT WILL EITHER PARTY BE LIABLE TO THE OTHER PARTY, OR TO ANY THIRD PARTY FOR ANY CONSEQUENTIAL, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE OR EXEMPLARY DAMAGES, WHETHER FORESEEABLE OR UNFORESEEABLE (INCLUDING DAMAGES FOR LOSS OF DATA, GOODWILL, PROFITS, INVESTMENTS, USE OF MONEY OR USE OF FACILITIES; INTERRUPTION IN USE OR AVAILABILITY OF DATA; STOPPAGE OF OTHER WORK OR IMPAIRMENT OF OTHER ASSETS), EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, ARISING OUT OF (i) THE PERFORMANCE OR NON-PERFORMANCE OF THESE TERMS OF USE OR SOFTWARE, PRODUCTS OR SERVICES PROVIDED HEREUNDER, OR (ii) ANY CLAIM, CAUSE OF ACTION, BREACH OF CONTRACT OR ANY EXPRESS OR IMPLIED WARRANTY, UNDER THESE TERMS OF USE OR OTHERWISE, MISREPRESENTATION, NEGLIGENCE, STRICT LIABILITY, OR OTHER TORT.
 
@@ -224,7 +224,7 @@ These Terms of Use will commence on the Effective Date and will continue in effe
 
 &#x20;
 
-#### Section 11.  Dispute Resolution
+### Section 11.  Dispute Resolution
 
 **11.1  Governing Law**_._ These Terms of Use will be governed by and interpreted in accordance with the internal laws of the State of Delaware and, where such laws are preempted by the laws of the United States, by the internal laws of the United States, in each case without regard to (i) conflicts of laws principles, and (ii) the applicability, if any, of the United Nations Convention on Contracts for the International Sale of Goods.
 
@@ -232,7 +232,7 @@ These Terms of Use will commence on the Effective Date and will continue in effe
 
 &#x20;
 
-#### Section 12.  Modifications
+### Section 12.  Modifications
 
 Spice AI will provide Customer notice of any modifications to these Terms of Use or to an Additional Terms of Service applicable to Customer and affecting Services (a “**Modification Notice**”). As between Customer and Spice AI, Modification Notices for the Professional Services Terms will not become effective until completion of all Professional Services pending under then existing Sales Orders. If modifications materially and adversely affect Customer and, as a result, Customer does not wish to accept such modifications, then Customer may terminate Customer’s subscription to the affected Service by providing Spice AI notice in accordance with these Terms of Use, subject to the following:
 
@@ -242,7 +242,7 @@ Spice AI will provide Customer notice of any modifications to these Terms of Use
 
 If Customer does not terminate the affected Service subscription as specified in this Section 12, then Customer will be bound by the modified terms beginning upon the date on which the Modification Notice states they become effective. References to these Terms of Use are to the Terms of Use (including Additional Terms of Use) as modified and updated from time to time.
 
-Section 13.  Miscellaneous Provisions
+### Section 13.  Miscellaneous Provisions
 
 **13.1  Affiliates**. These Terms of Use set forth the general terms and conditions under which Spice AI will provide Services to Customer and its Affiliates (defined below). Sales Orders may be entered into under these Terms of Use by either the entity designated above as “Customer” or any of Customer’s Affiliates. The entity that executes a Sales Order in the position of services recipient will be considered the “Customer” for all purposes of the Sales Order; and the Sales Order will be considered a two party agreement between Spice AI and such “Customer” under these Terms of Use.
 

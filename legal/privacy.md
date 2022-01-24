@@ -54,7 +54,7 @@ We implement security measures designed to protect your information from unautho
 You have the right at any time to prevent us from contacting you for marketing purposes.  When we send a promotional communication to a user, the user can opt out of further promotional communications by following the unsubscribe instructions provided in each promotional e-mail. Please note that notwithstanding the promotional preferences you indicate by either unsubscribing or opting out in the Settings section of the Site, we may continue to send you administrative emails including, for example, periodic updates to our Privacy Policy, or other important account information. \
 
 
-### V.             CUSTOMER DATA 
+### V. CUSTOMER DATA 
 
 ”Customer Data” means all information processed or stored on the Service by Customer or on Customer’s behalf, as well as any information derived from such information. Customer Data includes, without limitation: (1) information provided on the Service; (2) information provided to Company by other users or by other third parties; and (3) personally identifiable information from such customers, users, or other third parties. \
 \
@@ -68,23 +68,23 @@ You have the right at any time to prevent us from contacting you for marketing p
 (b)  _Customer’s Rights_. Unless otherwise stated in this Agreement, Customer possesses and retains all right, title, and interest in and to Customer Data, and Company’s use and possession thereof is solely on Customer’s behalf.\
 &#x20;
 
-### VI.             LINKS TO OTHER WEBSITES 
+### V.             LINKS TO OTHER WEBSITES 
 
 As part of the Services, we may provide links to or compatibility with other websites or applications.  However, we are not responsible for the privacy practices employed by those websites or the information or content they contain.  This Privacy Policy applies solely to information collected by us through the Site and the Service.  Therefore, this Privacy Policy does not apply to your use of a third-party website accessed by selecting a link on our Site or via our Services.  To the extent that you access or use the Service through or on another website or application, then the privacy policy of that other website or application will apply to your access or use of that site or application.  We encourage our users to read the privacy statements of other websites before proceeding to use them. \
 
 
-### VII.           CHANGES TO OUR PRIVACY POLICY 
+### VI.           CHANGES TO OUR PRIVACY POLICY 
 
 Company reserves the right to change this policy and our Terms of Service at any time.  We will notify you of significant changes to our Privacy Policy by sending a notice to the primary email address specified in your account or by placing a prominent notice on our site.  Significant changes will go into effect 30 days following such notification.  Non-material changes or clarifications will take effect immediately. You should periodically check the Site and this privacy page for updates. \
 
 
-### VIII.       CALIFORNIA PRIVACY RIGHTS
+### VII.       CALIFORNIA PRIVACY RIGHTS
 
 If you are a California resident, you may have additional privacy rights. For a complete discussion of such rights, please see our California Rights and Disclosures.
 
 &#x20;
 
-### IX.             CONTACT US
+### VIII.    CONTACT US
 
 \
 If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us by sending an email to [privacy@spiceai.io](mailto:privacy@spiceai.io).\
