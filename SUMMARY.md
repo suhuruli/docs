@@ -9,6 +9,7 @@
 
 * [Ethereum API](api/ethereum/README.md)
   * [JSON RPC Methods](api/ethereum/json-rpc-methods.md)
+  * [Blocks](api/ethereum/blocks.md)
   * [Contracts](api/ethereum/contracts.md)
   * [Gas Fees](api/ethereum/gas-fees.md)
 * [Prices API](api/prices.md)
