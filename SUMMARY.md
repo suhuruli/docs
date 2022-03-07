@@ -1,9 +1,10 @@
 # Table of contents
 
-* [👋 Welcome to Spice Data](README.md)
+* [👋 Welcome to Spice](README.md)
 * [Getting started](get-started.md)
 * [Core Concepts](core-concepts/README.md)
   * [Duration Literals](core-concepts/duration-literals.md)
+* [FAQ](faq.md)
 
 ## 💻 API
 

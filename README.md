@@ -1,20 +1,28 @@
 ---
-description: Welcome to the Spice Data documentation!
+description: Welcome to the Spice documentation!
 ---
 
-# 👋 Welcome to Spice Data
+# 👋 Welcome to Spice
 
-{% hint style="warning" %}
-Spice Data is currently in **Beta**. To gain access to longer query ranges and higher rate limits, request an API key at [**https://forms.office.com/r/aYp8a7zEPs**](https://forms.office.com/r/aYp8a7zEPs)****
-{% endhint %}
+**Spice** is a high-performance web3 data provider and platform for apps, machine learning (ML), and data science. It's built and supported by the team at [**Spice AI**](https://spiceai.io).
 
-**Spice Data** is a data platform and set of web3 on-chain data APIs initially supporting Ethereum. It's built and supported by the team at [**Spice AI**](https://spiceai.io).
+**Obtaining blockchain and smart-contract data is hard**.
 
-In addition to supporting standard web3 JSON RPC and WebSocket APIs, Spice Data provides querying for historical on-chain data available in both block-level and time-aggregated result sets.
+For data in a format and quantities that's useful, you have to:
 
-We're initially providing free [Ethereum Gas Fees](broken-reference) and [Prices](api/prices.md) APIs.
+* 😓 build and operate archive node and data infrastructure
+* 😓 understand and call JSON RPC APIs and smart-contract ABIs
+* 😓 manage 10s of TBs of data
 
-Try them out starting with the [getting started guide](get-started.md).
+**Spice makes it easy.**
+
+With **Spice,** you can query blockchain data **using SQL** in seconds and fetch results in JSON or **Apache Arrow** for easy use with apps, ML, or libraries like **NumPy** and **Pandas**.
+
+Spice currently supports **Ethereum** mainnet blockchain and contract data. We have plans to support many chains prioritized by user feedback. We expect to next support **Solana**.
+
+In addition to supporting standard web3 **JSON RPC**, Spice provides querying for historical on-chain data available in both block-level and time-aggregated result sets.
+
+Take it for a spin, and try out the [getting started guide](get-started.md).
 
 {% hint style="info" %}
 Feel free to ask any questions or queries to the team in [<mark style="color:purple;">Discord</mark>](https://discord.gg/kZnTfneP5u).
