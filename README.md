@@ -4,7 +4,7 @@ description: Welcome to the Spice documentation!
 
 # 👋 Welcome to Spice
 
-**Spice** is a high-performance web3 data provider and platform for apps, machine learning (ML), and data science. It's built and supported by the team at [**Spice AI**](https://spiceai.io).
+**Spice** is a high-performance web3 data provider and platform for applications, machine learning (ML), and data science. It's built and supported by the team at [**Spice AI**](https://spiceai.io).
 
 **Obtaining blockchain and smart-contract data is hard**.
 
@@ -16,7 +16,7 @@ For data in a format and quantities that's useful, you have to:
 
 **Spice makes it easy.**
 
-With **Spice,** you can query blockchain data **using SQL** in seconds and fetch results in JSON or **Apache Arrow** for easy use with apps, ML, or libraries like **NumPy** and **Pandas**.
+With **Spice,** you can query blockchain data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for easy use with apps, ML, or libraries like **NumPy** and **Pandas**.
 
 Spice currently supports **Ethereum** mainnet blockchain and contract data. We have plans to support many chains prioritized by user feedback. We expect to next support **Solana**.
 

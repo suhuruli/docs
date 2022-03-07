@@ -12,7 +12,7 @@ Spice is currently in beta and it's free to [get an API key](https://cloud.spice
 
 We plan to always have a free tier and offer free APIs, like the [Gas Fees API](api/ethereum/gas-fees.md).
 
-For customers who need higher request or query limits, service guarantees, or priority support we plan to offer paid tiers based on usage.
+For customers who need higher request or query limits, service guarantees, or priority support we plan to offer high-value paid tiers based on usage.
 
 ### What level of support do you offer?
 
