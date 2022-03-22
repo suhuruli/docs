@@ -1,8 +1,8 @@
 ---
-description: Health API documentation
+description: Health HTTP API documentation
 ---
 
-# Health
+# Health API
 
 The health API can be called to confirm the overall availability of the API service.
 
@@ -14,7 +14,6 @@ This endpoint gets the health of the API.
 {% swagger-response status="200: OK" description="The API is healthy." %}
 ```javascript
 ok
-
 ```
 {% endswagger-response %}
 {% endswagger %}

@@ -1,5 +1,5 @@
 ---
-description: Prices API documentation
+description: Prices HTTP API documentation
 ---
 
 # Prices API

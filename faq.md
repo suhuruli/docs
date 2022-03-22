@@ -16,7 +16,9 @@ For customers who need higher request or query limits, service guarantees, or pr
 
 ### What level of support do you offer?
 
-During the beta, we offer [best-effort support](broken-reference) in our Discord. If you'd like higher priority support, or are interested in becoming a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD), please let us know.
+During the beta, we offer [best-effort support](broken-reference) in our Discord. If you'd like higher priority support or are interested in becoming a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD), please let us know.
 
+### What SQL query engine/language do you support?
 
+We currently use an [Apache Calcite](https://calcite.apache.org) based query engine, and support the ANSI SQL standard.&#x20;
 
