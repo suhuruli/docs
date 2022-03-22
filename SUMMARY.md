@@ -25,11 +25,11 @@
 
 ## 📚 REFERENCE
 
-* [Example Ethereum Queries](reference/example-ethereum-queries/README.md)
-  * [Blocks](reference/example-ethereum-queries/blocks.md)
-  * [Gas & Fees](reference/example-ethereum-queries/gas-and-fees.md)
-  * [Transactions](reference/example-ethereum-queries/transactions.md)
-  * [Tokens](reference/example-ethereum-queries/tokens.md)
+* [Example Ethereum SQL Queries](reference/example-ethereum-sql-queries/README.md)
+  * [Blocks](reference/example-ethereum-sql-queries/blocks.md)
+  * [Gas & Fees](reference/example-ethereum-sql-queries/gas-and-fees.md)
+  * [Transactions](reference/example-ethereum-sql-queries/transactions.md)
+  * [Tokens](reference/example-ethereum-sql-queries/tokens.md)
 * [Example DEX Queries](reference/example-dex-queries/README.md)
   * [Uniswap](reference/example-dex-queries/uniswap.md)
   * [Sushiswap](reference/example-dex-queries/sushiswap.md)
