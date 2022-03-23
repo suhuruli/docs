@@ -13,6 +13,8 @@ Spice supported methods are:
 * `eth_protocolVersion`
 * `eth_gasPrice`
 * `eth_blockNumber`
+* `eth_call`
+* `eth_chainId`
 * `eth_getBalance`
 * `eth_getStorageAt`
 * `eth_getTransactionCount`
@@ -24,6 +26,7 @@ Spice supported methods are:
 * `eth_estimateGas`
 * `eth_getBlockByHash`
 * `eth_getBlockByNumber`
+* `eth_syncing`
 * `eth_getTransactionByHash`
 * `eth_getTransactionByBlockHashAndIndex`
 * `eth_getTransactionByBlockNumberAndIndex`
@@ -32,3 +35,4 @@ Spice supported methods are:
 * `eth_getUncleByBlockNumberAndIndex`
 * `eth_getWork`
 * `eth_feeHistory`
+* `web3_clientVersion`

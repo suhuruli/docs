@@ -6,8 +6,9 @@ description: Ethereum base type tables available to query via SQL
 
 #### Ethereum base type tables available to query
 
-| `eth.blocks`          | Block headers                     |
+| Table Name            | Description                       |
 | --------------------- | --------------------------------- |
+| `eth.blocks`          | Block headers                     |
 | `eth.recent_blocks`   | The latest 100 block headers      |
 | `eth.transactions`    | Block transactions                |
 | `eth.receipts`        | Transaction receipts              |
