@@ -1,4 +1,4 @@
-# Uniswap
+# Uniswap Tables
 
 ### Tables available to query
 
@@ -10,7 +10,7 @@
 | `eth.uniswap_v3.pools`               | Top 100 Uniswap-V3 Pools                                 |
 | `eth.uniswap_v3.pool_stats`          | (Coming Soon!) Pool stats (reserves, etc) for each block |
 
-
+The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 
 ```sql
 DESCRIBE eth.uniswap_v2.pools
