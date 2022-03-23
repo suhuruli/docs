@@ -2,7 +2,7 @@
 
 ### What data sources do you have?
 
-Spice currently supports **Ethereum** blockchain data and **Sushiswap, Uniswap-V2, and Uniswap-V3** smart-contract data.
+Spice currently supports [**Ethereum**](reference/sql-query-tables/) blockchain data and [**Sushiswap**](reference/sql-query-tables/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/uniswap-tables.md)**,** and **** [**Uniswap-V3**](reference/sql-query-tables/uniswap-tables.md) smart-contract data. We also have [**NFT specific tables**](reference/sql-query-tables/nft-tables.md).
 
 We have plans to add many more chains and contracts prioritized by user feedback, along with other sources of data like more [Prices](api/prices.md). We expect to add **Solana** next.
 
