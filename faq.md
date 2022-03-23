@@ -26,6 +26,14 @@ During the beta, we offer [best-effort support](broken-reference) in our Discord
 
 We currently use an [Apache Calcite](https://calcite.apache.org) based query engine and support the ANSI SQL standard.&#x20;
 
+### Do you support WebSockets or other streaming?
+
+Not yet, but it is on our roadmap.
+
+### Do you support alerting?
+
+Not yet, but it is on our roadmap.
+
 ### Do you support JDBC/ODBC?
 
 Not yet, but it is on our roadmap.
