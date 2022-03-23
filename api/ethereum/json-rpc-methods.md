@@ -8,6 +8,8 @@ The **`https://data.spiceai.io/eth`** API is a [Ethereum JSON-RPC](https://eth.w
 
 Both libraries have great documentation on individual methods and the complete list can be found in the [specification](https://playground.open-rpc.org/?schemaUrl=https://raw.githubusercontent.com/ethereum/eth1.0-apis/assembled-spec/openrpc.json\&uiSchema%5BappBar%5D%5Bui:splitView%5D=false\&uiSchema%5BappBar%5D%5Bui:input%5D=false\&uiSchema%5BappBar%5D%5Bui:examplesDropdown%5D=false).
 
+Here is a [drop-in provider](https://gist.github.com/lukekim/d27829badb5ee2044b8228d6bfdc3edb) for Ethers.js
+
 Spice supported methods are:
 
 * `eth_protocolVersion`
