@@ -25,6 +25,15 @@ This enables high-speed access to your data in [Python](https://arrow.apache.org
 
 Find code samples in Python on [this page](broken-reference).
 
+### Troubleshooting
+
+#### Apple Silicon (arm64) Support
+
+1. Install [Homebrew](https://brew.sh)
+2. Install [miniforge](https://github.com/conda-forge/miniforge) with `brew install --cask miniforge`
+3. Initialize conda in your terminal with `conda init "$(basename "${SHELL}")"`
+4. Install `pyarrow` and `pandas` with `conda install pyarrow pandas`
+
 #### Mac/Windows Certificate issue
 
 If you get this error:
@@ -33,7 +42,9 @@ If you get this error:
 
 Install the [gRPC root certificates](https://github.com/googleapis/google-cloud-cpp/blob/main/google/cloud/bigtable/examples/README.md#configure-environment).
 
-**For macOS:**
+<details>
+
+<summary><strong>Instructions for macOS</strong></summary>
 
 First download the `roots.pem` file from the google server:
 
@@ -51,7 +62,11 @@ The `export` command will set this variable for this specific terminal and thus 
 
 Note that `$PWD` is a bash-specific variable that will be replaced by the current directory path. You can download the certificate file `roots.pem` in a specific location and inform this path instead of `$PWD`.
 
-**For Windows:**
+</details>
+
+<details>
+
+<summary>Instructions for Windows</summary>
 
 ```powershell
 @powershell -NoProfile -ExecutionPolicy unrestricted -Command ^
@@ -59,3 +74,5 @@ Note that `$PWD` is a bash-specific variable that will be replaced by the curren
         'https://pki.google.com/roots.pem', 'roots.pem')
 set GRPC_DEFAULT_SSL_ROOTS_FILE_PATH=%cd%\roots.pem
 ```
+
+</details>
