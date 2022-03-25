@@ -13,7 +13,7 @@ apiKey = '[API_KEY]'
 query = 'SELECT * FROM eth.blocks LIMIT 10;'
 
 # Connect to the endpoint
-client = flight.connect(f'grpc+tls://flight.spiceai.io:443')
+client = flight.connect(f'grpc+tls://flight.spiceai.io')
 
 # Authenticate with your app's API key
 token_pair = client.authenticate_basic_token('', apiKey)
