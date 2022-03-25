@@ -35,6 +35,7 @@
   * [Uniswap](reference/example-dex-queries/uniswap.md)
   * [Sushiswap](reference/example-dex-queries/sushiswap.md)
   * [Cross-DEX](reference/example-dex-queries/cross-dex.md)
+* [Kaggle Notebooks](reference/kaggle-notebooks.md)
 * [Arrow Flight Samples](reference/arrow-flight-samples.md)
 * [Release notes](reference/release-notes.md)
 
