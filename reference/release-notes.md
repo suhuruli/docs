@@ -4,6 +4,28 @@ description: Spice Data Release notes
 
 # Release notes
 
+### Apr 2022
+
+Spice is now hosted at [**spice.xyz**](https://spice.xyz)! And with this release Spice is now **100% data complete**! We also have new **combined documentation** at [docs.spice.xyz](https://docs.spice.xyz), new **NFT specific tables** like `nft_transfers` and `nft_airdrop_transfers`, significantly **improved erc721 detection**, and **higher data integrity**.
+
+#### Changes
+
+* Now hosted at [spice.xyz](https://spice.xyz)
+* Now 100% data complete on core Ethereum tables
+* Refreshed documentation site at [docs.spice.xyz](https://docs.spice.xyz)
+* Added `input` field to the `transactions` table
+* Added `data`, `topics`, `block_timestamp` fields to the `logs` table
+* Added `block_timestamp` and `block_hash` to the `token_transfers` table
+
+#### Breaking Changes
+
+* The receipts table fields have been moved to the transactions table with prefix receipt\_. The told receipts table has been removed.
+* `receipts.cumulative_gas_used` → `transactions.receipt_cumulative_gas_used`
+* `receipts.gas_used` → `transactions.receipt_gas_used`
+* `receipts.contract_address` → `transactions.receipt_contract_address`
+* `receipts.root` → `transactions.receipt_root`
+* `receipts.effective_gas_price` → `transactions.receipt_effective_gas_price`
+
 ### Mar 2022
 
 More improvements to performance and data completeness. Now 99.99% complete for Ethereum base types.

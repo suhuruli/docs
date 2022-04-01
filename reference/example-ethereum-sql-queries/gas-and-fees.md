@@ -7,8 +7,8 @@ Gets the average amount of gas used for a transaction within a single block.
 **Typical query time**: <45 seconds
 
 ```sql
-SELECT block_number, avg(receipt_gas_used) AS avg_gas_used
-FROM eth.transactions 
+SELECT block_number, avg(gas_used) AS avg_gas_used
+FROM eth.receipts 
 GROUP BY block_number 
 ORDER BY block_number DESC 
 LIMIT 500
