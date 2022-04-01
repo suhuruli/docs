@@ -12,6 +12,7 @@ In beta, Spice has a number of limitations, including:
 #### Guest API Limits - No API Key
 
 * 4 request-per-minute SQL API limit.
+* 10 row result limit.
 
 **Apache Flight Endpoint**
 
