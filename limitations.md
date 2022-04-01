@@ -24,7 +24,6 @@ In beta, Spice has a number of limitations, including:
 
 #### Data Limitations (as of Mar 22, 2022)
 
-* 99.99% data complete on core Ethereum types (blocks, transactions).
 * DEX (Sushiswap, Uniswap, etc) pool data for the last month only, tracking the top 1000 pools by TVL/Market Cap.
 * 128-bit integer limit (while data can be uint256). We include both the 128-bit `DECIMAL(38)` type and  `_hex` fields where the type is 256-bit.
-* Support for erc20 and erc721. No support for erc1155 yet and token standard detection currently does not work for proxy contracts.
+* Support for erc20 and erc721. Support for erc1155 coming soon.
