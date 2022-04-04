@@ -38,7 +38,8 @@ Returns a list of the blocks that had the highest amount of Ethereum burned, sor
 SELECT number,
        sum(gas_used * (base_fee_per_gas / 1e18)) AS eth_burned
 FROM eth.blocks
-GROUP BY blocks.number
+WHERE base_fee_per_gas IS NOT NULL
+GROUP BY eth.blocks.number
 ORDER BY eth_burned DESC
 LIMIT 500
 ```

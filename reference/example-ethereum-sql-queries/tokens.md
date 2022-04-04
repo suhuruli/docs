@@ -13,7 +13,3 @@ INNER JOIN eth.contracts ON eth.contracts.address = eth.tokens.address
 WHERE eth.tokens.name != ''
 ORDER BY eth.tokens.name
 ```
-
-Example result:
-
-![](broken-reference)
