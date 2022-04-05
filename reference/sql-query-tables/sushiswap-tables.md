@@ -4,7 +4,7 @@
 
 | Name                                | Description                               |
 | ----------------------------------- | ----------------------------------------- |
-| `eth.sushiswap.pools`               | Top 100 Uniswap-V2 Pools                  |
+| `eth.sushiswap.pools`               | Top 1000 SushiSwap Pools                  |
 | `eth.sushiswap.pool_stats`          | Pool stats (reserves, etc) for each block |
 | `eth.sushiswap.pool_stats_detailed` | Join between pools and pool\_stats        |
 
