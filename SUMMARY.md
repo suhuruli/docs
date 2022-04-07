@@ -20,6 +20,10 @@
 * [Prices API](api/prices.md)
 * [Health API](api/health.md)
 
+## 🔗 SDKs
+
+* [Python SDK](sdks/python-sdk.md)
+
 ## 📚 REFERENCE
 
 * [SQL Query Tables](reference/sql-query-tables/README.md)
