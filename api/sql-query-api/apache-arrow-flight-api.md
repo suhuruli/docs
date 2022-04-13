@@ -15,7 +15,7 @@ We recommend using the [Spice Python SDK](../../sdks/python-sdk.md) `spicepy` to
 You may also use Apache's `pyarrow` library directly.
 
 {% hint style="info" %}
-**`Note on M1 Macs (Apple Silicon)`**
+Note on Apple M1 Macs - [How do I know if I have an M1?](https://support.apple.com/en-us/HT211814)
 
 `The spicepy/pyarrow` installation requires [miniforge](https://github.com/conda-forge/miniforge).
 
