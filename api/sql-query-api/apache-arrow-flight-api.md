@@ -17,7 +17,9 @@ You may also use Apache's `pyarrow` library directly.
 {% hint style="info" %}
 **`Note on M1 Macs (Apple Silicon)`**
 
-`The spicepy/pyarrow` installation requires [miniforge](https://github.com/conda-forge/miniforge). See related [Python SDK page](../../sdks/python-sdk.md#m1-macs) for more details
+`The spicepy/pyarrow` installation requires [miniforge](https://github.com/conda-forge/miniforge).
+
+See the [Python SDK page](../../sdks/python-sdk.md#m1-macs) for installation steps.
 {% endhint %}
 
 #### Connecting to the endpoint
