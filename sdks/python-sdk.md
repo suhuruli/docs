@@ -15,7 +15,7 @@ The following packages are required and will be automatically installed by pip:
 
 <summary>Apple M1 Mac Requirements - <a href="https://support.apple.com/en-us/HT211814">How do I know if I have an M1?</a></summary>
 
-M1 Macs require an arm64 compatible version of `pyarrow` which can be installed using [miniforge](https://github.com/conda-forge/miniforge). We recommend the following procedure:
+Apple M1 Macs require an arm64 compatible version of `pyarrow` which can be installed using [miniforge](https://github.com/conda-forge/miniforge). We recommend the following procedure:
 
 * Install [Homebrew](https://brew.sh)
 * Install [miniforge](https://github.com/conda-forge/miniforge) with:
