@@ -6,17 +6,20 @@ description: Ethereum base type tables available to query via SQL
 
 #### Ethereum base type tables available to query
 
-| Table Name            | Description                       |
-| --------------------- | --------------------------------- |
-| `eth.blocks`          | Block headers                     |
-| `eth.recent_blocks`   | The latest 100 block headers      |
-| `eth.transactions`    | Block transactions                |
-| `eth.receipts`        | Transaction receipts              |
-| `eth.logs`            | Transaction event logs            |
-| `eth.tokens`          | A listing of token contracts      |
-| `eth.token_transfers` | Token transfers between addresses |
-| `eth.token_mints`     | Token mints                       |
-| `eth.contracts`       | A listing of all contracts        |
+| Table Name                   | Description                                                              |
+| ---------------------------- | ------------------------------------------------------------------------ |
+| `eth.blocks`                 | Block headers                                                            |
+| `eth.recent_blocks`          | Block headers from the last 30 minutes, \~128 blocks                     |
+| `eth.transactions`           | Block transactions                                                       |
+| `eth.recent_transactions`    | Block transactions from the last 30 minutes, \~128 blocks                |
+| `eth.logs`                   | Transaction event logs                                                   |
+| `eth.recent_logs`            | Transaction event logs from the last 30 minutes, \~128 blocks            |
+| `eth.tokens`                 | A listing of token contracts                                             |
+| `eth.token_transfers`        | Token transfers between addresses                                        |
+| `eth.recent_token_transfers` | Token transfers between addresses from the last 30 minutes, \~128 blocks |
+| `eth.token_mints`            | Token mints                                                              |
+| `eth.recent_token_mints`     | Token mints from the last 30 minutes, \~128 blocks                       |
+| `eth.contracts`              | A listing of all contracts                                               |
 
 The table list is also available as a SQL query using `show tables`. For example:
 
@@ -31,11 +34,14 @@ The columns and their schema available for each table can be viewed with the `de
 DESCRIBE eth.blocks;
 DESCRIBE eth.recent_blocks;
 DESCRIBE eth.transactions;
-DESCRIBE eth.receipts;
+DESCRIBE eth.recent_transactions;
 DESCRIBE eth.logs;
+DESCRIBE eth.recent_logs;
 DESCRIBE eth.tokens;
 DESCRIBE eth.token_mints;
+DESCRIBE eth.recent_token_mints;
 DESCRIBE eth.token_transfers;
+DESCRIBE eth.recent_token_transfers;
 DESCRIBE eth.contracts;
 ```
 
