@@ -17,12 +17,26 @@ The following packages are required and will be automatically installed by pip:
 
 M1 Macs require an arm64 compatible version of `pyarrow` which can be installed using [miniforge](https://github.com/conda-forge/miniforge). We recommend the following procedure:
 
-1. Install [Homebrew](https://brew.sh)
-2. Install [miniforge](https://github.com/conda-forge/miniforge) with `brew install --cask miniforge`
-3. Initialize conda in your terminal with `conda init "$(basename "${SHELL}")"`
-4. Install `pyarrow` and `pandas` with `conda install pyarrow pandas`
+* Install [Homebrew](https://brew.sh)
+* Install [miniforge](https://github.com/conda-forge/miniforge) with:
 
-While [Anaconda](https://www.anaconda.com) can be used to install pyarrow, the installed version is old (4.0.0) so we recommend using [miniforge](https://github.com/conda-forge/miniforge).
+```
+brew install --cask miniforge
+```
+
+* Initialize conda in your terminal with:
+
+```
+conda init "$(basename "${SHELL}")"
+```
+
+* Install `pyarrow` and `pandas` with:
+
+```
+conda install pyarrow pandas
+```
+
+While [Anaconda](https://www.anaconda.com) can be used to install pyarrow, the installed version is old (4.0.0) so we recommend using the [miniforge](https://github.com/conda-forge/miniforge) distribution.
 
 </details>
 
