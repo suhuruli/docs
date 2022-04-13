@@ -22,7 +22,7 @@ You may also use Apache's `pyarrow` library directly.
 
 #### Connecting to the endpoint
 
-* Use the gRPC + TLS URL: `grpc+tls://flight.spiceai.ai`
+* Use the gRPC + TLS URL: `grpc+tls://flight.spiceai.io`
 * Use basic authentication
   * Username can be set to an empty string
   * Password should be set to the API key of your app
