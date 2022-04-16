@@ -11,11 +11,9 @@ It determines this based on the calculated next block base fee and a linear regr
 {% swagger baseUrl="https://data.spiceai.io" path="/eth/v0.1/gasfees" method="get" summary="Get Gas Fee Estimates" %}
 {% swagger-description %}
 Returns an estimate of the next block Ethereum gas fees.
-
-
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" %}
+{% swagger-parameter in="query" name="key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 
@@ -46,17 +44,15 @@ The **`/eth/v0.1/gasfees?price=usd`** API returns an estimate of the next block 
 
 {% swagger method="get" path="/eth/v0.1/gasfees?price=usd" baseUrl="https://data.spiceai.io" summary="Get Gas Fee Estimates With Price" %}
 {% swagger-description %}
-Returns an estimate of the next block Ethereum gas fees with price in the given currency or token. 
+Returns an estimate of the next block Ethereum gas fees with price in the given currency or token.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" %}
+{% swagger-parameter in="query" name="key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="price" required="true" %}
 Currency or token for pricing conversion.
-
-
 
 Currently support USD.
 {% endswagger-parameter %}
@@ -97,7 +93,7 @@ Currently support USD.
 {% endswagger-response %}
 {% endswagger %}
 
-The **`/eth/v0.1/gasfees?period=1d` ** API returns **** the historical gas used ratio and gas fees **by block** over the specified time period. If a period is not specified, it will default to 24 hours.
+The `/eth/v0.1/gasfees?period=1d` API returns the historical gas used ratio and gas fees **by block** over the specified time period. If a period is not specified, it will default to 24 hours.
 
 {% swagger method="get" path="/eth/v0.1/gasfees?period=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees by Block" %}
 {% swagger-description %}
@@ -106,24 +102,24 @@ Returns historical gas used and fees over time.
 One of `start` or `period` is required.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" %}
+{% swagger-parameter in="query" name="key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="start" %}
+{% swagger-parameter in="query" name="start" required="false" %}
 The beginning of the historical period. Will default to 24h ago if not provided.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="period" %}
-The period specified as a 
+{% swagger-parameter in="query" name="period" required="false" %}
+The period specified as a
 
 [Duration Literal](../../core-concepts/duration-literals.md)
 
 . E.g. 5d. If not specified, will default from start until now, or 24 hours if start is also not provided.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="granularity" %}
-The granularity of aggregation specified as a 
+{% swagger-parameter in="query" name="granularity" required="false" %}
+The granularity of aggregation specified as a
 
 [Duration Literal](../../core-concepts/duration-literals.md)
 
@@ -186,7 +182,7 @@ The granularity of aggregation specified as a
 {% endswagger-response %}
 {% endswagger %}
 
-The **`/eth/v0.1/gasfees?period=1w&granularity=1d` ** API returns **** the historical gas used ratio and gas fees **by time granularity** over the specified time period. If a period is not specified, it will default to 24 hours.
+The `/eth/v0.1/gasfees?period=1w&granularity=1d` API returns the historical gas used ratio and gas fees **by time granularity** over the specified time period. If a period is not specified, it will default to 24 hours.
 
 {% swagger method="get" path="/eth/v0.1/gasfees?period=7d&granularity=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees by Time Granularity" %}
 {% swagger-description %}
@@ -195,16 +191,16 @@ Returns historical gas used and fees over time.
 One of `start` or `period` is required. `granularity` is required.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" %}
+{% swagger-parameter in="query" name="key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="start" %}
+{% swagger-parameter in="query" name="start" required="false" %}
 The beginning of the historical period. Will default to 24h ago if not provided.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="period" %}
-The period specified as a 
+{% swagger-parameter in="query" name="period" required="false" %}
+The period specified as a
 
 [Duration Literal](../../core-concepts/duration-literals.md)
 
@@ -212,7 +208,7 @@ The period specified as a
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="granularity" required="true" %}
-The granularity of aggregation specified as a 
+The granularity of aggregation specified as a
 
 [Duration Literal](../../core-concepts/duration-literals.md)
 

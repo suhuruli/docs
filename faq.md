@@ -12,7 +12,7 @@ We have plans to add many more chains and contracts prioritized by user feedback
 
 ### How much does Spice cost?
 
-Spice is currently in beta and it's free to [get an API key](https://cloud.spiceai.io).
+Spice is currently in beta and it's free to [get an API key](https://spice.xyz).
 
 We plan to always have a free tier and offer free APIs, like the [Gas Fees API](api/ethereum/gas-fees.md).
 

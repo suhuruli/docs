@@ -1,6 +1,8 @@
 # Arrow Flight Samples
 
-If writing your client in Python, we highly recommend using the [PyArrow](https://arrow.apache.org/docs/python/index.html) package.
+If writing your client in Python, we highly recommend using our [Python SDK](../sdks/python-sdk.md).
+
+Alternatively, you can use the [PyArrow](https://arrow.apache.org/docs/python/index.html) package directly.
 
 _The Arrow Python bindings (also named “PyArrow”) have first-class integration with NumPy, pandas, and built-in Python objects. They are based on the C++ implementation of Arrow._
 

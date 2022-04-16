@@ -4,7 +4,7 @@ description: Get started with Spice Data
 
 # Getting started
 
-Follow this guide to get started with Spice Data. <mark style="color:green;">An API key is not required!</mark>
+Follow this guide to get started with Spice. <mark style="color:green;">An API key is not required!</mark>
 
 ### Call the API
 

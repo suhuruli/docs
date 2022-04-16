@@ -65,7 +65,7 @@ curl --request POST \
   --url https://data.spiceai.io/eth/v0.1/sql \
   --header 'Content-Type: text/plain' \
   --header 'X-API-Key: [api-key]' \
-  --data 'select count(*) from blocks'
+  --data 'select count(*) from recent_blocks'
 ```
 {% endtab %}
 
