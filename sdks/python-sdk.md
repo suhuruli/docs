@@ -58,7 +58,7 @@ You can then submit queries using the query function.
 import spicepy
 client = spicepy.Client('API_KEY')
 block_data = client.query('SELECT * FROM eth.recent_blocks LIMIT 10;').read_pandas()
-transaction_Data = client.query('SELECT * FROM eth.transactions LIMIT 10;').read_pandas()
+transaction_Data = client.query('SELECT * FROM eth.recent_transactions LIMIT 10;').read_pandas()
 ```
 
 `Client` objects has the following arguments:
