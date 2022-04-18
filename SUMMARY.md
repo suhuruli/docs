@@ -4,6 +4,7 @@
 * [Getting started](get-started.md)
 * [Core Concepts](core-concepts/README.md)
   * [Duration Literals](core-concepts/duration-literals.md)
+* [Best Practices](best-practices.md)
 * [Limitations](limitations.md)
 * [FAQ](faq.md)
 
