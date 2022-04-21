@@ -49,12 +49,13 @@ DESCRIBE eth.contracts;
 
 Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
 
-| Table Name            | Indexed Columns                                                                                |
-| --------------------- | ---------------------------------------------------------------------------------------------- |
-| `eth.blocks`          | `number` `hash` `timestamp`                                                                    |
-| `eth.transactions`    | `block_number` `hash` `block_hash` `from_address` `to_address` `transaction_type`              |
-| `eth.logs`            | `block_number` `log_index` `transaction_hash` `transaction_index` `block_hash` `address`       |
-| `eth.receipts`        | `transaction_hash` `transaction_index` `block_hash` `block_number` `contract_address` `status` |
-| `eth.token_transfers` | `block_number` `token_address` `from_address` `to_address` `transaction_hash`                  |
-| `eth.token_mints`     | `block_number` `token_address` `to_address` `symbol` `name`                                    |
+| Table Name            | Indexed Columns                                                                                                  |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `eth.blocks`          | `number` `hash` `timestamp`                                                                                      |
+| `eth.transactions`    | `block_number` `block_timestamp` `hash` `block_hash` `from_address` `to_address` `transaction_type`              |
+| `eth.logs`            | `block_number` `block_timestamp` `log_index` `transaction_hash` `transaction_index` `block_hash` `address`       |
+| `eth.receipts`        | `transaction_hash` `transaction_index` `block_hash` `block_number` `block_timestamp` `contract_address` `status` |
+| `eth.token_transfers` | `block_number` `block_timestamp` `token_address` `from_address` `to_address` `transaction_hash`                  |
+| `eth.token_mints`     | `block_number` `block_timestamp` `token_address` `to_address` `symbol` `name`                                    |
+| `eth.contracts`       | `block_number` `block_timestamp` `block_hash` `address`                                                          |
 
