@@ -6,7 +6,7 @@ description: Frequently asked questions
 
 ### What data sources do you have?
 
-Spice currently supports [**Ethereum**](reference/sql-query-tables/) blockchain data and [**Sushiswap**](reference/sql-query-tables/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/uniswap-tables.md)**,** and **** [**Uniswap-V3**](reference/sql-query-tables/uniswap-tables.md) smart-contract data. We also have [**NFT specific tables**](reference/sql-query-tables/nft-tables.md).
+Spice currently supports [**Ethereum**](reference/sql-query-tables/) blockchain data and [**Sushiswap**](reference/sql-query-tables/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/uniswap-tables.md)**,** and **** [**Uniswap-V3**](reference/sql-query-tables/uniswap-tables.md) smart-contract data. We also have [NFT](reference/sql-query-tables/nft-tables.md) and [token](reference/sql-query-tables/token-tables.md) specific tables.
 
 We have plans to add many more chains and contracts prioritized by user feedback, along with other sources of data like more [Prices](api/prices.md). We expect to add **Solana** next.
 
@@ -26,6 +26,10 @@ During the beta, we offer [best-effort support](broken-reference) in our Discord
 
 We currently use an [Apache Calcite](https://calcite.apache.org) based query engine and support the ANSI SQL standard.&#x20;
 
+### Can you add \<table> / dataset?
+
+Most likely, yes! Hit us up on Discord and we can work with you to add new views/tables. And the ability to create private custom tables is on our roadmap.
+
 ### Do you support WebSockets or other streaming?
 
 Not yet, but it is on our roadmap.
@@ -37,7 +41,3 @@ Not yet, but it is on our roadmap.
 ### Do you support JDBC/ODBC?
 
 Not yet, but it is on our roadmap.
-
-### Can you add \<table>?
-
-Most likely, yes! Hit us up on Discord and we can work with you to add new views/tables.

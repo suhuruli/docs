@@ -28,6 +28,7 @@
 ## 📚 REFERENCE
 
 * [SQL Query Tables](reference/sql-query-tables/README.md)
+  * [Token Tables](reference/sql-query-tables/token-tables.md)
   * [NFT Tables](reference/sql-query-tables/nft-tables.md)
   * [Uniswap Tables](reference/sql-query-tables/uniswap-tables.md)
   * [Sushiswap Tables](reference/sql-query-tables/sushiswap-tables.md)
