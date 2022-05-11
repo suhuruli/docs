@@ -36,6 +36,7 @@
   * [Blocks](reference/example-ethereum-sql-queries/blocks.md)
   * [Gas & Fees](reference/example-ethereum-sql-queries/gas-and-fees.md)
   * [Transactions](reference/example-ethereum-sql-queries/transactions.md)
+  * [NFTs](reference/example-ethereum-sql-queries/nfts.md)
   * [Tokens](reference/example-ethereum-sql-queries/tokens.md)
 * [Example DEX Queries](reference/example-dex-queries/README.md)
   * [Uniswap](reference/example-dex-queries/uniswap.md)

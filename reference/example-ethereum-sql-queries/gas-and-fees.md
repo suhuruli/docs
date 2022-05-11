@@ -15,24 +15,25 @@ ORDER BY block_number DESC
 LIMIT 500
 ```
 
-### Avg Transaction Fees for Recent Blocks
+### Transaction Fees for Recent Blocks
 
-Gets information about the average transaction fees for recent blocks and the calculation of the fee in Ethereum.
+Gets information about transactions fees for recent blocks, including the effective priority fee (defined as the difference between the block `baseFeePerGas` and the transaction `maxPriorityFeePerGas`) and the calculation of the fee in Ethereum.
 
-**Typical query time**: <10 seconds
+**Typical query time**: \~1 minute
 
 ```sql
-SELECT block_number,
-       TO_TIMESTAMP(block_timestamp) as block_timestamp,
-       avg(gas) as avg_gas_used,
-       avg(max_priority_fee_per_gas) as avg_max_priority_fee_per_gas,
-       avg(gas_price) as avg_gas_price,
-       avg(gas_price / 1e9) AS avg_gas_price_in_gwei,
-       avg(gas * (gas_price / 1e18)) AS avg_fee_in_eth
-FROM eth.transactions
-WHERE block_timestamp > UNIX_TIMESTAMP()-60*60*24*10 -- last 30 days
-GROUP BY block_number, block_timestamp
-ORDER BY block_number DESC
+SELECT eth.recent_blocks.*,
+       transaction_index,
+       eth.recent_transactions.hash AS tx_hash,
+       gas,
+       max_priority_fee_per_gas,
+       gas_price,
+       gas_price - recent_blocks.base_fee_per_gas AS effective_priority_fee,
+       gas * (gas_price / 1e18) AS fee_in_eth
+FROM recent_blocks INNER JOIN eth.recent_transactions ON 
+  eth.recent_transactions.block_number = recent_blocks.number
+ORDER BY recent_blocks.number DESC, transaction_index ASC
+LIMIT 500
 ```
 
 ### Total Transaction Fees in Ethereum Per Block
