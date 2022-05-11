@@ -1,30 +1,31 @@
 # Cross-DEX
 
-
-
-#### Compare reserves and price across Uniswap-v2 and Sushiswap
+#### Compare daily average reserves and price across Uniswap-v2 and Sushiswap
 
 **Typical query time**: <15 seconds
 
 ```sql
 WITH sushiswap_pool AS (
-    SELECT *
-    FROM eth.sushiswap.pool_stats_detailed
-    WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
-    ORDER BY block_number DESC
-    LIMIT 500
+    select "day", pool_address, token0_symbol, token1_symbol,
+    avg(reserve0) as reserve0_avg,
+    avg(reserve1) as reserve1_avg,
+    avg(price0) as price0_avg
+    from (select pool_address, token0_symbol, token1_symbol, DATE_TRUNC('day', to_timestamp(block_timestamp_last)) as "day", reserve0, reserve1, price0
+        from eth.sushiswap.pool_stats_detailed WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH')
+    group by "day", pool_address, token0_symbol, token1_symbol
 ), uniswapv2_pool AS (
-    SELECT *
-    FROM eth.uniswap_v2.pool_stats_detailed
-    WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
-    ORDER BY block_number DESC
-    LIMIT 500
+    select "day", pool_address, token0_symbol, token1_symbol,
+    avg(reserve0) as reserve0_avg,
+    avg(reserve1) as reserve1_avg,
+    avg(price0) as price0_avg
+    from (select pool_address, token0_symbol, token1_symbol, DATE_TRUNC('day', to_timestamp(block_timestamp_last)) as "day", reserve0, reserve1, price0
+        from eth.uniswap_v2.pool_stats_detailed WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH')
+    group by "day", pool_address, token0_symbol, token1_symbol
 )
-select 'sushiswap' as "exchange", token0_symbol, token1_symbol, avg(reserve0) as reserve0, avg(reserve1) as reserve1, avg(price0) as price0
+select 'sushiswap' as "exchange", "day", token0_symbol, token1_symbol, reserve0_avg, reserve1_avg, price0_avg
 from sushiswap_pool
-group by pool_address, token0_symbol, token1_symbol
 UNION ALL
-SELECT 'uniswap_v2' as "exchange", token0_symbol, token1_symbol, avg(reserve0) as reserve0, avg(reserve1) as reserve1, avg(price0) as price0
+SELECT 'uniswap_v2' as "exchange", "day", token0_symbol, token1_symbol, reserve0_avg, reserve1_avg, price0_avg
 from uniswapv2_pool
-group by pool_address, token0_symbol, token1_symbol
+order by "day" desc
 ```
