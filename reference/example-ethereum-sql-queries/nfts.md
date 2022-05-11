@@ -19,3 +19,5 @@ GROUP BY token_address, name, symbol
 HAVING COUNT(*)>1
 ORDER BY COUNT(*) DESC
 ```
+
+Run this query yourself using a [Kaggle notebook](https://www.kaggle.com/code/phillipleblanc/spice-xyz-nft-airdrops)
