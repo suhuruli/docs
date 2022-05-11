@@ -6,21 +6,23 @@
 
 ```sql
 WITH sushiswap_pool AS (
-    select "day", pool_address, token0_symbol, token1_symbol,
-    avg(reserve0) as reserve0_avg,
-    avg(reserve1) as reserve1_avg,
-    avg(price0) as price0_avg
-    from (select pool_address, token0_symbol, token1_symbol, DATE_TRUNC('day', to_timestamp(block_timestamp_last)) as "day", reserve0, reserve1, price0
-        from eth.sushiswap.pool_stats_detailed WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH')
-    group by "day", pool_address, token0_symbol, token1_symbol
+    SELECT pool_address, token0_symbol, token1_symbol,
+    AVG(reserve0) AS reserve0_avg,
+    AVG(reserve1) AS reserve1_avg,
+    AVG(price0) AS price0_avg,
+    DATE_TRUNC('day', to_timestamp(block_timestamp_last)) AS "day"
+    FROM eth.sushiswap.pool_stats_detailed
+    WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
+    GROUP BY "day", pool_address, token0_symbol, token1_symbol
 ), uniswapv2_pool AS (
-    select "day", pool_address, token0_symbol, token1_symbol,
-    avg(reserve0) as reserve0_avg,
-    avg(reserve1) as reserve1_avg,
-    avg(price0) as price0_avg
-    from (select pool_address, token0_symbol, token1_symbol, DATE_TRUNC('day', to_timestamp(block_timestamp_last)) as "day", reserve0, reserve1, price0
-        from eth.uniswap_v2.pool_stats_detailed WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH')
-    group by "day", pool_address, token0_symbol, token1_symbol
+    SELECT pool_address, token0_symbol, token1_symbol,
+    AVG(reserve0) AS reserve0_avg,
+    AVG(reserve1) AS reserve1_avg,
+    AVG(price0) AS price0_avg,
+    DATE_TRUNC('day', to_timestamp(block_timestamp_last)) AS "day"
+    FROM eth.uniswap_v2.pool_stats_detailed
+    WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
+    GROUP BY "day", pool_address, token0_symbol, token1_symbol
 )
 select 'sushiswap' as "exchange", "day", token0_symbol, token1_symbol, reserve0_avg, reserve1_avg, price0_avg
 from sushiswap_pool
