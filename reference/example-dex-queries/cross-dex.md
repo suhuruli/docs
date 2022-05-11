@@ -34,3 +34,5 @@ SELECT 'uniswap_v2' as "exchange", "minute", usdc_reserve, weth_reserve, usdc_we
 from uniswap_liquidity
 order by "minute" desc
 ```
+
+Run this query yourself using this [Kaggle notebook](https://www.kaggle.com/code/phillipleblanc/spice-xyz-dex-liquidity?scriptVersionId=95315760)
