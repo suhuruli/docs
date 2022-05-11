@@ -19,7 +19,7 @@ LIMIT 500
 
 Gets information about the average transaction fees for recent blocks and the calculation of the fee in Ethereum.
 
-**Typical query time**: \~1 minute
+**Typical query time**: <10 seconds
 
 ```sql
 SELECT block_number,
