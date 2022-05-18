@@ -4,6 +4,20 @@ description: Best practices and tips for getting the most out of Spice
 
 # Best Practices
 
+### Use `recent` tables
+
+If you only need recent/near-real-time data, then use the `recent` tables. For example:
+
+```sql
+eth.recent_blocks
+eth.recent_transactions
+eth.recent_logs
+eth.recent_token_transfers
+eth.recent_token_mints
+```
+
+These tables include the last 30 mins of data and are very fast to query.
+
 ### Improve performance with ORDER BY, LIMIT, and OFFSET
 
 You can significantly improve the performance of your SQL query by using limits and offsets on indexed columns. For example to fetch blocks in 1M block chunks:
