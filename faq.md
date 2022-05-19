@@ -10,6 +10,8 @@ Spice currently supports [**Ethereum**](reference/sql-query-tables/) blockchain 
 
 We have plans to add many more chains and contracts prioritized by user feedback, along with other sources of data like more [Prices](api/prices.md). We expect to add **Solana** next.
 
+For the all-up list, see [Datasets](datasets.md) and follow the [Release notes](reference/release-notes.md) for progress.
+
 ### How much does Spice cost?
 
 Spice is currently in beta and it's free to [get an API key](https://spice.xyz).
@@ -24,7 +26,7 @@ During the beta, we offer [best-effort support](broken-reference) in our Discord
 
 ### What SQL query engine/language do you support?
 
-We currently use an [Apache Calcite](https://calcite.apache.org) based query engine and support the ANSI SQL standard.&#x20;
+We currently use an [Apache Calcite](https://calcite.apache.org/) based query engine and support the ANSI SQL standard.&#x20;
 
 ### Can you add \<table> / dataset?
 

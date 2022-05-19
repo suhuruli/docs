@@ -2,6 +2,7 @@
 
 * [👋 Welcome to Spice](README.md)
 * [Getting started](get-started.md)
+* [Datasets](datasets.md)
 * [Core Concepts](core-concepts/README.md)
   * [Duration Literals](core-concepts/duration-literals.md)
 * [Best Practices](best-practices.md)
