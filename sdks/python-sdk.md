@@ -4,12 +4,13 @@ The Python SDK `spicepy` is the easiest way to use and query Spice in Python.
 
 ### Requirements
 
-* Python 3.7+
+* Python 3.8+
 
 The following packages are required and will be automatically installed by pip:
 
 * `pyarrow`
 * `pandas`
+* `web3`
 
 <details>
 
@@ -36,7 +37,7 @@ conda init "$(basename "${SHELL}")"
 conda install pyarrow pandas
 ```
 
-While [Anaconda](https://www.anaconda.com) can be used to install pyarrow, the installed version is old (4.0.0) so we recommend using the [miniforge](https://github.com/conda-forge/miniforge) distribution.
+While [Anaconda](https://www.anaconda.com/) can be used to install pyarrow, the installed version is old (4.0.0) so we recommend using the [miniforge](https://github.com/conda-forge/miniforge) distribution.
 
 </details>
 
