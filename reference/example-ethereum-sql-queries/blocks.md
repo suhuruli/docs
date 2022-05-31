@@ -54,7 +54,7 @@ Gets basic information about a random block in the chain.
 WITH random_block AS (
     SELECT mod(cast(floor(random() * 1e9) AS numeric), latest_block.number) AS number
         FROM (
-            SELECT max(number) AS number FROM blocks
+            SELECT max(number) AS number FROM eth.blocks
         ) AS latest_block
 )
 SELECT number, "timestamp", hash, transaction_count, gas_used 

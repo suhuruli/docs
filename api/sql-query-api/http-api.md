@@ -6,7 +6,7 @@ description: Querying Ethereum data with SQL via the HTTP API
 
 
 
-Ethereum blockchain and contract data may be queried by posting SQL to the `/eth/v0.1/sql` API.
+Ethereum blockchain and contract data may be queried by posting SQL to the `/v0.1/sql` API.
 
 See [Tables](broken-reference) for a list of tables to query or browse the example queries listed in the menu.
 
@@ -16,7 +16,7 @@ See [Tables](broken-reference) for a list of tables to query or browse the examp
 * Results are limited to 500 rows. Use the [Apache Arrow Flight API](broken-reference) to fetch up to 1M rows in a single query.
 * Requests are limited to 90 seconds.
 
-{% swagger method="post" path="/eth/v0.1/sql" baseUrl="https://data.spiceai.io" summary="Perform a SQL query" %}
+{% swagger method="post" path="/v0.1/sql" baseUrl="https://data.spiceai.io" summary="Perform a SQL query" %}
 {% swagger-description %}
 The SQL query should be sent in the body of the request as plain text
 {% endswagger-description %}
@@ -62,10 +62,10 @@ The API Key for your Spice app
 {% tab title="cURL" %}
 ```bash
 curl --request POST \
-  --url https://data.spiceai.io/eth/v0.1/sql \
+  --url https://data.spiceai.io/v0.1/sql \
   --header 'Content-Type: text/plain' \
   --header 'X-API-Key: [api-key]' \
-  --data 'select count(*) from recent_blocks'
+  --data 'select count(number) from eth.recent_blocks'
 ```
 {% endtab %}
 
@@ -74,11 +74,11 @@ curl --request POST \
 const API_KEY = "[api-key]";
 
 const query = `
-select count(*) as num_blocks
-from blocks
+select count(number) as num_blocks
+from eth.recent_blocks
 `;
 
-const res = await fetch("https://data.spiceai.io/eth/v0.1/sql", {
+const res = await fetch("https://data.spiceai.io/v0.1/sql", {
   method: "POST",
   headers: {
     "Content-Type": "text/plain",
@@ -91,7 +91,3 @@ console.log(await res.json());
 ```
 {% endtab %}
 {% endtabs %}
-
-{% hint style="info" %}
-The `eth.` table prefix is optional and can be skipped in the HTTP API.
-{% endhint %}
