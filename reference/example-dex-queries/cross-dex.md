@@ -15,6 +15,7 @@ WITH sushiswap_liquidity AS (
     WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
     GROUP BY "minute", pool_address, token0_symbol, token1_symbol
     ORDER BY "minute" DESC
+    LIMIT 10
 ), uniswap_liquidity AS (
     SELECT
     AVG(reserve0) AS usdc_reserve,
@@ -25,6 +26,7 @@ WITH sushiswap_liquidity AS (
     WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
     GROUP BY "minute", pool_address, token0_symbol, token1_symbol
     ORDER BY "minute" DESC
+    LIMIT 10
 )
 
 select 'sushiswap' as "exchange", "minute", usdc_reserve, weth_reserve, usdc_weth_price

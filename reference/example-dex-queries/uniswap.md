@@ -14,7 +14,7 @@ SELECT block_number,
     price1
 FROM eth.uniswap_v2.pool_stats
 ORDER BY block_number DESC
-LIMIT 500
+LIMIT 10
 ```
 
 ### Recent Changes in Price by Block Number
@@ -32,6 +32,7 @@ FROM eth.uniswap_v2.pool_stats_detailed
 WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
 GROUP BY price0, price1, reserve0, reserve1
 ORDER BY block_number DESC
+LIMIT 10
 ```
 
 ### Advanced Liquidity Aggregations for USD Token Pairs
@@ -55,6 +56,7 @@ FROM eth.uniswap_v2.pool_stats_detailed
 WHERE token0_symbol like '%USD%' or token1_symbol like '%USD%'
 GROUP BY pool_address, token0_symbol, token1_symbol
 ORDER BY avg_liquidity1 DESC
+LIMIT 10
 ```
 
 ### Liquidity Data Aggregated by Hour
@@ -72,6 +74,7 @@ SELECT "hour",
        reserve1_max
 FROM eth.uniswap_v2.pool_liquidity_stats_by_hour
 ORDER BY "hour" DESC
+LIMIT 10
 ```
 
 #### Over the past few days, which pair that included USDC had the largest change in liquidity during a single hour?
@@ -105,4 +108,5 @@ FROM (
 )
 WHERE change_in_min_reserve0 IS NOT NULL AND change_in_min_reserve1 IS NOT NULL AND (token0_symbol = 'USDC' OR token1_symbol = 'USDC')
 ORDER BY change_in_min_reserve0 DESC
+LIMIT 10
 ```
