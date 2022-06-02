@@ -26,8 +26,7 @@ In beta, Spice has a number of limitations, including:
 
 * 3 concurrent-requests.
 
-#### Data Limitations (as of Mar 22, 2022)
+#### Data Limitations (as of June, 2022)
 
-* DEX (Sushiswap, Uniswap, etc) pool data for the last month only, tracking the top 1000 pools by TVL/Market Cap.
+* DEX (Sushiswap, Uniswap, etc) pool data is limited to the last three months and tracking the top 1000 pools by TVL/Market Cap.
 * 128-bit integer limit (while data can be uint256). We include both the 128-bit `DECIMAL(38)` type and  `_hex` fields where the type is 256-bit.
-* Support for erc20 and erc721. Support for erc1155 coming soon.

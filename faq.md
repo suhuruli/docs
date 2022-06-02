@@ -34,7 +34,7 @@ Most likely, yes! Hit us up on Discord and we can work with you to add new views
 
 ### Do you support WebSockets or other streaming?
 
-Not yet, but it is on our roadmap.
+WebSocket support is available for [Design Partners](https://www.craft.do/s/bgJFtYzSZwuFXD). Apache Arrow over gRPC streaming is on our roadmap.
 
 ### Do you support alerting?
 
