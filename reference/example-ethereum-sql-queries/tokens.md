@@ -16,7 +16,7 @@ SELECT token_address,
        block_number 
 FROM eth.recent_token_transfers 
 ORDER BY block_number DESC
-LIMIT 10000
+LIMIT 10
 ```
 
 ### Get Tokens With Standard
