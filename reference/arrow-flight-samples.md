@@ -1,6 +1,6 @@
 # Arrow Flight Samples
 
-If writing your client in Python, we highly recommend using our [Python SDK](../sdks/python-sdk.md).
+If writing your client in Python, we highly recommend using the [Python SDK](../sdks/python-sdk.md).
 
 Alternatively, you can use the [PyArrow](https://arrow.apache.org/docs/python/index.html) package directly.
 

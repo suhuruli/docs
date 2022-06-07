@@ -1,8 +1,39 @@
 ---
-description: Spice Data Release notes
+description: Spice.xyz Release notes
 ---
 
 # Release notes
+
+### May 2002
+
+Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](sql-query-tables/token-tables.md).
+
+Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](../api/sql-query-api/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](../sdks/python-sdk.md) for production use though.
+
+WebSocket support is now available in private preview to Design Partners - get in touch if you are interested in custom limits, early access features, and dedicated support.
+
+#### Changes
+
+* Improved Ethereum standard detection for erc20, erc721, and erc115 tokens
+* Added new token specific tables
+  * `eth.contracts_erc20`
+  * `eth.contracts_erc721`
+  * `eth.contracts_erc1155`
+  * `eth.tokens_erc20`
+  * `eth.tokens_erc721`
+  * `eth.tokens_erc1155`
+  * `eth.token_transfers_erc20`
+  * `eth.token_transfers_erc721`
+  * `eth.token_transfers_erc1155`
+* Added new columns to `eth.token_transfers` table
+  * `token_standard`
+  * `token_id`
+* Added new columns to `eth.contracts` table
+  * `erc20_confidence`
+  * `erc721_confidence`
+  * `erc1155_confidence`
+  * `is_erc1155`
+* `eth.nft_` tables now include erc1155 tokens
 
 ### Apr 2022
 
@@ -64,4 +95,3 @@ Initial release of the Spice beta!
 * Adds `/eth/v0.1/gasfees` API.
 * Adds `/eth/v0.1/contracts` API.
 * Adds `/v0.1/prices` API.
-
