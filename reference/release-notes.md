@@ -4,7 +4,7 @@ description: Spice.xyz Release notes
 
 # Release notes
 
-### May 2002
+### May 2022
 
 Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](sql-query-tables/token-tables.md).
 
