@@ -21,14 +21,25 @@ LIMIT 10
 
 ### Get Tokens With Standard
 
-Joins the tokens table with the contracts table to get information about the token standard that the token is using.
+Use the tokens table to get information about the token standard that the token is using.
 
 **Typical query time**: <20 seconds
 
 ```sql
-SELECT DISTINCT tokens.symbol, tokens.name, is_erc721, is_erc20
+SELECT symbol, name, is_erc20, is_erc721, is_erc1155
 FROM eth.tokens
-INNER JOIN eth.contracts ON eth.contracts.address = eth.tokens.address
-WHERE eth.tokens.name != ''
-ORDER BY eth.tokens.name
+WHERE name != ''
+ORDER BY name
+LIMIT 10
+```
+
+### Get Confidence for Token Standards
+
+Get Spice's confidence (as a score from 0 to 1) on whether a smart contract implements the given token standard.
+
+```sql
+SELECT address, erc20_confidence, erc721_confidence, erc1155_confidence
+FROM eth.contracts
+WHERE erc20_confidence > 0 OR erc721_confidence > 0 OR erc1155_confidence > 0
+LIMIT 10
 ```
