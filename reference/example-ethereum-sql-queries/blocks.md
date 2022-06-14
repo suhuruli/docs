@@ -8,7 +8,7 @@ Gets the number of the latest block in the chain.
 
 ```sql
 SELECT max(number) AS latest_block_number
-FROM eth.blocks
+FROM eth.recent_blocks
 ```
 
 ### Last 5000 Blocks
@@ -16,7 +16,7 @@ FROM eth.blocks
 Gets basic information for the last 5000 blocks in the chain.
 
 {% hint style="info" %}
-To get access to more than 500 results, use the [Apache Arrow Flight API](broken-reference).
+To get access to more than 500 results, use the [Apache Arrow Flight API](broken-reference/).
 {% endhint %}
 
 **Typical query time**: 2 seconds
