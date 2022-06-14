@@ -29,7 +29,7 @@ DESCRIBE eth.recent_nft_airdrop_transfers;
 
 Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
 
-| Table Name                  | Indexed Columns                                                              |
-| --------------------------- | ---------------------------------------------------------------------------- |
-| `eth.nft_transfers`         | `block_number` `block_timestamp` `from_address` `to_address` `token_address` |
-| `eth.nft_airdrop_transfers` | `token_address` `token_id` `block_number` `block_timestamp`  `from_address`  |
+| Table Name                  | Indexed Columns |
+| --------------------------- | --------------- |
+| `eth.nft_transfers`         | `block_number`  |
+| `eth.nft_airdrop_transfers` | `block_number`  |
