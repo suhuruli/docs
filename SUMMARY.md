@@ -25,6 +25,7 @@
 ## 🔗 SDKs
 
 * [Python SDK](sdks/python-sdk.md)
+* [Node.js SDK](sdks/node.js-sdk.md)
 
 ## 📚 REFERENCE
 
