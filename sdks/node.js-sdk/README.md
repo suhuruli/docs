@@ -30,7 +30,7 @@ const table = await spiceClient.query(
 console.table(table.toArray());
 ```
 
-Query data using a `SpiceClient` object. `SpiceClient` has the following arguments:
+`SpiceClient` has the following arguments:
 
 * `apiKey` (string, required): API key to authenticate with the endpoint.
 * `url` (string, optional): URL of the endpoint to use (default: flight.spiceai.io:443)

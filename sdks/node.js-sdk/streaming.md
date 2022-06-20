@@ -1,6 +1,6 @@
 # Streaming
 
-The `@spiceai/spice` SDK allows streaming partial results as they become available.
+The `@spiceai/spice` SDK supports streaming partial results as they become available.
 
 This can be used to enable more efficient pipelining scenarios where processing each row of the result set can happen independently.
 
@@ -54,7 +54,7 @@ await spiceClient.query(query, (partialData) => {
 
 This will yield the same result as before: `processNFTOwner` will be called 10k times, but it can start processing the data earlier.
 
-To demonstrate the effect of streaming the data, the following snippet keep track of all the seen data and writes out how much of dataset it has processed.
+To demonstrate the effect of streaming the data, the following snippet keeps track of all the seen data and writes out how much of dataset it has processed.
 
 ```javascript
 import { SpiceClient } from "@spiceai/spice"
