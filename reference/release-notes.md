@@ -16,9 +16,6 @@ WebSocket support is now available in private preview to Design Partners - get i
 
 * Improved Ethereum standard detection for erc20, erc721, and erc115 tokens
 * Added new token specific tables
-  * `eth.contracts_erc20`
-  * `eth.contracts_erc721`
-  * `eth.contracts_erc1155`
   * `eth.tokens_erc20`
   * `eth.tokens_erc721`
   * `eth.tokens_erc1155`
