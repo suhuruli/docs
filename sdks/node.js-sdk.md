@@ -1,14 +1,24 @@
-# Node.js SDK
+# 🆕 Node.js SDK
 
-Spice.xyz client library for Node.JS
+The Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice) is the easiest way to use and query Spice with Node.js.
+
+### Requirements
+
+* [Node.js 16+](https://nodejs.org/)
 
 ### Installation
 
-`npm install @spiceai/spice` or `yarn add @spiceai/spice`
+`npm install @spiceai/spice --save`
+
+or
+
+`yarn add @spiceai/spice`
 
 ### Usage
 
-#### Arrow Query
+Import `SpiceClient` and instantiate a new instance with an API Key.
+
+You can then submit queries using the `query` function.
 
 ```javascript
 import { SpiceClient } from "@spiceai/spice";
@@ -24,7 +34,11 @@ const main = async () => {
 main();
 ```
 
-Querying data is done through a `SpiceClient` object that initializes the connection with Spice endpoint. `SpiceClient` has the following arguments:
+`SpiceClient` has the following arguments:
 
 * `apiKey` (string, required): API key to authenticate with the endpoint.
 * `url` (string, optional): URL of the endpoint to use (default: flight.spiceai.io:443)
+
+### Contributing
+
+Contribute to or file an issue with the Spice.js library at [https://github.com/spiceai/spice.js](https://github.com/spiceai/spice.js)
