@@ -43,6 +43,6 @@ curl --request POST \
 
 ### Use an SDK
 
-Use the [Python SDK](sdks/python-sdk/) to query Spice using it's high-performance Apache Arrow transport.
+Use the [Python SDK](sdks/python-sdk.md) to query Spice using it's high-performance Apache Arrow transport.
 
 TypeScript/JavaScript SDK coming soon!
