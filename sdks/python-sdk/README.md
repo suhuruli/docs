@@ -43,10 +43,10 @@ While [Anaconda](https://www.anaconda.com/) can be used to install pyarrow, the 
 
 ### Installation
 
-Install the `spicepy` package directly from the Spice Github Repository at [https://github.com/spicehq/spice-py](https://github.com/spicehq/spice-py):
+Install the `spicepy` package directly from the Spice Github Repository at [https://github.com/spiceai/spicepy](https://github.com/spiceai/spicepy):
 
 ```
-pip install git+https://github.com/spicehq/spice-py
+pip install git+https://github.com/spiceai/spicepy
 ```
 
 ### Usage

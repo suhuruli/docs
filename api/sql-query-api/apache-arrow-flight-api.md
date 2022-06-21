@@ -6,11 +6,11 @@ description: Querying Ethereum data with SQL via the Apache Arrow Flight API
 
 SQL query results are now available as [Apache Arrow](https://arrow.apache.org) data frames via a high-performance [Apache Arrow Flight](https://arrow.apache.org/docs/format/Flight.html) endpoint.
 
-Arrow Flight is a data protocol built on the high-performance, open-source [gRPC](https://grpc.io) protocol.&#x20;
+Arrow Flight is a data protocol built on the high-performance, open-source [gRPC](https://grpc.io) protocol.
 
-This enables high-speed access to your data in [Python](https://arrow.apache.org/docs/python/index.html), [Go](https://pkg.go.dev/github.com/apache/arrow/go/v8), [C++](https://arrow.apache.org/docs/cpp/index.html), [C#](https://github.com/apache/arrow/blob/master/csharp/README.md), and [Rust](https://docs.rs/arrow-flight/latest/arrow\_flight/), and makes it easy to use libraries like [Pandas](https://arrow.apache.org/docs/python/pandas.html) and [NumPy](https://arrow.apache.org/docs/python/numpy.html?highlight=numpy#).
+This enables high-speed access to your data in [Python](https://arrow.apache.org/docs/python/index.html), [Go](https://pkg.go.dev/github.com/apache/arrow/go/v8), [C++](https://arrow.apache.org/docs/cpp/index.html), [C#](https://github.com/apache/arrow/blob/master/csharp/README.md), and [Rust](https://docs.rs/arrow-flight/latest/arrow\_flight/), and makes it easy to use libraries like [Pandas](https://arrow.apache.org/docs/python/pandas.html) and [NumPy](https://arrow.apache.org/docs/python/numpy.html?highlight=numpy).
 
-We recommend using the [Spice Python SDK](../../sdks/python-sdk.md) `spicepy` to connect and query this endpoint. The query result from the SDK can be easily converted to Pandas or NumPy format.
+We recommend using the [Spice Python SDK](../../sdks/python-sdk/) `spicepy` to connect and query this endpoint. The query result from the SDK can be easily converted to Pandas or NumPy format.
 
 You may also use Apache's `pyarrow` library directly.
 
@@ -19,7 +19,7 @@ You may also use Apache's `pyarrow` library directly.
 
 `The spicepy/pyarrow` installation requires [miniforge](https://github.com/conda-forge/miniforge).
 
-See the [Python SDK page](../../sdks/python-sdk.md#m1-macs) for installation steps.
+See the [Python SDK page](../../sdks/python-sdk/#m1-macs) for installation steps.
 {% endhint %}
 
 #### Connecting to the endpoint
@@ -31,11 +31,11 @@ See the [Python SDK page](../../sdks/python-sdk.md#m1-macs) for installation ste
 
 #### Requirements
 
-* [Table](broken-reference) names must be fully-qualified. For example `eth.blocks`
+* [Table](broken-reference/) names must be fully-qualified. For example `eth.blocks`
 
 #### Samples
 
-Find code samples in Python in [[arrow-flight-samples.md](../../reference/arrow-flight-samples.md "mention")](broken-reference).
+Find code samples in Python in \[[arrow-flight-samples.md](../../reference/arrow-flight-samples.md "mention")]\(broken-reference).
 
 ### Troubleshooting
 

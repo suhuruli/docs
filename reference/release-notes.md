@@ -8,7 +8,7 @@ description: Spice.xyz Release notes
 
 Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](sql-query-tables/token-tables.md).
 
-Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](../api/sql-query-api/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](../sdks/python-sdk.md) for production use though.
+Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](../api/sql-query-api/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](../sdks/python-sdk/) for production use though.
 
 WebSocket support is now available in private preview to Design Partners - get in touch if you are interested in custom limits, early access features, and dedicated support.
 
@@ -16,9 +16,6 @@ WebSocket support is now available in private preview to Design Partners - get i
 
 * Improved Ethereum standard detection for erc20, erc721, and erc115 tokens
 * Added new token specific tables
-  * `eth.contracts_erc20`
-  * `eth.contracts_erc721`
-  * `eth.contracts_erc1155`
   * `eth.tokens_erc20`
   * `eth.tokens_erc721`
   * `eth.tokens_erc1155`

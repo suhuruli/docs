@@ -24,7 +24,8 @@
 
 ## 🔗 SDKs
 
-* [Python SDK](sdks/python-sdk.md)
+* [Python SDK](sdks/python-sdk/README.md)
+  * [Streaming](sdks/python-sdk/streaming.md)
 * [🆕 Node.js SDK](sdks/node.js-sdk/README.md)
   * [Streaming](sdks/node.js-sdk/streaming.md)
   * [API Reference](sdks/node.js-sdk/api-reference.md)
