@@ -22,6 +22,10 @@
 * [Prices API](api/prices.md)
 * [Health API](api/health.md)
 
+## 🎓 Tutorials
+
+* [Tokens & NFTs](tutorials/tokens-and-nfts.md)
+
 ## 🔗 SDKs
 
 * [Python SDK](sdks/python-sdk.md)
