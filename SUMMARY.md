@@ -39,6 +39,7 @@
 * [SQL Query Tables](reference/sql-query-tables/README.md)
   * [Token Tables](reference/sql-query-tables/token-tables.md)
   * [NFT Tables](reference/sql-query-tables/nft-tables.md)
+  * [ENS Tables](reference/sql-query-tables/token-tables-1.md)
   * [Uniswap Tables](reference/sql-query-tables/uniswap-tables.md)
   * [Sushiswap Tables](reference/sql-query-tables/sushiswap-tables.md)
 * [Example Ethereum SQL Queries](reference/example-ethereum-sql-queries/README.md)
