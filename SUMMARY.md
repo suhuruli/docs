@@ -59,6 +59,7 @@
   * [Transaction Fees](reference/example-bitcoin-queries/transaction-fees.md)
   * [Transactions](reference/example-bitcoin-queries/transactions.md)
   * [Transaction Inputs/Outputs](reference/example-bitcoin-queries/transaction-inputs-outputs.md)
+* [Example Cross-Chain Queries](reference/example-cross-chain-queries.md)
 * [Kaggle Notebooks](reference/kaggle-notebooks.md)
 * [Arrow Flight Samples](reference/arrow-flight-samples.md)
 * [Release notes](reference/release-notes.md)
