@@ -6,7 +6,7 @@ description: Frequently asked questions
 
 ### What data sources do you have?
 
-Spice currently supports [**Ethereum**](reference/sql-query-tables/) blockchain data and [**Sushiswap**](reference/sql-query-tables/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/uniswap-tables.md)**,** and **** [**Uniswap-V3**](reference/sql-query-tables/uniswap-tables.md) smart-contract data. We also have [NFT](reference/sql-query-tables/nft-tables.md) and [token](reference/sql-query-tables/token-tables.md) specific tables.
+Spice currently supports [**Ethereum**](reference/sql-query-tables/) blockchain data and [**Sushiswap**](reference/sql-query-tables/sql-query-tables/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/sql-query-tables/uniswap-tables.md)**,** and [**Uniswap-V3**](reference/sql-query-tables/sql-query-tables/uniswap-tables.md) smart-contract data. We also have [NFT](reference/sql-query-tables/sql-query-tables/nft-tables.md) and [token](reference/sql-query-tables/sql-query-tables/token-tables.md) specific tables.
 
 We have plans to add many more chains and contracts prioritized by user feedback, along with other sources of data like more [Prices](api/prices.md). We expect to add **Solana** next.
 
@@ -22,11 +22,11 @@ For customers who need higher request or query limits, service guarantees, or pr
 
 ### What level of support do you offer?
 
-During the beta, we offer [best-effort support](broken-reference) in our Discord. If you'd like higher priority support or are interested in becoming a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD), please let us know.
+During the beta, we offer [best-effort support](broken-reference/) in our Discord. If you'd like higher priority support or are interested in becoming a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD), please let us know.
 
 ### What SQL query engine/language do you support?
 
-We currently use an [Apache Calcite](https://calcite.apache.org/) based query engine and support the ANSI SQL standard.&#x20;
+We currently use an [Apache Calcite](https://calcite.apache.org/) based query engine and support the ANSI SQL standard.
 
 ### Can you add \<table> / dataset?
 

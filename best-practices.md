@@ -14,6 +14,10 @@ eth.recent_transactions
 eth.recent_logs
 eth.recent_token_transfers
 eth.recent_token_mints
+btc.recent_blocks
+btc.recent_transactions
+btc.recent_transaction_inputs
+btc.recent_transaction_outputs
 ```
 
 These tables include the last 30 mins of data and are very fast to query.
