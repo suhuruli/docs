@@ -32,11 +32,11 @@ curl https://data.spiceai.io/eth/v0.1/gasfees
 
 {% tabs %}
 {% tab title="cURL" %}
-```bash
+```
 curl --request POST \
-  --url 'https://data.spiceai.io/v0.1/sql' \
+  --url 'https://data.spiceai.io/eth/v0.1/sql' \
   --header 'Content-Type: text/plain' \
-  --data 'select * from eth.recent_blocks order by "timestamp" desc'
+  --data 'select * from recent_blocks order by "timestamp" desc'
 ```
 {% endtab %}
 {% endtabs %}
