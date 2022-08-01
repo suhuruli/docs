@@ -50,6 +50,7 @@
   * [Transactions](reference/example-ethereum-sql-queries/transactions.md)
   * [NFTs](reference/example-ethereum-sql-queries/nfts.md)
   * [Tokens](reference/example-ethereum-sql-queries/tokens.md)
+  * [Logs](reference/example-ethereum-sql-queries/logs.md)
 * [Example DEX Queries](reference/example-dex-queries/README.md)
   * [Uniswap](reference/example-dex-queries/uniswap.md)
   * [Sushiswap](reference/example-dex-queries/sushiswap.md)
