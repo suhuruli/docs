@@ -16,6 +16,7 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 * Transactions
 * Logs
 * Contracts
+* Traces
 
 [**Ethereum Token datasets**](reference/sql-query-tables/sql-query-tables/token-tables.md)
 

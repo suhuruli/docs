@@ -13,6 +13,7 @@ eth.recent_blocks
 eth.recent_transactions
 eth.recent_logs
 eth.recent_token_transfers
+eth.recent_traces
 eth.recent_token_mints
 btc.recent_blocks
 btc.recent_transactions
