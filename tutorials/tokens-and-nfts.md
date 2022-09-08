@@ -16,7 +16,7 @@ In this tutorial, we'll explore how to use these datasets to answer the followin
 
 * How many NFTs exist? How many of them are ERC-721 NFTs vs ERC-1155 NFTs?
 * Which ERC-721 contracts had the most token mints in the last 30 minutes?
-* Which contracts had the most NFT airdrops in March 2021, the month the largest NFT transfer took place?
+* Which contracts had the most NFT transfers in March 2021, the month the largest NFT transfer by value took place?
 * Who are the current owners of all Ethereum NFTs?
 * Using the standards compliance confidence for a specific application.
 
@@ -99,21 +99,21 @@ If you were instead interested in all NFT mints (including ERC-1155), which tabl
 
 If you guessed `eth.recent_nft_transfers`, you would be correct! You could also modify the query to add `where token_standard = 'erc721' or token_standard = 'erc1155'`, which would include fungible ERC-1155 token mints.
 
-### Which contracts had the most NFT airdrops in March 2021?
+### Which contracts had the most NFT transfers in March 2021?
 
-The `eth.nft_airdrop_transfers` table is perfect for answering this question. The only potentially tricky part is filtering the data to the time period we're interested in. We've already seen above how to do an aggregation to group by contracts and display the counts.
+The `eth.nft_transfers` table is perfect for answering this question. The only potentially tricky part is filtering the data to the time period we're interested in. We've already seen above how to do an aggregation to group by contracts and display the counts.
 
 On most datasets in Spice, there is a `block_timestamp` column that tracks when the data was emitted using the number of seconds since the Unix epoch. This is commonly referred to as [Unix time](https://en.wikipedia.org/wiki/Unix\_time). There is a SQL function `UNIX_TIMESTAMP()` that we can use to convert a human-readable date into a Unix timestamp.
 
 ```sql
-select token_address, count(*) as "num_airdrops" from eth.nft_airdrop_transfers
+select token_address, count(*) as "num_transfers" from eth.nft_transfers
 where block_timestamp between UNIX_TIMESTAMP('2021-03-01 00:00:00') 
                           and UNIX_TIMESTAMP('2021-04-01 00:00:00')
 group by token_address
 order by count(*) desc
 ```
 
-![A month of NFT airdrop data in less than 2 seconds](<../.gitbook/assets/Screen Shot 2022-06-22 at 9.05.42 AM.png>)
+<figure><img src="../.gitbook/assets/Screen Shot 2022-09-08 at 2.58.53 PM.png" alt=""><figcaption><p>A month of NFT transfer data in less than 2 seconds</p></figcaption></figure>
 
 ### Who are the current owners of all \~60M+ NFTs?
 
