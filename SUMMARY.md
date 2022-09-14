@@ -43,6 +43,7 @@
     * [ENS Tables](reference/sql-query-tables/sql-query-tables/token-tables-1.md)
     * [Uniswap Tables](reference/sql-query-tables/sql-query-tables/uniswap-tables.md)
     * [Sushiswap Tables](reference/sql-query-tables/sql-query-tables/sushiswap-tables.md)
+  * [Polygon](reference/sql-query-tables/polygon.md)
   * [Bitcoin](reference/sql-query-tables/bitcoin.md)
 * [Example Ethereum SQL Queries](reference/example-ethereum-sql-queries/README.md)
   * [Blocks](reference/example-ethereum-sql-queries/blocks.md)
