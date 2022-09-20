@@ -6,7 +6,7 @@ description: Spice.xyz Release notes
 
 ### July 2022
 
-Spice supports querying [Bitcoin data](sql-query-tables/bitcoin.md) in addition to the existing [Ethereum datasets](sql-query-tables/sql-query-tables/).
+Spice supports querying [Bitcoin data](sql-query-tables/bitcoin.md) in addition to the existing [Ethereum datasets](sql-query-tables/ethereum/).
 
 Read more on the [Spice AI blog](https://medium.com/spice-ai/).
 
@@ -23,7 +23,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/).
 
 This update includes a new [Javascript/Typescript SDK](../sdks/node.js-sdk/) for Node.js, an improved [Python SDK](../sdks/python-sdk.md), and performance improvements for Ethereum tokens and NFT datasets.
 
-[Ethereum Name Service (ENS)](sql-query-tables/sql-query-tables/token-tables-1.md) support is also available in beta with the new `ens.domains` dataset.
+[Ethereum Name Service (ENS)](sql-query-tables/ethereum/token-tables-1.md) support is also available in beta with the new `ens.domains` dataset.
 
 Read more on the [Spice AI blog](https://medium.com/spice-ai/spice-xyz-june-update-f74d60faff61).
 
@@ -37,7 +37,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/spice-xyz-june-upda
 
 ### May 2022
 
-Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](sql-query-tables/sql-query-tables/token-tables.md).
+Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](sql-query-tables/ethereum/token-tables.md).
 
 Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](../api/sql-query-api/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](../sdks/python-sdk.md) for production use though.
 

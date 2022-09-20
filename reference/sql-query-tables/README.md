@@ -2,8 +2,8 @@
 
 ## Chain Datasets
 
-{% content-ref url="sql-query-tables/" %}
-[sql-query-tables](sql-query-tables/)
+{% content-ref url="ethereum/" %}
+[ethereum](ethereum/)
 {% endcontent-ref %}
 
 {% content-ref url="bitcoin.md" %}

@@ -37,12 +37,12 @@
 ## 📚 REFERENCE
 
 * [SQL Query Tables](reference/sql-query-tables/README.md)
-  * [Ethereum](reference/sql-query-tables/sql-query-tables/README.md)
-    * [Token Tables](reference/sql-query-tables/sql-query-tables/token-tables.md)
-    * [NFT Tables](reference/sql-query-tables/sql-query-tables/nft-tables.md)
-    * [ENS Tables](reference/sql-query-tables/sql-query-tables/token-tables-1.md)
-    * [Uniswap Tables](reference/sql-query-tables/sql-query-tables/uniswap-tables.md)
-    * [Sushiswap Tables](reference/sql-query-tables/sql-query-tables/sushiswap-tables.md)
+  * [Ethereum](reference/sql-query-tables/ethereum/README.md)
+    * [Token Tables](reference/sql-query-tables/ethereum/token-tables.md)
+    * [NFT Tables](reference/sql-query-tables/ethereum/nft-tables.md)
+    * [ENS Tables](reference/sql-query-tables/ethereum/token-tables-1.md)
+    * [Uniswap Tables](reference/sql-query-tables/ethereum/uniswap-tables.md)
+    * [Sushiswap Tables](reference/sql-query-tables/ethereum/sushiswap-tables.md)
   * [Polygon](reference/sql-query-tables/polygon.md)
   * [Bitcoin](reference/sql-query-tables/bitcoin.md)
 * [Example Ethereum SQL Queries](reference/example-ethereum-sql-queries/README.md)
