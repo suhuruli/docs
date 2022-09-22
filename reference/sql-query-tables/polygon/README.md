@@ -1,5 +1,7 @@
 # Polygon
 
+As a blockchain compatible with the Ethereum Virtual Machine (EVM) standard, the Polygon tables are very similar to the [Ethereum](../ethereum/) tables in structure.
+
 #### Polygon base type tables available to query
 
 | Table Name                    | Description                                                                        |

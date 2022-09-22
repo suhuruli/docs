@@ -47,7 +47,7 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 
 * ENS Domains
 
-#### [Polygon datasets](reference/sql-query-tables/polygon.md)
+#### [Polygon datasets](reference/sql-query-tables/polygon/)
 
 * Blocks
 * Transactions
