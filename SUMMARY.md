@@ -19,6 +19,8 @@
   * [Blocks](api/ethereum/blocks.md)
   * [Contracts](api/ethereum/contracts.md)
   * [Gas Fees](api/ethereum/gas-fees.md)
+* [Polygon API](api/polygon-api/README.md)
+  * [JSON RPC Methods](api/polygon-api/json-rpc-methods.md)
 * [Prices API](api/prices.md)
 * [Health API](api/health.md)
 
