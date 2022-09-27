@@ -1,3 +1,7 @@
+---
+description: Polygon JSON-RPC Methods Documentation
+---
+
 # JSON RPC Methods
 
 
