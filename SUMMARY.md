@@ -35,6 +35,7 @@
 * [🆕 Node.js SDK](sdks/node.js-sdk/README.md)
   * [Streaming](sdks/node.js-sdk/streaming.md)
   * [API Reference](sdks/node.js-sdk/api-reference.md)
+  * [Converting Large Numbers](sdks/node.js-sdk/converting-large-numbers.md)
 
 ## 📚 REFERENCE
 
