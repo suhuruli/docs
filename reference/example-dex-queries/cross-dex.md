@@ -1,6 +1,6 @@
 # Cross-DEX
 
-#### Compare minute-by-minute reserves and price across Uniswap-v2 and Sushiswap
+#### Compare minute-by-minute reserves and price across Uniswap-v2 and Sushiswap from the past month
 
 **Typical query time**: <15 seconds
 
@@ -12,10 +12,10 @@ WITH sushiswap_liquidity AS (
     AVG(price0) AS usdc_weth_price,
     DATE_TRUNC('minute', to_timestamp(block_timestamp_last)) AS "minute"
     FROM eth.sushiswap.pool_stats_detailed
-    WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
+    WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH' 
+      and block_timestamp_last > UNIX_TIMESTAMP() - 30*24*60*60 -- 30 days
     GROUP BY "minute", pool_address, token0_symbol, token1_symbol
     ORDER BY "minute" DESC
-    LIMIT 10
 ), uniswap_liquidity AS (
     SELECT
     AVG(reserve0) AS usdc_reserve,
@@ -24,9 +24,9 @@ WITH sushiswap_liquidity AS (
     DATE_TRUNC('minute', to_timestamp(block_timestamp_last)) AS "minute"
     FROM eth.uniswap_v2.pool_stats_detailed
     WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
+      and block_timestamp_last > UNIX_TIMESTAMP() - 30*24*60*60 -- 30 days
     GROUP BY "minute", pool_address, token0_symbol, token1_symbol
     ORDER BY "minute" DESC
-    LIMIT 10
 )
 
 select 'sushiswap' as "exchange", "minute", usdc_reserve, weth_reserve, usdc_weth_price
