@@ -2,7 +2,7 @@
 
 ### UniswapV2 Pool Liquidity Stats
 
-**Typical query time**: <mark style="color:blue;"></mark> <10 seconds
+**Typical query time**: <10 seconds
 
 ```sql
 SELECT block_number,
@@ -13,13 +13,14 @@ SELECT block_number,
     price0,
     price1
 FROM eth.uniswap_v2.pool_stats
+WHERE block_timestamp_last > UNIX_TIMESTAMP() - 60*60 -- 1 hour
 ORDER BY block_number DESC
 LIMIT 10
 ```
 
 ### Recent Changes in Price by Block Number
 
-**Typical query time**: <mark style="color:blue;"></mark> <10 seconds
+**Typical query time**: <10 seconds
 
 ```sql
 SELECT min(block_number) as block_number,
@@ -30,6 +31,7 @@ SELECT min(block_number) as block_number,
     price1 AS "USDC/WETH"
 FROM eth.uniswap_v2.pool_stats_detailed
 WHERE token0_symbol = 'USDC' and token1_symbol = 'WETH'
+  and block_timestamp_last > UNIX_TIMESTAMP() - 60*60 -- 1 hour
 GROUP BY price0, price1, reserve0, reserve1
 ORDER BY block_number DESC
 LIMIT 10
@@ -37,7 +39,7 @@ LIMIT 10
 
 ### Advanced Liquidity Aggregations for USD Token Pairs
 
-**Typical query time**: <mark style="color:blue;"></mark> <10 seconds
+**Typical query time**: <10 seconds
 
 ```sql
 SELECT token0_symbol, token1_symbol,
@@ -53,7 +55,8 @@ SELECT token0_symbol, token1_symbol,
     min(price0) AS min_price0,
     avg(price0) AS avg_price0
 FROM eth.uniswap_v2.pool_stats_detailed
-WHERE token0_symbol like '%USD%' or token1_symbol like '%USD%'
+WHERE (token0_symbol like '%USD%' or token1_symbol like '%USD%')
+  and block_timestamp_last > UNIX_TIMESTAMP() - 60*60 -- 1 hour
 GROUP BY pool_address, token0_symbol, token1_symbol
 ORDER BY avg_liquidity1 DESC
 LIMIT 10
