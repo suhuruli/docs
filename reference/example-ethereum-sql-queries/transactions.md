@@ -36,16 +36,17 @@ WHERE to_address = LOWER('0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045')
 
 Gets the transaction that involved the largest transfer of Ethereum in January 2021.
 
-**Typical query time**: \~20 seconds
+**Typical query time**: 3\~5 seconds
 
 {% tabs %}
 {% tab title="Ethereum" %}
 ```sql
-SELECT "value" / 1e18 as max_eth_transferred, block_number, hash, TO_TIMESTAMP(block_timestamp) as block_timestamp
+SELECT "value" as max_eth_transferred, block_number, hash, TO_TIMESTAMP(block_timestamp) as block_timestamp
 FROM eth.transactions 
 WHERE block_timestamp >= UNIX_TIMESTAMP('2021-01-01 00:00:00')
-   AND block_timestamp <= UNIX_TIMESTAMP('2021-01-31 23:59:59')
-ORDER BY max_eth_transferred DESC
+   AND block_timestamp < UNIX_TIMESTAMP('2021-02-01 00:00:00')
+AND "value" in (SELECT max("value") FROM eth.transactions WHERE block_timestamp >= UNIX_TIMESTAMP('2021-01-01 00:00:00')
+AND block_timestamp < UNIX_TIMESTAMP('2021-02-01 00:00:00'))
 LIMIT 1
 ```
 {% endtab %}
@@ -55,8 +56,9 @@ LIMIT 1
 SELECT "value" / 1e18 as max_matic_transferred, block_number, hash, TO_TIMESTAMP(block_timestamp) as block_timestamp
 FROM polygon.transactions 
 WHERE block_timestamp >= UNIX_TIMESTAMP('2021-01-01 00:00:00')
-   AND block_timestamp <= UNIX_TIMESTAMP('2021-01-31 23:59:59')
-ORDER BY max_matic_transferred DESC
+   AND block_timestamp < UNIX_TIMESTAMP('2021-02-01 00:00:00')
+AND "value" in (SELECT max("value") FROM polygon.transactions WHERE block_timestamp >= UNIX_TIMESTAMP('2021-01-01 00:00:00')
+AND block_timestamp < UNIX_TIMESTAMP('2021-02-01 00:00:00'))
 LIMIT 1
 ```
 {% endtab %}

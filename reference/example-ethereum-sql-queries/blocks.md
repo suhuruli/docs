@@ -22,9 +22,9 @@ FROM polygon.recent_blocks
 {% endtab %}
 {% endtabs %}
 
-### Last 5000 Blocks
+### Blocks from the last 4 hours
 
-Gets basic information for the last 5000 blocks in the chain.
+Gets basic information for the blocks of the last 4 hours in the chain.
 
 {% hint style="info" %}
 To get access to more than 500 results, use the [Apache Arrow Flight API](broken-reference/).
@@ -37,8 +37,9 @@ To get access to more than 500 results, use the [Apache Arrow Flight API](broken
 ```sql
 SELECT number, "timestamp", hash, transaction_count, gas_used
 FROM eth.blocks
+WHERE "timestamp" > UNIX_TIMESTAMP() - 4 * 60 * 60
 ORDER BY number DESC
-LIMIT 5000
+LIMIT 1000
 ```
 {% endtab %}
 
@@ -46,8 +47,9 @@ LIMIT 5000
 ```sql
 SELECT number, "timestamp", hash, transaction_count, gas_used
 FROM polygon.blocks
+WHERE "timestamp" > UNIX_TIMESTAMP() - 4 * 60 * 60
 ORDER BY number DESC
-LIMIT 5000
+LIMIT 1000
 ```
 {% endtab %}
 {% endtabs %}
@@ -108,19 +110,20 @@ WHERE number = (SELECT number FROM random_block)
 {% endtab %}
 {% endtabs %}
 
-### Blocks with the Highest Number of Transactions
+### Blocks with the Highest Number of Transactions in last 4 hours
 
 Gets the list of blocks with the highest number of transactions that were included in that block, sorted in descending order.
 
-**Typical query time**: 1 second
+**Typical query time**: 5\~10 second
 
 {% tabs %}
 {% tab title="Ethereum" %}
 ```sql
 SELECT number, "timestamp", transaction_count, gas_used
 FROM eth.blocks 
+WHERE "timestamp" > UNIX_TIMESTAMP() - 4 * 60 * 60
 ORDER BY transaction_count DESC 
-LIMIT 500
+LIMIT 10
 ```
 {% endtab %}
 
@@ -128,8 +131,9 @@ LIMIT 500
 ```sql
 SELECT number, "timestamp", transaction_count, gas_used
 FROM polygon.blocks 
-ORDER BY transaction_count DESC 
-LIMIT 500
+WHERE "timestamp" > UNIX_TIMESTAMP() - 4 * 60 * 60
+ORDER BY transaction_count DESC
+LIMIT 10
 ```
 {% endtab %}
 {% endtabs %}
