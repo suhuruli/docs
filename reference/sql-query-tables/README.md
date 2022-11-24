@@ -6,6 +6,10 @@
 [ethereum](ethereum/)
 {% endcontent-ref %}
 
+{% content-ref url="polygon/" %}
+[polygon](polygon/)
+{% endcontent-ref %}
+
 {% content-ref url="bitcoin.md" %}
 [bitcoin.md](bitcoin.md)
 {% endcontent-ref %}
