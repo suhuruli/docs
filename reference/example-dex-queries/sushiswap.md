@@ -113,3 +113,16 @@ WHERE change_in_min_reserve0 IS NOT NULL AND change_in_min_reserve1 IS NOT NULL 
 ORDER BY change_in_min_reserve0 desc
 LIMIT 10
 ```
+
+### Sushiswap top 10 pools with highest number of swaps
+
+**Typical query time**: <10 seconds
+
+```sql
+SELECT address,
+       count(1) AS tx_count
+FROM eth.sushiswap.recent_event_swaps
+GROUP BY address
+ORDER BY tx_count DESC
+LIMIT 10
+```

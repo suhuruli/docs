@@ -31,7 +31,7 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 * NFT Owners
 * NFT Airdrop Transfers
 
-[**Ethereum Uniswap datasets**](reference/sql-query-tables/ethereum/uniswap-tables.md)
+[**Ethereum Uniswap datasets**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)
 
 * Uniswap V2 Pools (with optional details)
 * Uniswap V2 Pool Statistics (reserve and price info)
