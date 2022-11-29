@@ -13,3 +13,7 @@
 {% content-ref url="bitcoin.md" %}
 [bitcoin.md](bitcoin.md)
 {% endcontent-ref %}
+
+{% content-ref url="prices/" %}
+[prices](prices/)
+{% endcontent-ref %}

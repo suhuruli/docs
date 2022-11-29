@@ -62,6 +62,22 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 * Transaction Inputs
 * Transaction Outputs
 
+#### [Prices datasets](reference/sql-query-tables/prices/)
+
+* Coinbase
+  * ETH-USD
+  * BTC-USD
+  * LTC-USD
+* Gemini
+  * ETH-USD
+  * BTC-USD
+  * LTC-USD
+* Sushiswap
+  * ETH-USDC
+* UniswapV2
+  * ETH-USDC
+  * BTC-USDC
+
 ### Time-series Datasets
 
 * [Ethereum gas fees](https://docs.spice.xyz/api/ethereum/gas-fees)
