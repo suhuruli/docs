@@ -18,15 +18,22 @@ In beta, Spice has a number of limitations, including:
 * 4 request-per-minute SQL API limit.
 * 10 row result limit.
 
-**Apache Flight Endpoint**
+#### **Apache Flight Endpoint**
 
 * API Key (provided as gRPC password) is always required.
 
-**SQL Query Limits**
+#### **SQL Query Limits**
 
 * 3 concurrent-requests.
 
 #### Data Limitations (as of June, 2022)
 
 * DEX (Sushiswap, Uniswap, etc) pool data is limited to the last three months and tracking the top 1000 pools by TVL/Market Cap.
-* 128-bit integer limit (while data can be uint256). We include both the 128-bit `DECIMAL(38)` type and  `_hex` fields where the type is 256-bit.
+* 128-bit integer limit (while data can be uint256). We include both the 128-bit `DECIMAL(38)` type and `_hex` fields where the type is 256-bit.
+
+#### Data format limitations
+
+* List data cannot be downloaded as CSV
+  * If you wish to download list data as CSV, you should use the [flatten](https://docs.dremio.com/software/sql-reference/sql-functions/functions/FLATTEN/) operator first:
+    * `select topics from eth.logs limit 1` will **NOT** be able to be downloaded as CSV
+    * `select flatten(topics) from eth.logs limit 1` _will_ be able to be downloaded as CSV
