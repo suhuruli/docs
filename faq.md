@@ -6,9 +6,9 @@ description: Frequently asked questions
 
 ### What data sources do you have?
 
-Spice currently supports [**Ethereum**](reference/sql-query-tables/) and [**Bitcoin**](reference/sql-query-tables/bitcoin.md) blockchain data and [**Sushiswap**](reference/sql-query-tables/ethereum/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)**,** and [**Uniswap-V3**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md) smart-contract data. We also have [NFT](reference/sql-query-tables/ethereum/nft-tables.md) and [token](reference/sql-query-tables/ethereum/token-tables.md) specific tables.
+Spice currently supports [**Ethereum**](reference/sql-query-tables/), [**Bitcoin**](reference/sql-query-tables/bitcoin.md), and [**Polygon**](reference/sql-query-tables/polygon/) blockchain data and [**Sushiswap**](reference/sql-query-tables/ethereum/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)**,** and [**Uniswap-V3**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md) smart-contract data. We also have [**NFT**](reference/sql-query-tables/ethereum/nft-tables.md) and [**token**](reference/sql-query-tables/ethereum/token-tables.md) specific tables.
 
-We have plans to add many more chains and contracts prioritized by user feedback, along with other sources of data like more [Prices](api/prices.md). We expect to add **Solana** next.
+We have plans to add more chains and contracts prioritized by user feedback, along with other sources of data like more [Prices](api/prices.md). We expect to add **Solana** next.
 
 For the all-up list, see [Datasets](datasets.md) and follow the [Release notes](reference/release-notes.md) for progress.
 
@@ -22,7 +22,7 @@ For customers who need higher request or query limits, service guarantees, or pr
 
 ### What level of support do you offer?
 
-During the beta, we offer [best-effort support](broken-reference/) in our Discord. If you'd like higher priority support or are interested in becoming a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD), please let us know.
+During the beta, we offer [best-effort support](broken-reference/) in our Discord. If you'd like higher-priority support or are interested in becoming a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD), please let us know.
 
 ### What SQL query engine/language do you support?
 

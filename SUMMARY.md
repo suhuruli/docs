@@ -13,6 +13,7 @@
 
 * [SQL Query API](api/sql-query-api/README.md)
   * [HTTP API](api/sql-query-api/http-api.md)
+  * [Async HTTP API](api/sql-query-api/http-api-1.md)
   * [Apache Arrow Flight API](api/sql-query-api/apache-arrow-flight-api.md)
 * [Ethereum API](api/ethereum/README.md)
   * [JSON RPC Methods](api/ethereum/json-rpc-methods.md)

@@ -1,5 +1,5 @@
 ---
-description: Querying Ethereum data with SQL via the Apache Arrow Flight API
+description: Query web3 data with SQL via the Apache Arrow Flight API
 ---
 
 # Apache Arrow Flight API
@@ -35,7 +35,7 @@ See the [Python SDK page](../../sdks/python-sdk.md#m1-macs) for installation ste
 
 #### Samples
 
-Find code samples in Python in \[[arrow-flight-samples.md](../../reference/arrow-flight-samples.md "mention")]\(broken-reference).
+Find code samples in Python in [Arrow Flight Samples](../../reference/arrow-flight-samples.md).
 
 ### Troubleshooting
 

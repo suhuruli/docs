@@ -18,7 +18,7 @@ For data in a format and quantities that's useful, you have to:
 
 With **Spice,** you can query blockchain data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for easy use with apps, ML, or libraries like **NumPy** and **Pandas**.
 
-Spice currently supports **Ethereum** mainnet blockchain and contract data. We have plans to support many chains prioritized by user feedback. We expect to next support **Solana**.
+Spice currently supports **Ethereum**, **Bitcoin**, and **Polygon** blockchain and contract data. We have plans to support many chains prioritized by user feedback. We expect to next support **Solana**.
 
 In addition to supporting standard web3 **JSON RPC**, Spice provides querying for historical on-chain data available in both block-level and time-aggregated result sets.
 
