@@ -4,6 +4,7 @@
 * [Getting started](get-started.md)
 * [Datasets](datasets.md)
 * [Core Concepts](core-concepts/README.md)
+  * [Organizations](core-concepts/organizations.md)
   * [Duration Literals](core-concepts/duration-literals.md)
 * [Best Practices](best-practices.md)
 * [Limitations](limitations.md)
@@ -29,11 +30,16 @@
 
 * [Tokens & NFTs](tutorials/tokens-and-nfts.md)
 
+## 👨💻 Portal
+
+* [Organizations](portal/organizations.md)
+* [Query Editor](portal/query-editor.md)
+
 ## 🔗 SDKs
 
 * [Python SDK](sdks/python-sdk.md)
   * [Streaming](sdks/python-sdk/streaming.md)
-* [🆕 Node.js SDK](sdks/node.js-sdk/README.md)
+* [Node.js SDK](sdks/node.js-sdk/README.md)
   * [Streaming](sdks/node.js-sdk/streaming.md)
   * [API Reference](sdks/node.js-sdk/api-reference.md)
   * [Converting Large Numbers](sdks/node.js-sdk/converting-large-numbers.md)

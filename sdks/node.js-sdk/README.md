@@ -1,4 +1,4 @@
-# 🆕 Node.js SDK
+# Node.js SDK
 
 The Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice) is the easiest way to use and query Spice with Node.js.
 
@@ -34,8 +34,6 @@ console.table(table.toArray());
 
 * `apiKey` (string, required): API key to authenticate with the endpoint.
 * `url` (string, optional): URL of the endpoint to use (default: flight.spiceai.io:443)
-
-
 
 ### Contributing
 
