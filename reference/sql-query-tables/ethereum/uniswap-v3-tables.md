@@ -32,3 +32,12 @@ DESCRIBE eth.uniswap_v3.pools
 DESCRIBE eth.uniswap_v3.pool_stats
 DESCRIBE eth.uniswap_v3.event_mints
 ```
+
+#### Improving query performance - indexed columns
+
+Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
+
+| Table Name                                     | Indexed Columns                            |
+| ---------------------------------------------- | ------------------------------------------ |
+| `eth.uniswap_v3.pool_stats`                    | `block_number` `pool_address`              |
+| `eth.uniswap_v3.event_[mints/burns/swaps/etc]` | `block_number` `block_timestamp` `address` |

@@ -38,3 +38,11 @@ DESCRIBE polygon.token_transfers_erc1155;
 DESCRIBE polygon.token_mints;
 DESCRIBE polygon.recent_token_mints;
 ```
+
+#### Improving query performance - indexed columns
+
+Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
+
+| Table Name                | Indexed Columns                                                                                 |
+| ------------------------- | ----------------------------------------------------------------------------------------------- |
+| `polygon.token_transfers` | `block_number` `block_timestamp` `transaction_hash` `token_address` `from_address` `to_address` |

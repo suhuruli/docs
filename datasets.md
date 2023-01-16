@@ -55,6 +55,19 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 * Contracts
 * Traces
 
+****[**Polygon Token Datasets**](reference/sql-query-tables/polygon/token-tables.md)****
+
+* Contracts (erc20, erc721, erc1155)
+* Tokens (erc20, erc721, erc1155)
+* Token Transfers (erc20, erc721, erc1155)
+
+****[**Polygon NFT Datasets**](reference/sql-query-tables/polygon/nft-tables.md)****
+
+* NFT Contracts
+* NFT Transfers (with optional hold time)
+* NFT Owners
+* NFT Airdrop Transfers
+
 ****[**Bitcoin datasets**](reference/sql-query-tables/bitcoin.md)****
 
 * Blocks
