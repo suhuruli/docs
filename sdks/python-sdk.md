@@ -62,11 +62,18 @@ block_data = client.query('SELECT * FROM eth.recent_blocks LIMIT 10;').read_pand
 transaction_Data = client.query('SELECT * FROM eth.recent_transactions LIMIT 10;').read_pandas()
 ```
 
-`Client` objects has the following arguments:
+Querying data is done through a `Client` object that initializes the connection with the Spice.xyz endpoint. `Client` has the following arguments:
 
-* **key** (required) : the API key too authenticate with.
-* **url** (optional) : URL to the endpoint to connect to (default: grpc+tls://flight.spiceai.io).
-* **tls\_root\_cert** (optional): path to specific certificate to use for the TLS connection.
+* **api\_key** (string, required): API key to authenticate with the endpoint.
+* **url** (string, optional): URL of the endpoint to use (default: grpc+tls://flight.spiceai.io)
+* **tls\_root\_cert** (Path or string, optional): Path to the tls certificate to use for the secure connection (ommit for automatic detection)
+
+Once a `Client` is obtained queries can be made using the `query()` function. The `query()` function has the following arguments:
+
+* **query** (string, required): The SQL query.
+* **timeout** (int, optional): The timeout in seconds.
+
+A custom timeout can be set by passing the `timeout` parameter in the `query` function call. If no timeout is specified, it will default to a 10 min timeout then cancel the query, and a TimeoutError exception will be raised.
 
 ### Contributing
 
