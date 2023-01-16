@@ -40,10 +40,10 @@ DESCRIBE eth.traces;
 
 Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
 
-| Table Name         | Indexed Columns             |
-| ------------------ | --------------------------- |
-| `eth.blocks`       | `number` `hash` `timestamp` |
-| `eth.transactions` | `block_number` `hash`       |
-| `eth.logs`         | `block_number`              |
-| `eth.contracts`    | `address`                   |
-| `eth.traces`       | `block_number`              |
+| Table Name         | Indexed Columns                            |
+| ------------------ | ------------------------------------------ |
+| `eth.blocks`       | `number` `timestamp` `hash`                |
+| `eth.transactions` | `block_number` `block_timestamp` `hash`    |
+| `eth.logs`         | `block_number` `block_timestamp` `address` |
+| `eth.contracts`    | `block_number` `block_timestamp` `address` |
+| `eth.traces`       | `block_number`                             |

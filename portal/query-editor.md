@@ -1,6 +1,6 @@
 # Query Editor
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Spice.xyz Query Editor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Spice.xyz Query Editor</p></figcaption></figure>
 
 Use the Spice.xyz Query Editor to query web3 data from the web portal.
 

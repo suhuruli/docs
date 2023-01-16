@@ -10,7 +10,7 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 
 ### Datasets for SQL Query
 
-#### [Ethereum datasets](reference/sql-query-tables/ethereum/)
+#### [Ethereum datasets](reference/sql-query-tables/sql-query-tables/)
 
 * Blocks
 * Transactions
@@ -18,32 +18,32 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 * Contracts
 * Traces
 
-[**Ethereum Token datasets**](reference/sql-query-tables/ethereum/token-tables.md)
+[**Ethereum Token datasets**](reference/sql-query-tables/sql-query-tables/token-tables.md)
 
 * Contracts (erc20, erc721, erc1155)
 * Tokens (erc20, erc721, erc1155)
 * Token Transfers (erc20, erc721, erc1155)
 
-[**Ethereum NFT datasets**](reference/sql-query-tables/ethereum/nft-tables.md)
+[**Ethereum NFT datasets**](reference/sql-query-tables/sql-query-tables/nft-tables.md)
 
 * NFT Contracts
 * NFT Transfers (with optional hold time)
 * NFT Owners
 * NFT Airdrop Transfers
 
-[**Ethereum Uniswap datasets**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)
+[**Ethereum Uniswap datasets**](reference/sql-query-tables/sql-query-tables/uniswap-v2-tables.md)
 
 * Uniswap V2 Pools (with optional details)
 * Uniswap V2 Pool Statistics (reserve and price info)
 * Uniswap V3 Pools (with optional details)
 * Uniswap V3 Pool Statistics (reserve and price info)
 
-[**Ethereum Sushiswap datasets**](reference/sql-query-tables/ethereum/sushiswap-tables.md)
+[**Ethereum Sushiswap datasets**](reference/sql-query-tables/sql-query-tables/sushiswap-tables.md)
 
 * Sushiswap Pools (with optional details)
 * Sushiswap Pool Statistics (reserve and price info)
 
-****[**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/ethereum/token-tables-1.md) **** \*beta
+****[**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/sql-query-tables/token-tables-1.md) **** \*beta
 
 * ENS Domains
 

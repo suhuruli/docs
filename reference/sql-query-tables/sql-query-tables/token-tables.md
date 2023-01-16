@@ -42,3 +42,11 @@ DESCRIBE eth.token_transfers_erc1155;
 DESCRIBE eth.token_mints;
 DESCRIBE eth.recent_token_mints;
 ```
+
+#### Improving query performance - indexed columns
+
+Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
+
+| Table Name            | Indexed Columns                                      |
+| --------------------- | ---------------------------------------------------- |
+| `eth.token_transfers` | `block_number` `block_timestamp` `transaction_hash`  |
