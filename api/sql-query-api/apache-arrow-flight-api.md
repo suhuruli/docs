@@ -10,7 +10,7 @@ Arrow Flight is a data protocol built on the high-performance, open-source [gRPC
 
 This enables high-speed access to your data in [Python](https://arrow.apache.org/docs/python/index.html), [Go](https://pkg.go.dev/github.com/apache/arrow/go/v8), [C++](https://arrow.apache.org/docs/cpp/index.html), [C#](https://github.com/apache/arrow/blob/master/csharp/README.md), and [Rust](https://docs.rs/arrow-flight/latest/arrow\_flight/), and makes it easy to use libraries like [Pandas](https://arrow.apache.org/docs/python/pandas.html) and [NumPy](https://arrow.apache.org/docs/python/numpy.html?highlight=numpy).
 
-We recommend using the [Spice Python SDK](../../sdks/python-sdk.md) `spicepy` to connect and query this endpoint. The query result from the SDK can be easily converted to Pandas or NumPy format.
+We recommend using our SDKs to connect and query this endpoint. SDKs are available for [Python](../../sdks/python-sdk.md), [Node.js](../../sdks/node.js-sdk/), and [Go](../../sdks/go.md) with more coming soon. In Python, the query results from the SDK can be easily converted to Pandas or NumPy format.
 
 You may also use Apache's `pyarrow` library directly.
 

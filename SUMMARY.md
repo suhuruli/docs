@@ -26,10 +26,6 @@
 * [Prices API](api/prices.md)
 * [Health API](api/health.md)
 
-## 🎓 Tutorials
-
-* [Tokens & NFTs](tutorials/tokens-and-nfts.md)
-
 ## 👨💻 Portal
 
 * [Organizations](portal/organizations.md)
@@ -39,10 +35,15 @@
 
 * [Python SDK](sdks/python-sdk.md)
   * [Streaming](sdks/python-sdk/streaming.md)
-* [🆕 Node.js SDK](sdks/node.js-sdk/README.md)
+* [Node.js SDK](sdks/node.js-sdk/README.md)
   * [Streaming](sdks/node.js-sdk/streaming.md)
   * [API Reference](sdks/node.js-sdk/api-reference.md)
   * [Converting Large Numbers](sdks/node.js-sdk/converting-large-numbers.md)
+* [🆕 Go SDK](sdks/go.md)
+
+## 🎓 Tutorials
+
+* [Tokens & NFTs](tutorials/tokens-and-nfts.md)
 
 ## 📚 REFERENCE
 
@@ -51,9 +52,9 @@
     * [Token Tables](reference/sql-query-tables/sql-query-tables/token-tables.md)
     * [NFT Tables](reference/sql-query-tables/sql-query-tables/nft-tables.md)
     * [ENS Tables](reference/sql-query-tables/sql-query-tables/token-tables-1.md)
-    * [Uniswap V2 Tables](reference/sql-query-tables/sql-query-tables/uniswap-v2-tables.md)
-    * [Uniswap V3 Tables](reference/sql-query-tables/sql-query-tables/uniswap-v3-tables.md)
-    * [Sushiswap Tables](reference/sql-query-tables/sql-query-tables/sushiswap-tables.md)
+    * [Uniswap V2 Tables](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)
+    * [Uniswap V3 Tables](reference/sql-query-tables/ethereum/uniswap-v3-tables.md)
+    * [Sushiswap Tables](reference/sql-query-tables/ethereum/sushiswap-tables.md)
   * [Polygon](reference/sql-query-tables/polygon/README.md)
     * [Token Tables](reference/sql-query-tables/polygon/token-tables.md)
     * [NFT Tables](reference/sql-query-tables/polygon/nft-tables.md)

@@ -1,6 +1,8 @@
-# 🆕 Node.js SDK
+# Node.js SDK
 
-The Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice) is the easiest way to use and query Spice with Node.js.
+The Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice) is the easiest way to use and query [Spice.xyz](https://spice.xyz) with Node.js.
+
+It uses [Apache Apache Flight](https://arrow.apache.org/docs/format/Flight.html) to efficiently stream data to the client and [Apache Arrow](https://arrow.apache.org/) Records as data frames which are then easily converted to JavaScript objects/arrays or JSON.
 
 ### Requirements
 
