@@ -4,6 +4,84 @@ description: Spice.xyz Release notes
 
 # Release notes
 
+### December 2022
+
+Spice supports querying [Polygon data](sql-query-tables/polygon/) in addition to the existing [Ethereum](sql-query-tables/sql-query-tables/) and [BItcoin](sql-query-tables/bitcoin.md) datasets.
+
+Read more on the [Spice AI Blog](https://blog.spice.ai/build-multi-chain-with-spice-ai-now-with-polygon-support-9db156f36d80).
+
+**Changes**
+
+* Support for fundamental Polygon datasets and NFT specific tables&#x20;
+  * `polygon.blocks` / `polygon.recent_blocks`
+  * `polygon.transactions` / `polygon.recent_transactions`
+  * `polygon.nft_transfers` /`polygon.recent_nft_transfers`&#x20;
+  * `polygon.nft_airdrop_transfers` / `polygon.recent_nft_airdrop_transfers`
+  * `polygon.nft_owners`
+* View the columns and their schema available for each table with the `describe <table>` command&#x20;
+
+### November 2022
+
+**DEX Liquidity & Events Dataset**
+
+Spice now features DEX Liquidity and Events Dataset where users can access indexed liquidity data from UniSwap \[[V2](sql-query-tables/ethereum/uniswap-v2-tables.md), [V3](sql-query-tables/ethereum/uniswap-v3-tables.md)] and [SushiSwap](sql-query-tables/ethereum/sushiswap-tables.md) liquidity pools, _within seconds_.&#x20;
+
+Data is available both historically and in real time, providing unparalleled visibility on DEX liquidity pools.
+
+**ENS (Preview)**\
+You can now preview the new dataset for [Ethereum Name Service events](sql-query-tables/sql-query-tables/token-tables-1.md), available by querying `eth.ens`. Within the dataset, you’ll find that each ENS event will have its own table as immutable data.
+
+This also includes the new `ens.domains` dataset, which is updated in real-time to have the latest `eth_address` whenever a transfer or name-registered event happens
+
+Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
+
+**Changes**
+
+* [Prices dataset](sql-query-tables/prices/) now out of preview
+* Added export to CSV results format in addition to existing formats [JSON](../api/ethereum/json-rpc-methods.md) and [Apache Arrow](../api/sql-query-api/apache-arrow-flight-api.md), for easy use with apps, ML, or libraries like NumPy and Pandas
+* Added performance improvements for faster queries **** across existing datasets including `eth.traces`&#x20;
+
+### October 2022
+
+Spice now has [prices dataset](sql-query-tables/prices/) in preview.&#x20;
+
+* Query historical High-Low-Open-Close (HILO) prices to minute precision
+* Join with other real-time and historical web3 data to do calculations and conversions back to USD
+* Initial data sources include Gemini, Coinbase, SushiSwap, and UniSwap (a mix of CEX, DEX, and third parties)
+
+Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
+
+### September 2022
+
+
+
+**Ethereum Traces Dataset**
+
+Spice launches the `eth.traces` dataset for both Ethereum and Polygon. The Ethereum internal transactions are available for query at `eth.traces` and are updated in real-time.
+
+
+
+**Polygon Support (Preview)**
+
+Spice launches and tests [Polygon support](sql-query-tables/polygon/).
+
+**Changes**
+
+* completed real-time indexing and parquet writing for Polygon
+* incorporated asynchronous process block notifications to enable Polygon support
+* added improvements on data integrity and bug fixes
+* added transaction\_hash and block\_timestamp to `eth.nft_owners`
+
+### August 2022
+
+Key infrastructure improvements were made for Spice's query performance, security, and data availability.
+
+**Changes**
+
+* Improved performance for node configuration
+* Upgrade dremio infrastructure
+* Expanded node memory for broader availability
+
 ### July 2022
 
 Spice supports querying [Bitcoin data](sql-query-tables/bitcoin.md) in addition to the existing [Ethereum datasets](sql-query-tables/sql-query-tables/).
