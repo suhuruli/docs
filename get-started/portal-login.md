@@ -15,13 +15,11 @@
 
 4\.   \*Spice now features [Organization Support](../portal/organizations.md). If you have a pre-existing account, you may be prompted to reauthorize with your GitHub.&#x20;
 
-5\.   Select and check off all the organizations you would like to use with Spice.
+5\.   Select and click **Grant** next to all the organizations you would like to use with Spice.
 
 6\.   Click **Authorize spicehq** to grant Spice AI read-only access to your **Organization and Teams** data.
 
-
-
-<figure><img src="../.gitbook/assets/CleanShot 2023-01-24 at 14.22.37@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **Congrats, you're ready to create your first app!**
 
