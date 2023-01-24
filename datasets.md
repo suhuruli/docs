@@ -24,7 +24,7 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 * Tokens (erc20, erc721, erc1155)
 * Token Transfers (erc20, erc721, erc1155)
 
-[**Ethereum NFT datasets**](reference/sql-query-tables/ethereum/nft-tables.md)
+[**Ethereum NFT datasets**](reference/sql-query-tables/sql-query-tables/nft-tables.md)
 
 * NFT Contracts
 * NFT Transfers (with optional hold time)
