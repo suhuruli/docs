@@ -3,7 +3,7 @@
 ## From Website
 
 1. Go to [spice.xyz](https://www.spice.xyz) and click on Login or Getting Started in the top right corner.
-2. You can also navigate by URL via [spice.xyz/login](https://www.spice.xyz/login) or /\*insertyourusername\*
+2. You can also navigate by URL via [spice.xyz/login](https://spice.xyz/login) or /\*insertyourusername\*
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-01-24 at 14.07.06@2x.png" alt=""><figcaption></figcaption></figure>
 
