@@ -22,7 +22,7 @@ Spice currently supports **Ethereum**, **Bitcoin**, and **Polygon** blockchain a
 
 In addition to supporting standard web3 **JSON RPC**, Spice provides querying for historical on-chain data available in both block-level and time-aggregated result sets.
 
-Take it for a spin, and try out the [getting started guide](get-started.md).
+Take it for a spin, and try out the [getting started guide](get-started/).
 
 {% hint style="info" %}
 Feel free to ask any questions or queries to the team in [<mark style="color:purple;">Discord</mark>](https://discord.gg/kZnTfneP5u).

@@ -1,7 +1,8 @@
 # Table of contents
 
 * [👋 Welcome to Spice](README.md)
-* [Getting started](get-started.md)
+* [Getting started](get-started/README.md)
+  * [Portal Login](get-started/portal-login.md)
 * [Datasets](datasets.md)
 * [Core Concepts](core-concepts/README.md)
   * [Organizations](core-concepts/organizations.md)

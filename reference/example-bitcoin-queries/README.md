@@ -1,5 +1,11 @@
 # Example Bitcoin Queries
 
+[Blocks](blocks.md)
+
+[Transaction Fees](transactions.md)
+
+[Transaction Inputs/Outputs](transaction-inputs-outputs.md)
+
 `btc.blocks` \
 `btc.flattened_transaction_inputs`\
 `btc.flattened_transaction_outputs`\
