@@ -24,7 +24,7 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 * Tokens (erc20, erc721, erc1155)
 * Token Transfers (erc20, erc721, erc1155)
 
-[**Ethereum NFT datasets**](reference/sql-query-tables/sql-query-tables/nft-tables.md)
+[**Ethereum NFT datasets**](reference/sql-query-tables/ethereum/nft-tables.md)
 
 * NFT Contracts
 * NFT Transfers (with optional hold time)
@@ -43,7 +43,7 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 * Sushiswap Pools (with optional details)
 * Sushiswap Pool Statistics (reserve and price info)
 
-****[**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/sql-query-tables/token-tables-1.md) **** \*beta
+****[**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/ethereum/token-tables-1.md)
 
 * ENS Domains
 

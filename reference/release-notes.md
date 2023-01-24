@@ -29,7 +29,7 @@ Spice now features DEX Liquidity and Events Dataset where users can access index
 Data is available both historically and in real time, providing unparalleled visibility on DEX liquidity pools.
 
 **ENS (Preview)**\
-You can now preview the new dataset for [Ethereum Name Service events](sql-query-tables/sql-query-tables/token-tables-1.md), available by querying `eth.ens`. Within the dataset, you’ll find that each ENS event will have its own table as immutable data.
+You can now preview the new dataset for [Ethereum Name Service events](sql-query-tables/ethereum/token-tables-1.md), available by querying `eth.ens`. Within the dataset, you’ll find that each ENS event will have its own table as immutable data.
 
 This also includes the new `ens.domains` dataset, which is updated in real-time to have the latest `eth_address` whenever a transfer or name-registered event happens
 
@@ -101,7 +101,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/).
 
 This update includes a new [Javascript/Typescript SDK](../sdks/node.js-sdk/) for Node.js, an improved [Python SDK](../sdks/python-sdk.md), and performance improvements for Ethereum tokens and NFT datasets.
 
-[Ethereum Name Service (ENS)](sql-query-tables/sql-query-tables/token-tables-1.md) support is also available in beta with the new `ens.domains` dataset.
+[Ethereum Name Service (ENS)](sql-query-tables/ethereum/token-tables-1.md) support is also available in beta with the new `ens.domains` dataset.
 
 Read more on the [Spice AI blog](https://medium.com/spice-ai/spice-xyz-june-update-f74d60faff61).
 

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [👋 Welcome to Spice](README.md)
-* [Getting started](get-started/README.md)
+* [Getting started](get-started.md)
   * [Portal Login](get-started/portal-login.md)
 * [Datasets](datasets.md)
 * [Core Concepts](core-concepts/README.md)
@@ -51,8 +51,8 @@
 * [SQL Query Tables](reference/sql-query-tables/README.md)
   * [Ethereum](reference/sql-query-tables/sql-query-tables/README.md)
     * [Token Tables](reference/sql-query-tables/sql-query-tables/token-tables.md)
-    * [NFT Tables](reference/sql-query-tables/sql-query-tables/nft-tables.md)
-    * [ENS Tables](reference/sql-query-tables/sql-query-tables/token-tables-1.md)
+    * [NFT Tables](reference/sql-query-tables/ethereum/nft-tables.md)
+    * [ENS Tables](reference/sql-query-tables/ethereum/token-tables-1.md)
     * [Uniswap V2 Tables](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)
     * [Uniswap V3 Tables](reference/sql-query-tables/ethereum/uniswap-v3-tables.md)
     * [Sushiswap Tables](reference/sql-query-tables/ethereum/sushiswap-tables.md)
