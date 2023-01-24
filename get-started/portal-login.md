@@ -23,6 +23,8 @@
 
 **Congrats, you're ready to create your first app!**
 
+****
 
-
+{% hint style="info" %}
 Raise issues or feedback with our team on Discord [here](https://discord.gg/PUCapX22En).&#x20;
+{% endhint %}
