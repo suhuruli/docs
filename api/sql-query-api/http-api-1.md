@@ -39,7 +39,7 @@ The SQL query should be sent in the JSON payload along with the list of notifica
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Content-Type" required="true" %}
-text/plain
+application/json
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="api_key" required="false" %}
