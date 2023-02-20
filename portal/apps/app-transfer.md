@@ -18,7 +18,7 @@ Learn more about [**organization management**](../organizations.md).
 
 2. In the **Danger Zone** section of **App Settings**, click the **Transfer App** button.
 
-<figure><img src="../../.gitbook/assets/fotor_2023-2-20_14_5_32.png" alt=""><figcaption><p>Transfer App button in App Settings.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/fotor_2023-2-20_16_18_48.png" alt=""><figcaption></figcaption></figure>
 
 3. On the **Transfer App** page, select the **New Owner** organization from the menu.
 
