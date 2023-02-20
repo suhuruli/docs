@@ -29,6 +29,8 @@
 
 ## 👨💻 Portal
 
+* [Apps](portal/apps/README.md)
+  * [Transfer an App](portal/apps/app-transfer.md)
 * [Organizations](portal/organizations.md)
 * [Query Editor](portal/query-editor.md)
 
