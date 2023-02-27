@@ -55,6 +55,7 @@
     * [Token Tables](reference/sql-query-tables/sql-query-tables/token-tables.md)
     * [NFT Tables](reference/sql-query-tables/sql-query-tables/nft-tables.md)
     * [ENS Tables](reference/sql-query-tables/ethereum/token-tables-1.md)
+    * [Wallet Balances](reference/sql-query-tables/sql-query-tables/wallet-balances.md)
     * [Uniswap V2 Tables](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)
     * [Uniswap V3 Tables](reference/sql-query-tables/ethereum/uniswap-v3-tables.md)
     * [Sushiswap Tables](reference/sql-query-tables/ethereum/sushiswap-tables.md)
