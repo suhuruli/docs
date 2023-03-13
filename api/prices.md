@@ -61,6 +61,39 @@ Returns token/currency pairs for several exchanges, such as Coinbase, and Gemini
 {% endswagger-response %}
 {% endswagger %}
 
+The **`/v0.1/prices/[pair]`** API returns spot prices of the specified token/currency pair.
+
+E.g. `/v0.1/prices/btc-aud` will return the price of BTC in AUD.
+
+The API will default to **USD** as the base currency if one is not provided.
+
+E.g. `/v0.1/prices/btc` will return the price of BTC in USD.
+
+{% swagger method="get" path="/v0.1/prices/[pair]" baseUrl="https://data.spiceai.io" summary="" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="pair" required="true" %}
+The currency/token pair
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Prices for the pair successfully returned." %}
+```javascript
+{
+	"pair": "ETH-AUD",
+	"prices": {
+		"coinbase": "2405.566348377514821804",
+		"gemini": ""
+	},
+	"minPrice": "2405.566348",
+	"maxPrice": "2405.566348",
+	"avePrice": "2405.566348"
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
 ## Historical Prices (Preview)
 
 The **`/v0.1/prices/[pair]`** API returns historical prices of the specified token/currency pair.
