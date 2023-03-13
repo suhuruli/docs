@@ -78,13 +78,13 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 #### [Prices datasets](reference/sql-query-tables/prices/)
 
 * Coinbase
-  * ETH-USD
-  * BTC-USD
-  * LTC-USD
+  * Spot/latest prices for all pairs traded on Coinbase.
+  * Historical OHLC prices at 1-min granularity for all pairs in preview.
 * Gemini
-  * ETH-USD
-  * BTC-USD
-  * LTC-USD
+  * Spot/latest prices for all pairs traded on Coinbase.
+* Coinmarket Cap
+  * Spot/latest prices for all pairs tracked by Coinmarket Cap
+  * Historical prices in the last year for all pair tracked by Coinmarket Cap
 * Sushiswap
   * ETH-USDC
 * UniswapV2
