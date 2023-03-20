@@ -27,3 +27,25 @@ User can query this table by ENS domain name to retrieve the latest `owner` and 
   * earth.eth
   * auth.eth
 
+This table can be used, for example, to retrieve the Ethereum address associated with a  `*.eth` domain or subdomain:
+
+```sql
+SELECT * FROM ens.domains WHERE name='covolan.eth'
+SELECT * FROM ens.domains WHERE name='ccc.earth.eth'
+```
+
+Or to infer the domain name of an address (reverse look-up):
+
+```sql
+SELECT * FROM ens.domains WHERE eth_address='0x73690db4433c90111bafd0e20e4e43b54696b050'
+```
+
+Expiration dates in the `expires` column are given as Unix timestamps. They can be `null` for entities such as subdomains, which do not necessarily have expiry dates. We currently do not track expiration dates of [NameWrapper subdomains](https://github.com/ensdomains/ens-contracts/tree/master/contracts/wrapper).
+
+#### Improving query performance - indexed columns
+
+Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
+
+| Table Name    | Indexed Columns        |
+| ------------- | ---------------------- |
+| `ens.domains` | `name`, `eth_address`  |
