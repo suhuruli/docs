@@ -6,7 +6,7 @@ description: Prices HTTP API documentation
 
 ## Spot Prices
 
-The **`/v0.1/prices`** API returns the spot prices of popular token/currency pairs for several exchanges, such as Coinbase, and Gemini, and the min, max, and average price across them.
+The **`/v0.1/prices`** API returns the spot prices of popular token/currency pairs for several exchanges, such as Binance, Coinbase, and Gemini, and the min, max, and average price across them.
 
 {% swagger method="get" path="/v0.1/prices" baseUrl="https://data.spiceai.io" summary="Get Exchange Prices" %}
 {% swagger-description %}
