@@ -77,11 +77,15 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 
 #### [Prices datasets](reference/sql-query-tables/prices/)
 
+* Binance
+  * Spot/latest prices for all pairs traded on Binance.
+  * Historical OHLC prices at 1-min granularity for all pairs.
 * Coinbase
   * Spot/latest prices for all pairs traded on Coinbase.
-  * Historical OHLC prices at 1-min granularity for all pairs in preview.
+  * Historical OHLC prices at 1-min granularity for all pairs.
 * Gemini
-  * Spot/latest prices for all pairs traded on Coinbase.
+  * Spot/latest prices for all pairs traded on Gemini.
+  * Partial historical OHLC prices at 1-min granularity for all pairs.
 * Coinmarket Cap
   * Spot/latest prices for all pairs tracked by Coinmarket Cap
   * Historical prices in the last year for all pair tracked by Coinmarket Cap
@@ -93,6 +97,7 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 
 ### Time-series Datasets
 
+* [Spot/latest and historical prices](api/prices.md)
 * [Ethereum gas fees](https://docs.spice.xyz/api/ethereum/gas-fees)
 * [Ethereum blocks](https://docs.spice.xyz/api/ethereum/blocks)
 
