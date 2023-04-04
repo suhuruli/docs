@@ -66,6 +66,8 @@
     * [ETH](reference/sql-query-tables/prices/eth.md)
     * [BTC](reference/sql-query-tables/prices/btc.md)
     * [LTC](reference/sql-query-tables/prices/ltc.md)
+  * [Chainlink](reference/sql-query-tables/chainlink/README.md)
+    * [Prices](reference/sql-query-tables/chainlink/prices.md)
 * [Example Ethereum (EVM) SQL Queries](reference/example-ethereum-sql-queries/README.md)
   * [Blocks](reference/example-ethereum-sql-queries/blocks.md)
   * [Gas & Fees](reference/example-ethereum-sql-queries/gas-and-fees.md)
