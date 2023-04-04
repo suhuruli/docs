@@ -41,3 +41,33 @@ const table = await client.query(
 let baseFeeGwei = tableResult.getChild("base_fee_per_gas_gwei");
 console.log(baseFeeGwei?.toJSON())
 ```
+
+**getPrice**(pair: string) => [LatestPrice](https://github.com/spiceai/spice.js/blob/trunk/src/interfaces.ts#L40)
+
+* `pair`: (string, required): The cypto/currency pair, for example "BTC-USD"
+
+`getPrice` return a [LatestPrice](https://github.com/spiceai/spice.js/blob/trunk/src/interfaces.ts#L40) object
+
+```javascript
+  const res = await spiceClient.getPrice("eth-btc")
+  console.log(res);
+```
+
+**getPrices**(pair: string, startTime: number, endTime: number, granularity: string) => [HistoricalPrices](https://github.com/spiceai/spice.js/blob/trunk/src/interfaces.ts#L32)
+
+* `pair`: (string, required): The cypto/currency pair, for example "BTC-USD"
+* `startTime`: start time milliseconds since Unix Epoch
+* `endTime`: end time milliseconds since Unix Epoch
+* `granularity`: valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h"
+
+`getPrices` return a [HistoricalPrices](https://github.com/spiceai/spice.js/blob/trunk/src/interfaces.ts#L32) object
+
+```javascript
+  const prices = await spiceClient.getPrices(
+    'BTC-USD',
+    new Date('2023-01-01').getTime(),
+    new Date('2023-01-02').getTime(),
+    '1h'
+  );
+  console.log(res);
+```
