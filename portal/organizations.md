@@ -48,5 +48,5 @@ To remove a member from an organization:
 3. Click the **ellipsis** on the right of the user's card.
 4. Confirm the removal by clicking the **Remove member from organization** button in the confirmation popup.
 
-![](<../.gitbook/assets/Screenshot 2023-01-09 at 13.13.10 (1).png>)
+![](<../.gitbook/assets/Screenshot 2023-01-09 at 13.13.10.png>)
 

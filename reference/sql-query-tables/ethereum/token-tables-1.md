@@ -29,14 +29,15 @@ User can query this table by ENS domain name to retrieve the latest `owner` and 
 
 This table can be used, for example, to retrieve the Ethereum address associated with a  `*.eth` domain or subdomain:
 
-<pre class="language-sql"><code class="lang-sql"><strong>SELECT *, TO_TIMESTAMP(expires) AS datetime FROM ens.domains WHERE name='covolan.eth'
-</strong>SELECT *, TO_TIMESTAMP(expires) AS datetime FROM ens.domains WHERE name='ccc.earth.eth'
-</code></pre>
+```sql
+SELECT * FROM ens.domains WHERE name='spiceai.eth'
+SELECT * FROM ens.domains WHERE name='ccc.earth.eth'
+```
 
 Or to infer the domain name of an address (reverse look-up):
 
 ```sql
-SELECT *, TO_TIMESTAMP(expires) AS datetime FROM ens.domains WHERE eth_address='0x73690db4433c90111bafd0e20e4e43b54696b050'
+SELECT * FROM ens.domains WHERE eth_address='0x425ec049c2a4722edfd770ab7bc4f9ca8b7bd815'
 ```
 
 Expiration dates in the `expires` column are given as Unix timestamps. They can be `null` for entities such as subdomains, which do not necessarily have expiry dates. We currently do not track expiration dates of [NameWrapper subdomains](https://github.com/ensdomains/ens-contracts/tree/master/contracts/wrapper).
