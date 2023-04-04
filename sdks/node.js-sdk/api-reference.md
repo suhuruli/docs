@@ -42,25 +42,45 @@ let baseFeeGwei = tableResult.getChild("base_fee_per_gas_gwei");
 console.log(baseFeeGwei?.toJSON())
 ```
 
-**getPrice**(pair: string) => [LatestPrice](https://github.com/spiceai/spice.js/blob/trunk/src/interfaces.ts#L40)
+**getPrice**(pair: string) => LatestPrice
 
-* `pair`: (string, required): The cypto/currency pair, for example "BTC-USD"
+* `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
 
-`getPrice` return a [LatestPrice](https://github.com/spiceai/spice.js/blob/trunk/src/interfaces.ts#L40) object
+`getPrice` return a LatestPrice object
+```javascript
+LatestPrice {
+  pair: string;
+  minPrice: string;
+  maxPrice: string;
+  avePrice: string;
+}
+```
+
+examlpe api query
 
 ```javascript
   const res = await spiceClient.getPrice("eth-btc")
   console.log(res);
 ```
 
-**getPrices**(pair: string, startTime: number, endTime: number, granularity: string) => [HistoricalPrices](https://github.com/spiceai/spice.js/blob/trunk/src/interfaces.ts#L32)
+**getPrices**(pair: string, startTime: number, endTime: number, granularity: string) => HistoricalPrices
 
-* `pair`: (string, required): The cypto/currency pair, for example "BTC-USD"
+* `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
 * `startTime`: start time milliseconds since Unix Epoch
 * `endTime`: end time milliseconds since Unix Epoch
 * `granularity`: valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h"
 
-`getPrices` return a [HistoricalPrices](https://github.com/spiceai/spice.js/blob/trunk/src/interfaces.ts#L32) object
+`getPrices` return a HistoricalPrices object
+```javascript
+HistoricalPrices {
+  pair: string;
+  prices: {
+    timestamp: string;
+    price: number;
+  }[];
+}
+```
+example api query
 
 ```javascript
   const prices = await spiceClient.getPrices(
