@@ -68,7 +68,7 @@ examlpe api query
 * `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
 * `startTime`: start time milliseconds since Unix Epoch
 * `endTime`: end time milliseconds since Unix Epoch
-* `granularity`: valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h"
+* `granularity`: valid [duration](https://docs.spice.xyz/core-concepts/duration-literals)
 
 `getPrices` return a HistoricalPrices object
 ```javascript
