@@ -70,7 +70,7 @@ example api query
 * `endTime`: end time milliseconds since Unix Epoch
 * `granularity`: valid [duration](https://docs.spice.xyz/core-concepts/duration-literals)
 
-`getPrices` return a HistoricalPrices object
+`getPrices` returns a HistoricalPrices object
 ```javascript
 HistoricalPrices {
   pair: string;
