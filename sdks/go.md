@@ -12,7 +12,7 @@ GoDocs available at [pkg.go.dev/github.com/spiceai/gospice](https://pkg.go.dev/g
 
 ### Requirements
 
-* [Go 1.19](https://go.dev/doc/go1.19)
+* [Go 1.19](https://go.dev/doc/go1.19) (or later)
 
 ### Installation
 
@@ -27,7 +27,7 @@ go get github.com/spiceai/gospice
 1\. Create a SpiceClient passing in your API key. Get your free API key at [spice.xyz](https://spice.xyz/).
 
 ```go
-spice := NewSpiceClient()
+spice := gospice.NewSpiceClient()
 defer spice.Close()
 ```
 
@@ -42,7 +42,7 @@ if err := spice.Init("API Key"); err != nil {
 3\. Execute a query and get back an Apache Arrow Reader.
 
 ```go
-reader, err := spice.Query(context.Background(), "SELECT * FROM eth.recent_blocks ORDER BY block_number LIMIT 10")
+reader, err := spice.Query(context.Background(), "SELECT * FROM eth.recent_blocks ORDER BY number LIMIT 10")
 if err != nil {
     panic(fmt.Errorf("error querying: %w", err))
 }
