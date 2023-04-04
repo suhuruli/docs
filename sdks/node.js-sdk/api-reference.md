@@ -41,3 +41,53 @@ const table = await client.query(
 let baseFeeGwei = tableResult.getChild("base_fee_per_gas_gwei");
 console.log(baseFeeGwei?.toJSON())
 ```
+
+**getPrice**(pair: string) => LatestPrice
+
+* `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
+
+`getPrice` returns a LatestPrice object
+```javascript
+LatestPrice {
+  pair: string;
+  minPrice: string;
+  maxPrice: string;
+  avePrice: string;
+}
+```
+
+example api query
+
+```javascript
+  const res = await spiceClient.getPrice("eth-btc")
+  console.log(res);
+```
+
+**getPrices**(pair: string, startTime?: number, endTime?: number, granularity?: string) => HistoricalPrices
+
+* `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
+* `startTime`: start time milliseconds since Unix Epoch
+* `endTime`: end time milliseconds since Unix Epoch
+* `granularity`: valid [duration](https://docs.spice.xyz/core-concepts/duration-literals)
+
+`getPrices` returns a HistoricalPrices object
+```javascript
+HistoricalPrices {
+  pair: string;
+  prices: {
+    timestamp: string;
+    price: number;
+  }[];
+}
+```
+example api query
+
+```javascript
+  const prices = await spiceClient.getPrices(
+    'BTC-USD',
+    new Date('2023-01-01').getTime(),
+    new Date('2023-01-02').getTime(),
+    '1h'
+  );
+  console.log(res);
+```
