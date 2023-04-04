@@ -27,7 +27,7 @@
 * [Prices API](api/prices.md)
 * [Health API](api/health.md)
 
-## 👨💻 Portal
+## 👨💻 👨💻 Portal
 
 * [Apps](portal/apps/README.md)
   * [Transfer an App](portal/apps/app-transfer.md)
