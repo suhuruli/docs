@@ -46,7 +46,7 @@ console.log(baseFeeGwei?.toJSON())
 
 * `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
 
-`getPrice` return a LatestPrice object
+`getPrice` returns a LatestPrice object
 ```javascript
 LatestPrice {
   pair: string;
@@ -56,14 +56,14 @@ LatestPrice {
 }
 ```
 
-examlpe api query
+example api query
 
 ```javascript
   const res = await spiceClient.getPrice("eth-btc")
   console.log(res);
 ```
 
-**getPrices**(pair: string, startTime: number, endTime: number, granularity: string) => HistoricalPrices
+**getPrices**(pair: string, startTime?: number, endTime?: number, granularity?: string) => HistoricalPrices
 
 * `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
 * `startTime`: start time milliseconds since Unix Epoch
