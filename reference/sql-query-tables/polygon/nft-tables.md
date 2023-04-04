@@ -29,7 +29,12 @@ DESCRIBE polygon.recent_nft_airdrop_transfers;
 
 Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
 
-| Table Name                      | Indexed Columns |
-| ------------------------------- | --------------- |
-| `polygon.nft_transfers`         | `block_number`  |
-| `polygon.nft_airdrop_transfers` | `block_number`  |
+| Table Name                             | Indexed Columns                                      |
+| -------------------------------------- | ---------------------------------------------------- |
+| `polygon.nft_transfers`                | `block_number`                                       |
+| `polygon.nft_airdrop_transfers`        | `block_number`                                       |
+| `polygon.nfts`                         |                                                      |
+| `polygon.nft_contracts`                | `address`                                            |
+| `polygon.nft_owners`                   | `token_address` `token_id` `owner` `block_timestamp` |
+| `polygon.recent_nft_transfers`         |                                                      |
+| `polygon.recent_nft_airdrop_transfers` |                                                      |

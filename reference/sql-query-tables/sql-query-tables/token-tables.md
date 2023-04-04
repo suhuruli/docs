@@ -47,6 +47,16 @@ DESCRIBE eth.recent_token_mints;
 
 Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
 
-| Table Name            | Indexed Columns                                      |
-| --------------------- | ---------------------------------------------------- |
-| `eth.token_transfers` | `block_number` `block_timestamp` `transaction_hash`  |
+| Table Name                    | Indexed Columns                                                  |
+| ----------------------------- | ---------------------------------------------------------------- |
+| `eth.tokens`                  | `block_number` `block_timestamp` `name` `symbol`                 |
+| `eth.tokens_erc20`            | `block_number` `block_timestamp` `name` `symbol`                 |
+| `eth.tokens_erc721`           | `block_number` `block_timestamp` `name` `symbol`                 |
+| `eth.tokens_erc1155`          | `block_number` `block_timestamp` `name` `symbol`                 |
+| `eth.token_transfers`         | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `eth.recent_token_transfers`  | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `eth.token_transfers_erc20`   | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `eth.token_transfers_erc721`  | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `eth.token_transfers_erc1155` | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `eth.token_mints`             | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `eth.recent_token_mints`      | `block_number` `block_timestamp` `block_hash` `transaction_hash` |

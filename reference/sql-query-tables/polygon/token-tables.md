@@ -43,6 +43,16 @@ DESCRIBE polygon.recent_token_mints;
 
 Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
 
-| Table Name                | Indexed Columns                                                                                 |
-| ------------------------- | ----------------------------------------------------------------------------------------------- |
-| `polygon.token_transfers` | `block_number` `block_timestamp` `transaction_hash` `token_address` `from_address` `to_address` |
+| Table Name                        | Indexed Columns                                                  |
+| --------------------------------- | ---------------------------------------------------------------- |
+| `polygon.tokens`                  | `block_number` `block_timestamp` `name` `symbol`                 |
+| `polygon.tokens_erc20`            | `block_number` `block_timestamp` `name` `symbol`                 |
+| `polygon.tokens_erc721`           | `block_number` `block_timestamp` `name` `symbol`                 |
+| `polygon.tokens_erc1155`          | `block_number` `block_timestamp` `name` `symbol`                 |
+| `polygon.token_transfers`         | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `polygon.recent_token_transfers`  | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `polygon.token_transfers_erc20`   | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `polygon.token_transfers_erc721`  | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `polygon.token_transfers_erc1155` | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `polygon.token_mints`             | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
+| `polygon.recent_token_mints`      | `block_number` `block_timestamp` `block_hash` `transaction_hash` |
