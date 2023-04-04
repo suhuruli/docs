@@ -4,7 +4,7 @@ description: Get started with Spice Data
 
 # Getting started
 
-Follow this guide to get started with Spice. <mark style="color:green;">An API key is not required!</mark>
+Follow this guide to get started with Spice.
 
 ### Call the API
 
@@ -30,12 +30,15 @@ curl https://data.spiceai.io/eth/v0.1/gasfees
 
 ### Make a basic SQL query
 
+To get an API key, set up a [Portal account](portal-login.md).
+
 {% tabs %}
 {% tab title="cURL" %}
 ```bash
 curl --request POST \
   --url 'https://data.spiceai.io/v0.1/sql' \
   --header 'Content-Type: text/plain' \
+  --header 'X-API-KEY: [API-KEY]'
   --data 'select * from eth.recent_blocks order by "timestamp" desc'
 ```
 {% endtab %}
@@ -43,6 +46,4 @@ curl --request POST \
 
 ### Use an SDK
 
-Use the [Python SDK](../sdks/python-sdk.md) to query Spice using it's high-performance Apache Arrow transport.
-
-TypeScript/JavaScript SDK coming soon!
+Use the [Python SDK](../sdks/python-sdk.md), [Node.js SDK](../sdks/node.js-sdk/), or [Go SDK](../sdks/go.md) to query Spice using it's high-performance Apache Arrow transport.
