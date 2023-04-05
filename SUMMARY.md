@@ -50,6 +50,10 @@
 
 ## 📚 REFERENCE
 
+* [SQL Reference](reference/sql-reference/README.md)
+  * [SQL Functions](reference/sql-reference/sql-functions/README.md)
+    * [Aggregate](reference/sql-reference/sql-functions/aggregate/README.md)
+      * [APPROX\_COUNT\_DISTINCT](reference/sql-reference/sql-functions/aggregate/approx\_count\_distinct.md)
 * [SQL Query Tables](reference/sql-query-tables/README.md)
   * [Ethereum](reference/sql-query-tables/sql-query-tables/README.md)
     * [Token Tables](reference/sql-query-tables/sql-query-tables/token-tables.md)
