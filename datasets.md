@@ -12,91 +12,87 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 
 Explore our SQL datasets organized by chain and data type, each with a representative table. Click the section header links for more information and complete table listings.
 
-{% hint style="info" %}
-For most tables, prefix `recent_` to access a faster version with data from the past 30 minutes. i.e. `eth.blocks` -> `eth.recent_blocks`
-{% endhint %}
-
 #### [Ethereum datasets](reference/sql-query-tables/sql-query-tables/)
 
-| Blocks       | `eth.blocks`       |
-| ------------ | ------------------ |
-| Transactions | `eth.transactions` |
-| Logs         | `eth.logs`         |
-| Contracts    | `eth.contracts`    |
-| Traces       | `eth.traces`       |
+| Blocks       | `eth.recent_blocks`       |
+| ------------ | ------------------------- |
+| Transactions | `eth.recent_transactions` |
+| Logs         | `eth.recent_logs`         |
+| Contracts    | `eth.contracts`           |
+| Traces       | `eth.recent_traces`       |
 
 [**Ethereum Token datasets**](reference/sql-query-tables/sql-query-tables/token-tables.md)
 
-| Contracts (erc20, erc721, erc1155)       | `eth.contracts`       |
-| ---------------------------------------- | --------------------- |
-| Tokens (erc20, erc721, erc1155)          | `eth.tokens`          |
-| Token Transfers (erc20, erc721, erc1155) | `eth.token_transfers` |
-| Token Mints (erc20, erc721, erc1155)     | `eth.token_mints`     |
+| Contracts (erc20, erc721, erc1155)       | `eth.contracts`              |
+| ---------------------------------------- | ---------------------------- |
+| Tokens (erc20, erc721, erc1155)          | `eth.tokens`                 |
+| Token Transfers (erc20, erc721, erc1155) | `eth.recent_token_transfers` |
+| Token Mints (erc20, erc721, erc1155)     | `eth.recent_token_mints`     |
 
 [**Ethereum NFT datasets**](reference/sql-query-tables/sql-query-tables/nft-tables.md)
 
-| NFTs                                    | `eth.nfts`                  |
-| --------------------------------------- | --------------------------- |
-| NFT Contracts                           | `eth.nft_contracts`         |
-| NFT Transfers (with optional hold time) | `eth.nft_transfers`         |
-| NFT Owners                              | `eth.nft_owners`            |
-| NFT Airdrop Transfers                   | `eth.nft_airdrop_transfers` |
+| NFTs                                    | `eth.nfts`                         |
+| --------------------------------------- | ---------------------------------- |
+| NFT Contracts                           | `eth.nft_contracts`                |
+| NFT Transfers (with optional hold time) | `eth.recent_nft_transfers`         |
+| NFT Owners                              | `eth.nft_owners`                   |
+| NFT Airdrop Transfers                   | `eth.recent_nft_airdrop_transfers` |
 
 [**Ethereum Uniswap datasets**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)
 
-| Uniswap V2 Pools                                     | `eth.uniswap_v2.pools`       |
-| ---------------------------------------------------- | ---------------------------- |
-| Uniswap V2 Pool Statistics (reserves and price info) | `eth.uniswap_v2.pool_stats`  |
-| Uniswap V2 Events (swaps, mints, burns, etc)         | `eth.uniswap_v2.event_swaps` |
-| Uniswap V3 Pools                                     | `eth.uniswap_v3.pools`       |
-| Uniswap V3 Pool Statistics (reserves and price info) | `eth.uniswap_v3.pool_stats`  |
-| Uniswap V3 Events (swaps, mints, burns, etc)         | `eth.uniswap_v3.event_swaps` |
+| Uniswap V2 Pools                                     | `eth.uniswap_v2.pools`              |
+| ---------------------------------------------------- | ----------------------------------- |
+| Uniswap V2 Pool Statistics (reserves and price info) | `eth.uniswap_v2.pool_stats`         |
+| Uniswap V2 Events (swaps, mints, burns, etc)         | `eth.uniswap_v2.recent_event_swaps` |
+| Uniswap V3 Pools                                     | `eth.uniswap_v3.pools`              |
+| Uniswap V3 Pool Statistics (reserves and price info) | `eth.uniswap_v3.pool_stats`         |
+| Uniswap V3 Events (swaps, mints, burns, etc)         | `eth.uniswap_v3.recent_event_swaps` |
 
 [**Ethereum Sushiswap datasets**](reference/sql-query-tables/ethereum/sushiswap-tables.md)
 
-| Sushiswap Pools                                     | `eth.sushiswap.pools`       |
-| --------------------------------------------------- | --------------------------- |
-| Sushiswap Pool Statistics (reserves and price info) | `eth.sushiswap.pool_stats`  |
-| Sushiswap Events (swaps, mints, burns, etc)         | `eth.sushiswap.event_swaps` |
+| Sushiswap Pools                                     | `eth.sushiswap.pools`              |
+| --------------------------------------------------- | ---------------------------------- |
+| Sushiswap Pool Statistics (reserves and price info) | `eth.sushiswap.pool_stats`         |
+| Sushiswap Events (swaps, mints, burns, etc)         | `eth.sushiswap.recent_event_swaps` |
 
-****[**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/ethereum/token-tables-1.md)
+[**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/ethereum/token-tables-1.md)
 
 | ENS Domains | `ens.domains` |
 | ----------- | ------------- |
 
 #### [Polygon datasets](reference/sql-query-tables/polygon/)
 
-| Blocks       | `polygon.blocks`       |
-| ------------ | ---------------------- |
-| Transactions | `polygon.transactions` |
-| Logs         | `polygon.logs`         |
-| Contracts    | `polygon.contracts`    |
-| Traces       | `polygon.traces`       |
+| Blocks       | `polygon.recent_blocks`       |
+| ------------ | ----------------------------- |
+| Transactions | `polygon.recent_transactions` |
+| Logs         | `polygon.recent_logs`         |
+| Contracts    | `polygon.contracts`           |
+| Traces       | `polygon.recent_traces`       |
 
-****[**Polygon Token Datasets**](reference/sql-query-tables/polygon/token-tables.md)****
+[**Polygon Token Datasets**](reference/sql-query-tables/polygon/token-tables.md)
 
-| Contracts (erc20, erc721, erc1155)       | `polygon.contracts`       |
-| ---------------------------------------- | ------------------------- |
-| Tokens (erc20, erc721, erc1155)          | `polygon.tokens`          |
-| Token Transfers (erc20, erc721, erc1155) | `polygon.token_transfers` |
-| Token Mints (erc20, erc721, erc1155)     | `polygon.token_mints`     |
+| Contracts (erc20, erc721, erc1155)       | `polygon.contracts`              |
+| ---------------------------------------- | -------------------------------- |
+| Tokens (erc20, erc721, erc1155)          | `polygon.tokens`                 |
+| Token Transfers (erc20, erc721, erc1155) | `polygon.recent_token_transfers` |
+| Token Mints (erc20, erc721, erc1155)     | `polygon.recent_token_mints`     |
 
-****[**Polygon NFT Datasets**](reference/sql-query-tables/polygon/nft-tables.md)****
+[**Polygon NFT Datasets**](reference/sql-query-tables/polygon/nft-tables.md)
 
-| NFTs                                    | `polygon.nfts`                  |
-| --------------------------------------- | ------------------------------- |
-| NFT Contracts                           | `polygon.nft_contracts`         |
-| NFT Transfers (with optional hold time) | `polygon.nft_transfers`         |
-| NFT Owners                              | `polygon.nft_owners`            |
-| NFT Airdrop Transfers                   | `polygon.nft_airdrop_transfers` |
+| NFTs                                    | `polygon.nfts`                         |
+| --------------------------------------- | -------------------------------------- |
+| NFT Contracts                           | `polygon.nft_contracts`                |
+| NFT Transfers (with optional hold time) | `polygon.recent_nft_transfers`         |
+| NFT Owners                              | `polygon.nft_owners`                   |
+| NFT Airdrop Transfers                   | `polygon.recent_nft_airdrop_transfers` |
 
-****[**Bitcoin datasets**](reference/sql-query-tables/bitcoin.md)****
+[**Bitcoin datasets**](reference/sql-query-tables/bitcoin.md)
 
-| Blocks              | `btc.blocks`              |
-| ------------------- | ------------------------- |
-| Transactions        | `btc.transactions`        |
-| Transaction Inputs  | `btc.transaction_inputs`  |
-| Transaction Outputs | `btc.transaction_outputs` |
+| Blocks              | `btc.recent_blocks`              |
+| ------------------- | -------------------------------- |
+| Transactions        | `btc.recent_transactions`        |
+| Transaction Inputs  | `btc.recent_transaction_inputs`  |
+| Transaction Outputs | `btc.recent_transaction_outputs` |
 
 #### [Prices datasets](reference/sql-query-tables/prices/)
 
