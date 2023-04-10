@@ -39,7 +39,7 @@ Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
 
 * [Prices dataset](sql-query-tables/prices/) now out of preview
 * Added export to CSV results format in addition to existing formats [JSON](../api/ethereum/json-rpc-methods.md) and [Apache Arrow](../api/sql-query-api/apache-arrow-flight-api.md), for easy use with apps, ML, or libraries like NumPy and Pandas
-* Added performance improvements for faster queries **** across existing datasets including `eth.traces`&#x20;
+* Added performance improvements for faster queries across existing datasets including `eth.traces`&#x20;
 
 ### October 2022
 

@@ -12,9 +12,11 @@ description: Returns the approximate number of unique, non-null values in a colu
 
 **Examples**
 
+{% code title="APPROX_COUNT_DISTINCT example" %}
 ```sql
 SELECT APPROX_COUNT_DISTINCT(number)
 FROM eth.recent_blocks
 -- 143
 
 ```
+{% endcode %}
