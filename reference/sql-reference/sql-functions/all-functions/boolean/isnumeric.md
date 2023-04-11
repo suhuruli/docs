@@ -30,7 +30,7 @@ SELECT ISNUMERIC('Hello World!')
 
 {% code title="ISNUMERIC example" %}
 ```sql
-SELECT ISNUMERIC(passenger_count)
+SELECT ISNUMERIC(transaction_count)
 FROM eth.recent_blocks 
 LIMIT 1 
 

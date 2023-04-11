@@ -14,7 +14,7 @@ description: Returns the minimum value among the non-NULL input expressions.
 
 {% code title="Aggregate function example" %}
 ```sql
-SELECT MIN("total_amount") 
+SELECT MIN("gas_used") 
 FROM eth.recent_blocks
 
 -- EXPR$0
@@ -30,12 +30,12 @@ FROM eth.recent_blocks
 
 {% code title="Window function example" %}
 ```sql
-SELECT "trip_distance_mi", 
-  MIN("total_amount") OVER(PARTITION BY "trip_distance_mi") "min_total_amount"
+SELECT "transaction_count", 
+  MIN("total_gas_used") OVER(PARTITION BY "transaction_count") "min_total_gas_used"
 FROM eth.recent_blocks
 LIMIT 1
 
--- trip_distance_mi, min_total_amount
+-- trip_distance_mi, min_total_gas_used
 -- 0.06, -52.5
 ```
 {% endcode %}

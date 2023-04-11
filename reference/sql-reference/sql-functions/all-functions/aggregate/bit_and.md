@@ -12,7 +12,7 @@ description: Returns the bitwise AND of non-NULL input values.
 
 **Examples**
 
-<pre class="language-sql" data-title="BIT_AND example "><code class="lang-sql"><strong>SELECT BIT_AND(passenger_count)
+<pre class="language-sql" data-title="BIT_AND example "><code class="lang-sql"><strong>SELECT BIT_AND(transaction_count)
 </strong>  FROM eth.recent_blocks
 
 -- EXPR$0
@@ -21,10 +21,10 @@ description: Returns the bitwise AND of non-NULL input values.
 
 {% code title="BIT_AND example" %}
 ```sql
-SELECT total_amount, 
-  BIT_AND(passenger_count)
+SELECT gas_used, 
+  BIT_AND(transaction_count)
 FROM eth.recent_blocks
-GROUP BY total_amount
+GROUP BY gas_used
 
 -- total_amount, EXPR$1
 -- 21.5, 0

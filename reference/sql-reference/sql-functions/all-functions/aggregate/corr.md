@@ -21,10 +21,10 @@ description: >-
 
 {% code title="CORR example" %}
 ```sql
-SELECT passenger_count,
-  "CORR"(fare_amount, tip_amount)
+SELECT transaction_count,
+  "CORR"(gas_used, base_fee_per_gas)
 FROM eth.recent_blocks
-GROUP BY passenger_count
+GROUP BY transaction_count
 LIMIT 5
 
 -- 8, 0.38978465691058356

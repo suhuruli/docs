@@ -8,7 +8,7 @@ description: Returns a binary value for the given hexadecimal string.
 
 #### FROM\_HEX(_in_ string) → binary <a href="#from_hexin-string--binary" id="from_hexin-string--binary"></a>
 
-* in: A hexadecimal string
+* in: A hexadecimal string.
 
 **Examples**
 

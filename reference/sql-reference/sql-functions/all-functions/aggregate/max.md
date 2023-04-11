@@ -14,7 +14,7 @@ description: Returns the maximum value among the non-NULL input expressions.
 
 {% code title="Aggregate function example" %}
 ```sql
-SELECT MAX("total_amount") 
+SELECT MAX("total_gas_used") 
 FROM eth.recent_blocks
 
 -- EXPR$0
@@ -30,12 +30,12 @@ FROM eth.recent_blocks
 
 {% code title="Window function example" %}
 ```sql
-SELECT "trip_distance_mi", 
-  MAX("total_amount") OVER(PARTITION BY "trip_distance_mi") "max_total_amount"
+SELECT "transaction_count", 
+  MAX("total_gas_used") OVER(PARTITION BY "transaction_count") "max_total_gas_used"
 FROM eth.recent_blocks
 LIMIT 1
 
--- trip_distance_mi, max_total_amount
+-- block_number, max_gas_used
 -- 0.03, 450.5
 ```
 {% endcode %}

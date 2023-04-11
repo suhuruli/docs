@@ -24,12 +24,12 @@ FROM eth.recent_blocks 
 
 {% code title="BIT_OR example" %}
 ```sql
-SELECT total_amount, 
-  BIT_OR(passenger_count)
+SELECT total_gas_used, 
+  BIT_OR(transaction_count)
 FROM eth.recent_blocks 
-GROUP BY total_amount
+GROUP BY total_gas_used
 
--- total_amount, EXPR$1
+-- total_gas_used, EXPR$1
 -- 29.0, 7
 -- 5.5, 15
 ```

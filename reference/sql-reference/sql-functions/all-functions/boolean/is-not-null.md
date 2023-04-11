@@ -16,14 +16,14 @@ description: >-
 
 {% code title="ISNULL function returns true if <expression> is NULL, and false otherwise." %}
 ```sql
-select ISNULL('spice')
+SELECT ISNULL('SPICE')
 -- False
 ```
 {% endcode %}
 
 {% code title="ISNULL operator returns true if <expression> is NULL, and false otherwise." %}
 ```sql
-select 'spice' IS NULL
+SELECT 'SPICE' IS NULL
 -- False
 ```
 {% endcode %}
@@ -36,7 +36,7 @@ select 'spice' IS NULL
 
 {% code title="ISNOTNULL function returns true if <expression> is not NULL, and false otherwise." %}
 ```sql
-select ISNOTNULL('spice')
+SELECT ISNOTNULL('SPICE')
 -- True
 ```
 {% endcode %}
@@ -45,7 +45,7 @@ ISNOTNULL operator returns true if \<expression> is not NULL, and false otherwis
 
 {% code title="ISNOTNULL operator returns true if <expression> is not NULL, and false otherwise." %}
 ```sql
-select 'spice' IS NOT NULL
+SELECT 'SPICE' IS NOT NULL
 -- False
 ```
 {% endcode %}

@@ -17,7 +17,7 @@ description: >-
 
 {% code title="STDDEV_POP example" %}
 ```sql
-SELECT STDDEV_POP(tip_amount) 
+SELECT STDDEV_POP(gas_used) 
 FROM eth.recent_blocks
 -- 2.259665030506379
 ```
@@ -31,7 +31,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV_POP example" %}
 ```sql
-SELECT STDDEV_POP(tip_amount) 
+SELECT STDDEV_POP(gas_used) 
 FROM eth.recent_blocks
 -- 2.259665030506379
 ```
@@ -45,7 +45,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV_POP example" %}
 ```sql
-SELECT STDDEV_POP(passenger_count) 
+SELECT STDDEV_POP(transaction_count) 
 FROM eth.recent_blocks
 -- 1.367021462155777
 ```
@@ -59,7 +59,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV_POP example" %}
 ```sql
-SELECT STDDEV_POP(passenger_count) 
+SELECT STDDEV_POP(transaction_count) 
 FROM eth.recent_blocks
 -- 1.367021462155777
 ```

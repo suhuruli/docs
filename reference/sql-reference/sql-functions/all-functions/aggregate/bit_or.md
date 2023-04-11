@@ -12,17 +12,17 @@ description: Returns the bitwise OR of non-NULL input values.
 
 **Examples**
 
-<pre class="language-sql" data-title="BIT_OR example"><code class="lang-sql"><strong>SELECT BIT_OR(passenger_count)
+<pre class="language-sql" data-title="BIT_OR example"><code class="lang-sql"><strong>SELECT BIT_OR(transaction_count)
 </strong>  FROM eth.recent_blocks
 
 -- EXPR$0
 -- 255
 </code></pre>
 
-<pre class="language-sql" data-title="BIT_OR example"><code class="lang-sql"><strong>SELECT total_amount, 
-</strong>  BIT_OR(passenger_count)
+<pre class="language-sql" data-title="BIT_OR example"><code class="lang-sql"><strong>SELECT gas_used, 
+</strong>  BIT_OR(transaction_count)
 FROM eth.recent_blocks
-GROUP BY total_amount
+GROUP BY gas_used
 
 -- total_amount, EXPR$1
 -- 29.0, 7

@@ -8,7 +8,7 @@ description: Returns whether the current user is a member of the specified role.
 
 #### IS\_MEMBER(_expression_ varchar) → boolean <a href="#is_memberexpression-varchar--boolean" id="is_memberexpression-varchar--boolean"></a>
 
-* expression: String expression identfying a role in Dremio.
+* expression: String expression identifying a role in Spice.
 
 **Examples**
 

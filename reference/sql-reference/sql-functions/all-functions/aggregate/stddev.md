@@ -16,7 +16,7 @@ description: >-
 
 {% code title="STDDEV example" %}
 ```sql
-SELECT STDDEV(tip_amount) 
+SELECT STDDEV(gas_used) 
 FROM eth.recent_blocks
 -- 2.2596650338461766
 ```
@@ -30,7 +30,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV example" %}
 ```sql
-SELECT STDDEV(tip_amount) 
+SELECT STDDEV(gas_used) 
 FROM eth.recent_blocks
 -- 2.2596650338461766
 ```
@@ -44,7 +44,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV example" %}
 ```sql
-SELECT STDDEV(passenger_count) 
+SELECT STDDEV(transaction_count) 
 FROM eth.recent_blocks
 -- 1.3670214641762426
 ```
@@ -58,7 +58,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV example" %}
 ```sql
-SELECT STDDEV(passenger_count) 
+SELECT STDDEV(transaction_count) 
 FROM eth.recent_blocks
 -- 1.3670214641762426
 ```

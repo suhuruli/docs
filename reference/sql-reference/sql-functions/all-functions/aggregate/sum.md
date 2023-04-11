@@ -12,18 +12,19 @@ description: Returns the sum of non-NULL input expressions.
 
 **Examples**
 
-<pre class="language-sql" data-title="Aggregate function example"><code class="lang-sql">SELECT SUM(trip_distance_mi) 
+<pre class="language-sql" data-title="Aggregate function example"><code class="lang-sql">SELECT SUM(base_fee_per_gas) 
 FROM eth.recent_blocks
 <strong>-- 9.858134477692287E8
 </strong></code></pre>
 
 {% code title="Window function example" %}
 ```sql
-SELECT "tip_amount", "fare_amount", SUM("total_amount") 
-OVER (partition by "tip_amount") as "sum_amount" 
+SELECT "base_fee_per_gas", "gas_used", SUM("total_gas_used") 
+OVER (PARTITION BY "base_fee_per_gas") as "sum_gas_used" 
 FROM eth.recent_blocks 
 LIMIT 1
--- tip_amount, fare_amount, sum_amount
+-- base_fee_per_gas, gas_used, sum_gas_used
 -- -51.0, -4.0, -56.0
 ```
 {% endcode %}
+

@@ -17,7 +17,7 @@ description: >-
 
 {% code title="STDDEV_SAMP example" %}
 ```sql
-SELECT STDDEV_SAMP(tip_amount) 
+SELECT STDDEV_SAMP(gas_used) 
 FROM eth.recent_blocks
 -- 2.259665033869644
 ```
@@ -31,7 +31,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV_SAMP example" %}
 ```sql
-SELECT STDDEV_SAMP(tip_amount) 
+SELECT STDDEV_SAMP(gas_used) 
 FROM eth.recent_blocks
 -- 2.259665033869644
 ```
@@ -45,7 +45,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV_SAMP example" %}
 ```sql
-SELECT STDDEV_SAMP(passenger_count) 
+SELECT STDDEV_SAMP(transaction_count) 
 FROM eth.recent_blocks
 -- 1.3670214641762426
 ```
@@ -59,7 +59,7 @@ FROM eth.recent_blocks
 
 {% code title="STDDEV_SAMP example" %}
 ```sql
-SELECT STDDEV_SAMP(passenger_count) 
+SELECT STDDEV_SAMP(transaction_count) 
 FROM eth.recent_blocks
 -- 1.3670214641762426
 ```
