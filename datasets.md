@@ -20,6 +20,7 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | Logs         | `eth.recent_logs`         |
 | Contracts    | `eth.contracts`           |
 | Traces       | `eth.recent_traces`       |
+| Withdrawals  | `eth.recent_withdrawals`  |
 
 [**Ethereum Token datasets**](reference/sql-query-tables/sql-query-tables/token-tables.md)
 

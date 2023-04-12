@@ -17,6 +17,8 @@ description: Ethereum base type tables available to query via SQL
 | `eth.contracts`           | A listing of all contracts                                                         |
 | `eth.traces`              | All call frames executed during a transaction, also known as internal transactions |
 | `eth.recent_traces`       | `eth.traces` data from the last 30 minutes, \~128 blocks                           |
+| `eth.withdrawals`         | Block withdrawals                                                                  |
+| `eth.recent_withdrawals`  | Block withdrawals from the last 30 minutes, \~128 blocks                           |
 
 The table list is also available as a SQL query using `show tables`. For example:
 
@@ -34,6 +36,7 @@ DESCRIBE eth.logs;
 DESCRIBE eth.recent_logs;
 DESCRIBE eth.contracts;
 DESCRIBE eth.traces;
+DESCRIBE eth.withdrawals;
 ```
 
 #### Improving query performance - indexed columns
@@ -47,3 +50,4 @@ Query performance can be significantly improved by adding `WHERE` clauses to you
 | `eth.logs`         | `block_number` `block_timestamp` `address` |
 | `eth.contracts`    | `block_number` `block_timestamp` `address` |
 | `eth.traces`       | `block_number`                             |
+| `eth.withdrawals`  | `block_number`                             |
