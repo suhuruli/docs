@@ -61,6 +61,25 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | ENS Domains | `ens.domains` |
 | ----------- | ------------- |
 
+[**Ethereum Beacon Chain datasets**](reference/sql-query-tables/sql-query-tables/beacon-chain-tables.md)
+
+|                           |                                        |
+| ------------------------- | -------------------------------------- |
+| Slots                     | `eth.beacon.slots`                     |
+| Recent Slots              | `eth.beacon.recent_slots`              |
+| Attestations              | `eth.beacon.attestations`              |
+| Recent Attestations       | `eth.beacon.recent_attestations`       |
+| Deposits                  | `eth.beacon.deposits`                  |
+| Recent Deposits           | `eth.beacon.recent_deposits`           |
+| Voluntary Exits           | `eth.beacon.voluntary_exits`           |
+| Recent Voluntary Exits    | `eth.beacon.recent_voluntary_exits`    |
+| Attester Slashings        | `eth.beacon.attester_slashings`        |
+| Recent Attester Slashings | `eth.beacon.recent_attester_slashings` |
+| Proposer Slashings        | `eth.beacon.proposer_slashings`        |
+| Recent Proposer Slashings | `eth.beacon.recent_proposer_slashings` |
+| Committees                | `eth.beacon.committees`                |
+| Recent Committees         | `eth.beacon.recent_committees`         |
+
 #### [Polygon datasets](reference/sql-query-tables/polygon/)
 
 | Blocks       | `polygon.recent_blocks`       |
@@ -137,3 +156,4 @@ For access to spot/historical prices on thousands of pairs, try our [time-series
 ### JSON RPC Methods
 
 * See [JSON RPC Methods](datasets.md#time-series-datasets-1)
+
