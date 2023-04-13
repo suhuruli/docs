@@ -14,47 +14,47 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 #### [Ethereum datasets](reference/sql-query-tables/sql-query-tables/)
 
-| Blocks       | `eth.recent_blocks`       |
-| ------------ | ------------------------- |
-| Transactions | `eth.recent_transactions` |
-| Logs         | `eth.recent_logs`         |
-| Contracts    | `eth.contracts`           |
-| Traces       | `eth.recent_traces`       |
-| Withdrawals  | `eth.recent_withdrawals`  |
+| Blocks       | `eth.blocks`       | `eth.recent_blocks`       |
+| ------------ | ------------------ | ------------------------- |
+| Transactions | `eth.transactions` | `eth.recent_transactions` |
+| Logs         | `eth.logs`         | `eth.recent_logs`         |
+| Contracts    | `eth.contracts`    |                           |
+| Traces       | `eth.traces`       | `eth.recent_traces`       |
+| Withdrawals  | `eth.withdrawals`  | `eth.recent_withdrawals`  |
 
 [**Ethereum Token datasets**](reference/sql-query-tables/sql-query-tables/token-tables.md)
 
-| Contracts (erc20, erc721, erc1155)       | `eth.contracts`              |
-| ---------------------------------------- | ---------------------------- |
-| Tokens (erc20, erc721, erc1155)          | `eth.tokens`                 |
-| Token Transfers (erc20, erc721, erc1155) | `eth.recent_token_transfers` |
-| Token Mints (erc20, erc721, erc1155)     | `eth.recent_token_mints`     |
+| Contracts (erc20, erc721, erc1155)       | `eth.contracts`       |                              |
+| ---------------------------------------- | --------------------- | ---------------------------- |
+| Tokens (erc20, erc721, erc1155)          | `eth.tokens`          |                              |
+| Token Transfers (erc20, erc721, erc1155) | `eth.token_transfers` | `eth.recent_token_transfers` |
+| Token Mints (erc20, erc721, erc1155)     | `eth.token_mints`     | `eth.recent_token_mints`     |
 
 [**Ethereum NFT datasets**](reference/sql-query-tables/sql-query-tables/nft-tables.md)
 
-| NFTs                                    | `eth.nfts`                         |
-| --------------------------------------- | ---------------------------------- |
-| NFT Contracts                           | `eth.nft_contracts`                |
-| NFT Transfers (with optional hold time) | `eth.recent_nft_transfers`         |
-| NFT Owners                              | `eth.nft_owners`                   |
-| NFT Airdrop Transfers                   | `eth.recent_nft_airdrop_transfers` |
+| NFTs                                    | `eth.nfts`                  |                                    |
+| --------------------------------------- | --------------------------- | ---------------------------------- |
+| NFT Contracts                           | `eth.nft_contracts`         |                                    |
+| NFT Transfers (with optional hold time) | `eth.nft_transfers`         | `eth.recent_nft_transfers`         |
+| NFT Owners                              | `eth.nft_owners`            |                                    |
+| NFT Airdrop Transfers                   | `eth.nft_airdrop_transfers` | `eth.recent_nft_airdrop_transfers` |
 
 [**Ethereum Uniswap datasets**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)
 
-| Uniswap V2 Pools                                     | `eth.uniswap_v2.pools`              |
-| ---------------------------------------------------- | ----------------------------------- |
-| Uniswap V2 Pool Statistics (reserves and price info) | `eth.uniswap_v2.pool_stats`         |
-| Uniswap V2 Events (swaps, mints, burns, etc)         | `eth.uniswap_v2.recent_event_swaps` |
-| Uniswap V3 Pools                                     | `eth.uniswap_v3.pools`              |
-| Uniswap V3 Pool Statistics (reserves and price info) | `eth.uniswap_v3.pool_stats`         |
-| Uniswap V3 Events (swaps, mints, burns, etc)         | `eth.uniswap_v3.recent_event_swaps` |
+| Uniswap V2 Pools                                     | `eth.uniswap_v2.pools`       |                                     |
+| ---------------------------------------------------- | ---------------------------- | ----------------------------------- |
+| Uniswap V2 Pool Statistics (reserves and price info) | `eth.uniswap_v2.pool_stats`  |                                     |
+| Uniswap V2 Events (swaps, mints, burns, etc)         | `eth.uniswap_v2.event_swaps` | `eth.uniswap_v2.recent_event_swaps` |
+| Uniswap V3 Pools                                     | `eth.uniswap_v3.pools`       |                                     |
+| Uniswap V3 Pool Statistics (reserves and price info) | `eth.uniswap_v3.pool_stats`  |                                     |
+| Uniswap V3 Events (swaps, mints, burns, etc)         | `eth.uniswap_v3.event_swaps` | `eth.uniswap_v3.recent_event_swaps` |
 
 [**Ethereum Sushiswap datasets**](reference/sql-query-tables/ethereum/sushiswap-tables.md)
 
-| Sushiswap Pools                                     | `eth.sushiswap.pools`              |
-| --------------------------------------------------- | ---------------------------------- |
-| Sushiswap Pool Statistics (reserves and price info) | `eth.sushiswap.pool_stats`         |
-| Sushiswap Events (swaps, mints, burns, etc)         | `eth.sushiswap.recent_event_swaps` |
+| Sushiswap Pools                                     | `eth.sushiswap.pools`       |                                    |
+| --------------------------------------------------- | --------------------------- | ---------------------------------- |
+| Sushiswap Pool Statistics (reserves and price info) | `eth.sushiswap.pool_stats`  |                                    |
+| Sushiswap Events (swaps, mints, burns, etc)         | `eth.sushiswap.event_swaps` | `eth.sushiswap.recent_event_swaps` |
 
 [**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/ethereum/token-tables-1.md)
 
@@ -63,56 +63,51 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 [**Ethereum Beacon Chain datasets**](reference/sql-query-tables/sql-query-tables/beacon-chain-tables.md)
 
-|                           |                                        |
-| ------------------------- | -------------------------------------- |
-| Slots                     | `eth.beacon.slots`                     |
-| Recent Slots              | `eth.beacon.recent_slots`              |
-| Attestations              | `eth.beacon.attestations`              |
-| Recent Attestations       | `eth.beacon.recent_attestations`       |
-| Deposits                  | `eth.beacon.deposits`                  |
-| Recent Deposits           | `eth.beacon.recent_deposits`           |
-| Voluntary Exits           | `eth.beacon.voluntary_exits`           |
-| Recent Voluntary Exits    | `eth.beacon.recent_voluntary_exits`    |
-| Attester Slashings        | `eth.beacon.attester_slashings`        |
-| Recent Attester Slashings | `eth.beacon.recent_attester_slashings` |
-| Proposer Slashings        | `eth.beacon.proposer_slashings`        |
-| Recent Proposer Slashings | `eth.beacon.recent_proposer_slashings` |
-| Committees                | `eth.beacon.committees`                |
-| Recent Committees         | `eth.beacon.recent_committees`         |
+|                          |                                       |                                              |
+| ------------------------ | ------------------------------------- | -------------------------------------------- |
+| Slots                    | `eth.beacon.slots`                    | `eth.beacon.recent_slots`                    |
+| Attestations             | `eth.beacon.attestations`             | `eth.beacon.recent_attestations`             |
+| Deposits                 | `eth.beacon.deposits`                 | `eth.beacon.recent_deposits`                 |
+| Voluntary Exits          | `eth.beacon.voluntary_exits`          | `eth.beacon.recent_voluntary_exits`          |
+| Attester Slashings       | `eth.beacon.attester_slashings`       | `eth.beacon.recent_attester_slashings`       |
+| Proposer Slashings       | `eth.beacon.proposer_slashings`       | `eth.beacon.recent_proposer_slashings`       |
+| BLS To Execution Changes | `eth.beacon.bls_to_execution_changes` | `eth.beacon.recent_bls_to_execution_changes` |
+| Withdrawals              | `eth.beacon.withdrawals`              | `eth.beacon.recent_withdrawals`              |
+| Committees               | `eth.beacon.committees`               | `eth.beacon.recent_committees`               |
 
 #### [Polygon datasets](reference/sql-query-tables/polygon/)
 
-| Blocks       | `polygon.recent_blocks`       |
-| ------------ | ----------------------------- |
-| Transactions | `polygon.recent_transactions` |
-| Logs         | `polygon.recent_logs`         |
-| Contracts    | `polygon.contracts`           |
-| Traces       | `polygon.recent_traces`       |
+| Blocks       | `polygon.blocks`       | `polygon.recent_blocks`       |
+| ------------ | ---------------------- | ----------------------------- |
+| Transactions | `polygon.transactions` | `polygon.recent_transactions` |
+| Logs         | `polygon.logs`         | `polygon.recent_logs`         |
+| Contracts    | `polygon.contracts`    |                               |
+| Traces       | `polygon.traces`       | `polygon.recent_traces`       |
 
 [**Polygon Token Datasets**](reference/sql-query-tables/polygon/token-tables.md)
 
-| Contracts (erc20, erc721, erc1155)       | `polygon.contracts`              |
-| ---------------------------------------- | -------------------------------- |
-| Tokens (erc20, erc721, erc1155)          | `polygon.tokens`                 |
-| Token Transfers (erc20, erc721, erc1155) | `polygon.recent_token_transfers` |
-| Token Mints (erc20, erc721, erc1155)     | `polygon.recent_token_mints`     |
+| Contracts (erc20, erc721, erc1155)       | `polygon.contracts`       |                                  |
+| ---------------------------------------- | ------------------------- | -------------------------------- |
+| Tokens (erc20, erc721, erc1155)          | `polygon.tokens`          |                                  |
+| Token Transfers (erc20, erc721, erc1155) | `polygon.token_transfers` | `polygon.recent_token_transfers` |
+| Token Mints (erc20, erc721, erc1155)     | `polygon.token_mints`     | `polygon.recent_token_mints`     |
 
 [**Polygon NFT Datasets**](reference/sql-query-tables/polygon/nft-tables.md)
 
-| NFTs                                    | `polygon.nfts`                         |
-| --------------------------------------- | -------------------------------------- |
-| NFT Contracts                           | `polygon.nft_contracts`                |
-| NFT Transfers (with optional hold time) | `polygon.recent_nft_transfers`         |
-| NFT Owners                              | `polygon.nft_owners`                   |
-| NFT Airdrop Transfers                   | `polygon.recent_nft_airdrop_transfers` |
+| NFTs                                    | `polygon.nfts`                  |                                        |
+| --------------------------------------- | ------------------------------- | -------------------------------------- |
+| NFT Contracts                           | `polygon.nft_contracts`         |                                        |
+| NFT Transfers (with optional hold time) | `polygon.nft_transfers`         | `polygon.recent_nft_transfers`         |
+| NFT Owners                              | `polygon.nft_owners`            |                                        |
+| NFT Airdrop Transfers                   | `polygon.nft_airdrop_transfers` | `polygon.recent_nft_airdrop_transfers` |
 
 [**Bitcoin datasets**](reference/sql-query-tables/bitcoin.md)
 
-| Blocks              | `btc.recent_blocks`              |
-| ------------------- | -------------------------------- |
-| Transactions        | `btc.recent_transactions`        |
-| Transaction Inputs  | `btc.recent_transaction_inputs`  |
-| Transaction Outputs | `btc.recent_transaction_outputs` |
+| Blocks              | `btc.blocks`              | `btc.recent_blocks`              |
+| ------------------- | ------------------------- | -------------------------------- |
+| Transactions        | `btc.transactions`        | `btc.recent_transactions`        |
+| Transaction Inputs  | `btc.transaction_inputs`  | `btc.recent_transaction_inputs`  |
+| Transaction Outputs | `btc.transaction_outputs` | `btc.recent_transaction_outputs` |
 
 #### [Prices datasets](reference/sql-query-tables/prices/)
 

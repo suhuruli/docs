@@ -332,6 +332,8 @@
   * [Voluntary Exits](reference/example-ethereum-beacon-sql-queries/voluntary-exits.md)
   * [Deposits](reference/example-ethereum-beacon-sql-queries/deposits.md)
   * [Attester Slashings](reference/example-ethereum-beacon-sql-queries/attester-slashings.md)
+  * [BLS To Execution Changes](reference/example-ethereum-beacon-sql-queries/bls-to-execution-changes.md)
+  * [Withdrawals](reference/example-ethereum-beacon-sql-queries/withdrawals.md)
   * [Committees](reference/example-ethereum-beacon-sql-queries/committees.md)
 * [Example DEX Queries](reference/example-dex-queries/README.md)
   * [Uniswap](reference/example-dex-queries/uniswap.md)
