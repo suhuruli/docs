@@ -1,2 +1,2 @@
-# Example Ethereum Beacon SQL Queries
+# 🆕 Example Ethereum Beacon SQL Queries
 

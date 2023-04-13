@@ -331,7 +331,7 @@
   * [Tokens](reference/example-ethereum-sql-queries/tokens.md)
   * [Logs](reference/example-ethereum-sql-queries/logs.md)
   * [ENS Domains](reference/example-ethereum-sql-queries/ens-domains.md)
-* [Example Ethereum Beacon SQL Queries](reference/example-ethereum-beacon-sql-queries/README.md)
+* [🆕 Example Ethereum Beacon SQL Queries](reference/example-ethereum-beacon-sql-queries/README.md)
   * [Slots](reference/example-ethereum-beacon-sql-queries/slots.md)
   * [Attestations](reference/example-ethereum-beacon-sql-queries/attestations.md)
   * [Voluntary Exits](reference/example-ethereum-beacon-sql-queries/voluntary-exits.md)
