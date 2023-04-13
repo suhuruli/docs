@@ -1,4 +1,4 @@
-# All Functions
+# SQL Functions
 
 ## All Functions <a href="#all-functions" id="all-functions"></a>
 
