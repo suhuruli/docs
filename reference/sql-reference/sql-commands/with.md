@@ -27,16 +27,16 @@ A temporary named result set for use in the statement that defines the CTE.
 
 ### Examples <a href="#examples" id="examples"></a>
 
-{% code title="Query an existing table using a CTE clause." %}
+{% code title="Get ETH withdrawn after the Ethereum Shanghai upgrade" %}
 ```sql
-WITH cte_quantity (Total)
-  AS (
-      SELECT SUM(transaction_count) as Total
-      FROM eth.recent_blocks  WHERE transaction_count > 2
-      GROUP BY pickup_datetime
-      )
-SELECT AVG(Total) average_pass
-FROM cte_quantity
+with eth_withdrawn as (
+    select eth.withdrawals.block_number, SUM(amount) as amount_gwei
+    from eth.withdrawals
+    group by eth.withdrawals.block_number
+    order by block_number asc)
+
+select AVG(amount_gwei / 1e9) as amount_eth, (AVG(amount_gwei / 1e9) - 32) as reward_eth
+from eth_withdrawn
 ```
 {% endcode %}
 
