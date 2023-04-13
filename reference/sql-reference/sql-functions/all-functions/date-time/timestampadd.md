@@ -28,14 +28,14 @@ SELECT TIMESTAMPADD(HOUR, -2, TIMESTAMP '2021-04-01 17:14:32')
 ```
 {% endcode %}
 
-{% code title="Get get TIMESTAMP as of 30 mins ago" %}
+{% code title="Get TIMESTAMP as of 30 mins ago" %}
 ```sql
 SELECT TIMESTAMPADD(MINUTE, -30, CURRENT_TIMESTAMP)
 -- 2023-04-13 16:51:27.467
 ```
 {% endcode %}
 
-{% code title="Get get TIMESTAMP in 3 seconds" %}
+{% code title="Get TIMESTAMP in 3 seconds" %}
 ```sql
 SELECT TIMESTAMPADD(SECOND, 3, CURRENT_TIMESTAMP)
 -- 2023-04-13 17:24:15.446
