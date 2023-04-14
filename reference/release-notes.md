@@ -4,13 +4,61 @@ description: Spice.xyz Release notes
 
 # Release notes
 
+### Feburary 2023
+
+Spice released two datasets in preview this month along with the Historic Prices API in preview, and the v0.3 update to the Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice).&#x20;
+
+**Ethereum wallet balances (Preview):** One of the fundamental queries to make on any blockchain is the native currency balance of a wallet. Now it's available in preview on Spice. The `eth.wallet_balance_updates` table contains a block-level aggregation of all Ether balance changes due to gas fees and committed transactions, including internal contract calls. Soon, you will be able to query all the way back to genesis. Spice also provides this data as a rollup into historical daily snapshots in the `eth.daily_wallet_balances` table.
+
+**NFT dataset with core metadata (Preview):** You can now query and leverage fungible and non-fungible token contracts under `eth.tokens` as well as isolated NFT specific per token information under `eth.nfts`. Currently in preview, you can access the latter in a limited capacity featuring  name and symbol for ERC721 tokens. See the full list of [NFT tables](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/nft-tables) and [Token tables](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables).&#x20;
+
+The preview will soon include more NFT metadata information for our NFT datasets such as name and symbol for ERC1155 tokens, metadata URI, description and asset URI (also known as the image URI) for both ERC721 and ERC1155 tokens. Please contact us if you would like access to the dataset in preview.&#x20;
+
+**Historic Prices API (Preview):** In addition to accessing the [Spot Prices](https://docs.spice.xyz/api/prices#spot-prices) of popular token/currency pairs on top exchanges, users can now access the **`/v0.1/prices/[pair]`** API, which returns historical prices of the specified token/currency pair. You can refine your search by defining parameters like `start` and `end`, which will return all prices between the two timestamps at a provided `granularity`.
+
+Please contact us if you would like to access the API.&#x20;
+
+**Node.js SDK v0.3:** adds support for improved [Prices APIs](https://docs.spice.xyz/api/prices) supporting spot/latest and historical prices for pair across Coinbase, Gemini, and tracked by Coinmarket Cap. This upgrade ensures the SDK remains the easiest way to use and query [Spice.xyz](https://spice.xyz) with Node.js.
+
+It uses [Apache Apache Flight](https://arrow.apache.org/docs/format/Flight.html) to efficiently stream data to the client and [Apache Arrow](https://arrow.apache.org/) Records as data frames which are then easily converted to JavaScript objects/arrays or JSON.
+
+New functions available on the client are:
+
+* `getPrice()`
+* `getPrices()`
+
+You'll need [Node.js 16+](https://nodejs.org/) to get started. See the step-by-step installation guide [here](https://docs.spice.xyz/sdks/node.js-sdk).&#x20;
+
+#### New In this Release
+
+* \[API] Added [Historic Prices API in Preview](https://docs.spice.xyz/api/prices#historical-prices-preview)
+* \[Wallet Balances] Ethereum wallet balances dataset in preview
+* \[NFT and Metadata] [NFT](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/nft-tables) and [Token](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables) datasets in preview&#x20;
+* \[Node.js SDK] [v0.3 release](https://docs.spice.xyz/sdks/node.js-sdk) of Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice)
+
+#### Changes
+
+* \[Performance] Improved query performance and scale
+* \[Portal] Improved performance of portal pages
+* \[Node.js SDK] Add `getPrice` and `getPrices` API&#x20;
+
+#### Resources
+
+* [Getting started with Spice AI](https://docs.spice.xyz/get-started)
+* [Documentation](https://docs.spice.xyz/)
+* [FAQ](https://docs.spice.xyz/faq)
+
+
+
+
+
 ### January 2023
 
 Sharing a packed release this month focused on a new dataset, org management, two developer querying tools, and two SDKs.
 
-**Ethereum Name Service (ENS) events** is now out of preview, available by querying `ens.domains`, which is updated in real-time to have the latest `eth_address`whenever a transfer or name-registered event happens. Both `eth.ens` and other on-demand events indexed under the `eth.ens` prefix such as `eth.ens_event_nameregistered` are updated in real time with the same high-performance standards of published Spice datasets. See the tables [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables-1).
+**Ethereum Name Service (ENS) events:** now out of preview, it's available by querying `ens.domains`, which is updated in real-time to have the latest `eth_address`whenever a transfer or name-registered event happens. Both `eth.ens` and other on-demand events indexed under the `eth.ens` prefix such as `eth.ens_event_nameregistered` are updated in real time with the same high-performance standards of published Spice datasets. See the tables [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables-1).
 
-**Organization Management:** Existing users can start exploring org support and management for users, apps, and datasets by [authorizing Spice with read-only access](https://docs.spice.xyz/get-started/portal-login) when logging into the [Spice.xyz](http://spice.xyz/) portal. This will also act as a parent container for future concepts including apps, users, teams, datasets, and metrics for streamlined management and navigation within [spice.xyz](http://spice.xyz/).
+**Organization Management:** existing users can start exploring org support and management for users, apps, and datasets by [authorizing Spice with read-only access](https://docs.spice.xyz/get-started/portal-login) when logging into the [Spice.xyz](http://spice.xyz/) portal. This will also act as a parent container for future concepts including apps, users, teams, datasets, and metrics for streamlined management and navigation within [spice.xyz](http://spice.xyz/).
 
 The big game changers this month are [Async Query](https://docs.spice.xyz/api/sql-query-api/http-api-1) and [Flow AI Query Auto-Complete (in preview)](https://medium.com/spice-ai/introducing-spice-ai-flow-8bcfc5cc2294) — which supercharge the developer experience.
 
