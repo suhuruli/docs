@@ -12,11 +12,9 @@ Spice `DESCRIBE` supports all filesystem source types and relies upon a user’s
 
 #### Parameters <a href="#parameters-2" id="parameters-2"></a>
 
-\<table\_name> `String`
+* \<table\_name> `String`   The name of an existing user-defined table.
 
-The name of an existing user-defined table.
-
-### Examples
+**Examples**
 
 {% code title="DESCRIBE TABLE syntax." %}
 ```sql

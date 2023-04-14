@@ -4,17 +4,17 @@ The `USE` command enables you to specify the context to be used for the current 
 
 ### Syntax
 
-{% code title="Example" %}
+{% code title="USE Example" %}
 ```sql
 USE <path> 
 ```
 {% endcode %}
 
-### Parameter <a href="#parameter" id="parameter"></a>
+#### Parameter <a href="#parameter" id="parameter"></a>
 
-\<path> `String` The path that of the tables, views, or both that you want to query.
+* \<path> `String` The path that of the tables, views, or both that you want to query.
 
-### Example <a href="#example" id="example"></a>
+**Example**
 
 {% code title="Use the demo source." %}
 ```sql

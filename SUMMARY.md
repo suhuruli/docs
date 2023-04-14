@@ -51,6 +51,7 @@
 ## 📚 REFERENCE
 
 * [SQL Reference](reference/sql-reference/README.md)
+  * [Data Types](reference/sql-reference/data-types.md)
   * [SQL Functions](reference/sql-reference/sql-functions/all-functions/README.md)
     * [Aggregate](reference/sql-reference/sql-functions/all-functions/aggregate/README.md)
       * [APPROX\_COUNT\_DISTINCT](reference/sql-reference/sql-functions/all-functions/aggregate/approx\_count\_distinct.md)

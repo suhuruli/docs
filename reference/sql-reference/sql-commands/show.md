@@ -10,9 +10,7 @@ SHOW TABLE [ LIKE { pattern } ]
 
 #### Parameters <a href="#parameters" id="parameters"></a>
 
-\[ LIKE ]
-
-The pattern match is case-insensitive but must be used with the LIKE operator.
+* \[ LIKE ] The pattern match is case-insensitive but must be used with the LIKE operator.
 
 #### Examples <a href="#examples" id="examples"></a>
 

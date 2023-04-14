@@ -2,7 +2,7 @@
 
 The `WITH` clause defines a common table expression (CTE), which is a temporary named result set. The definition of a CTE includes its name, an optional list of column names, and a query expression (that is, a `SELECT` statement).
 
-For more information about `SELECT` statements, see [SELECT](broken-reference).
+For more information about `SELECT` statements, see [SELECT](select.md).
 
 ### Syntax
 
