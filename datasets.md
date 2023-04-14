@@ -73,7 +73,6 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | Proposer Slashings       | `eth.beacon.proposer_slashings`       | `eth.beacon.recent_proposer_slashings`       |
 | BLS To Execution Changes | `eth.beacon.bls_to_execution_changes` | `eth.beacon.recent_bls_to_execution_changes` |
 | Withdrawals              | `eth.beacon.withdrawals`              | `eth.beacon.recent_withdrawals`              |
-| Committees               | `eth.beacon.committees`               | `eth.beacon.recent_committees`               |
 
 #### [Polygon datasets](reference/sql-query-tables/polygon/)
 
