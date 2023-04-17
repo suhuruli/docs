@@ -65,6 +65,7 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 |                          |                                       |                                              |
 | ------------------------ | ------------------------------------- | -------------------------------------------- |
+| Validators               | `eth.beacon.validators`               |                                              |
 | Slots                    | `eth.beacon.slots`                    | `eth.beacon.recent_slots`                    |
 | Attestations             | `eth.beacon.attestations`             | `eth.beacon.recent_attestations`             |
 | Deposits                 | `eth.beacon.deposits`                 | `eth.beacon.recent_deposits`                 |
