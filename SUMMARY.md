@@ -19,6 +19,7 @@
   * [Apache Arrow Flight API](api/sql-query-api/apache-arrow-flight-api.md)
 * [Ethereum API](api/ethereum/README.md)
   * [JSON RPC Methods](api/ethereum/json-rpc-methods.md)
+  * [Beacon HTTP API](api/ethereum/beacon-http-api.md)
   * [Blocks](api/ethereum/blocks.md)
   * [Contracts](api/ethereum/contracts.md)
   * [Gas Fees](api/ethereum/gas-fees.md)
