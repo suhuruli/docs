@@ -144,9 +144,6 @@ For access to spot/historical prices on thousands of pairs, try our [time-series
 * Gemini
   * Spot/latest prices for all pairs traded on Gemini.
   * Partial historical OHLC prices at 1-min granularity for all pairs.
-* Coinmarket Cap
-  * Spot/latest prices for all pairs tracked by Coinmarket Cap
-  * Historical prices in the last year for all pair tracked by Coinmarket Cap
 
 ### JSON RPC Methods
 
