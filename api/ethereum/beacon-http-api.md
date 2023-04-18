@@ -1,6 +1,27 @@
 # Beacon HTTP API
 
-The **`https://data.spiceai.io/eth/beacon`** API is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).&#x20;
+The **`https://data.spiceai.io/eth/beacon`** API is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).
+
+#### Authentication
+
+All requests should specify the Spice API Key by adding a header with `X-API-KEY` or appending `?api_key=[apikey]` to the URL suffix.
+
+{% tabs %}
+{% tab title="Header API Key Example" %}
+```bash
+curl https://data.spiceai.io/eth/beacon/eth/v1/beacon/genesis \
+  --header 'X-API-Key: [api-key]'
+```
+{% endtab %}
+
+{% tab title="Query API Key Example" %}
+```bash
+curl https://data.spiceai.io/eth/beacon/eth/v1/beacon/genesis?api_key=[api_key]
+```
+{% endtab %}
+{% endtabs %}
+
+#### Beacon APIs&#x20;
 
 {% swagger src="https://gist.githubusercontent.com/phillipleblanc/ef278a45544089dde22fdad718bea234/raw/a6b3a9b45ebc37050816bc9bad736c35a07231fe/beacon-node-oapi.json" path="/eth/v1/beacon/genesis" method="get" %}
 [https://gist.githubusercontent.com/phillipleblanc/ef278a45544089dde22fdad718bea234/raw/a6b3a9b45ebc37050816bc9bad736c35a07231fe/beacon-node-oapi.json](https://gist.githubusercontent.com/phillipleblanc/ef278a45544089dde22fdad718bea234/raw/a6b3a9b45ebc37050816bc9bad736c35a07231fe/beacon-node-oapi.json)
