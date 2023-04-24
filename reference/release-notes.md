@@ -26,20 +26,22 @@ SHOW TABLES IN eth.beacon
 
 Sample Queries
 
-1.  ENS Domain Names that map to a validator\
+1. ENS Domain Names that map to a validator
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.53.07 PM.png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.53.07 PM.png" alt=""><figcaption></figcaption></figure>
-2.  Number of Weekly Attester Slashings \
-    \
+
+2. Number of Weekly Attester Slashings \
 
 
-    <figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.59.02 PM.png" alt=""><figcaption></figcaption></figure>
-3.  Top 10 most frequent block proposers \
-    \
+<figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.59.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.57.47 PM.png" alt=""><figcaption></figcaption></figure>
+
+3. Top 10 most frequent block proposers
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.57.47 PM.png" alt=""><figcaption></figcaption></figure>
 
 By leveraging beacon chain capabilities, developers can create scalable decentralized applications that can handle a large volume of transactions, while also participating in network governance and incentivization through its Proof of Stake consensus mechanism. You can learn more about the chain [here](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain).&#x20;
 

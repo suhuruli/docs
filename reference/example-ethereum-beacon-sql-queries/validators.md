@@ -27,7 +27,7 @@ ORDER BY COUNT(1) DESC
 
 ### Validator with the highest balance
 
-**Typical query time**: < 2 seconds
+**Typical query time**: < 15 seconds
 
 ```sql
 SELECT validator_index, 
