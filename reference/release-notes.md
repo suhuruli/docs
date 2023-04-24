@@ -12,7 +12,7 @@ If you are waitlisted, you can now instantly enable your account by signing up f
 
 **Improved monitoring:** you can now track requests, their status code, and duration to Spice, in addition to the existing usage monitoring metrics dashboard. Start by going to your app, under the Monitor sidebar, select API Requests. You can then toggle between Metrics and Logs views. Within Logs, you can select to retrieve API requests from the past 1 hour, 8 hours, 24 hours, and up to the past 3 days.
 
-<figure><img src="../.gitbook/assets/MicrosoftTeams-image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 6.02.01 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Ethereum Beacon Chain Dataset (Preview):** The Ethereum beacon chain is the central coordination and consensus layer for the Ethereum 2.0 upgrade, which aims to improve scalability, security, and sustainability. Now you can query and access beacon chain dataset with `eth.beacon`, `eth.beacon.validators`, `eth.beacon.withdrawals` and more.
 
