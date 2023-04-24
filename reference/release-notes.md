@@ -4,19 +4,80 @@ description: Spice.xyz Release notes
 
 # Release notes
 
-### Feburary 2023
+### March 2023
 
-Spice released two datasets in preview this month along with the Historic Prices API in preview, and the v0.3 update to the Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice).&#x20;
+If you are waitlisted, you can now instantly enable your account by signing up for a preview plan at 50% off. This month's release also includes support for the Ethereum Beacon chain dataset and improved monitoring with request logs.
 
-**Ethereum wallet balances (Preview):** One of the fundamental queries to make on any blockchain is the native currency balance of a wallet. Now it's available in preview on Spice. The `eth.wallet_balance_updates` table contains a block-level aggregation of all Ether balance changes due to gas fees and committed transactions, including internal contract calls. Soon, you will be able to query all the way back to genesis. Spice also provides this data as a rollup into historical daily snapshots in the `eth.daily_wallet_balances` table.
+**Self-Service Activation from Waitlist:** as a waitlisted customer, you can now enable your account instantly without manual Spice AI approval when you sign up for a Pro for Teams or Lite Plan. Begin a 7-day trial of the Pro for Team plan, then monthly subscription of $1,245 at 50% off (normally $2,490). It comes with early access (off the waitlist), dedicated support on Discord, and a bi-weekly sync with the Spice AI engineering team.
 
-**NFT dataset with core metadata (Preview):** You can now query and leverage fungible and non-fungible token contracts under `eth.tokens` as well as isolated NFT specific per token information under `eth.nfts`. Currently in preview, you can access the latter in a limited capacity featuring  name and symbol for ERC721 tokens. See the full list of [NFT tables](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/nft-tables) and [Token tables](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables).&#x20;
+**Improved monitoring:** you can now track requests, their status code, and duration to Spice, in addition to the existing usage monitoring metrics dashboard. Start by going to your app, under the Monitor sidebar, select API Requests. You can then toggle between Metrics and Logs views. Within Logs, you can select to retrieve API requests from the past 1 hour, 8 hours, 24 hours, and up to the past 3 days.
 
-The preview will soon include more NFT metadata information for our NFT datasets such as name and symbol for ERC1155 tokens, metadata URI, description and asset URI (also known as the image URI) for both ERC721 and ERC1155 tokens. Please contact us if you would like access to the dataset in preview.&#x20;
+<figure><img src="../.gitbook/assets/MicrosoftTeams-image (2).png" alt=""><figcaption></figcaption></figure>
+
+**Ethereum Beacon Chain Dataset (Preview):** The Ethereum beacon chain is the central coordination and consensus layer for the Ethereum 2.0 upgrade, which aims to improve scalability, security, and sustainability. Now you can query and access beacon chain dataset with `eth.beacon`, `eth.beacon.validators`, `eth.beacon.withdrawals` and more.
+
+You can also reference the full query list via [Ethereum Beacon tables](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/beacon-chain-tables) or by directly querying the following in the application:
+
+```sql
+SHOW TABLES IN eth.beacon
+```
+
+[Example SQL queries](https://docs.spice.xyz/reference/example-ethereum-beacon-sql-queries) include slots, attestations, validators, deposits, voluntary exits, attester slashings and more, all retrievable within a few seconds.&#x20;
+
+Sample Queries
+
+1.  ENS Domain Names that map to a validator\
+
+
+    <figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.53.07 PM.png" alt=""><figcaption></figcaption></figure>
+2.  Number of Weekly Attester Slashings \
+    \
+
+
+    <figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.59.02 PM.png" alt=""><figcaption></figcaption></figure>
+3.  Top 10 most frequent block proposers \
+    \
+
+
+    <figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.57.47 PM.png" alt=""><figcaption></figcaption></figure>
+
+By leveraging beacon chain capabilities, developers can create scalable decentralized applications that can handle a large volume of transactions, while also participating in network governance and incentivization through its Proof of Stake consensus mechanism. You can learn more about the chain [here](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain).&#x20;
+
+#### New In this Release
+
+* \[Portal] Added Self-Service account activation
+* \[Beacon] Added Ethereum beacon chain dataset `eth.beacon`
+* Beacon] Added Ethereum beacon chain dataset `eth.validators`
+* \[Beacon] Added Ethereum beacon chain datasets `eth.beacon.slots`, `eth.beacon.recent_slots`
+* \[Beacon] Added Ethereum beacon chain datasets `eth.beacon.attestations`, `eth.beacon.recent_attestations`
+* \[Beacon] Added Ethereum beacon chain datasets `eth.beacon.deposits`, `eth.beacon.recent_deposits`
+* \[Beacon] Added Ethereum beacon chain datasets `eth.beacon.voluntary_exits`, `eth.beacon.recent_voluntary_exits`
+* \[Beacon] Added Ethereum beacon chain datasets `eth.beacon.attester_slashings`, `eth.beacon.recent_attester_slashings`
+* \[Beacon] Added Ethereum beacon chain datasets `eth.beacon.proposer_slashings`, `eth.beacon.recent_proposer_slashings`
+* \[Beacon] Added Ethereum beacon chain datasets `eth.beacon.bls_to_execution_changes`, `eth.beacon.recent_bls_to_execution_changes`
+* \[Beacon] Added Ethereum beacon chain datasets `eth.beacon.withdrawals`, `eth.beacon.recent_withdrawals`
+
+#### Changes
+
+* \[Portal] Improved performance of portal pages
+
+#### Resources
+
+* [Getting started with Spice AI](https://docs.spice.xyz/get-started)
+* [Documentation](https://docs.spice.xyz/)
+* [FAQ](https://docs.spice.xyz/faq)
+
+
+
+### February 2023
+
+Spice released the NFT dataset with Metadata in preview, along with the Historic Prices API in preview, and the v0.3 update to the Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice).&#x20;
 
 **Historic Prices API (Preview):** In addition to accessing the [Spot Prices](https://docs.spice.xyz/api/prices#spot-prices) of popular token/currency pairs on top exchanges, users can now access the **`/v0.1/prices/[pair]`** API, which returns historical prices of the specified token/currency pair. You can refine your search by defining parameters like `start` and `end`, which will return all prices between the two timestamps at a provided `granularity`.
 
-Please contact us if you would like to access the API.&#x20;
+Please contact us if you would like to access the API. \
+\
+**NFT Dataset with Metadata (Preview):** You can now query and leverage fungible and non-fungible token contracts under `eth.tokens` as well as isolated NFT specific per token information under `eth.nfts`. These are made available also with name and symbol for ERC721 tokens. See the full list of [NFT tables](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/nft-tables) and [Token tables](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables).&#x20;
 
 **Node.js SDK v0.3:** adds support for improved [Prices APIs](https://docs.spice.xyz/api/prices) supporting spot/latest and historical prices for pair across Coinbase, Gemini, and tracked by Coinmarket Cap. This upgrade ensures the SDK remains the easiest way to use and query [Spice.xyz](https://spice.xyz) with Node.js.
 
@@ -32,9 +93,8 @@ You'll need [Node.js 16+](https://nodejs.org/) to get started. See the step-by-s
 #### New In this Release
 
 * \[API] Added [Historic Prices API in Preview](https://docs.spice.xyz/api/prices#historical-prices-preview)
-* \[Wallet Balances] Ethereum wallet balances dataset in preview
-* \[NFT and Metadata] [NFT](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/nft-tables) and [Token](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables) datasets in preview&#x20;
 * \[Node.js SDK] [v0.3 release](https://docs.spice.xyz/sdks/node.js-sdk) of Node.js SDK [spice.js](https://www.npmjs.com/package/@spiceai/spice)
+* \[NFT and Metadata] [NFT](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/nft-tables) and [Token](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables) datasets in preview&#x20;
 
 #### Changes
 
@@ -56,7 +116,7 @@ You'll need [Node.js 16+](https://nodejs.org/) to get started. See the step-by-s
 
 Sharing a packed release this month focused on a new dataset, org management, two developer querying tools, and two SDKs.
 
-**Ethereum Name Service (ENS) events:** now out of preview, it's available by querying `ens.domains`, which is updated in real-time to have the latest `eth_address`whenever a transfer or name-registered event happens. Both `eth.ens` and other on-demand events indexed under the `eth.ens` prefix such as `eth.ens_event_nameregistered` are updated in real time with the same high-performance standards of published Spice datasets. See the tables [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables-1).
+**Ethereum Name Service (ENS) Events:** now out of preview, it's available by querying `ens.domains`, which is updated in real-time to have the latest `eth_address`whenever a transfer or name-registered event happens. Both `eth.ens` and other on-demand events indexed under the `eth.ens` prefix such as `eth.ens_event_nameregistered` are updated in real time with the same high-performance standards of published Spice datasets. See the tables [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/token-tables-1).
 
 **Organization Management:** existing users can start exploring org support and management for users, apps, and datasets by [authorizing Spice with read-only access](https://docs.spice.xyz/get-started/portal-login) when logging into the [Spice.xyz](http://spice.xyz/) portal. This will also act as a parent container for future concepts including apps, users, teams, datasets, and metrics for streamlined management and navigation within [spice.xyz](http://spice.xyz/).
 

@@ -35,7 +35,7 @@ To add a member to an organization:
 3. Enter the Spice.xyz username of the user you wish to invite to the organization.
 4. Click the **Add Member** button to confirm.
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 The invited user will be added to the organization and they will receive an email notifying them of their membership.
 
