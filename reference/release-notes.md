@@ -12,7 +12,7 @@ If you are waitlisted, you can now instantly enable your account by signing up f
 
 **Improved monitoring:** you can now track requests, their status code, and duration to Spice, in addition to the existing usage monitoring metrics dashboard. Start by going to your app, under the Monitor sidebar, select API Requests. You can then toggle between Metrics and Logs views. Within Logs, you can select to retrieve API requests from the past 1 hour, 8 hours, 24 hours, and up to the past 3 days.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 6.02.01 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 **Ethereum Beacon Chain Dataset (Preview):** The Ethereum beacon chain is the central coordination and consensus layer for the Ethereum 2.0 upgrade, which aims to improve scalability, security, and sustainability. Now you can query and access beacon chain dataset with `eth.beacon`, `eth.beacon.validators`, `eth.beacon.withdrawals` and more.
 
@@ -26,22 +26,21 @@ SHOW TABLES IN eth.beacon
 
 Sample Queries
 
-1. ENS Domain Names that map to a validator
-
-<figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.53.07 PM.png" alt=""><figcaption></figcaption></figure>
+1.  ENS Domain Names that map to a validator\
 
 
+    <figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 10.59.20 PM (3).png" alt=""><figcaption></figcaption></figure>
+2.  Number of Weekly Attester Slashings \
 
-2. Number of Weekly Attester Slashings \
 
-
-<figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.59.02 PM.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
-3. Top 10 most frequent block proposers
+3.  Top 10 most frequent block proposers\
 
-<figure><img src="../.gitbook/assets/Screen Shot 2023-04-24 at 5.57.47 PM.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 By leveraging beacon chain capabilities, developers can create scalable decentralized applications that can handle a large volume of transactions, while also participating in network governance and incentivization through its Proof of Stake consensus mechanism. You can learn more about the chain [here](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain).&#x20;
 
