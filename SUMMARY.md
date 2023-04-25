@@ -315,6 +315,7 @@
     * [Uniswap V3 Tables](reference/sql-query-tables/ethereum/uniswap-v3-tables.md)
     * [Sushiswap Tables](reference/sql-query-tables/ethereum/sushiswap-tables.md)
     * [Beacon Chain Tables](reference/sql-query-tables/sql-query-tables/beacon-chain-tables.md)
+    * [Aave V2 Tables](reference/sql-query-tables/ethereum/aave-v2-tables.md)
   * [Polygon](reference/sql-query-tables/polygon/README.md)
     * [Token Tables](reference/sql-query-tables/polygon/token-tables.md)
     * [NFT Tables](reference/sql-query-tables/polygon/nft-tables.md)
