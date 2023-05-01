@@ -75,6 +75,15 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | BLS To Execution Changes | `eth.beacon.bls_to_execution_changes` | `eth.beacon.recent_bls_to_execution_changes` |
 | Withdrawals              | `eth.beacon.withdrawals`              | `eth.beacon.recent_withdrawals`              |
 
+#### [Ethereum Aave V2 datasets](reference/sql-query-tables/sql-query-tables/aave-v2-tables.md)
+
+|                          |                                  |                                         |
+| ------------------------ | -------------------------------- | --------------------------------------- |
+| Loans (historical)       | `eth.aave_v2.loan_updates`       | `eth.aave_v2.recent_loan_updates`       |
+| Collateral (historical)  | `eth.aave_v2.collateral_updates` | `eth.aave_v2.recent_collateral_updates` |
+| Loans (latest view)      | `eth.aave_v2.loans`              |                                         |
+| Collateral (latest view) | `eth.aave_v2.collateral`         |                                         |
+
 #### [Polygon datasets](reference/sql-query-tables/polygon/)
 
 | Blocks       | `polygon.blocks`       | `polygon.recent_blocks`       |
@@ -125,8 +134,9 @@ For access to spot/historical prices on thousands of pairs, try our [time-series
 
 #### [Chainlink datasets](reference/sql-query-tables/sql-query-tables/chainlink-tables/)
 
-* Prices
-  * Prices observed by oracle data feeds on the chainlink network
+|                     |                        |                               |
+| ------------------- | ---------------------- | ----------------------------- |
+| Prices (historical) | `eth.chainlink.prices` | `eth.chainlink.recent_prices` |
 
 ### Time-series Datasets
 
