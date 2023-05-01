@@ -123,7 +123,7 @@ Query for BTC, ETH and LTC prices in SQL with data sourced from several sources
 For access to spot/historical prices on thousands of pairs, try our [time-series Prices API](api/prices.md).
 {% endhint %}
 
-#### [Chainlink datasets](reference/sql-query-tables/chainlink/)
+#### [Chainlink datasets](reference/sql-query-tables/sql-query-tables/chainlink-tables/)
 
 * Prices
   * Prices observed by oracle data feeds on the chainlink network

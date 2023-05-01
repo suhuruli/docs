@@ -1,4 +1,4 @@
-# Chainlink
+# Chainlink tables
 
 * Oracles for for various data feed on the chainlink network
-  * [Prices](prices.md)
+  * [Prices](prices-tables.md)
