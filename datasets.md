@@ -84,6 +84,40 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | Loans (latest view)      | `eth.aave_v2.loans`              |                                         |
 | Collateral (latest view) | `eth.aave_v2.collateral`         |                                         |
 
+#### [Goerli Datasets](reference/sql-query-tables/sql-query-tables-1/)
+
+| Blocks       | `goerli.blocks`       | `goerli.recent_blocks`       |
+| ------------ | --------------------- | ---------------------------- |
+| Transactions | `goerli.transactions` | `goerli.recent_transactions` |
+| Logs         | `goerli.logs`         | `goerli.recent_logs`         |
+| Contracts    | `goerli.contracts`    |                              |
+| Traces       | `goerli.traces`       | `goerli.recent_traces`       |
+| Withdrawals  | `goerli.withdrawals`  | `goerli.recent_withdrawals`  |
+
+#### [Goerli Token Datasets](reference/sql-query-tables/sql-query-tables-1/token-tables.md)
+
+| Contracts (erc20, erc721, erc1155)       | `goerli.contracts`       |                                 |
+| ---------------------------------------- | ------------------------ | ------------------------------- |
+| Tokens (erc20, erc721, erc1155)          | `goerli.tokens`          |                                 |
+| Token Transfers (erc20, erc721, erc1155) | `goerli.token_transfers` | `goerli.recent_token_transfers` |
+| Token Mints (erc20, erc721, erc1155)     | `goerli.token_mints`     | `goerli.recent_token_mints`     |
+
+#### [Goerli Beacon Chain Datasets](reference/sql-query-tables/sql-query-tables-1/beacon-chain-tables.md)
+
+|                          |                                          |                                                 |
+| ------------------------ | ---------------------------------------- | ----------------------------------------------- |
+| Validators               | `goerli.beacon.validators`               |                                                 |
+| Slots                    | `goerli.beacon.slots`                    | `goerli.beacon.recent_slots`                    |
+| Attestations             | `goerli.beacon.attestations`             | `goerli.beacon.recent_attestations`             |
+| Deposits                 | `goerli.beacon.deposits`                 | `goerli.beacon.recent_deposits`                 |
+| Voluntary Exits          | `goerli.beacon.voluntary_exits`          | `goerli.beacon.recent_voluntary_exits`          |
+| Attester Slashings       | `goerli.beacon.attester_slashings`       | `goerli.beacon.recent_attester_slashings`       |
+| Proposer Slashings       | `goerli.beacon.proposer_slashings`       | `goerli.beacon.recent_proposer_slashings`       |
+| BLS To Execution Changes | `goerli.beacon.bls_to_execution_changes` | `goerli.beacon.recent_bls_to_execution_changes` |
+| Withdrawals              | `goerli.beacon.withdrawals`              | `goerli.beacon.recent_withdrawals`              |
+
+#### [Ethereum Aave V2 datasets](reference/sql-query-tables/sql-query-tables/aave-v2-tables.md)
+
 #### [Polygon datasets](reference/sql-query-tables/polygon/)
 
 | Blocks       | `polygon.blocks`       | `polygon.recent_blocks`       |

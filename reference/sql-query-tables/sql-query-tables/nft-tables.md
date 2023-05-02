@@ -6,7 +6,7 @@
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `eth.nfts`                         | All NFTs from both ERC721 and ERC1155 contracts.                                                                                                                             |
 | `eth.nft_contracts`                | All erc721 contracts & subset of erc1155 contracts that contain NFTs.                                                                                                        |
-| `eth.nft_transfers`                | <p>Transfers of erc721 &#x26; erc1155 NFTs. </p><p>Does not include fungible tokens from erc1155 contracts.</p>                                                              |
+| `eth.nft_transfers`                | <p>Transfers of erc721 &#x26; erc1155 NFTs.</p><p>Does not include fungible tokens from erc1155 contracts.</p>                                                               |
 | `eth.nft_owners`                   | <p>Tracks the current owner of an NFT.<br>This table is mutable; the number of rows within a given time or block range can be different due to changes in NFT ownership.</p> |
 | `eth.recent_nft_transfers`         | Transfers of NFTs from the last 30 minutes, \~128 blocks                                                                                                                     |
 | `eth.nft_airdrop_transfers`        | Airdrops of NFTs                                                                                                                                                             |
