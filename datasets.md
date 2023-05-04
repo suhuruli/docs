@@ -116,8 +116,6 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | BLS To Execution Changes | `goerli.beacon.bls_to_execution_changes` | `goerli.beacon.recent_bls_to_execution_changes` |
 | Withdrawals              | `goerli.beacon.withdrawals`              | `goerli.beacon.recent_withdrawals`              |
 
-#### [Ethereum Aave V2 datasets](reference/sql-query-tables/sql-query-tables/aave-v2-tables.md)
-
 #### [Polygon datasets](reference/sql-query-tables/polygon/)
 
 | Blocks       | `polygon.blocks`       | `polygon.recent_blocks`       |
