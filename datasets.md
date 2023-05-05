@@ -84,7 +84,7 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | Loans (latest view)      | `eth.aave_v2.loans`              |                                         |
 | Collateral (latest view) | `eth.aave_v2.collateral`         |                                         |
 
-#### [Goerli Datasets](reference/sql-query-tables/sql-query-tables-1/)
+#### [Goerli Datasets](reference/sql-query-tables/goerli/)
 
 | Blocks       | `goerli.blocks`       | `goerli.recent_blocks`       |
 | ------------ | --------------------- | ---------------------------- |
@@ -94,7 +94,7 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | Traces       | `goerli.traces`       | `goerli.recent_traces`       |
 | Withdrawals  | `goerli.withdrawals`  | `goerli.recent_withdrawals`  |
 
-#### [Goerli Token Datasets](reference/sql-query-tables/sql-query-tables-1/token-tables.md)
+#### [Goerli Token Datasets](reference/sql-query-tables/goerli/token-tables.md)
 
 | Contracts (erc20, erc721, erc1155)       | `goerli.contracts`       |                                 |
 | ---------------------------------------- | ------------------------ | ------------------------------- |
@@ -102,7 +102,7 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 | Token Transfers (erc20, erc721, erc1155) | `goerli.token_transfers` | `goerli.recent_token_transfers` |
 | Token Mints (erc20, erc721, erc1155)     | `goerli.token_mints`     | `goerli.recent_token_mints`     |
 
-#### [Goerli Beacon Chain Datasets](reference/sql-query-tables/sql-query-tables-1/beacon-chain-tables.md)
+#### [Goerli Beacon Chain Datasets](reference/sql-query-tables/goerli/beacon-chain-tables.md)
 
 |                          |                                          |                                                 |
 | ------------------------ | ---------------------------------------- | ----------------------------------------------- |
