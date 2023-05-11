@@ -14,7 +14,11 @@ Learn more about [**organization management**](../organizations.md).
 
 1. To transfer an app, click **App Settings** in the **Configure** section of the portal sidebar.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/fotor_2023-2-20_14_1_44.png" alt=""><figcaption><p>App Settings in the portal sidebar.</p></figcaption></figure>
+
+</div>
 
 2. In the **Danger Zone** section of **App Settings**, click the **Transfer App** button.
 
@@ -22,7 +26,11 @@ Learn more about [**organization management**](../organizations.md).
 
 3. On the **Transfer App** page, select the **New Owner** organization from the menu.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/fotor_2023-2-20_14_5_56.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 4. Type the full app name into the text box to confirm and click **Transfer** to complete process.
 

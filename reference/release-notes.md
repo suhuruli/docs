@@ -4,6 +4,163 @@ description: Spice.xyz Release notes
 
 # Release notes
 
+### April 2023
+
+This month we added new datasets including Chainlink prices data feeds, Aave v2 contract data, Ethereum Shanghai/Capella beacon and withdrawals data, and we now fully index the Goerli testnet. We also released the Goerli Beacon and Ethereum Beacon APIs. \
+\
+**Chainlink Data Feeds:** You can now leverage oracles for various data feed on the Chainlink network by querying prices specific tables including `eth.chainlink.prices` and `eth.chainlink.recent_prices`.
+
+This includes accessing the latest, minute-precision data on `transaction_hash`, `oracle_address`, `block_timestamp`, price of the asset in WEI, `asset_address` and more. The columns and their schema available for each table can be viewed with the describe \<table> command:
+
+<pre class="language-sql"><code class="lang-sql"><strong>/* Show the columns available */
+</strong>DESCRIBE eth.chainlink.prices;
+</code></pre>
+
+With this release, we now support data feeds for Curve, Balancer, Aave, Yearn, DAI, Tether USD and 30 other top assets. See the full list of supported data feeds [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/chainlink-tables/prices-tables).&#x20;
+
+\
+**Aave V2 Dataset:** In addition to the Aave token prices data feed on the Chainlink network, we have released indexed [Aave V2](sql-query-tables/sql-query-tables/aave-v2-tables.md) data for loans, collaterals and prices. You can query for the latest updates to Aave loans and collateral by querying `eth.aave_v2.loan_updates` and `eth.aave_v2.collateral_updates`.&#x20;
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-05-09 at 9.49.27 AM.png" alt=""><figcaption><p>Latest view of all Aave V2 loans query, sample output</p></figcaption></figure>
+
+\
+**Ethereum Shanghai Upgrade and Withdrawals Datasets:** Spice added support for the [Ethereum Shanghai/Capella upgrade](https://blog.ethereum.org/2023/03/28/shapella-mainnet-announcement) which was completed on April 12, 2023, 10:27:35pm UTC at epoch 194048.
+
+The completion of Ethereum's Shanghai hard fork, also known as "Shapella," has authorized the withdrawal of funds for individuals who have "staked" their ETH to validate and secure blockchain transactions.
+
+As part of this upgrade, we have also released the `eth.withdrawals` dataset to capture new withdrawals. For example, you can now query to get ETH withdrawn:
+
+```sql
+with eth_withdrawn as (
+  select eth.withdrawals.block_number, SUM(amount) as amount_gwei
+  from eth.withdrawals
+  group by eth.withdrawals.block_number
+  order by block_number asc)
+
+select AVG(amount_gwei / 1e9) as amount_eth
+from eth_withdrawn
+```
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-05-10 at 10.20.00 PM.png" alt=""><figcaption><p>Get ETH withdrawn after the Ethereum Shanghai upgrade, sample output</p></figcaption></figure>
+
+Explore detailed sample SQL queries for [DEX](example-dex-queries/), [Cross-Chain](example-cross-chain-queries.md), [Ethereum](example-ethereum-sql-queries/), [Beacon](example-ethereum-beacon-sql-queries/), and [Bitcoin](example-bitcoin-queries/) in the Spice Docs.\
+
+
+**Goerli Testnet Datasets:** Real-time and historical Goerli chain data is now supported on [Spice.xyz](https://spice.xyz). Users can query and access Goerli base type tables, Goerli token specific tables, and Goerli Beacon Chain specific tables. &#x20;
+
+We’re excited help web3 developers test their applications before launching them on the Ethereum Mainnet.&#x20;
+
+You can start by querying `goerli.traces`, `goerli.blocks`, and check out the full token tables list [here](https://docs.spice.xyz/reference/sql-query-tables/goerli/token-tables) or by querying:&#x20;
+
+```sql
+SHOW TABLES IN goerli
+```
+
+All Goerli Beacon Chain specific tables are listed [here](https://docs.spice.xyz/reference/sql-query-tables/goerli/beacon-chain-tables) or by querying:&#x20;
+
+```sql
+SHOW TABLES IN goerli.beacon
+```
+
+For example, you can query from `goerli.beacon.validators` to retrieve recently updated validators, with their balance and status:
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-05-09 at 8.33.15 PM.png" alt=""><figcaption><p>Recently updated validators, with their balance and status by querying from <code>goerli.beacon.validators</code>, sample output</p></figcaption></figure>
+
+**Goerli Beacon API:** You can also easily retrieve requests like "[get validator balances from state](https://docs.spice.xyz/api/goerli/beacon-http-api)" using the **`https://data.spiceai.io/goerli/beacon`** API, which is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).
+
+All [Goerli testnet data APIs](../api/goerli/) are available at **/goerli/v0.1** including the following:
+
+* [JSON RPC Methods](../api/goerli/json-rpc-methods.md)
+* [Beacon HTTP API](../api/goerli/beacon-http-api.md)
+* [Blocks](../api/goerli/blocks.md)
+* [Contracts](../api/goerli/contracts.md)
+* [Gas Fees](../api/goerli/gas-fees.md)
+
+**Ethereum Beacon API:** The [Ethereum API](../api/ethereum/) is now updated to support Beacon requests via the **`https://data.spiceai.io/eth/beacon`** API. This is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).&#x20;
+
+See the full list of Beacon API requests [here](https://docs.spice.xyz/api/ethereum/beacon-http-api).&#x20;
+
+
+
+**New In this Release**
+
+* \[Goerli] added `goerli.blocks`, `goerli.recent_blocks`&#x20;
+* \[Goerli] added `goerli.transactions`, `goerli.recent_transactions`&#x20;
+* \[Goerli] added `goerli.logs`, `goerli.recent_logs`&#x20;
+* \[Goerli] added `goerli.traces`, `goerli.recent_traces`&#x20;
+* \[Goerli] added `goerli.withdrawals`, `goerli.recent_withdrawals`&#x20;
+* \[Goerli] added `goerli.contracts`&#x20;
+* \[Goerli] added `goerli.tokens`
+* \[Goerli] added `goerli.token_transfers`
+* \[Goerli] added `goerli.tokens_erc20`
+* \[Goerli] added `goerli.token_transfers_erc20`
+* \[Goerli] added `goerli.tokens_erc721`
+* \[Goerli] added `goerli.token_transfers_erc721`
+* \[Goerli] added `goerli.tokens_erc1155`
+* \[Goerli] added `goerli.token_transfers_erc1155`
+* \[Goerli] added `goerli.token_mints`
+* \[Goerli] added `goerli.recent_token_mints`
+* \[Goerli] added `goerli.beacon.slots`, `goerli.beacon.recent_slots`
+* \[Goerli] added `goerli.beacon.voluntary_exits`, `goerli.beacon.recent_voluntary_exits`
+* \[Goerli] added `goerli.beacon.attestations`, `goerli.beacon.recent_attestations`
+* \[Goerli] added `goerli.beacon.attester_slashings`, `goerli.beacon.recent_attester_slashings`
+* \[Goerli] added `goerli.beacon.deposits`, `goerli.beacon.recent_deposits`
+* \[Goerli] added `goerli.beacon.proposer_slashings`, `goerli.beacon.recent_proposer_slashings`
+* \[Goerli] added `goerli.beacon.bls_to_execution_changes`, `goerli.beacon.recent_bls_to_execution_changes`
+* \[Goerli] added `goerli.beacon.withdrawals`, `goerli.beacon.recent_withdrawals`
+* \[Beacon] added [Goerli Beacon HTTP API](https://docs.spice.xyz/api/goerli/beacon-http-api)
+* \[Beacon] added [Ethereum Beacon HTTP API ](https://docs.spice.xyz/api/ethereum/beacon-http-api)
+* \[Aave V2] added `eth.aave_v2.loan_updates`, `eth.aave_v2.loans`
+* \[Aave V2] added `eth.aave_v2.collateral_updates`, `eth.aave_v2.collateral`
+* \[Chainlink] added `eth.chainlink.prices`, `eth.chainlink.recent_prices`
+* \[Chainlink] added [price feed support](sql-query-tables/sql-query-tables/chainlink-tables/) for the following assets:
+  * USD Coin (USDC)&#x20;
+  * 1INCH Token (1INCH)&#x20;
+  * Yearn.finance (YFI)&#x20;
+  * Dai Stablecoin (DAI)&#x20;
+  * DefiPulse Index (DPI)&#x20;
+  * UST (UST)&#x20;
+  * Decentraland MANA (MANA)&#x20;
+  * Liquid staked Ether 2.0 (stETH)&#x20;
+  * ChainLink Token (LINK)&#x20;
+  * Balancer (BAL)&#x20;
+  * Enjin Coin (ENJ)&#x20;
+  * Tether USD (USDT)&#x20;
+  * Wrapped BTC (WBTC)&#x20;
+  * Maker (MKR)&#x20;
+  * Convex Token (CVX)&#x20;
+  * Fei USD (FEI)&#x20;
+  * Uniswap (UNI)&#x20;
+  * Pax Dollar (USDP)&#x20;
+  * Kyber Network Crystal (KNC)&#x20;
+  * Aave Token (AAVE)&#x20;
+  * 0x Protocol Token (ZRX)&#x20;
+  * Binance USD (BUSD)&#x20;
+  * SushiBar (xSUSHI)&#x20;
+  * Republic Token (REN)&#x20;
+  * renFIL (renFIL)&#x20;
+  * Basic Attention Token (BAT)&#x20;
+  * Synthetix Network Token (SNX)&#x20;
+  * Ampleforth (AMPL)&#x20;
+  * Frax (FRAX)&#x20;
+  * Rai Reflex Index (RAI)&#x20;
+  * Synth sUSD (sUSD)&#x20;
+  * TrueUSD (TUSD) \
+
+
+#### Changes
+
+* \[Portal] Improved performance of portal pages
+* \[Performance] Improved query performance, data redundancy, and scale by migrating to new infrastructure
+
+#### Resources
+
+* [Getting started with Spice AI](https://docs.spice.xyz/get-started)
+* [Documentation](https://docs.spice.xyz/)
+* [FAQ](https://docs.spice.xyz/faq)
+
+
+
 ### March 2023
 
 If you are waitlisted, you can now instantly enable your account by signing up for a preview plan at 50% off. This month's release also includes support for the Ethereum Beacon chain dataset and improved monitoring with request logs.
@@ -12,7 +169,7 @@ If you are waitlisted, you can now instantly enable your account by signing up f
 
 **Improved monitoring:** you can now track requests, their status code, and duration to Spice, in addition to the existing usage monitoring metrics dashboard. Start by going to your app, under the Monitor sidebar, select API Requests. You can then toggle between Metrics and Logs views. Within Logs, you can select to retrieve API requests from the past 1 hour, 8 hours, 24 hours, and up to the past 3 days.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Ethereum Beacon Chain Dataset (Preview):** The Ethereum beacon chain is the central coordination and consensus layer for the Ethereum 2.0 upgrade, which aims to improve scalability, security, and sustainability. Now you can query and access beacon chain dataset with `eth.beacon`, `eth.beacon.validators`, `eth.beacon.withdrawals` and more.
 
@@ -34,9 +191,6 @@ Sample Queries
 
 
     <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
-
-
-
 3.  Top 10 most frequent block proposers\
 
 
