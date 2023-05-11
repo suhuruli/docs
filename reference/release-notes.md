@@ -16,7 +16,7 @@ This includes accessing the latest, minute-precision data on `transaction_hash`,
 </strong>DESCRIBE eth.chainlink.prices;
 </code></pre>
 
-With this release, we now support data feeds for Curve, Balancer, Aave, Yearn, DAI, Tether USD and 30 other top assets. See the full list of supported data feeds [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/chainlink-tables/prices-tables).&#x20;
+Data for for [Curve](https://classic.curve.fi/whitepaper), [Balancer](https://balancer.fi/), [Aave](https://aave.com/), [Yearn](https://yearn.finance/), [DAI](https://makerdao.com/en/), [Tether USD](https://tether.to/en/about-us/) and 30 other top assets is available. See the full list of supported data feeds [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/chainlink-tables/prices-tables).&#x20;
 
 \
 **Aave V2 Dataset:** In addition to the Aave token prices data feed on the Chainlink network, we have released indexed [Aave V2](sql-query-tables/sql-query-tables/aave-v2-tables.md) data for loans, collaterals and prices. You can query for the latest updates to Aave loans and collateral by querying `eth.aave_v2.loan_updates` and `eth.aave_v2.collateral_updates`.&#x20;
@@ -24,11 +24,11 @@ With this release, we now support data feeds for Curve, Balancer, Aave, Yearn, D
 <figure><img src="../.gitbook/assets/Screen Shot 2023-05-09 at 9.49.27 AM.png" alt=""><figcaption><p>Latest view of all Aave V2 loans query, sample output</p></figcaption></figure>
 
 \
-**Ethereum Shanghai Upgrade and Withdrawals Datasets:** Spice added support for the [Ethereum Shanghai/Capella upgrade](https://blog.ethereum.org/2023/03/28/shapella-mainnet-announcement) which was completed on April 12, 2023, 10:27:35pm UTC at epoch 194048.
+**Ethereum Shanghai/Capella Upgrade and Withdrawals Datasets:** The [Ethereum Shanghai/Capella upgrade](https://blog.ethereum.org/2023/03/28/shapella-mainnet-announcement) is now full supported after its completion on April 12, 2023, 10:27:35pm UTC at epoch 194048.
 
 The completion of Ethereum's Shanghai hard fork, also known as "Shapella," has authorized the withdrawal of funds for individuals who have "staked" their ETH to validate and secure blockchain transactions.
 
-As part of this upgrade, we have also released the `eth.withdrawals` dataset to capture new withdrawals. For example, you can now query to get ETH withdrawn:
+We also released the `eth.withdrawals` dataset to capture new withdrawals. For example, you can now query to get ETH withdrawn:
 
 ```sql
 with eth_withdrawn as (
@@ -46,27 +46,15 @@ from eth_withdrawn
 Explore detailed sample SQL queries for [DEX](example-dex-queries/), [Cross-Chain](example-cross-chain-queries.md), [Ethereum](example-ethereum-sql-queries/), [Beacon](example-ethereum-beacon-sql-queries/), and [Bitcoin](example-bitcoin-queries/) in the Spice Docs.\
 
 
-**Goerli Testnet Datasets:** Real-time and historical Goerli chain data is now supported on [Spice.xyz](https://spice.xyz). Users can query and access Goerli base type tables, Goerli token specific tables, and Goerli Beacon Chain specific tables. &#x20;
+**Goerli Testnet Datasets:** Full support for the Goerli testnet has been added, including hosted beacon and execution nodes, and fully indexed datasets, helping developers test their applications before mainnet launch.&#x20;
 
-We’re excited help web3 developers test their applications before launching them on the Ethereum Mainnet.&#x20;
-
-You can start by querying `goerli.traces`, `goerli.blocks`, and check out the full token tables list [here](https://docs.spice.xyz/reference/sql-query-tables/goerli/token-tables) or by querying:&#x20;
-
-```sql
-SHOW TABLES IN goerli
-```
-
-All Goerli Beacon Chain specific tables are listed [here](https://docs.spice.xyz/reference/sql-query-tables/goerli/beacon-chain-tables) or by querying:&#x20;
-
-```sql
-SHOW TABLES IN goerli.beacon
-```
+Available with realtime and historical data on [Spice.xyz](https://spice.xyz/), this includes Goerli base type tables, Goerli [token specific tables](https://docs.spice.xyz/reference/sql-query-tables/goerli/token-tables), and Goerli [Beacon Chain specific tables](https://docs.spice.xyz/reference/sql-query-tables/goerli/beacon-chain-tables). You can start by querying `goerli.traces`, `goerli.blocks` or a number of sample beacon queries.&#x20;
 
 For example, you can query from `goerli.beacon.validators` to retrieve recently updated validators, with their balance and status:
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-05-09 at 8.33.15 PM.png" alt=""><figcaption><p>Recently updated validators, with their balance and status by querying from <code>goerli.beacon.validators</code>, sample output</p></figcaption></figure>
 
-**Goerli Beacon API:** You can also easily retrieve requests like "[get validator balances from state](https://docs.spice.xyz/api/goerli/beacon-http-api)" using the **`https://data.spiceai.io/goerli/beacon`** API, which is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).
+**Goerli Beacon API:** You can easily retrieve requests like "[get validator balances from state](https://docs.spice.xyz/api/goerli/beacon-http-api)" using the **`https://data.spiceai.io/goerli/beacon`** API, which is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).
 
 All [Goerli testnet data APIs](../api/goerli/) are available at **/goerli/v0.1** including the following:
 
