@@ -6,23 +6,25 @@ description: Frequently asked questions
 
 ### What data sources do you have?
 
-Spice currently supports [**Ethereum**](reference/sql-query-tables/), [**Bitcoin**](reference/sql-query-tables/bitcoin.md), and [**Polygon**](reference/sql-query-tables/polygon/) blockchain data and [**Sushiswap**](reference/sql-query-tables/ethereum/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)**,** and [**Uniswap-V3**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md) smart-contract data. We also have [**NFT**](broken-reference) and [**token**](reference/sql-query-tables/sql-query-tables/token-tables.md) specific tables.
+Spice currently supports [**Ethereum**](reference/sql-query-tables/) (including [**Beacon**](reference/sql-query-tables/goerli/beacon-chain-tables.md) & [**Goerli**](reference/sql-query-tables/goerli/)), [**Bitcoin**](reference/sql-query-tables/bitcoin.md), and [**Polygon**](reference/sql-query-tables/polygon/) blockchain data along with [**ENS**](reference/sql-query-tables/ethereum/token-tables-1.md), **DeFi/DEX** ([**Sushiswap**](reference/sql-query-tables/ethereum/sushiswap-tables.md)**,** [**Uniswap-V2**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)**,** [**Uniswap-V3**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)**,** [**Aave**](reference/sql-query-tables/sql-query-tables/aave-v2-tables.md)), [**NFT**](broken-reference) and [**token**](reference/sql-query-tables/sql-query-tables/token-tables.md) specific data.
 
-We have plans to add more chains and contracts prioritized by user feedback, along with other sources of data like more [Prices](api/prices.md). We expect to add **Solana** next.
+Digital asset/cryptocurrency [spot/latest](api/prices.md) and full [historical prices](api/prices.md) data is available from leading exchanges including Coinbase, Gemini, and Binance.
 
-For the all-up list, see [Datasets](datasets.md) and follow the [Release notes](reference/release-notes.md) for progress.
+We are adding more chains and contracts prioritized by user feedback every month.
+
+For the all-up list, see [Datasets](datasets.md) and follow the [Release notes](reference/release-notes.md) for updates.
 
 ### How much does Spice cost?
 
-Spice is currently in beta and it's free to [get an API key](https://spice.xyz).
+Spice is currently in beta and it's free to [get an API key](https://spice.xyz), although due to demand there is waitlist.
 
 We plan to always have a free tier and offer free APIs, like the [Gas Fees API](api/ethereum/gas-fees.md).
 
-For customers who need higher request or query limits, service guarantees, or priority support we plan to offer high-value paid tiers based on usage.
+For customers who need higher request or query limits, service guarantees, or priority support we  offer high-value paid tiers based on usage.
 
 ### What level of support do you offer?
 
-During the beta, we offer [best-effort support](broken-reference/) in our Discord. If you'd like higher-priority support or are interested in becoming a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD), please let us know.
+During the beta, we offer [best-effort support](broken-reference/) in our Discord. If you'd like higher-priority support or are interested in becoming a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD) with dedicated support, please let us know.
 
 ### What SQL query engine/language do you support?
 
