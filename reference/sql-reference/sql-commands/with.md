@@ -27,17 +27,14 @@ A temporary named result set for use in the statement that defines the CTE.
 
 ### Examples <a href="#examples" id="examples"></a>
 
-{% code title="Get ETH withdrawn after the Ethereum Shanghai upgrade" %}
-```sql
-with eth_withdrawn as (
-    select eth.withdrawals.block_number, SUM(amount) as amount_gwei
-    from eth.withdrawals
-    group by eth.withdrawals.block_number
-    order by block_number asc)
-
-select AVG(amount_gwei / 1e9) as amount_eth, (AVG(amount_gwei / 1e9) - 32) as reward_eth
-from eth_withdrawn
-```
-{% endcode %}
+<pre class="language-sql" data-title="Get Average ETH withdrawn per block after the Ethereum Shanghai Upgrade"><code class="lang-sql">with eth_withdrawn as (
+  select eth.withdrawals.block_number, SUM(amount) as amount_gwei
+  from eth.withdrawals
+  group by eth.withdrawals.block_number
+  order by block_number asc)
+<strong>
+</strong><strong>select AVG(amount_gwei / 1e9) as amount_eth
+</strong>from eth_withdrawn
+</code></pre>
 
 \
