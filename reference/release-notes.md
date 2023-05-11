@@ -46,7 +46,7 @@ from eth_withdrawn
 Explore detailed sample SQL queries for [DEX](example-dex-queries/), [Cross-Chain](example-cross-chain-queries.md), [Ethereum](example-ethereum-sql-queries/), [Beacon](example-ethereum-beacon-sql-queries/), and [Bitcoin](example-bitcoin-queries/) in the Spice Docs.\
 
 
-**Goerli Testnet Datasets:** Full support for the Goerli testnet has been added, including hosted beacon and execution nodes, and fully indexed datasets, helping developers test their applications before mainnet launch.&#x20;
+**Goerli Testnet:** Full support for the Goerli testnet has been added, including hosted beacon and execution nodes, and fully indexed datasets, helping developers test their applications before mainnet launch.&#x20;
 
 Available with realtime and historical data on [Spice.xyz](https://spice.xyz/), this includes Goerli base type tables, Goerli [token specific tables](https://docs.spice.xyz/reference/sql-query-tables/goerli/token-tables), and Goerli [Beacon Chain specific tables](https://docs.spice.xyz/reference/sql-query-tables/goerli/beacon-chain-tables). You can start by querying `goerli.traces`, `goerli.blocks` or a number of sample beacon queries.&#x20;
 
