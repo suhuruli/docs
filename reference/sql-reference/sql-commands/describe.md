@@ -34,14 +34,7 @@ Once a table or view has been queried, the Spice UI displays the following:
 * Rows describing each table column.
 * Data types, properties, policies, and other associated attributes
 
-| COLUMN\_NAME | DATA\_TYPE        | IS\_NULLABLE | NUMERIC\_PRECISION | NUMERIC\_SCALE | EXTENDED\_PROPERTIES | MASKING\_POLICY |
-| ------------ | ----------------- | ------------ | ------------------ | -------------- | -------------------- | --------------- |
-| number       | BIGINT            | YES          | 64                 | 0              | \[]                  | \[]             |
-| hash         | CHARACTER VARYING | YES          | NULL               | NULL           | \[]                  | \[]             |
-| parent\_hash | CHARACTER VARYING | YES          | NULL               | NULL           | \[]                  | \[]             |
-| nonce        | CHARACTER VARYING | YES          | NULL               | NULL           | \[]                  | \[]             |
-| sha3\_uncles | CHARACTER VARYING | YES          | NULL               | NULL           | \[]                  | \[]             |
-| logs\_bloom  | CHARACTER VARYING | YES          | NULL               | NULL           | \[]                  | \[]             |
+<table><thead><tr><th width="171">COLUMN_NAME</th><th width="206">DATA_TYPE</th><th>IS_NULLABLE</th><th>NUMERIC_PRECISION</th><th>NUMERIC_SCALE</th><th>EXTENDED_PROPERTIES</th><th>MASKING_POLICY</th></tr></thead><tbody><tr><td>number</td><td>BIGINT</td><td>YES</td><td>64</td><td>0</td><td>[]</td><td>[]</td></tr><tr><td>hash</td><td>CHARACTER VARYING</td><td>YES</td><td>NULL</td><td>NULL</td><td>[]</td><td>[]</td></tr><tr><td>parent_hash</td><td>CHARACTER VARYING</td><td>YES</td><td>NULL</td><td>NULL</td><td>[]</td><td>[]</td></tr><tr><td>nonce</td><td>CHARACTER VARYING</td><td>YES</td><td>NULL</td><td>NULL</td><td>[]</td><td>[]</td></tr><tr><td>sha3_uncles</td><td>CHARACTER VARYING</td><td>YES</td><td>NULL</td><td>NULL</td><td>[]</td><td>[]</td></tr><tr><td>logs_bloom</td><td>CHARACTER VARYING</td><td>YES</td><td>NULL</td><td>NULL</td><td>[]</td><td>[]</td></tr></tbody></table>
 
 The cells containing a ‘\[]’ indicate “empty” values.
 

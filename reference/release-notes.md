@@ -4,6 +4,35 @@ description: Spice.xyz Release notes
 
 # Release notes
 
+### May 2023
+
+The April release includes significant platform performance upgrades with the rollout of Spice AI's **second generation platform architecture (Gen. 2)** along with several usability and user-experience improvements.
+
+[Ethereum](sql-query-tables/sql-query-tables/) and [Polygon](sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](example-ethereum-sql-queries/nfts.md), [ENS](sql-query-tables/ethereum/token-tables-1.md), [Uniswap](example-dex-queries/uniswap.md), and [Sushiswap](example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p><a href="example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
+
+Portal UX improvements include the ability to collapse the sidebar, resize the SQL query input and results pane, and expand to a fullscreen focus mode. SQL query errors are now highlighted with red underline swiggles along with a more readable error pane. Finally, results render faster and app switching is faster.
+
+{% embed url="https://youtu.be/ZJNt3paE7hA" %}
+[Spice.xyz](http://spice.xyz) SQL explorer fullscreen mode
+{% endembed %}
+
+**New In this Release**
+
+1. \[Platform] Spice AI's Second-Generation Platform Architecture (Gen. 2) resulting in 30-50% data latency improvements, 1.5x-10x faster queries, with a target availability of 99.9%.
+2. \[Portal] SQL query editor contextual error reporting.
+3. \[Portal] SQL query explorer fullscreen mode.
+4. \[Portal] SQL query editor and results pane resizability.
+5. \[Portal] Collapsable sidebar.
+6. \[Portal] Page loading progress bar.
+
+**Changes**
+
+1. \[Portal] The portal now uses a [GitHub App](https://docs.github.com/en/apps) to integrate with GitHub. This will result in a request for re-authorization on the next sign-in.
+2. \[Go SDK] [gospice v0.2.1](https://github.com/spiceai/gospice) released with [Prices API](../api/prices.md) and [Apache Arrow v12](https://pkg.go.dev/github.com/apache/arrow/go/v12) support.
+3. \[Node.js SDK] [spice.js v0.3.2](https://github.com/spiceai/spice.js/releases) released with a fix to re-support Node 16.
+
 ### April 2023
 
 This month we added new datasets including Chainlink prices data feeds, Aave v2 contract data, Ethereum Shanghai/Capella beacon and withdrawals data, and we now fully index the Goerli testnet. We also released the Goerli Beacon and Ethereum Beacon APIs. \

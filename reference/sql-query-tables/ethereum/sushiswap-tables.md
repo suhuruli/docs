@@ -28,8 +28,4 @@ DESCRIBE eth.sushiswap.pool_stats_detailed
 
 Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
 
-| Table Name                                      | Indexed Columns                            |
-| ----------------------------------------------- | ------------------------------------------ |
-| `eth.sushiswap.pool_stats`                      | `block_number` `pool_address`              |
-| `eth.sushiswap.pool_stats_detailed`             | `block_number` `pool_address`              |
-| `eth.sushiswap.event_[mints/burns/swaps/syncs]` | `block_number` `block_timestamp` `address` |
+<table><thead><tr><th width="354.5">Table Name</th><th>Indexed Columns</th></tr></thead><tbody><tr><td><code>eth.sushiswap.pool_stats</code></td><td><code>block_number</code> <code>pool_address</code></td></tr><tr><td><code>eth.sushiswap.pool_stats_detailed</code></td><td><code>block_number</code> <code>pool_address</code></td></tr><tr><td><code>eth.sushiswap.event_[mints/burns/swaps/syncs]</code></td><td><code>block_number</code> <code>block_timestamp</code> <code>address</code></td></tr></tbody></table>

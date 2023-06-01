@@ -37,7 +37,4 @@ DESCRIBE eth.uniswap_v3.event_mints
 
 Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns.
 
-| Table Name                                     | Indexed Columns                            |
-| ---------------------------------------------- | ------------------------------------------ |
-| `eth.uniswap_v3.pool_stats`                    | `block_number` `pool_address`              |
-| `eth.uniswap_v3.event_[mints/burns/swaps/etc]` | `block_number` `block_timestamp` `address` |
+<table><thead><tr><th width="354.5">Table Name</th><th>Indexed Columns</th></tr></thead><tbody><tr><td><code>eth.uniswap_v3.pool_stats</code></td><td><code>block_number</code> <code>pool_address</code></td></tr><tr><td><code>eth.uniswap_v3.event_[mints/burns/swaps/etc]</code></td><td><code>block_number</code> <code>block_timestamp</code> <code>address</code></td></tr></tbody></table>
