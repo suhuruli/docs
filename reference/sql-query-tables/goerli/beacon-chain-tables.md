@@ -8,7 +8,7 @@ description: Goerli Beacon tables available to query via SQL
 
 | Table Name                                      | Description                                                                                                                                                                              |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `goerli.validators`                             | Latest validators, with their status and current balance                                                                                                                                 |
+| `goerli.beacon.validators`                      | Latest validators, with their status and current balance                                                                                                                                 |
 | `goerli.beacon.slots`                           | This table contains data about each slot in the Beacon Chain.                                                                                                                            |
 | `goerli.beacon.recent_slots`                    | Slots from the past 30 minutes.                                                                                                                                                          |
 | `goerli.beacon.attestations`                    | This table stores data about attestations made by validators on the Beacon Chain.                                                                                                        |
