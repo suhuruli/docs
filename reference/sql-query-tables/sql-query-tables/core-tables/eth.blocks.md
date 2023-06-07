@@ -1,11 +1,12 @@
 ---
-description: SQL table schema for `eth.blocks` and `eth.recent_blocks`
+description: SQL table schema for eth.blocks and eth.recent_blocks
 ---
 
 # eth.blocks
 
 | Column Name         | Data Type         |
 | ------------------- | ----------------- |
+| `number`            | BIGINT            |
 | `hash`              | CHARACTER VARYING |
 | `parent_hash`       | CHARACTER VARYING |
 | `nonce`             | CHARACTER VARYING |

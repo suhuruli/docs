@@ -316,6 +316,7 @@
   * [Ethereum](reference/sql-query-tables/sql-query-tables/README.md)
     * [Core Tables](reference/sql-query-tables/sql-query-tables/core-tables/README.md)
       * [eth.blocks](reference/sql-query-tables/sql-query-tables/core-tables/eth.blocks.md)
+      * [eth.transactions](reference/sql-query-tables/sql-query-tables/core-tables/eth.transactions.md)
     * [Beacon Chain Tables](reference/sql-query-tables/sql-query-tables/beacon-chain-tables.md)
     * [Token Tables](reference/sql-query-tables/sql-query-tables/token-tables.md)
     * [NFT Tables](reference/sql-query-tables/sql-query-tables/nft-tables.md)
