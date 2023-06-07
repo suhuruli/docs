@@ -12,13 +12,13 @@ description: Ethereum base type tables available to query via SQL
 | [`eth.recent_blocks`](eth.blocks.md)             | Block headers from the last 30 minutes, \~128 blocks                               |
 | [`eth.transactions`](eth.transactions.md)        | Block transactions                                                                 |
 | [`eth.recent_transactions`](eth.transactions.md) | Block transactions from the last 30 minutes, \~128 blocks                          |
-| `eth.logs`                                       | Transaction event logs                                                             |
-| `eth.recent_logs`                                | Transaction event logs from the last 30 minutes, \~128 blocks                      |
-| `eth.contracts`                                  | A listing of all contracts                                                         |
-| `eth.traces`                                     | All call frames executed during a transaction, also known as internal transactions |
-| `eth.recent_traces`                              | `eth.traces` data from the last 30 minutes, \~128 blocks                           |
-| `eth.withdrawals`                                | Block withdrawals                                                                  |
-| `eth.recent_withdrawals`                         | Block withdrawals from the last 30 minutes, \~128 blocks                           |
+| [`eth.logs`](eth.logs.md)                        | Transaction event logs                                                             |
+| [`eth.recent_logs`](eth.logs.md)                 | Transaction event logs from the last 30 minutes, \~128 blocks                      |
+| [`eth.contracts`](eth.contracts.md)              | A listing of all contracts                                                         |
+| [`eth.traces`](eth.traces.md)                    | All call frames executed during a transaction, also known as internal transactions |
+| [`eth.recent_traces`](eth.traces.md)             | `eth.traces` data from the last 30 minutes, \~128 blocks                           |
+| [`eth.withdrawals`](eth.withdrawals.md)          | Block withdrawals                                                                  |
+| [`eth.recent_withdrawals`](eth.withdrawals.md)   | Block withdrawals from the last 30 minutes, \~128 blocks                           |
 
 The table list is also available as a SQL query using `show tables`. For example:
 
