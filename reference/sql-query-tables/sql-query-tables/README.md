@@ -5,7 +5,7 @@ description: Ethereum data tables available in SQL query
 # Ethereum
 
 * [Core Tables](core-tables/)
-* [Beacon Chain Tables](beacon-chain-tables.md)
+* [Beacon Chain Tables](beacon-chain-tables/)
 * [Token Tables](token-tables.md)
 * [NFT Tables](../polygon/nft-tables.md)
 * [ENS Tables](../ethereum/token-tables-1.md)

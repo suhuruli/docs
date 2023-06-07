@@ -39,7 +39,7 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 <table data-header-hidden><thead><tr><th width="368.5"></th><th></th></tr></thead><tbody><tr><td>ENS Domains</td><td><code>ens.domains</code></td></tr></tbody></table>
 
-[**Ethereum Beacon Chain datasets**](reference/sql-query-tables/sql-query-tables/beacon-chain-tables.md)
+[**Ethereum Beacon Chain datasets**](reference/sql-query-tables/sql-query-tables/beacon-chain-tables/)
 
 <table><thead><tr><th width="218"></th><th></th><th></th></tr></thead><tbody><tr><td>Validators</td><td><code>eth.beacon.validators</code></td><td></td></tr><tr><td>Slots</td><td><code>eth.beacon.slots</code></td><td><code>eth.beacon.recent_slots</code></td></tr><tr><td>Attestations</td><td><code>eth.beacon.attestations</code></td><td><code>eth.beacon.recent_attestations</code></td></tr><tr><td>Deposits</td><td><code>eth.beacon.deposits</code></td><td><code>eth.beacon.recent_deposits</code></td></tr><tr><td>Voluntary Exits</td><td><code>eth.beacon.voluntary_exits</code></td><td><code>eth.beacon.recent_voluntary_exits</code></td></tr><tr><td>Attester Slashings</td><td><code>eth.beacon.attester_slashings</code></td><td><code>eth.beacon.recent_attester_slashings</code></td></tr><tr><td>Proposer Slashings</td><td><code>eth.beacon.proposer_slashings</code></td><td><code>eth.beacon.recent_proposer_slashings</code></td></tr><tr><td>BLS To Execution Changes</td><td><code>eth.beacon.bls_to_execution_changes</code></td><td><code>eth.beacon.recent_bls_to_execution_changes</code></td></tr><tr><td>Withdrawals</td><td><code>eth.beacon.withdrawals</code></td><td><code>eth.beacon.recent_withdrawals</code></td></tr></tbody></table>
 
