@@ -6,9 +6,9 @@ description: Ethereum Name Service tables
 
 #### **Ethereum Name Service (ENS) tables**
 
-| Table Name                                                         | Description                         |
-| ------------------------------------------------------------------ | ----------------------------------- |
-| [`ens.domains`](../sql-query-tables/token-tables-1/ens.domains.md) | A mapping of ENS names to addresses |
+| Table Name                      | Description                         |
+| ------------------------------- | ----------------------------------- |
+| [`ens.domains`](ens.domains.md) | A mapping of ENS names to addresses |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 

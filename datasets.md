@@ -12,38 +12,38 @@ We add datasets every week, so this list is just the start. Get in touch on Disc
 
 Explore our SQL datasets organized by chain and data type, each with a representative table. Click the section header links for more information and complete table listings.
 
-#### [Ethereum datasets](reference/sql-query-tables/sql-query-tables/)
+#### [Ethereum datasets](reference/sql-query-tables/ethereum/)
 
 <table data-header-hidden><thead><tr><th width="230.5"></th><th width="235"></th><th></th></tr></thead><tbody><tr><td>Blocks</td><td><code>eth.blocks</code></td><td><code>eth.recent_blocks</code></td></tr><tr><td>Transactions</td><td><code>eth.transactions</code></td><td><code>eth.recent_transactions</code></td></tr><tr><td>Logs</td><td><code>eth.logs</code></td><td><code>eth.recent_logs</code></td></tr><tr><td>Contracts</td><td><code>eth.contracts</code></td><td></td></tr><tr><td>Traces</td><td><code>eth.traces</code></td><td><code>eth.recent_traces</code></td></tr><tr><td>Withdrawals</td><td><code>eth.withdrawals</code></td><td><code>eth.recent_withdrawals</code></td></tr></tbody></table>
 
-[**Ethereum Token datasets**](reference/sql-query-tables/sql-query-tables/token-tables.md)
+[**Ethereum Token datasets**](reference/sql-query-tables/ethereum/token-tables/)
 
 <table data-header-hidden><thead><tr><th width="278.5"></th><th width="236"></th><th></th></tr></thead><tbody><tr><td>Contracts (erc20, erc721, erc1155)</td><td><code>eth.contracts</code></td><td></td></tr><tr><td>Tokens (erc20, erc721, erc1155)</td><td><code>eth.tokens</code></td><td></td></tr><tr><td>Token Transfers (erc20, erc721, erc1155)</td><td><code>eth.token_transfers</code></td><td><code>eth.recent_token_transfers</code></td></tr><tr><td>Token Mints (erc20, erc721, erc1155)</td><td><code>eth.token_mints</code></td><td><code>eth.recent_token_mints</code></td></tr></tbody></table>
 
-[**Ethereum NFT datasets**](reference/sql-query-tables/sql-query-tables/nft-tables.md)
+[**Ethereum NFT datasets**](reference/sql-query-tables/ethereum/nft-tables/)
 
 <table data-header-hidden><thead><tr><th width="223.5"></th><th width="266"></th><th></th></tr></thead><tbody><tr><td>NFTs</td><td><code>eth.nfts</code></td><td></td></tr><tr><td>NFT Contracts</td><td><code>eth.nft_contracts</code></td><td></td></tr><tr><td>NFT Transfers (with optional hold time)</td><td><code>eth.nft_transfers</code></td><td><code>eth.recent_nft_transfers</code></td></tr><tr><td>NFT Owners</td><td><code>eth.nft_owners</code></td><td></td></tr><tr><td>NFT Airdrop Transfers</td><td><code>eth.nft_airdrop_transfers</code></td><td><code>eth.recent_nft_airdrop_transfers</code></td></tr></tbody></table>
 
-[**Ethereum Uniswap datasets**](reference/sql-query-tables/ethereum/uniswap-v2-tables.md)
+[**Ethereum Uniswap datasets**](reference/sql-query-tables/ethereum/uniswap-v2-tables/)
 
 <table data-header-hidden><thead><tr><th width="280.5"></th><th></th><th></th></tr></thead><tbody><tr><td>Uniswap V2 Pools</td><td><code>eth.uniswap_v2.pools</code></td><td></td></tr><tr><td>Uniswap V2 Pool Statistics (reserves and price info)</td><td><code>eth.uniswap_v2.pool_stats</code></td><td></td></tr><tr><td>Uniswap V2 Events (swaps, mints, burns, etc)</td><td><code>eth.uniswap_v2.event_swaps</code></td><td><code>eth.uniswap_v2.recent_event_swaps</code></td></tr><tr><td>Uniswap V3 Pools</td><td><code>eth.uniswap_v3.pools</code></td><td></td></tr><tr><td>Uniswap V3 Pool Statistics (reserves and price info)</td><td><code>eth.uniswap_v3.pool_stats</code></td><td></td></tr><tr><td>Uniswap V3 Events (swaps, mints, burns, etc)</td><td><code>eth.uniswap_v3.event_swaps</code></td><td><code>eth.uniswap_v3.recent_event_swaps</code></td></tr></tbody></table>
 
-[**Ethereum Sushiswap datasets**](reference/sql-query-tables/ethereum/sushiswap-tables.md)
+[**Ethereum Sushiswap datasets**](reference/sql-query-tables/ethereum/sushiswap-tables/)
 
 | Sushiswap Pools                                     | `eth.sushiswap.pools`       |                                    |
 | --------------------------------------------------- | --------------------------- | ---------------------------------- |
 | Sushiswap Pool Statistics (reserves and price info) | `eth.sushiswap.pool_stats`  |                                    |
 | Sushiswap Events (swaps, mints, burns, etc)         | `eth.sushiswap.event_swaps` | `eth.sushiswap.recent_event_swaps` |
 
-[**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/ethereum/token-tables-1.md)
+[**Ethereum Name Service (ENS) datasets**](reference/sql-query-tables/ethereum/token-tables-1/)
 
 <table data-header-hidden><thead><tr><th width="368.5"></th><th></th></tr></thead><tbody><tr><td>ENS Domains</td><td><code>ens.domains</code></td></tr></tbody></table>
 
-[**Ethereum Beacon Chain datasets**](reference/sql-query-tables/sql-query-tables/beacon-chain-tables/)
+[**Ethereum Beacon Chain datasets**](reference/sql-query-tables/ethereum/beacon-chain-tables/)
 
 <table><thead><tr><th width="218"></th><th></th><th></th></tr></thead><tbody><tr><td>Validators</td><td><code>eth.beacon.validators</code></td><td></td></tr><tr><td>Slots</td><td><code>eth.beacon.slots</code></td><td><code>eth.beacon.recent_slots</code></td></tr><tr><td>Attestations</td><td><code>eth.beacon.attestations</code></td><td><code>eth.beacon.recent_attestations</code></td></tr><tr><td>Deposits</td><td><code>eth.beacon.deposits</code></td><td><code>eth.beacon.recent_deposits</code></td></tr><tr><td>Voluntary Exits</td><td><code>eth.beacon.voluntary_exits</code></td><td><code>eth.beacon.recent_voluntary_exits</code></td></tr><tr><td>Attester Slashings</td><td><code>eth.beacon.attester_slashings</code></td><td><code>eth.beacon.recent_attester_slashings</code></td></tr><tr><td>Proposer Slashings</td><td><code>eth.beacon.proposer_slashings</code></td><td><code>eth.beacon.recent_proposer_slashings</code></td></tr><tr><td>BLS To Execution Changes</td><td><code>eth.beacon.bls_to_execution_changes</code></td><td><code>eth.beacon.recent_bls_to_execution_changes</code></td></tr><tr><td>Withdrawals</td><td><code>eth.beacon.withdrawals</code></td><td><code>eth.beacon.recent_withdrawals</code></td></tr></tbody></table>
 
-#### [Ethereum Aave V2 datasets](reference/sql-query-tables/sql-query-tables/aave-v2-tables.md)
+#### [Ethereum Aave V2 datasets](reference/sql-query-tables/ethereum/aave-v2-tables.md)
 
 |                          |                                  |                                         |
 | ------------------------ | -------------------------------- | --------------------------------------- |
@@ -90,7 +90,7 @@ Query for BTC, ETH and LTC prices in SQL with data sourced from several sources
 For access to spot/historical prices on thousands of pairs, try our [time-series Prices API](api/prices.md).
 {% endhint %}
 
-#### [Chainlink datasets](reference/sql-query-tables/sql-query-tables/chainlink-tables/)
+#### [Chainlink datasets](reference/sql-query-tables/ethereum/chainlink-tables/)
 
 |                     |                        |                               |
 | ------------------- | ---------------------- | ----------------------------- |
