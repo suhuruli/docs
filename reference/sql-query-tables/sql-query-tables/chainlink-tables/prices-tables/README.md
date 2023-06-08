@@ -1,11 +1,11 @@
-# Prices tables
+# Prices Tables
 
 #### Prices specific tables
 
-| Table name                    | Description                                                                                        |
-| ----------------------------- | -------------------------------------------------------------------------------------------------- |
-| `eth.chainlink.prices`        | Prices per price oracle data feeds on the ethereum network                                         |
-| `eth.chainlink.recent_prices` | Prices per price oracle data feeds on the ethereum network from the last 30min (\~last 128 blocks) |
+| Table name                                               | Description                                                                                        |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [`eth.chainlink.prices`](eth.chainlink.prices.md)        | Prices per price oracle data feeds on the ethereum network                                         |
+| [`eth.chainlink.recent_prices`](eth.chainlink.prices.md) | Prices per price oracle data feeds on the ethereum network from the last 30min (\~last 128 blocks) |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 
