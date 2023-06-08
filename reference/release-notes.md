@@ -8,7 +8,7 @@ description: Spice.xyz Release notes
 
 The April release includes significant platform performance upgrades with the rollout of Spice AI's **second generation platform architecture (Gen. 2)** along with several usability and user-experience improvements.
 
-[Ethereum](sql-query-tables/sql-query-tables/) and [Polygon](sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](example-ethereum-sql-queries/nfts.md), [ENS](sql-query-tables/sql-query-tables/token-tables-1/), [Uniswap](example-dex-queries/uniswap.md), and [Sushiswap](example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
+[Ethereum](sql-query-tables/sql-query-tables/) and [Polygon](sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](example-ethereum-sql-queries/nfts.md), [ENS](sql-query-tables/ethereum/token-tables-1.md), [Uniswap](example-dex-queries/uniswap.md), and [Sushiswap](example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p><a href="example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
 
@@ -48,7 +48,7 @@ This includes accessing the latest, minute-precision data on `transaction_hash`,
 Data for for [Curve](https://classic.curve.fi/whitepaper), [Balancer](https://balancer.fi/), [Aave](https://aave.com/), [Yearn](https://yearn.finance/), [DAI](https://makerdao.com/en/), [Tether USD](https://tether.to/en/about-us/) and 30 other top assets is available. See the full list of supported data feeds [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/chainlink-tables/prices-tables).&#x20;
 
 \
-**Aave V2 Dataset:** In addition to the Aave token prices data feed on the Chainlink network, we have released indexed [Aave V2](sql-query-tables/sql-query-tables/aave-v2-tables/) data for loans, collaterals and prices. You can query for the latest updates to Aave loans and collateral by querying `eth.aave_v2.loan_updates` and `eth.aave_v2.collateral_updates`.&#x20;
+**Aave V2 Dataset:** In addition to the Aave token prices data feed on the Chainlink network, we have released indexed [Aave V2](sql-query-tables/sql-query-tables/aave-v2-tables.md) data for loans, collaterals and prices. You can query for the latest updates to Aave loans and collateral by querying `eth.aave_v2.loan_updates` and `eth.aave_v2.collateral_updates`.&#x20;
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-05-09 at 9.49.27 AM.png" alt=""><figcaption><p>Latest view of all Aave V2 loans query, sample output</p></figcaption></figure>
 
@@ -363,12 +363,12 @@ Read more on the [Spice AI Blog](https://blog.spice.ai/build-multi-chain-with-sp
 
 **DEX Liquidity & Events Dataset**
 
-Spice now features DEX Liquidity and Events Dataset where users can access indexed liquidity data from UniSwap \[[V2](sql-query-tables/sql-query-tables/uniswap-v2-tables/), [V3](sql-query-tables/sql-query-tables/uniswap-v3-tables/)] and [SushiSwap](sql-query-tables/sql-query-tables/sushiswap-tables/) liquidity pools, _within seconds_.&#x20;
+Spice now features DEX Liquidity and Events Dataset where users can access indexed liquidity data from UniSwap \[[V2](sql-query-tables/ethereum/uniswap-v2-tables.md), [V3](sql-query-tables/ethereum/uniswap-v3-tables.md)] and [SushiSwap](sql-query-tables/ethereum/sushiswap-tables.md) liquidity pools, _within seconds_.&#x20;
 
 Data is available both historically and in real time, providing unparalleled visibility on DEX liquidity pools.
 
 **ENS (Preview)**\
-You can now preview the new dataset for [Ethereum Name Service events](sql-query-tables/sql-query-tables/token-tables-1/), available by querying `eth.ens`. Within the dataset, you’ll find that each ENS event will have its own table as immutable data.
+You can now preview the new dataset for [Ethereum Name Service events](sql-query-tables/ethereum/token-tables-1.md), available by querying `eth.ens`. Within the dataset, you’ll find that each ENS event will have its own table as immutable data.
 
 This also includes the new `ens.domains` dataset, which is updated in real-time to have the latest `eth_address` whenever a transfer or name-registered event happens
 
@@ -478,7 +478,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/).
 
 This update includes a new [Javascript/Typescript SDK](../sdks/node.js-sdk/) for Node.js, an improved [Python SDK](../sdks/python-sdk.md), and performance improvements for Ethereum tokens and NFT datasets.
 
-[Ethereum Name Service (ENS)](sql-query-tables/sql-query-tables/token-tables-1/) support is also available in beta with the new `ens.domains` dataset.
+[Ethereum Name Service (ENS)](sql-query-tables/ethereum/token-tables-1.md) support is also available in beta with the new `ens.domains` dataset.
 
 Read more on the [Spice AI blog](https://medium.com/spice-ai/spice-xyz-june-update-f74d60faff61).
 
@@ -500,7 +500,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/spice-xyz-june-upda
 
 ### May 2022
 
-Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](sql-query-tables/sql-query-tables/token-tables/).
+Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](sql-query-tables/sql-query-tables/token-tables.md).
 
 Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](../api/sql-query-api/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](../sdks/python-sdk.md) for production use though.
 

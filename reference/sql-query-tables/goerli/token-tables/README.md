@@ -13,19 +13,19 @@ description: Goerli token specific tables
 
 #### Token specific tables
 
-| Table Name                       | Description                                            |
-| -------------------------------- | ------------------------------------------------------ |
-| `goerli.tokens`                  | ERC-20, ERC-721 and ERC-1155 token contracts           |
-| `goerli.token_transfers`         | ERC-20, ERC-721, and ERC-1155 token transfers          |
-| `goerli.recent_token_transfers`  | Token transfers from the last 30 minutes, \~128 blocks |
-| `goerli.tokens_erc20`            | ERC-20 token contracts                                 |
-| `goerli.token_transfers_erc20`   | ERC-20 token transfers                                 |
-| `goerli.tokens_erc721`           | ERC-721 token contracts                                |
-| `goerli.token_transfers_erc721`  | ERC-721 token transfers (NFTs)                         |
-| `goerli.tokens_erc1155`          | ERC-1155 token contracts                               |
-| `goerli.token_transfers_erc1155` | ERC-1155 token transfers                               |
-| `goerli.token_mints`             | ERC-20, ERC-721, and ERC-1155 token mints              |
-| `goerli.recent_token_mints`      | Token mints from the last 30 minutes, \~128 blocks     |
+| Table Name                                                                            | Description                                            |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| [`goerli.tokens`](goerli.tokens.md)                                                   | ERC-20, ERC-721 and ERC-1155 token contracts           |
+| [`goerli.token_transfers`](goerli.token\_transfers.md)                                | ERC-20, ERC-721, and ERC-1155 token transfers          |
+| [`goerli.recent_token_transfers`](goerli.token\_transfers.md)                         | Token transfers from the last 30 minutes, \~128 blocks |
+| [`goerli.tokens_erc20`](goerli.tokens\_erc20.md)                                      | ERC-20 token contracts                                 |
+| [`goerli.token_transfers_erc20`](goerli.token\_transfers\_erc20.md)                   | ERC-20 token transfers                                 |
+| [`goerli.tokens_erc721`](goerli.tokens\_erc721.md)                                    | ERC-721 token contracts                                |
+| [`goerli.token_transfers_erc721`](goerli.token\_transfers\_erc20.md)                  | ERC-721 token transfers (NFTs)                         |
+| [`goerli.tokens_erc1155`](../../sql-query-tables/token-tables/eth.tokens\_erc1155.md) | ERC-1155 token contracts                               |
+| [`goerli.token_transfers_erc1155`](goerli.token\_transfers\_erc1155.md)               | ERC-1155 token transfers                               |
+| [`goerli.token_mints`](goerli.token\_mints.md)                                        | ERC-20, ERC-721, and ERC-1155 token mints              |
+| [`goerli.recent_token_mints`](goerli.token\_mints.md)                                 | Token mints from the last 30 minutes, \~128 blocks     |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 

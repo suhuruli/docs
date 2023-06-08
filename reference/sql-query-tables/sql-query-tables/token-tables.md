@@ -13,19 +13,19 @@ description: Ethereum token specific tables
 
 #### Token specific tables
 
-| Table Name                                                        | Description                                            |
-| ----------------------------------------------------------------- | ------------------------------------------------------ |
-| [`eth.tokens`](eth.tokens.md)                                     | ERC-20, ERC-721 and ERC-1155 token contracts           |
-| [`eth.token_transfers`](eth.token\_transfers.md)                  | ERC-20, ERC-721, and ERC-1155 token transfers          |
-| [`eth.recent_token_transfers`](eth.recent\_token\_transfers.md)   | Token transfers from the last 30 minutes, \~128 blocks |
-| [`eth.tokens_erc20`](eth.tokens\_erc20.md)                        | ERC-20 token contracts                                 |
-| [`eth.token_transfers_erc20`](eth.token\_transfers\_erc20.md)     | ERC-20 token transfers                                 |
-| [`eth.tokens_erc721`](eth.tokens\_erc721.md)                      | ERC-721 token contracts                                |
-| [`eth.token_transfers_erc721`](eth.token\_transfers\_erc721.md)   | ERC-721 token transfers (NFTs)                         |
-| [`eth.tokens_erc1155`](eth.tokens\_erc1155.md)                    | ERC-1155 token contracts                               |
-| [`eth.token_transfers_erc1155`](eth.token\_transfers\_erc1155.md) | ERC-1155 token transfers                               |
-| [`eth.token_mints`](eth.token\_mints.md)                          | ERC-20, ERC-721, and ERC-1155 token mints              |
-| [`eth.recent_token_mints`](eth.token\_mints.md)                   | Token mints from the last 30 minutes, \~128 blocks     |
+| Table Name                                                                     | Description                                            |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------ |
+| [`eth.tokens`](token-tables/eth.tokens.md)                                     | ERC-20, ERC-721 and ERC-1155 token contracts           |
+| [`eth.token_transfers`](token-tables/eth.token\_transfers.md)                  | ERC-20, ERC-721, and ERC-1155 token transfers          |
+| [`eth.recent_token_transfers`](token-tables/eth.recent\_token\_transfers.md)   | Token transfers from the last 30 minutes, \~128 blocks |
+| [`eth.tokens_erc20`](token-tables/eth.tokens\_erc20.md)                        | ERC-20 token contracts                                 |
+| [`eth.token_transfers_erc20`](token-tables/eth.token\_transfers\_erc20.md)     | ERC-20 token transfers                                 |
+| [`eth.tokens_erc721`](token-tables/eth.tokens\_erc721.md)                      | ERC-721 token contracts                                |
+| [`eth.token_transfers_erc721`](token-tables/eth.token\_transfers\_erc721.md)   | ERC-721 token transfers (NFTs)                         |
+| [`eth.tokens_erc1155`](token-tables/eth.tokens\_erc1155.md)                    | ERC-1155 token contracts                               |
+| [`eth.token_transfers_erc1155`](token-tables/eth.token\_transfers\_erc1155.md) | ERC-1155 token transfers                               |
+| [`eth.token_mints`](token-tables/eth.token\_mints.md)                          | ERC-20, ERC-721, and ERC-1155 token mints              |
+| [`eth.recent_token_mints`](token-tables/eth.token\_mints.md)                   | Token mints from the last 30 minutes, \~128 blocks     |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 
