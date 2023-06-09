@@ -4,6 +4,8 @@ description: SQL table schema for eth.blocks and eth.recent_blocks
 
 # eth.blocks
 
+Ethereum [Block Headers](https://ethereum.org/vi/developers/docs/blocks).
+
 | Column Name         | Data Type         |
 | ------------------- | ----------------- |
 | `number`            | BIGINT            |
