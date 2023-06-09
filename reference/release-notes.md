@@ -48,7 +48,7 @@ This includes accessing the latest, minute-precision data on `transaction_hash`,
 Data for for [Curve](https://classic.curve.fi/whitepaper), [Balancer](https://balancer.fi/), [Aave](https://aave.com/), [Yearn](https://yearn.finance/), [DAI](https://makerdao.com/en/), [Tether USD](https://tether.to/en/about-us/) and 30 other top assets is available. See the full list of supported data feeds [here](https://docs.spice.xyz/reference/sql-query-tables/sql-query-tables/chainlink-tables/prices-tables).&#x20;
 
 \
-**Aave V2 Dataset:** In addition to the Aave token prices data feed on the Chainlink network, we have released indexed [Aave V2](sql-query-tables/ethereum/aave-v2-tables.md) data for loans, collaterals and prices. You can query for the latest updates to Aave loans and collateral by querying `eth.aave_v2.loan_updates` and `eth.aave_v2.collateral_updates`.&#x20;
+**Aave V2 Dataset:** In addition to the Aave token prices data feed on the Chainlink network, we have released indexed [Aave V2](sql-query-tables/ethereum/aave-v2-tables/) data for loans, collaterals and prices. You can query for the latest updates to Aave loans and collateral by querying `eth.aave_v2.loan_updates` and `eth.aave_v2.collateral_updates`.&#x20;
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-05-09 at 9.49.27 AM.png" alt=""><figcaption><p>Latest view of all Aave V2 loans query, sample output</p></figcaption></figure>
 
@@ -337,7 +337,7 @@ Read the announcement post at [blog.spice.ai](https://blog.spice.ai/spice-xyz-ja
 
 ### December 2022
 
-Spice supports querying [Polygon data](sql-query-tables/polygon/) in addition to the existing [Ethereum](sql-query-tables/ethereum/) and [BItcoin](sql-query-tables/bitcoin.md) datasets.
+Spice supports querying [Polygon data](sql-query-tables/polygon/) in addition to the existing [Ethereum](sql-query-tables/ethereum/) and [BItcoin](sql-query-tables/bitcoin/) datasets.
 
 Read more on the [Spice AI Blog](https://blog.spice.ai/build-multi-chain-with-spice-ai-now-with-polygon-support-9db156f36d80).
 
@@ -453,7 +453,7 @@ Key infrastructure improvements were made for Spice's query performance, securit
 
 ### July 2022
 
-Spice supports querying [Bitcoin data](sql-query-tables/bitcoin.md) in addition to the existing [Ethereum datasets](sql-query-tables/ethereum/).
+Spice supports querying [Bitcoin data](sql-query-tables/bitcoin/) in addition to the existing [Ethereum datasets](sql-query-tables/ethereum/).
 
 Read more on the [Spice AI blog](https://medium.com/spice-ai/).
 

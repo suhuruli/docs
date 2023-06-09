@@ -1,5 +1,5 @@
 ---
-description: Goerli Beacon tables available to query via SQL
+description: Goerli Beacon Chain tables available to query via SQL
 ---
 
 # Beacon Chain Tables

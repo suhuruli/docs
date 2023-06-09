@@ -1,3 +1,7 @@
+---
+description: Ethereum Chainlink Price tables available in SQL query
+---
+
 # Prices Tables
 
 #### Prices specific tables

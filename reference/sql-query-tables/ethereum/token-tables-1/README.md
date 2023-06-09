@@ -1,5 +1,5 @@
 ---
-description: Ethereum Name Service tables
+description: Ethereum Name Service (ENS) tables available to query via SQL
 ---
 
 # ENS Tables

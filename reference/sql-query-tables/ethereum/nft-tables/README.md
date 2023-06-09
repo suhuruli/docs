@@ -1,3 +1,7 @@
+---
+description: Ethereum NFT tables available to query via SQL
+---
+
 # NFT Tables
 
 #### NFT specific tables

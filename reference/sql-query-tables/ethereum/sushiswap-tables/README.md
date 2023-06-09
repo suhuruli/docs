@@ -1,3 +1,7 @@
+---
+description: Ethereum Sushiswap tables available to query via SQL
+---
+
 # Sushiswap Tables
 
 ### Tables available to query

@@ -1,3 +1,7 @@
+---
+description: Ethereum Uniswap V3 tables available to query via SQL
+---
+
 # Uniswap V3 Tables
 
 ### Tables available to query <a href="#tables-available-to-query" id="tables-available-to-query"></a>

@@ -7,11 +7,11 @@ description: Ethereum data tables available in SQL query
 * [Core Tables](core-tables/)
 * [Beacon Chain Tables](beacon-chain-tables/)
 * [Token Tables](token-tables/)
-* [NFT Tables](../polygon/nft-tables.md)
+* [NFT Tables](../polygon/nft-tables/)
 * [ENS Tables](token-tables-1/)
 * [Uniswap v2 Tables](uniswap-v3-tables/)
 * [Uniswap v3 Tables](uniswap-v3-tables/)
 * [Sushiswap Tables](../../example-dex-queries/sushiswap.md)
 * [Chainlink Tables](chainlink-tables/)
-* [Aave v2 Tables](aave-v2-tables.md)
+* [Aave v2 Tables](aave-v2-tables/)
 

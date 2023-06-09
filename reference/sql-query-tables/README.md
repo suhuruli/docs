@@ -10,8 +10,8 @@
 [polygon](polygon/)
 {% endcontent-ref %}
 
-{% content-ref url="bitcoin.md" %}
-[bitcoin.md](bitcoin.md)
+{% content-ref url="bitcoin/" %}
+[bitcoin](bitcoin/)
 {% endcontent-ref %}
 
 {% content-ref url="prices/" %}

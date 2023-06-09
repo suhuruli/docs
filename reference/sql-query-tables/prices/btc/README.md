@@ -2,11 +2,11 @@
 
 #### BTC exchange specific tables
 
-| Table Name              | Description                                               |
-| ----------------------- | --------------------------------------------------------- |
-| `prices.btc.coinbase`   | HLOC values for BTC at 1 minute granularity from Coinbase |
-| `prices.btc.gemini`     | HLOC values for BTC at 1 minute granularity from Gemini   |
-| `prices.btc.uniswap_v2` | HLOC values for BTC at 1 minute granularity from Uniswap  |
+| Table Name                                           | Description                                               |
+| ---------------------------------------------------- | --------------------------------------------------------- |
+| [`prices.btc.coinbase`](prices.btc.coinbase.md)      | HLOC values for BTC at 1 minute granularity from Coinbase |
+| [`prices.btc.gemini`](prices.btc.gemini.md)          | HLOC values for BTC at 1 minute granularity from Gemini   |
+| [`prices.btc.uniswap_v2`](prices.btc.uniswap\_v2.md) | HLOC values for BTC at 1 minute granularity from Uniswap  |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 

@@ -1,3 +1,7 @@
+---
+description: Ethereum Uniswap V2 tables available to query via SQL
+---
+
 # Uniswap V2 Tables
 
 ### Tables available to query

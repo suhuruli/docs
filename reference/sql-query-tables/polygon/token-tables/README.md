@@ -1,3 +1,7 @@
+---
+description: Polygon Token tables available to query via SQL
+---
+
 # Token Tables
 
 **Links**
@@ -9,19 +13,19 @@
 
 #### Polygon Token specific tables
 
-| Table Name                        | Description                                            |
-| --------------------------------- | ------------------------------------------------------ |
-| `polygon.tokens`                  | ERC-20, ERC-721 and ERC-1155 token contracts           |
-| `polygon.token_transfers`         | ERC-20, ERC-721, and ERC-1155 token transfers          |
-| `polygon.recent_token_transfers`  | Token transfers from the last 30 minutes, \~128 blocks |
-| `polygon.tokens_erc20`            | ERC-20 token contracts                                 |
-| `polygon.token_transfers_erc20`   | ERC-20 token transfers                                 |
-| `polygon.tokens_erc721`           | ERC-721 token contracts                                |
-| `polygon.token_transfers_erc721`  | ERC-721 token transfers (NFTs)                         |
-| `polygon.tokens_erc1155`          | ERC-1155 token contracts                               |
-| `polygon.token_transfers_erc1155` | ERC-1155 token transfers                               |
-| `polygon.token_mints`             | ERC-20, ERC-721, and ERC-1155 token mints              |
-| `polygon.recent_token_mints`      | Token mints from the last 30 minutes, \~128 blocks     |
+| Table Name                                                                | Description                                            |
+| ------------------------------------------------------------------------- | ------------------------------------------------------ |
+| [`polygon.tokens`](polygon.tokens.md)                                     | ERC-20, ERC-721 and ERC-1155 token contracts           |
+| [`polygon.token_transfers`](polygon.token\_transfers.md)                  | ERC-20, ERC-721, and ERC-1155 token transfers          |
+| [`polygon.recent_token_transfers`](polygon.recent\_token\_transfers.md)   | Token transfers from the last 30 minutes, \~128 blocks |
+| [`polygon.tokens_erc20`](polygon.tokens\_erc20.md)                        | ERC-20 token contracts                                 |
+| [`polygon.token_transfers_erc20`](polygon.token\_transfers\_erc20.md)     | ERC-20 token transfers                                 |
+| [`polygon.tokens_erc721`](polygon.tokens\_erc721.md)                      | ERC-721 token contracts                                |
+| [`polygon.token_transfers_erc721`](polygon.token\_transfers\_erc721.md)   | ERC-721 token transfers (NFTs)                         |
+| [`polygon.tokens_erc1155`](polygon.tokens\_erc1155.md)                    | ERC-1155 token contracts                               |
+| [`polygon.token_transfers_erc1155`](polygon.token\_transfers\_erc1155.md) | ERC-1155 token transfers                               |
+| [`polygon.token_mints`](polygon.token\_mints.md)                          | ERC-20, ERC-721, and ERC-1155 token mints              |
+| [`polygon.recent_token_mints`](polygon.token\_mints.md)                   | Token mints from the last 30 minutes, \~128 blocks     |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 

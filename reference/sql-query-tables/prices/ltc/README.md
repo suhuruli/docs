@@ -2,10 +2,10 @@
 
 #### LTC exchange specific tables
 
-| Table Name            | Description                                               |
-| --------------------- | --------------------------------------------------------- |
-| `prices.ltc.coinbase` | HLOC values for LTC at 1 minute granularity from Coinbase |
-| `prices.ltc.gemini`   | HLOC values for LTC at 1 minute granularity from Gemini   |
+| Table Name                                      | Description                                               |
+| ----------------------------------------------- | --------------------------------------------------------- |
+| [`prices.ltc.coinbase`](prices.ltc.coinbase.md) | HLOC values for LTC at 1 minute granularity from Coinbase |
+| [`prices.ltc.gemini`](prices.ltc.gemini.md)     | HLOC values for LTC at 1 minute granularity from Gemini   |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 

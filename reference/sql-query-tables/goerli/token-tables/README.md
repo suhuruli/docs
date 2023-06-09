@@ -1,5 +1,5 @@
 ---
-description: Goerli token specific tables
+description: Goerli Token tables available to query via SQL
 ---
 
 # Token Tables

@@ -2,12 +2,12 @@
 
 #### ETH exchange specific tables
 
-| Table Name              | Description                                                |
-| ----------------------- | ---------------------------------------------------------- |
-| `prices.eth.coinbase`   | HLOC values for ETH at 1 minute granularity from Coinbase  |
-| `prices.eth.gemini`     | HLOC values for ETH at 1 minute granularity from Gemini    |
-| `prices.eth.sushiswap`  | HLOC values for ETH at 1 minute granularity from Sushiswap |
-| `prices.eth.uniswap_v2` | HLOC values for ETH at 1 minute granularity from Uniswap   |
+| Table Name                                           | Description                                                |
+| ---------------------------------------------------- | ---------------------------------------------------------- |
+| [`prices.eth.coinbase`](prices.eth.coinbase.md)      | HLOC values for ETH at 1 minute granularity from Coinbase  |
+| [`prices.eth.gemini`](prices.eth.gemini.md)          | HLOC values for ETH at 1 minute granularity from Gemini    |
+| [`prices.eth.sushiswap`](prices.eth.sushiswap.md)    | HLOC values for ETH at 1 minute granularity from Sushiswap |
+| [`prices.eth.uniswap_v2`](prices.eth.uniswap\_v2.md) | HLOC values for ETH at 1 minute granularity from Uniswap   |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 

@@ -43,7 +43,7 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 <table><thead><tr><th width="218"></th><th></th><th></th></tr></thead><tbody><tr><td>Validators</td><td><code>eth.beacon.validators</code></td><td></td></tr><tr><td>Slots</td><td><code>eth.beacon.slots</code></td><td><code>eth.beacon.recent_slots</code></td></tr><tr><td>Attestations</td><td><code>eth.beacon.attestations</code></td><td><code>eth.beacon.recent_attestations</code></td></tr><tr><td>Deposits</td><td><code>eth.beacon.deposits</code></td><td><code>eth.beacon.recent_deposits</code></td></tr><tr><td>Voluntary Exits</td><td><code>eth.beacon.voluntary_exits</code></td><td><code>eth.beacon.recent_voluntary_exits</code></td></tr><tr><td>Attester Slashings</td><td><code>eth.beacon.attester_slashings</code></td><td><code>eth.beacon.recent_attester_slashings</code></td></tr><tr><td>Proposer Slashings</td><td><code>eth.beacon.proposer_slashings</code></td><td><code>eth.beacon.recent_proposer_slashings</code></td></tr><tr><td>BLS To Execution Changes</td><td><code>eth.beacon.bls_to_execution_changes</code></td><td><code>eth.beacon.recent_bls_to_execution_changes</code></td></tr><tr><td>Withdrawals</td><td><code>eth.beacon.withdrawals</code></td><td><code>eth.beacon.recent_withdrawals</code></td></tr></tbody></table>
 
-#### [Ethereum Aave V2 datasets](reference/sql-query-tables/ethereum/aave-v2-tables.md)
+#### [Ethereum Aave V2 datasets](reference/sql-query-tables/ethereum/aave-v2-tables/)
 
 |                          |                                  |                                         |
 | ------------------------ | -------------------------------- | --------------------------------------- |
@@ -68,15 +68,15 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 <table data-header-hidden><thead><tr><th width="251.5"></th><th></th><th></th></tr></thead><tbody><tr><td>Blocks</td><td><code>polygon.blocks</code></td><td><code>polygon.recent_blocks</code></td></tr><tr><td>Transactions</td><td><code>polygon.transactions</code></td><td><code>polygon.recent_transactions</code></td></tr><tr><td>Logs</td><td><code>polygon.logs</code></td><td><code>polygon.recent_logs</code></td></tr><tr><td>Contracts</td><td><code>polygon.contracts</code></td><td></td></tr><tr><td>Traces</td><td><code>polygon.traces</code></td><td><code>polygon.recent_traces</code></td></tr></tbody></table>
 
-[**Polygon Token Datasets**](reference/sql-query-tables/polygon/token-tables.md)
+[**Polygon Token Datasets**](reference/sql-query-tables/polygon/token-tables/)
 
 <table data-header-hidden><thead><tr><th width="320.5"></th><th></th><th></th></tr></thead><tbody><tr><td>Contracts (erc20, erc721, erc1155)</td><td><code>polygon.contracts</code></td><td></td></tr><tr><td>Tokens (erc20, erc721, erc1155)</td><td><code>polygon.tokens</code></td><td></td></tr><tr><td>Token Transfers (erc20, erc721, erc1155)</td><td><code>polygon.token_transfers</code></td><td><code>polygon.recent_token_transfers</code></td></tr><tr><td>Token Mints (erc20, erc721, erc1155)</td><td><code>polygon.token_mints</code></td><td><code>polygon.recent_token_mints</code></td></tr></tbody></table>
 
-[**Polygon NFT Datasets**](reference/sql-query-tables/polygon/nft-tables.md)
+[**Polygon NFT Datasets**](reference/sql-query-tables/polygon/nft-tables/)
 
 <table data-header-hidden><thead><tr><th width="239.5"></th><th></th><th></th></tr></thead><tbody><tr><td>NFTs</td><td><code>polygon.nfts</code></td><td></td></tr><tr><td>NFT Contracts</td><td><code>polygon.nft_contracts</code></td><td></td></tr><tr><td>NFT Transfers (with optional hold time)</td><td><code>polygon.nft_transfers</code></td><td><code>polygon.recent_nft_transfers</code></td></tr><tr><td>NFT Owners</td><td><code>polygon.nft_owners</code></td><td></td></tr><tr><td>NFT Airdrop Transfers</td><td><code>polygon.nft_airdrop_transfers</code></td><td><code>polygon.recent_nft_airdrop_transfers</code></td></tr></tbody></table>
 
-[**Bitcoin datasets**](reference/sql-query-tables/bitcoin.md)
+[**Bitcoin datasets**](reference/sql-query-tables/bitcoin/)
 
 <table data-header-hidden><thead><tr><th width="240.5"></th><th></th><th></th></tr></thead><tbody><tr><td>Blocks</td><td><code>btc.blocks</code></td><td><code>btc.recent_blocks</code></td></tr><tr><td>Transactions</td><td><code>btc.transactions</code></td><td><code>btc.recent_transactions</code></td></tr><tr><td>Transaction Inputs</td><td><code>btc.transaction_inputs</code></td><td><code>btc.recent_transaction_inputs</code></td></tr><tr><td>Transaction Outputs</td><td><code>btc.transaction_outputs</code></td><td><code>btc.recent_transaction_outputs</code></td></tr></tbody></table>
 

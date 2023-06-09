@@ -1,5 +1,5 @@
 ---
-description: Ethereum token specific tables
+description: Ethereum Token tables available to query via SQL
 ---
 
 # Token Tables
