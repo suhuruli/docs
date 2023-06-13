@@ -9,14 +9,14 @@ All requests should specify the Spice API Key by adding a header with `X-API-KEY
 {% tabs %}
 {% tab title="Header API Key Example" %}
 ```bash
-curl https://data.spiceai.io/goerli/beacon/goerli/v1/beacon/genesis \
+curl https://data.spiceai.io/goerli/beacon/eth/v1/beacon/genesis \
   --header 'X-API-Key: [api-key]'
 ```
 {% endtab %}
 
 {% tab title="Query API Key Example" %}
 ```bash
-curl https://data.spiceai.io/goerli/beacon/goerli/v1/beacon/genesis?api_key=[api_key]
+curl https://data.spiceai.io/goerli/beacon/eth/v1/beacon/genesis?api_key=[api_key]
 ```
 {% endtab %}
 {% endtabs %}
