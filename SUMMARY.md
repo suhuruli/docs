@@ -34,7 +34,7 @@
 * [Prices API](api/prices.md)
 * [Health API](api/health.md)
 
-## 👨💻 Portal
+## 👨💻 👨💻 Portal
 
 * [Apps](portal/apps/README.md)
   * [Transfer an App](portal/apps/app-transfer.md)
@@ -349,6 +349,8 @@
       * [eth.nft\_owners](reference/sql-query-tables/ethereum/nft-tables/eth.nft\_owners.md)
       * [eth.recent\_nft\_transfers](reference/sql-query-tables/ethereum/nft-tables/eth.recent\_nft\_transfers.md)
       * [eth.nft\_airdrop\_transfers](reference/sql-query-tables/ethereum/nft-tables/eth.nft\_airdrop\_transfers.md)
+    * [Wallet Balances](reference/sql-query-tables/ethereum/wallet-balances/README.md)
+      * [eth.wallet\_balances](reference/sql-query-tables/ethereum/wallet-balances/eth.wallet\_balances.md)
     * [ENS Tables](reference/sql-query-tables/ethereum/token-tables-1/README.md)
       * [ens.domains](reference/sql-query-tables/ethereum/token-tables-1/ens.domains.md)
     * [Uniswap V2 Tables](reference/sql-query-tables/ethereum/uniswap-v2-tables/README.md)
@@ -396,6 +398,8 @@
       * [goerli.tokens\_erc1155](reference/sql-query-tables/goerli/token-tables/goerli.tokens\_erc1155.md)
       * [goerli.token\_transfers\_erc1155](reference/sql-query-tables/goerli/token-tables/goerli.token\_transfers\_erc1155.md)
       * [goerli.token\_mints](reference/sql-query-tables/goerli/token-tables/goerli.token\_mints.md)
+    * [Wallet Balance Tables](reference/sql-query-tables/goerli/token-tables-1/README.md)
+      * [goerli.wallet\_balances](reference/sql-query-tables/goerli/token-tables-1/goerli.wallet\_balances.md)
     * [Beacon Chain Tables](reference/sql-query-tables/goerli/beacon-chain-tables/README.md)
       * [goerli.beacon.validators](reference/sql-query-tables/goerli/beacon-chain-tables/goerli.beacon.validators.md)
       * [goerli.beacon.slots](reference/sql-query-tables/goerli/beacon-chain-tables/goerli.beacon.slots.md)

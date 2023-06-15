@@ -19,7 +19,7 @@
 
 6\.   Click **Authorize spicehq** to grant Spice AI read-only access to your **Organization and Teams** data.
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **Congrats, you're ready to create your first app!**
 
