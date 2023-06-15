@@ -4,6 +4,8 @@ description: SQL table schema for eth.sushiswap.pool_stats_detailed
 
 # eth.sushiswap.pool\_stats\_detailed
 
+Ethereum Sushiswap Join between pools and pool\_stats.
+
 | Column Name            | Data Type         |
 | ---------------------- | ----------------- |
 | `block_number`         | BIGINT            |

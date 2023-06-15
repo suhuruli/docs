@@ -4,6 +4,8 @@ description: SQL table schema for goerli.tokens_erc20
 
 # goerli.tokens\_erc20
 
+Goerli ERC-20 token contracts.
+
 | Column Name       | Data Type         |
 | ----------------- | ----------------- |
 | `address`         | CHARACTER VARYING |

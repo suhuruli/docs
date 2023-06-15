@@ -4,6 +4,8 @@ description: SQL table schema for goerli.token_mints and goerli.recent_token_min
 
 # goerli.token\_mints
 
+Goerli ERC-20, ERC-721, and ERC-1155 token mints.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `name`             | CHARACTER VARYING |

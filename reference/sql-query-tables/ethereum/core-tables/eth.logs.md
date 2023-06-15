@@ -4,6 +4,8 @@ description: SQL table schema for eth.logs and eth.recent_logs
 
 # eth.logs
 
+Ethereum Transaction event logs.
+
 | Column Name         | Data Type         |
 | ------------------- | ----------------- |
 | `log_index`         | BIGINT            |

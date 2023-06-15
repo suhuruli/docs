@@ -4,6 +4,8 @@ description: SQL table schema for btc.transactions and btc.recent_transactions
 
 # btc.transactions
 
+Bitcoin Block transactions.
+
 | Column Name       | Data Type         |
 | ----------------- | ----------------- |
 | `hash`            | CHARACTER VARYING |

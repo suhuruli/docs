@@ -4,6 +4,8 @@ description: SQL table schema for eth.tokens_erc721
 
 # eth.tokens\_erc721
 
+Ethereum Token tables ERC-721 token contracts.
+
 | Column Name       | Data Type         |
 | ----------------- | ----------------- |
 | `address`         | CHARACTER VARYING |

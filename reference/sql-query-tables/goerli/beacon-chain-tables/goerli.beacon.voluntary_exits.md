@@ -6,6 +6,8 @@ description: >-
 
 # goerli.beacon.voluntary\_exits
 
+Goerli  table stores data about voluntary exits of validators from the Beacon Chain.
+
 | Column Name       | Data Type         |
 | ----------------- | ----------------- |
 | `block_slot`      | DOUBLE            |

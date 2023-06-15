@@ -6,6 +6,8 @@ description: SQL table schema for eth.beacon.withdrawals and eth.beacon.recent_w
 
 
 
+Ethereum Beacon withdrawals of ETH from the beacon chain to the main Ethereum chain.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `block_slot`       | DOUBLE            |

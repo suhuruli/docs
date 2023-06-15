@@ -6,6 +6,8 @@ description: >-
 
 # goerli.beacon.proposer\_slashings
 
+Goerli Beacon Chain table stores data about proposer slashings on the Beacon Chain. Proposer slashings occur when a validator has been found to have proposed two conflicting blocks for the same slot.
+
 | Column Name               | Data Type         |
 | ------------------------- | ----------------- |
 | `block_slot`              | DOUBLE            |

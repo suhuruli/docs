@@ -4,6 +4,8 @@ description: SQL table schema for polygon.tokens_erc20
 
 # polygon.tokens\_erc20
 
+Polygon ERC-20 token contracts.
+
 | Column Name       | Data Type         |
 | ----------------- | ----------------- |
 | `address`         | CHARACTER VARYING |

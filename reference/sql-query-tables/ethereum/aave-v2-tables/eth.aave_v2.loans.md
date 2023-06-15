@@ -4,6 +4,8 @@ description: SQL table schema for eth.aave_v2.loans and r eth.aave_v2.loan_updat
 
 # eth.aave\_v2.loans
 
+All Ethereum updates to aave v2 loans.
+
 | Column Name            | Data Type         |
 | ---------------------- | ----------------- |
 | `lending_pool_address` | CHARACTER VARYING |

@@ -4,6 +4,8 @@ description: SQL table schema for polygon.token_transfers
 
 # polygon.token\_transfers
 
+Polygon ERC-20, ERC-721, and ERC-1155 token transfers.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

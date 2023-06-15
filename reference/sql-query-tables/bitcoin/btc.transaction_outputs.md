@@ -4,6 +4,8 @@ description: SQL table schema for btc.transaction_outputs
 
 # btc.transaction\_outputs
 
+All Bitcoin outputs from transactions.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `transaction_hash` | CHARACTER VARYING |

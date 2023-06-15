@@ -4,6 +4,8 @@ description: SQL table schema for eth.chainlink.prices and eth.chainlink.recent_
 
 # eth.chainlink.prices
 
+Prices per price oracle data feeds on the ethereum network.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `oracle_address`   | CHARACTER VARYING |

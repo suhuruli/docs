@@ -4,6 +4,8 @@ description: SQL table schema for eth.aave_v2.collateral and eth.aave_v2.collate
 
 # eth.aave\_v2.collateral
 
+All Ethereum updates to aave v2 collateral.
+
 | Column Name                        | Data Type         |
 | ---------------------------------- | ----------------- |
 | `lending_pool_address`             | CHARACTER VARYING |

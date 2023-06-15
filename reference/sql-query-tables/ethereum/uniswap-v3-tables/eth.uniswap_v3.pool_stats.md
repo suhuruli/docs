@@ -4,6 +4,8 @@ description: SQL table schema for eth.uniswap_v3.pool_stats
 
 # eth.uniswap\_v3.pool\_stats
 
+Ethereum Uniswap-V3 Pool stats (reserves, etc) for each block.
+
 | Column Name                  | Data Type         |
 | ---------------------------- | ----------------- |
 | `block_number`               | BIGINT            |

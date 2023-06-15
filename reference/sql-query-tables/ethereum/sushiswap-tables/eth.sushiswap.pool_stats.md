@@ -4,6 +4,8 @@ description: SQL table schema for eth.sushiswap.pool_stats
 
 # eth.sushiswap.pool\_stats
 
+Ethereum Sushiswap tables Pool stats (reserves, etc) for each block.
+
 | Column Name              | Data Type         |
 | ------------------------ | ----------------- |
 | `block_number`           | BIGINT            |

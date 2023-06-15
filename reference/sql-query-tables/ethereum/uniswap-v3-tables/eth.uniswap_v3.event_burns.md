@@ -6,6 +6,8 @@ description: >-
 
 # eth.uniswap\_v3.event\_burns
 
+Ethereum Uniswap-V3 burn events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |

@@ -6,6 +6,8 @@ description: >-
 
 # eth.sushiswap.event\_mints
 
+Ethereum Sushiswap mint events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |

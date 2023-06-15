@@ -4,6 +4,8 @@ description: SQL table schema for eth.uniswap_v2.pool_stats_detailed
 
 # eth.uniswap\_v2.pool\_stats\_detailed
 
+Ethereum Uniswap-V2 join between pools and pool\_stats.
+
 | Column Name            | Data Type         |
 | ---------------------- | ----------------- |
 | `block_number`         | BIGINT            |

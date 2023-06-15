@@ -4,6 +4,8 @@ description: SQL table schema for prices.ltc.gemini
 
 # prices.ltc.gemini
 
+HLOC values for LTC at 1 minute granularity from Gemini.
+
 | Column Name | Data Type |
 | ----------- | --------- |
 | `timestamp` | TIMESTAMP |

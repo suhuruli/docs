@@ -4,6 +4,8 @@ description: SQL table schema for polygon.token_transfers_erc1155
 
 # polygon.token\_transfers\_erc1155
 
+Polygon ERC-1155 token transfers.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

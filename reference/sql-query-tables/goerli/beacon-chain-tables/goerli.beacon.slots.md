@@ -4,6 +4,8 @@ description: SQL table schema for goerli.beacon.slots and goerli.beacon.recent_s
 
 # goerli.beacon.slots
 
+Goerli Beacon Chain table contains data about each slot in the Beacon Chain.
+
 | Column Name                               | Data Type         |
 | ----------------------------------------- | ----------------- |
 | `block_slot`                              | DOUBLE            |

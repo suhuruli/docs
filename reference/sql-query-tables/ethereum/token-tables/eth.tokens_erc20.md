@@ -4,6 +4,8 @@ description: SQL table schema for eth.tokens_erc20
 
 # eth.tokens\_erc20
 
+Ethereum Token tables ERC-20 token contracts.
+
 | Column Name       | Data Type         |
 | ----------------- | ----------------- |
 | `address`         | CHARACTER VARYING |

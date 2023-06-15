@@ -4,6 +4,8 @@ description: SQL table schema for eth.beacon.deposits and eth.beacon.recent_depo
 
 # eth.beacon.deposits
 
+Ethereum Beacon table contains data about validator deposits made on the Beacon Chain.
+
 | Column Name              | Data Type         |
 | ------------------------ | ----------------- |
 | `block_slot`             | DOUBLE            |

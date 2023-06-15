@@ -4,6 +4,8 @@ description: SQL table schema for eth.nft_contracts
 
 # eth.nft\_contracts
 
+All Ethereum erc721 contracts & subset of erc1155 contracts that contain NFTs.
+
 | Column Name  | Data Type         |
 | ------------ | ----------------- |
 | `address`    | CHARACTER VARYING |

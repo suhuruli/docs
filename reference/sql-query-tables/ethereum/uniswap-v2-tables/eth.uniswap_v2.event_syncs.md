@@ -6,6 +6,8 @@ description: >-
 
 # eth.uniswap\_v2.event\_syncs
 
+Ethereum Uniswap-V2 sync events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |

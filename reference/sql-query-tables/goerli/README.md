@@ -6,19 +6,19 @@ description: Goerli base type tables available to query via SQL
 
 #### Goerli base type tables available to query
 
-| Table Name                   | Description                                                                        |
-| ---------------------------- | ---------------------------------------------------------------------------------- |
-| `goerli.blocks`              | Block headers                                                                      |
-| `goerli.recent_blocks`       | Block headers from the last 30 minutes, \~128 blocks                               |
-| `goerli.transactions`        | Block transactions                                                                 |
-| `goerli.recent_transactions` | Block transactions from the last 30 minutes, \~128 blocks                          |
-| `goerli.logs`                | Transaction event logs                                                             |
-| `goerli.recent_logs`         | Transaction event logs from the last 30 minutes, \~128 blocks                      |
-| `goerli.contracts`           | A listing of all contracts                                                         |
-| `goerli.traces`              | All call frames executed during a transaction, also known as internal transactions |
-| `goerli.recent_traces`       | `goerli.traces` data from the last 30 minutes, \~128 blocks                        |
-| `goerli.withdrawals`         | Block withdrawals                                                                  |
-| `goerli.recent_withdrawals`  | Block withdrawals from the last 30 minutes, \~128 blocks                           |
+| Table Name                                                         | Description                                                                        |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| [`goerli.blocks`](core-tables/goerli.blocks.md)                    | Block headers                                                                      |
+| [`goerli.recent_blocks`](core-tables/goerli.blocks.md)             | Block headers from the last 30 minutes, \~128 blocks                               |
+| [`goerli.transactions`](core-tables/goerli.transactions.md)        | Block transactions                                                                 |
+| [`goerli.recent_transactions`](core-tables/goerli.transactions.md) | Block transactions from the last 30 minutes, \~128 blocks                          |
+| [`goerli.logs`](core-tables/goerli.logs.md)                        | Transaction event logs                                                             |
+| [`goerli.recent_logs`](core-tables/goerli.logs.md)                 | Transaction event logs from the last 30 minutes, \~128 blocks                      |
+| [`goerli.contracts`](core-tables/goerli.contracts.md)              | A listing of all contracts                                                         |
+| [`goerli.traces`](core-tables/goerli.traces.md)                    | All call frames executed during a transaction, also known as internal transactions |
+| [`goerli.recent_traces`](core-tables/goerli.traces.md)             | `goerli.traces` data from the last 30 minutes, \~128 blocks                        |
+| [`goerli.withdrawals`](core-tables/goerli.withdrawals.md)          | Block withdrawals                                                                  |
+| [`goerli.recent_withdrawals`](core-tables/goerli.withdrawals.md)   | Block withdrawals from the last 30 minutes, \~128 blocks                           |
 
 The table list is also available as a SQL query using `show tables`. For example:
 

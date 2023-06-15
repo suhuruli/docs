@@ -4,6 +4,8 @@ description: SQL table schema for prices.eth.sushiswap
 
 # prices.eth.sushiswap
 
+HLOC values for ETH at 1 minute granularity from Sushiswap.
+
 | Column Name | Data Type |
 | ----------- | --------- |
 | `timestamp` | TIMESTAMP |

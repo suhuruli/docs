@@ -6,6 +6,8 @@ description: >-
 
 # eth.beacon.bls\_to\_execution\_changes
 
+Ethereum Beacon requests to change old BLS withdrawal credentials to the new withdrawal credentials in execution address format.
+
 | Column Name            | Data Type         |
 | ---------------------- | ----------------- |
 | `block_slot`           | DOUBLE            |

@@ -6,6 +6,8 @@ description: >-
 
 # eth.uniswap\_v3.event\_set\_fee\_protocols
 
+Ethereum Uniswap-V3 set fee protocol events.
+
 | Column Name         | Data Type         |
 | ------------------- | ----------------- |
 | `address`           | CHARACTER VARYING |

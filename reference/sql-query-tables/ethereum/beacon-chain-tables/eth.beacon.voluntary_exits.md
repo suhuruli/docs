@@ -6,6 +6,8 @@ description: >-
 
 # eth.beacon.voluntary\_exits
 
+Ethereum Beacon table stores data about voluntary exits of validators from the Beacon Chain.
+
 | Column Name       | Data Type         |
 | ----------------- | ----------------- |
 | `block_slot`      | DOUBLE            |

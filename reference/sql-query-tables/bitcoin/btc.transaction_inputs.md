@@ -4,6 +4,8 @@ description: SQL table schema for btc.transaction_inputs and btc.recent_transact
 
 # btc.transaction\_inputs
 
+All  Bitcoin inputs to transactions.
+
 | Column Name              | Data Type         |
 | ------------------------ | ----------------- |
 | `transaction_hash`       | CHARACTER VARYING |

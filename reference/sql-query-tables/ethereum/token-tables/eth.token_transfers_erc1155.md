@@ -4,6 +4,8 @@ description: SQL table schema for eth.token_transfers_erc1155
 
 # eth.token\_transfers\_erc1155
 
+Ethereum Token tables ERC-1155 token transfers.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

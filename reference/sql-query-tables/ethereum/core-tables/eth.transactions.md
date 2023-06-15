@@ -4,6 +4,8 @@ description: SQL table schema for eth.transactions and eth.recent_transactions
 
 # eth.transactions
 
+Ethereum Block transactions.
+
 | Column Name                   | Data Type         |
 | ----------------------------- | ----------------- |
 | `hash`                        | CHARACTER VARYING |

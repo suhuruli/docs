@@ -6,6 +6,8 @@ description: >-
 
 # eth.sushiswap.event\_syncs
 
+Ethereum Sushiswap sync events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |

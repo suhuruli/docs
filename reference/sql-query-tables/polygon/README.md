@@ -4,17 +4,17 @@ As a blockchain compatible with the Ethereum Virtual Machine (EVM) standard, the
 
 #### Polygon base type tables available to query
 
-| Table Name                    | Description                                                                        |
-| ----------------------------- | ---------------------------------------------------------------------------------- |
-| `polygon.blocks`              | Block headers                                                                      |
-| `polygon.recent_blocks`       | Block headers from the last 30 minutes, \~900 blocks                               |
-| `polygon.transactions`        | Block transactions                                                                 |
-| `polygon.recent_transactions` | Block transactions from the last 30 minutes, \~900 blocks                          |
-| `polygon.logs`                | Transaction event logs                                                             |
-| `polygon.recent_logs`         | Transaction event logs from the last 30 minutes, \~900 blocks                      |
-| `polygon.contracts`           | A listing of all contracts                                                         |
-| `polygon.traces`              | All call frames executed during a transaction, also known as internal transactions |
-| `polygon.recent_traces`       | `polygon.traces` data from the last 30 minutes, \~900 blocks                       |
+| Table Name                                                           | Description                                                                        |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| [`polygon.blocks`](core-tables/polygon.blocks.md)                    | Block headers                                                                      |
+| [`polygon.recent_blocks`](core-tables/polygon.blocks.md)             | Block headers from the last 30 minutes, \~900 blocks                               |
+| [`polygon.transactions`](core-tables/polygon.transactions.md)        | Block transactions                                                                 |
+| [`polygon.recent_transactions`](core-tables/polygon.transactions.md) | Block transactions from the last 30 minutes, \~900 blocks                          |
+| [`polygon.logs`](core-tables/polygon.logs.md)                        | Transaction event logs                                                             |
+| [`polygon.recent_logs`](core-tables/polygon.logs.md)                 | Transaction event logs from the last 30 minutes, \~900 blocks                      |
+| [`polygon.contracts`](core-tables/polygon.contracts.md)              | A listing of all contracts                                                         |
+| [`polygon.traces`](core-tables/polygon.traces.md)                    | All call frames executed during a transaction, also known as internal transactions |
+| [`polygon.recent_traces`](core-tables/polygon.traces.md)             | `polygon.traces` data from the last 30 minutes, \~900 blocks                       |
 
 The table list is also available as a SQL query using `show tables`. For example:
 

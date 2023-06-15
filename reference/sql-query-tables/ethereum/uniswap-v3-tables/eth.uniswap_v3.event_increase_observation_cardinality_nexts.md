@@ -7,6 +7,8 @@ description: >-
 
 # eth.uniswap\_v3.event\_increase\_observation\_cardinality\_nexts
 
+Ethereum Uniswap-V3 increase observation cardinality next events.
+
 | Column Name                        | Data Type         |
 | ---------------------------------- | ----------------- |
 | `address`                          | CHARACTER VARYING |

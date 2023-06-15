@@ -4,6 +4,8 @@ description: SQL table schema for polygon.nfts
 
 # polygon.nfts
 
+All Polygon NFTs from both ERC721 and ERC1155 contracts.
+
 | Column Name  | Data Type         |
 | ------------ | ----------------- |
 | `address`    | CHARACTER VARYING |

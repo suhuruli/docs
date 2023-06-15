@@ -4,6 +4,8 @@ description: SQL table schema for goerli.beacon.deposits and goerli.beacon.recen
 
 # goerli.beacon.deposits
 
+Goerli table contains data about validator deposits made on the Beacon Chain.
+
 | Column Name              | Data Type         |
 | ------------------------ | ----------------- |
 | `block_slot`             | DOUBLE            |

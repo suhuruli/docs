@@ -4,6 +4,8 @@ description: SQL table schema for eth.nft_airdrop_transfers
 
 # eth.nft\_airdrop\_transfers
 
+Ethereum Airdrops of NFTs.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

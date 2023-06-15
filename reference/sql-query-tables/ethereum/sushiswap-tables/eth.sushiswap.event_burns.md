@@ -6,6 +6,8 @@ description: >-
 
 # eth.sushiswap.event\_burns
 
+Ethereum Sushiswap burn events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |

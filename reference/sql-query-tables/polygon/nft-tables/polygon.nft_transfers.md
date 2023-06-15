@@ -4,6 +4,8 @@ description: SQL table schema for polygon.nft_transfers and polygon.recent_nft_t
 
 # polygon.nft\_transfers
 
+Polygon Transfers of erc721 & erc1155 NFTs. Does not include fungible tokens from erc1155 contracts.
+
 |                    |                   |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

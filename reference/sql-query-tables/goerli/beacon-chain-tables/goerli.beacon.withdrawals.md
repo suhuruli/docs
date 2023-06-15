@@ -6,6 +6,8 @@ description: >-
 
 # goerli.beacon.withdrawals
 
+Withdrawals of ETH from the beacon chain to the Goerli testnet chain.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `block_slot`       | DOUBLE            |

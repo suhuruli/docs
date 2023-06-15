@@ -4,6 +4,8 @@ description: SQL table schema for eth.traces and eth.recent_traces
 
 # eth.traces
 
+All Ethereum call frames executed during a transaction, also known as internal transactions.
+
 | Column Name         | Data Type         |
 | ------------------- | ----------------- |
 | `transaction_hash`  | CHARACTER VARYING |

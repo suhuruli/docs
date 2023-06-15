@@ -4,6 +4,8 @@ description: SQL table schema for goerli.beacon.validators
 
 # goerli.beacon.validators
 
+Goerli Beacon Chain latest validators, with their status and current balance.
+
 | Column Name                    | Data Type         |
 | ------------------------------ | ----------------- |
 | `validator_index`              | DECIMAL           |

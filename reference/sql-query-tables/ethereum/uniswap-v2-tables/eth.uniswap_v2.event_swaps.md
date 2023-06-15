@@ -6,6 +6,8 @@ description: >-
 
 # eth.uniswap\_v2.event\_swaps
 
+Ethereum Uniswap-V2 swap events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |

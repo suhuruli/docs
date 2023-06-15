@@ -4,6 +4,8 @@ description: SQL table schema for polygon.recent_token_transfers
 
 # polygon.recent\_token\_transfers
 
+Polygon Token transfers from the last 30 minutes, \~128 blocks.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

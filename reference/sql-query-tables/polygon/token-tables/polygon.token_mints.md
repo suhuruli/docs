@@ -4,6 +4,8 @@ description: SQL table schema for polygon.token_mints and polygon.recent_token_m
 
 # polygon.token\_mints
 
+Polygon ERC-20, ERC-721, and ERC-1155 token mints.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `name`             | CHARACTER VARYING |

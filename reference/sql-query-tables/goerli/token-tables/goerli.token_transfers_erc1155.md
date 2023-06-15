@@ -4,6 +4,8 @@ description: SQL table schema for goerli.token_transfers_erc1155
 
 # goerli.token\_transfers\_erc1155
 
+Goerli ERC-1155 token transfers.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

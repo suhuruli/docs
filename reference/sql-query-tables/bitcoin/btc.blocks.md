@@ -4,6 +4,8 @@ description: SQL table schema for btc.blocks and btc.recent_blocks
 
 # btc.blocks
 
+Bitcoin Block headers.
+
 | Column Name         | Data Type         |
 | ------------------- | ----------------- |
 | `number`            | BIGINT            |

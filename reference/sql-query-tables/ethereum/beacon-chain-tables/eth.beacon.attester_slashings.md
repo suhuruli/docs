@@ -6,6 +6,8 @@ description: >-
 
 # eth.beacon.attester\_slashings
 
+Ethereum Beacon table contains information about attester slashings on the Beacon Chain. Occurs when a validator has made conflicting attestations.
+
 | Column Name                       | Data Type         |
 | --------------------------------- | ----------------- |
 | `block_slot`                      | DOUBLE            |

@@ -6,6 +6,8 @@ description: >-
 
 # polygon.nft\_airdrop\_transfers
 
+Polygon Airdrops of NFTs.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

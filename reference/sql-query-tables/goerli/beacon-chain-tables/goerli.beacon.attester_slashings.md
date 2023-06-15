@@ -6,6 +6,8 @@ description: >-
 
 # goerli.beacon.attester\_slashings
 
+Goerli table contains information about attester slashings on the Beacon Chain. Occurs when a validator has made conflicting attestations.
+
 | Column Name                       | Data Type         |
 | --------------------------------- | ----------------- |
 | `block_slot`                      | DOUBLE            |

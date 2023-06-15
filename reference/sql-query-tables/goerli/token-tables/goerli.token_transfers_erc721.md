@@ -4,6 +4,8 @@ description: SQL table schema for goerli.token_transfers_erc721
 
 # goerli.token\_transfers\_erc721
 
+Goerli ERC-721 token transfers (NFTs).
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

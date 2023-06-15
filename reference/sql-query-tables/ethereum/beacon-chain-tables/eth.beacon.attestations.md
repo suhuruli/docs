@@ -6,6 +6,8 @@ description: >-
 
 # eth.beacon.attestations
 
+Ethereum Beacon table stores data about attestations made by validators on the Beacon Chain.
+
 | Column Name         | Data Type         |
 | ------------------- | ----------------- |
 | `block_slot`        | DOUBLE            |

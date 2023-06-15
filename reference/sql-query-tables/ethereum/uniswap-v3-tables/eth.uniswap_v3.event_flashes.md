@@ -6,6 +6,8 @@ description: >-
 
 # eth.uniswap\_v3.event\_flashes
 
+Ethereum Uniswap-V3 flash events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |

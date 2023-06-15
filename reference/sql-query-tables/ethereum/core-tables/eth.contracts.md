@@ -4,6 +4,8 @@ description: SQL table schema for eth.contracts
 
 # eth.contracts
 
+Ethereum listing of all contracts.
+
 | Column Name          | Data Type         |
 | -------------------- | ----------------- |
 | `address`            | CHARACTER VARYING |

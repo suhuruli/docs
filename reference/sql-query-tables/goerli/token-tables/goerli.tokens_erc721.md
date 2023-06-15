@@ -4,6 +4,8 @@ description: SQL table schema for goerli.tokens_erc721
 
 # goerli.tokens\_erc721
 
+Goerli ERC-721 token contracts.
+
 | Column Name       | Data Type         |
 | ----------------- | ----------------- |
 | `address`         | CHARACTER VARYING |

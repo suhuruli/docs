@@ -6,6 +6,8 @@ description: >-
 
 # eth.uniswap\_v2.event\_mints
 
+Ethereum Uniswap-V2 mint events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |

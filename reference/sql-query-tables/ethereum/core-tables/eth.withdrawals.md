@@ -4,6 +4,8 @@ description: SQL table schema for eth.withdrawals and eth.recent_withdrawals
 
 # eth.withdrawals
 
+Ethereum Block withdrawals.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `withdrawal_index` | DOUBLE            |

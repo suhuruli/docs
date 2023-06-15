@@ -4,6 +4,8 @@ description: SQL table schema for eth.token_transfers_erc721
 
 # eth.token\_transfers\_erc721
 
+Ethereum Token tables ERC-721 token transfers (NFTs).
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `token_address`    | CHARACTER VARYING |

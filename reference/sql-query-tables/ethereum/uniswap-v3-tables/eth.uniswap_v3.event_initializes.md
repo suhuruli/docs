@@ -6,6 +6,8 @@ description: >-
 
 # eth.uniswap\_v3.event\_initializes
 
+Ethereum Uniswap-V3 initialize events.
+
 | Column Name        | Data Type         |
 | ------------------ | ----------------- |
 | `address`          | CHARACTER VARYING |
