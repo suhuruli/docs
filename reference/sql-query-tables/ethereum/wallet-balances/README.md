@@ -23,10 +23,13 @@ One of the most fundamental queries to make on any blockchain is the native curr
 Getting the balance of a wallet becomes a simple act of querying the absolute balance (in gwei) at the last block that it changed:
 
 ```sql
-WITH user_balances AS (
-    SELECT * FROM eth.wallet_balances WHERE address = LOWER('0x28c6c06298d514db089934071355e5743bf21d60')
+WITH ranked_balances AS (
+    SELECT address, balance_gwei, ROW_NUMBER() OVER (PARTITION BY address ORDER BY block_number DESC) AS rn
+    FROM eth.wallet_balances
 )
-SELECT address, balance_gwei FROM user_balances WHERE block_number = (SELECT MAX(block_number) from user_balances)
+
+SELECT address, balance_gwei
+FROM ranked_balances WHERE rn = 1 and address = LOWER('0x28c6c06298d514db089934071355e5743bf21d60')
 ```
 
 This dataset contains the `balance_gwei` (Ether balance, in gwei) at the block in question, as well as an estimated `balance_usd` in USD. In cases where the gwei balance is too large to represent efficiently, the full value can be extracted programmatically from the hexadecimal string representation in the `balance_hex` column.
