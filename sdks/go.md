@@ -6,7 +6,7 @@ description: Golang SDK for Spice.xyz
 
 The [Go SDK](https://github.com/spiceai/gospice) `gospice` is the easiest way to query [Spice.xyz](https://spice.xyz) from Go.
 
-It uses [Apache Apache Flight](https://arrow.apache.org/docs/format/Flight.html) to efficiently stream data to the client and [Apache Arrow](https://arrow.apache.org/) Records as data frames.
+It uses [Apache Arrow Flight](https://arrow.apache.org/docs/format/Flight.html) to efficiently stream data to the client and [Apache Arrow](https://arrow.apache.org/) Records as data frames.
 
 GoDocs available at [pkg.go.dev/github.com/spiceai/gospice](https://pkg.go.dev/github.com/spiceai/gospice).
 
