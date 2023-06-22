@@ -4,7 +4,7 @@ description: SQL table schema for polygon.contracts
 
 # polygon.contracts
 
-A listing of all Polygon contracts..
+A listing of all Polygon contracts.
 
 | Column Name          | Data Type         |
 | -------------------- | ----------------- |

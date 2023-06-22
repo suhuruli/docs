@@ -29,7 +29,7 @@
 | [TIMESTAMPADD](timestampadd.md)                         | Add (or subtract) an interval of time from a date/timestamp value or column.                       |
 | [TIMESTAMPDIFF](timestampdiff.md)                       | Return the amount of time between two date or timestamp values                                     |
 | [TO\_DATE](to\_date.md)                                 | Converts the input expressions to the corresponding date.                                          |
-| [TO\_TIME](to\_time.md)                                 | Converts the input expressions to the corresponding time.                                          |
+| [TO\_TIME](../conversion/to\_time.md)                   | Converts the input expressions to the corresponding time.                                          |
 | [TO\_TIMESTAMP](to\_timestamp.md)                       | Converts the input expressions to the corresponding timestamp.                                     |
 | [UNIX\_TIMESTAMP](unix\_timestamp.md)                   | Returns the Unix epoch time representation of an ISO 8601 timestamp.                               |
 | [WEEK](week.md)                                         | Extracts the week number (from 0 to 53) for a given date or timestamp.                             |

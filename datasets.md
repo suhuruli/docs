@@ -90,6 +90,14 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 <table data-header-hidden><thead><tr><th width="240.5"></th><th></th><th></th></tr></thead><tbody><tr><td>Blocks</td><td><code>btc.blocks</code></td><td><code>btc.recent_blocks</code></td></tr><tr><td>Transactions</td><td><code>btc.transactions</code></td><td><code>btc.recent_transactions</code></td></tr><tr><td>Transaction Inputs</td><td><code>btc.transaction_inputs</code></td><td><code>btc.recent_transaction_inputs</code></td></tr><tr><td>Transaction Outputs</td><td><code>btc.transaction_outputs</code></td><td><code>btc.recent_transaction_outputs</code></td></tr></tbody></table>
 
+#### [Flow datasets](reference/sql-query-tables/flow/core-tables/)
+
+<table data-header-hidden><thead><tr><th width="251.5"></th><th></th><th></th></tr></thead><tbody><tr><td>Blocks</td><td><code>flow.blocks</code></td><td><code>flow.recent_blocks</code></td></tr><tr><td>Transactions</td><td><code>flow.transactions</code></td><td><code>flow.recent_transactions</code></td></tr><tr><td>Events</td><td><code>flow.events</code></td><td><code>flow.recent_events</code></td></tr></tbody></table>
+
+[**Flow Token/NFT datasets**](reference/sql-query-tables/flow/token-nft-tables/)
+
+<table data-header-hidden><thead><tr><th width="239.5"></th><th></th><th></th></tr></thead><tbody><tr><td>NFTs</td><td><code>flow.nfts</code></td><td></td></tr><tr><td>NFT Transfers</td><td><code>flow.nft_transfers</code></td><td><code>flow.recent_nft_transfers</code></td></tr><tr><td>Fungible Token Transfers</td><td><code>flow.token_transfers</code></td><td><code>flow.recent_token_transfers</code></td></tr></tbody></table>
+
 #### [Prices datasets](reference/sql-query-tables/prices/)
 
 Query for BTC, ETH and LTC prices in SQL with data sourced from several sources

@@ -1,0 +1,9 @@
+# flow.nfts
+
+
+
+<table><thead><tr><th>Column Name</th><th>Description</th><th>Example Value</th><th data-hidden>Data Type</th></tr></thead><tbody><tr><td><code>id</code></td><td>The unique ID of this NFT, with the format:<br>"A.{collection_address}.{collection_name}.{serial}"</td><td>A.0b2a3299cc857e29.TopShot.392127</td><td>CHARACTER VARYING</td></tr><tr><td><code>name</code></td><td>The name of this NFT</td><td>Chris Paul 3 Pointer</td><td>CHARACTER VARYING</td></tr><tr><td><code>description</code></td><td>The description associated with this NFT</td><td>Don’t call it a comeback! Veteran Oklahoma City Thunder point guard Chris Paul drains the beautiful stepback three against the Houston Rockets on August 31, 2020.</td><td>CHARACTER VARYING</td></tr><tr><td><code>thumbnail_url</code></td><td>A link to a thumbnail representing this NFT</td><td><a href="https://assets.nbatopshot.com/media/392127?width=256">https://assets.nbatopshot.com/media/392127?width=256</a></td><td>CHARACTER VARYING</td></tr><tr><td><code>external_url</code></td><td>An external link to the full representation of this NFT</td><td><a href="https://nbatopshot.com/moment/392127">https://nbatopshot.com/moment/392127</a></td><td>CHARACTER VARYING</td></tr><tr><td><code>collection_id</code></td><td>The unique ID of this NFT collection, with the format:<br>"A.{collection_address}.{collection_name}"</td><td>A.0b2a3299cc857e29.TopShot</td><td>CHARACTER VARYING</td></tr><tr><td><code>collection_address</code></td><td>The on-chain address where this NFT collection is deployed</td><td>0b2a3299cc857e29</td><td>CHARACTER VARYING</td></tr><tr><td><code>collection_name</code></td><td>The name of the NFT collection this NFT belongs to</td><td>TopShot</td><td>CHARACTER VARYING</td></tr><tr><td><code>serial</code></td><td>The unique ID of the NFT within the collection</td><td>392127</td><td>BIGINT</td></tr></tbody></table>
+
+Indexed columns:
+
+* `id`
