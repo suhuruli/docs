@@ -40,6 +40,26 @@ GROUP BY block_height
 LIMIT 10
 ```
 
+### Average gas limit per block
+
+```sql
+SELECT avg(gas_limit) AS avg_gas_limit, block_height
+FROM flow.recent_transactions
+GROUP BY block_height
+LIMIT 10
+```
+
+### Counts of different types of recent events
+
+Total number of each type of events recently happened.
+
+```sql
+SELECT split_part(type, '.', 4) AS event_type, count(*) AS counts
+FROM flow.recent_events
+GROUP BY split_part(type, '.', 4)
+ORDER BY count(*) DESC
+```
+
 ### Events that represent NFT Withdrawals/Deposits
 
 The raw event data that corresponds to an NFT Withdrawal or Deposit.
