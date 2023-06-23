@@ -1,14 +1,14 @@
 ---
-description: Prices HTTP API documentation
+description: Currency/Token Prices HTTP API documentation
 ---
 
 # Prices API
 
-## Spot Prices
+## Spot/Latest Prices
 
-The **`/v0.1/prices`** API returns the spot prices of popular token/currency pairs for several exchanges, such as Binance, Coinbase, and Gemini, and the min, max, and average price across them.
+The **`/v0.1/prices`** API returns the spot (latest) prices of popular token/currency pairs for several exchanges, such as Binance, Coinbase, and Gemini, and the min, max, and average price across them.
 
-{% swagger method="get" path="/v0.1/prices" baseUrl="https://data.spiceai.io" summary="Get Exchange Prices" %}
+{% swagger method="get" path="/v0.1/prices" baseUrl="https://data.spiceai.io" summary="Get exchange prices for a symbol/currency" expanded="false" %}
 {% swagger-description %}
 Returns token/currency pairs for several exchanges, such as Coinbase, and Gemini and the min, max, and average price across them.
 {% endswagger-description %}
@@ -61,6 +61,62 @@ Returns token/currency pairs for several exchanges, such as Coinbase, and Gemini
 {% endswagger-response %}
 {% endswagger %}
 
+To fetch the price of multiple currency/tokens in a single request, `POST` to the `/v0.1/prices` endpoint.
+
+{% swagger method="post" path="/v0.1/prices" baseUrl="https://data.spiceai.io" summary="Get exchange prices for multiple symbols/currencies" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="symbols" type="String[]" required="true" %}
+An array of one or more currency/token symbols. E.g. 
+
+`"symbols": ["cbETH", "stETH", "rETH"]`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="convert" type="String" %}
+An optional conversion currency/token symbol. E.g. 
+
+`"convert": "AUD"`
+
+  If not provided defaults to "USD".
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="An array of price pairs for each of the symbols provided to the conversion symbol" %}
+```json
+[
+	{
+		"pair": "CBETH-USD",
+		"prices": {
+			"coinmarketcap": "1958.4909298141743"
+		},
+		"minPrice": "1958.49093",
+		"maxPrice": "1958.49093",
+		"avePrice": "1958.49093"
+	},
+	{
+		"pair": "STETH-USD",
+		"prices": {
+			"coinmarketcap": "1865.1506855247744"
+		},
+		"minPrice": "1865.150686",
+		"maxPrice": "1865.150686",
+		"avePrice": "1865.150686"
+	},
+	{
+		"pair": "RETH-USD",
+		"prices": {
+			"coinmarketcap": "2024.2628747010635"
+		},
+		"minPrice": "2024.262875",
+		"maxPrice": "2024.262875",
+		"avePrice": "2024.262875"
+	}
+]
+```
+{% endswagger-response %}
+{% endswagger %}
+
 The **`/v0.1/prices/[pair]`** API returns spot prices of the specified token/currency pair.
 
 E.g. `/v0.1/prices/btc-aud` will return the price of BTC in AUD.
@@ -69,7 +125,7 @@ The API will default to **USD** as the base currency if one is not provided.
 
 E.g. `/v0.1/prices/btc` will return the price of BTC in USD.
 
-{% swagger method="get" path="/v0.1/prices/[pair]" baseUrl="https://data.spiceai.io" summary="" %}
+{% swagger method="get" path="/v0.1/prices/[pair]" baseUrl="https://data.spiceai.io" summary="Get exchange prices for a specific currency/token pair" %}
 {% swagger-description %}
 
 {% endswagger-description %}
