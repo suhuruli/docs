@@ -91,3 +91,27 @@ example api query
   );
   console.log(res);
 ```
+
+**getMultiplePrices**(convert?: string, symbols: string[]) => LatestPrice[]
+
+* `convert`: Conversion currency/token symbol, for example: "AUD".  If not provided defaults to "USD".
+* `symbols`: (string[], required): Currency/token symbols whose prices will be fetched, for example ["cbETH", "stETH", "rETH"]
+
+`getMultiplePrices` returns an array of LatestPrice object
+```javascript
+LatestPrice {
+  pair: string;
+  minPrice: string;
+  maxPrice: string;
+  avePrice: string;
+}
+```
+example api query
+
+```javascript
+const multiplePrices = await spiceClient.getMultiplePrices(
+  'AUD',
+  ["cbETH", "stETH", "rETH"]
+);
+console.log(multiplePrices);
+```
