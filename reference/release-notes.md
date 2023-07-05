@@ -4,9 +4,62 @@ description: Spice.xyz Release notes
 
 # Release notes
 
+### June 2023
+
+The June release includes new datasets for Ethereum/Goerli wallet balances + Flow core/nft datasets, additional platform performance upgrades along with several usability and user-experience improvements.
+
+#### Wallet Balance Datasets
+
+The wallet balances datasets contains a block-level view of all Ether balance changes due to gas fees, withdrawals, and committed external and internal (contract) transactions.
+
+{% hint style="info" %}
+Wallet Balances datasets do not yet have full historical data.
+{% endhint %}
+
+* [`eth.wallet_balances`](sql-query-tables/ethereum/wallet-balances/)
+* [`goerli.wallet_balances`](sql-query-tables/goerli/token-tables-1/)
+
+#### Flow Datasets
+
+[Flow](sql-query-tables/flow/) is a fast, decentralized, and developer-friendly blockchain, designed as the foundation for a new generation of games, apps, and the digital assets that power them. Supercharge your Flow apps with these datasets indexed by Spice.xyz.
+
+{% hint style="info" %}
+Flow support is in preview. Contact us to let us know if Flow support is important to you!
+{% endhint %}
+
+* [`flow.blocks`](sql-query-tables/flow/core-tables/flow.blocks.md)
+* [`flow.transactions`](sql-query-tables/flow/core-tables/flow.transactions.md)
+* [`flow.events`](sql-query-tables/flow/core-tables/flow.events.md)
+* [`flow.nfts`](sql-query-tables/flow/token-nft-tables/flow.nfts.md)
+* [`flow.nft_transfers`](sql-query-tables/flow/token-nft-tables/flow.nft\_transfers.md)
+* [`flow.token_transfers`](sql-query-tables/flow/token-nft-tables/flow.token\_transfers.md)
+
+#### Portal
+
+Portal UX improvements include the ability to search the dataset reference for specific datasets and inserting a sample query with a click. GitHub avatars now show up in the organization drop-down, as well as a distinction between your personal account and other organizations you are part of. Searching for members to add to an organization now properly autocompletes.
+
+{% embed url="https://youtu.be/2qk8ZMZOJek" %}
+[Spice.xyz](http://spice.xyz) SQL explorer dataset reference improvements
+{% endembed %}
+
+**New In this Release**
+
+1. \[Wallet Balances] Added wallet balance datasets for Ethereum and Goerli which track changes to wallet balances on every block.
+2. \[Flow] Added Flow datasets, including core and enriched NFT/token datasets.
+3. \[Portal] GitHub avatars are now shown in the organization drop-down.
+4. \[Portal] The organization drop-down now distinguishes between your personal account and other organizations you are part of.
+
+**Changes**
+
+1. \[Portal] You can now search for datasets in the dataset reference.
+2. \[Portal] Sample queries can be injected into the query editor by clicking in the dataset reference.
+3. \[Portal] Improved error messages in the SQL editor for syntax errors.
+4. \[Portal] The dialog box used for adding organization members now auto-completes for potential members to add.
+5. \[Performance] Improved performance for several datasets, including `eth.beacon.validators` and `goerli.beacon.validators`.
+
 ### May 2023
 
-The April release includes significant platform performance upgrades with the rollout of Spice AI's **second generation platform architecture (Gen. 2)** along with several usability and user-experience improvements.
+The May release includes significant platform performance upgrades with the rollout of Spice AI's **second generation platform architecture (Gen. 2)** along with several usability and user-experience improvements.
 
 [Ethereum](sql-query-tables/ethereum/) and [Polygon](sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](example-ethereum-sql-queries/nfts.md), [ENS](sql-query-tables/ethereum/token-tables-1/), [Uniswap](example-dex-queries/uniswap.md), and [Sushiswap](example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
 
