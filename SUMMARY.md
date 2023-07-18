@@ -51,6 +51,10 @@
   * [Converting Large Numbers](sdks/node.js-sdk/converting-large-numbers.md)
 * [🆕 Go SDK](sdks/go.md)
 
+## 🔌 Integrations
+
+* [Grafana](integrations/grafana.md)
+
 ## 🎓 Tutorials
 
 * [Tokens & NFTs](tutorials/tokens-and-nfts.md)
