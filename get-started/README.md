@@ -16,7 +16,7 @@ Navigate to [data.spiceai.io/eth/v0.1/gasfees](https://data.spiceai.io/eth/v0.1/
 
 Example:
 
-{% embed url="https://data.spiceai.io/eth/v0.1/gasfees?price=USD" %}
+{% embed url="https://data.spiceai.io/eth/v0.1/gasfees" %}
 Example results from the Ethereum gas fees API.
 {% endembed %}
 {% endtab %}
