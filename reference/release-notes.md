@@ -46,7 +46,7 @@ Portal UX improvements include the ability to search the dataset reference for s
 
 1. \[Wallet Balances] Added wallet balance datasets for Ethereum and Goerli which track changes to wallet balances on every block.
 2. \[Flow] Added Flow datasets, including core and enriched NFT/token datasets.
-3. \[Portal] GitHub avatars are now shown in the organization drop-down.
+3. \[Portal] Show GitHub avatars in the organization drop-down.
 4. \[Portal] The organization drop-down now distinguishes between your personal account and other organizations you are part of.
 
 **Changes**
