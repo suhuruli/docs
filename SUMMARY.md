@@ -32,6 +32,8 @@
 * [Polygon API](api/polygon/README.md)
   * [JSON RPC Methods](api/polygon/json-rpc-methods.md)
 * [Prices API](api/prices.md)
+* [Predictions API](api/predictions-api/README.md)
+  * [Predictions API Terms and Conditions](api/predictions-api/predictions-api-terms-and-conditions.md)
 * [Health API](api/health.md)
 
 ## 👨💻 👨💻 Portal
