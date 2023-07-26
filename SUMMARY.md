@@ -5,16 +5,16 @@
 * [👋 Welcome to Spice](README.md)
 * [Quickstart](getting-started/get-started/README.md)
   * [Step 1 - Portal Login](getting-started/get-started/portal-login.md)
-  * [Step 2 - SQL Query in Playground](getting-started/get-started/step-3-make-a-basic-sql-query.md)
-  * [Step 3 - Leverage a SDK](getting-started/get-started/step-3-build-faster-with-a-sdk.md)
+  * [Step 2 - SQL Query in Playground](getting-started/get-started/step-2-sql-query-in-playground.md)
+  * [Step 3 - Leverage a SDK](getting-started/get-started/step-3-leverage-a-sdk.md)
   * [Next Steps](getting-started/get-started/next-steps.md)
-* [Datasets](datasets.md)
+* [Datasets](getting-started/datasets.md)
 * [Core Concepts](getting-started/core-concepts/README.md)
-  * [Organizations](core-concepts/organizations.md)
-  * [Duration Literals](core-concepts/duration-literals.md)
+  * [Organizations](getting-started/core-concepts/organizations.md)
+  * [Duration Literals](getting-started/core-concepts/duration-literals.md)
 * [Best Practices](getting-started/best-practices.md)
-* [Limitations](limitations.md)
-* [FAQ](faq.md)
+* [Limitations](getting-started/limitations.md)
+* [FAQ](getting-started/faq.md)
 
 ## 💻 API
 
