@@ -7,7 +7,7 @@ description: SQL table schema for eth.nft_owners
 Ethereum NFT tables tracks the current owner of an NFT.\
 This table is mutable; the number of rows within a given time or block range can be different due to changes in NFT ownership.
 
-| Column Name        | Data Type         |                                                                          |
+| Column Name        | Data Type         | Description                                                              |
 | ------------------ | ----------------- | ------------------------------------------------------------------------ |
 | `token_address`    | CHARACTER VARYING | The contract address of this NFT.                                        |
 | `token_id`         | CHARACTER VARYING | The unique, opaque identifier of this specific NFT mint.                 |
