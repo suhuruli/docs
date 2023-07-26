@@ -2,7 +2,7 @@
 description: Welcome to the Spice documentation!
 ---
 
-# 👋 Welcome to Spice
+# Welcome to Spice
 
 **Spice** is a high-performance web3 data provider and platform for applications, machine learning (ML), and data science. It's built and supported by the team at [**Spice AI**](https://spice.ai).
 
