@@ -61,9 +61,9 @@ Portal UX improvements include the ability to search the dataset reference for s
 
 The May release includes significant platform performance upgrades with the rollout of Spice AI's **second generation platform architecture (Gen. 2)** along with several usability and user-experience improvements.
 
-[Ethereum](sql-query-tables/ethereum/) and [Polygon](sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](samples-and-examples/example-ethereum-sql-queries/nfts.md), [ENS](sql-query-tables/ethereum/token-tables-1/), [Uniswap](samples-and-examples/example-dex-queries/uniswap.md), and [Sushiswap](samples-and-examples/example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
+[Ethereum](sql-query-tables/ethereum/) and [Polygon](sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](example-ethereum-sql-queries/nfts.md), [ENS](sql-query-tables/ethereum/token-tables-1/), [Uniswap](example-dex-queries/uniswap.md), and [Sushiswap](example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p><a href="samples-and-examples/example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p><a href="example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
 
 Portal UX improvements include the ability to collapse the sidebar, resize the SQL query input and results pane, and expand to a fullscreen focus mode. SQL query errors are now highlighted with red underline swiggles along with a more readable error pane. Finally, results render faster and app switching is faster.
 
@@ -125,7 +125,7 @@ from eth_withdrawn
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-05-10 at 10.20.00 PM.png" alt=""><figcaption><p>Get ETH withdrawn after the Ethereum Shanghai upgrade, sample output</p></figcaption></figure>
 
-Explore detailed sample SQL queries for [DEX](samples-and-examples/example-dex-queries/), [Cross-Chain](samples-and-examples/example-cross-chain-queries.md), [Ethereum](samples-and-examples/example-ethereum-sql-queries/), [Beacon](samples-and-examples/example-ethereum-beacon-sql-queries/), and [Bitcoin](samples-and-examples/example-bitcoin-queries/) in the Spice Docs.\
+Explore detailed sample SQL queries for [DEX](example-dex-queries/), [Cross-Chain](example-cross-chain-queries.md), [Ethereum](example-ethereum-sql-queries/), [Beacon](example-ethereum-beacon-sql-queries/), and [Bitcoin](example-bitcoin-queries/) in the Spice Docs.\
 
 
 **Goerli Testnet:** Full support for the Goerli testnet has been added, including hosted beacon and execution nodes, and fully indexed datasets, helping developers test their applications before mainnet launch.&#x20;
@@ -517,7 +517,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/).
   * `btc.transactions` / `btc.recent_transactions`
   * `btc.transaction_inputs` / `btc.recent_transaction_inputs`
   * `btc.transaction_outputs` / `btc.recent_transaction_outputs`
-* [example-bitcoin-queries](samples-and-examples/example-bitcoin-queries/ "mention") for querying Bitcoin data.
+* [example-bitcoin-queries](example-bitcoin-queries/ "mention") for querying Bitcoin data.
 
 #### Resources
 

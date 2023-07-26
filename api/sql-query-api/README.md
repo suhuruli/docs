@@ -10,8 +10,8 @@ See the [SQL Query Tables](../../reference/sql-query-tables/) for table definiti
 
 ### Example SQL Queries
 
-* [Ethereum (EVM) Queries](../../reference/samples-and-examples/example-ethereum-sql-queries/)
-* [Ethereum Beacon Queries](../../reference/samples-and-examples/example-bitcoin-queries/)
-* [Decentralized-Exchange (DEX) Queries](../../reference/samples-and-examples/example-dex-queries/)
-* [Bitcoin Queries](../../reference/samples-and-examples/example-bitcoin-queries/)
-* [Cross-Chain Queries](../../reference/samples-and-examples/example-cross-chain-queries.md)
+* [Ethereum (EVM) Queries](../../reference/example-ethereum-sql-queries/)
+* [Ethereum Beacon Queries](../../reference/example-bitcoin-queries/)
+* [Decentralized-Exchange (DEX) Queries](../../reference/example-dex-queries/)
+* [Bitcoin Queries](../../reference/example-bitcoin-queries/)
+* [Cross-Chain Queries](../../reference/example-cross-chain-queries.md)

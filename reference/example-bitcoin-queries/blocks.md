@@ -16,7 +16,7 @@ FROM btc.recent_blocks
 Gets basic information for the last 5000 blocks in the chain
 
 {% hint style="info" %}
-To get access to more than 500 results, use the [Apache Arrow Flight API](../../../api/sql-query-api/apache-arrow-flight-api.md).
+To get access to more than 500 results, use the [Apache Arrow Flight API](../../api/sql-query-api/apache-arrow-flight-api.md).
 {% endhint %}
 
 **Typical query time**: 2 seconds

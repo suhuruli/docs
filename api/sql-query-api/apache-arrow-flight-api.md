@@ -35,7 +35,7 @@ See the [Python SDK page](../../sdks/python-sdk.md#m1-macs) for installation ste
 
 #### Samples
 
-Find code samples in Python in [Arrow Flight Samples](../../reference/samples-and-examples/arrow-flight-samples.md).
+Find code samples in Python in [Arrow Flight Samples](../../reference/arrow-flight-samples.md).
 
 ### Troubleshooting
 
