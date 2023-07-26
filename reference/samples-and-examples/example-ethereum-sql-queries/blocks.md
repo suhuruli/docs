@@ -27,7 +27,7 @@ FROM polygon.recent_blocks
 Gets basic information for the blocks of the last 4 hours in the chain.
 
 {% hint style="info" %}
-To get access to more than 500 results, use the [Apache Arrow Flight API](broken-reference/).
+To get access to more than 500 results, use the [Apache Arrow Flight API](../../example-ethereum-sql-queries/broken-reference/).
 {% endhint %}
 
 **Typical query time**: 2 seconds

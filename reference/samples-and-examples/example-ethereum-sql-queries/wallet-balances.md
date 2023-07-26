@@ -51,9 +51,9 @@ WHERE wr.rnk = 1
 ORDER BY balance_gwei DESC
 ```
 
-<figure><img src="../../.gitbook/assets/1THdeAg3ei_-ky8xE4pTLrA.png" alt=""><figcaption><p>Query: Wallets with top balances, identified with their ENS names and balance change in gwei.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1THdeAg3ei_-ky8xE4pTLrA.png" alt=""><figcaption><p>Query: Wallets with top balances, identified with their ENS names and balance change in gwei.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/1VcvTjPcmq_xkyhvVPHrrjg.png" alt=""><figcaption><p>Select wallets with the top 10 balances, identified with their ENS names.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1VcvTjPcmq_xkyhvVPHrrjg.png" alt=""><figcaption><p>Select wallets with the top 10 balances, identified with their ENS names.</p></figcaption></figure>
 
 ## Analyze transaction trends for a specific group of highly active wallets week over week
 
