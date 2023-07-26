@@ -1,3 +1,9 @@
+---
+description: >-
+  A step-by-step guide to login to your Spice.xyz account, connect with your
+  Github organizations, and create your first app.
+---
+
 # Portal Login
 
 ## From Website
@@ -21,7 +27,7 @@
 
 <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Congrats, you're ready to create your first app!**
+**Congrats, you're ready to create your first** [**app**](../portal/apps/)**!**
 
 
 

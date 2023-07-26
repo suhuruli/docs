@@ -47,3 +47,16 @@ curl --request POST \
 ### Use an SDK
 
 Use the [Python SDK](../sdks/python-sdk.md), [Node.js SDK](../sdks/node.js-sdk/), or [Go SDK](../sdks/go.md) to query Spice using it's high-performance Apache Arrow transport.
+
+
+
+Next steps
+
+To get inspired and learn more about leveraging queries, SDKs, and APIs for different tasks:
+
+* Read our [GPT guide](https://platform.openai.com/docs/guides/gpt).
+* Explore our library of SQL Reference, Query Tables, and Sample Queries.&#x20;
+* Start experimenting in the [Playground](https://platform.openai.com/playground).
+* Keep our [usage policies](https://openai.com/policies/usage-policies) in mind as you start building.
+
+Looking for ChatGPT? Head to [chat.openai.com](https://chat.openai.com/).
