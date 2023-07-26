@@ -1,6 +1,6 @@
 # Dataset & View YAML Specification
 
-Spice Datasets and Views are defined in YAML. The create a Dataset or View, add a dataset YAML to the `.spice/datasets` path of the connected [GitHub repository](../../../portal/apps/link-github-repository-beta.md).
+Spice Datasets and Views are defined in YAML. To create a Dataset or View, add a dataset YAML to the `.spice/datasets` path of the connected [GitHub repository](../../../portal/apps/link-github-repository-beta.md).
 
 ### **YAML Schema Reference**
 
