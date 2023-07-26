@@ -5,7 +5,7 @@
 * [Welcome to Spice](README.md)
 * [Quickstart](getting-started/get-started/README.md)
   * [Step 1 - Portal Login](getting-started/get-started/portal-login.md)
-  * [Step 2 - SQL Query](getting-started/get-started/step-2-sql-query.md)
+  * [Step 2 - SQL Query](getting-started/get-started/step-3-make-a-basic-sql-query.md)
   * [Step 3 - Leverage a SDK](getting-started/get-started/step-3-leverage-a-sdk.md)
   * [Next Steps](getting-started/get-started/next-steps.md)
 * [Datasets](getting-started/datasets.md)

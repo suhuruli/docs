@@ -9,7 +9,7 @@ It includes:
 * A [SQL Query Editor](../../portal/sql-query-editor.md) for experimentation.
 * Interactive API clients and sample code.
 
-<figure><img src="../../.gitbook/assets/Screen Recording 2023-06-21 at 6.08.06 PM.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Recording 2023-07-26 at 1.12.12 AM (1).gif" alt=""><figcaption><p>SQL Query Editor: querying for UniswapV2 Pool Liquidity Stats</p></figcaption></figure>
 
 ### Make a basic SQL query using cURL
 
