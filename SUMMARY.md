@@ -478,7 +478,7 @@
       * [prices.ltc.coinbase](reference/sql-query-tables/prices/ltc/prices.ltc.coinbase.md)
       * [prices.ltc.gemini](reference/sql-query-tables/prices/ltc/prices.ltc.gemini.md)
 * [Specifications](reference/specifications/README.md)
-  * [Dataset & View YAML Specification](reference/specifications/dataset-and-view-yaml-specification/README.md)
+  * [Dataset & View YAML Specification](reference/specifications/dataset-and-view-yaml-specification.md)
     * [Firecache](reference/specifications/dataset-and-view-yaml-specification/firecache.md)
 * [Samples and Examples](reference/samples-and-examples/README.md)
   * [Example Ethereum (EVM) SQL Queries](reference/example-ethereum-sql-queries/README.md)
