@@ -1,15 +1,20 @@
 # Table of contents
 
+## 🌟 Getting Started
+
 * [👋 Welcome to Spice](README.md)
-* [Getting started](get-started/README.md)
-  * [Portal Login](get-started/portal-login.md)
-* [Datasets](datasets.md)
-* [Core Concepts](core-concepts/README.md)
-  * [Organizations](core-concepts/organizations.md)
-  * [Duration Literals](core-concepts/duration-literals.md)
-* [Best Practices](best-practices.md)
-* [Limitations](limitations.md)
-* [FAQ](faq.md)
+* [Quickstart](getting-started/get-started/README.md)
+  * [Step 1 - Portal Login](getting-started/get-started/portal-login.md)
+  * [Step 3 - Make a basic SQL Query](getting-started/get-started/step-3-make-a-basic-sql-query.md)
+  * [Step 3 - Build Faster with a SDK](getting-started/get-started/step-3-build-faster-with-a-sdk.md)
+  * [Next Steps](getting-started/get-started/next-steps.md)
+* [Datasets](getting-started/datasets.md)
+* [Core Concepts](getting-started/core-concepts/README.md)
+  * [Organizations](getting-started/core-concepts/organizations.md)
+  * [Duration Literals](getting-started/core-concepts/duration-literals.md)
+* [Best Practices](getting-started/best-practices.md)
+* [Limitations](getting-started/limitations.md)
+* [FAQ](getting-started/faq.md)
 
 ## 💻 API
 
@@ -479,7 +484,7 @@
       * [prices.ltc.coinbase](reference/sql-query-tables/prices/ltc/prices.ltc.coinbase.md)
       * [prices.ltc.gemini](reference/sql-query-tables/prices/ltc/prices.ltc.gemini.md)
 * [Specifications](reference/specifications/README.md)
-  * [Dataset & View YAML Specification](reference/specifications/dataset-and-view-yaml-specification/README.md)
+  * [Dataset & View YAML Specification](reference/specifications/dataset-and-view-yaml-specification.md)
     * [Firecache](reference/specifications/dataset-and-view-yaml-specification/firecache.md)
 * [Samples and Examples](reference/samples-and-examples/README.md)
   * [Example Ethereum (EVM) SQL Queries](reference/example-ethereum-sql-queries/README.md)
