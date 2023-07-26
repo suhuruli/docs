@@ -8,13 +8,13 @@
   * [Step 3 - Make a basic SQL Query](getting-started/get-started/step-3-make-a-basic-sql-query.md)
   * [Step 3 - Build Faster with a SDK](getting-started/get-started/step-3-build-faster-with-a-sdk.md)
   * [Next Steps](getting-started/get-started/next-steps.md)
-* [Datasets](getting-started/datasets.md)
+* [Datasets](datasets.md)
 * [Core Concepts](getting-started/core-concepts/README.md)
-  * [Organizations](getting-started/core-concepts/organizations.md)
-  * [Duration Literals](getting-started/core-concepts/duration-literals.md)
+  * [Organizations](core-concepts/organizations.md)
+  * [Duration Literals](core-concepts/duration-literals.md)
 * [Best Practices](getting-started/best-practices.md)
-* [Limitations](getting-started/limitations.md)
-* [FAQ](getting-started/faq.md)
+* [Limitations](limitations.md)
+* [FAQ](faq.md)
 
 ## 💻 API
 
