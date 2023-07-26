@@ -1,9 +1,3 @@
----
-description: >-
-  Use the Spice.xyz Query Editor in Playground to query data from the web
-  portal.
----
-
 # Query Editor
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Spice.xyz Query Editor</p></figcaption></figure>

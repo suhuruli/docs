@@ -34,6 +34,7 @@
 * [Prices API](api/prices.md)
 * [Predictions API](api/predictions-api/README.md)
   * [Predictions API Terms and Conditions](api/predictions-api/predictions-api-terms-and-conditions.md)
+* [Spicepods API](api/spicepods-api.md)
 * [Health API](api/health.md)
 
 ## 👨💻 👨💻 Portal
@@ -478,7 +479,7 @@
       * [prices.ltc.coinbase](reference/sql-query-tables/prices/ltc/prices.ltc.coinbase.md)
       * [prices.ltc.gemini](reference/sql-query-tables/prices/ltc/prices.ltc.gemini.md)
 * [Specifications](reference/specifications/README.md)
-  * [Dataset & View YAML Specification](reference/specifications/dataset-and-view-yaml-specification.md)
+  * [Dataset & View YAML Specification](reference/specifications/dataset-and-view-yaml-specification/README.md)
     * [Firecache](reference/specifications/dataset-and-view-yaml-specification/firecache.md)
 * [Samples and Examples](reference/samples-and-examples/README.md)
   * [Example Ethereum (EVM) SQL Queries](reference/example-ethereum-sql-queries/README.md)
