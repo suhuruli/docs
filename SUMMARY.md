@@ -42,7 +42,7 @@
 * [Spicepods API](api/spicepods-api.md)
 * [Health API](api/health.md)
 
-## 👨💻 👨💻 Portal
+## 👨💻 Portal
 
 * [Apps](portal/apps/README.md)
   * [Connect GitHub repository](portal/apps/link-github-repository-beta.md)
