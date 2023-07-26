@@ -260,7 +260,7 @@ Sample Queries
 2.  Number of Weekly Attester Slashings \
 
 
-    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Top 10 most frequent block proposers\
 
 

@@ -14,7 +14,7 @@ To view your organizations, click your profile image and select **Your organizat
 
 All the organizations you have access to are listed.
 
-![](<../.gitbook/assets/image (2) (1) (1).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 ### Organization Management
 
