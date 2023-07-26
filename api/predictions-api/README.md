@@ -1,5 +1,5 @@
 ---
-description: Run Predictions using Pre-trained AI Models
+description: Run predictions using pre-trained AI models
 ---
 
 # Predictions API
@@ -9,23 +9,6 @@ The Spice AI Predictions API is made available for research purposes only. By ac
 {% endhint %}
 
 Spice AI has trained a number of AI models for predictions on blockchain data. These models come with data included, so all you need to get a glimpse of the future is a simple API request.
-
-**Available models**
-
-<table><thead><tr><th width="259">Model Id</th><th>Description</th></tr></thead><tbody><tr><td><code>uniswapv3_usdc_eth</code></td><td>Short horizon forecasting of Uniswap v3 data for the USDC:ETH 0.05% pool <code>0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640</code></td></tr><tr><td><code>uniswapv3_usdc_usdt</code></td><td>Short horizon forecasting of Uniswap v3 data for the USDC:USDT 0.01% pool <code>0x3416cf6c708da44db2624d63ea0aaef7113527c6</code></td></tr><tr><td><code>uniswapv3_eth_usdt</code></td><td>Short horizon forecasting of Uniswap v3 data for the ETH:USDT 0.05% pool <code>0x11b815efb8f581194ae79006d24e0d814b7697f6</code></td></tr><tr><td><code>uniswapv3_wbtc_eth</code></td><td>Short horizon forecasting of Uniswap v3 data for the WBTC/ETH 0.05% pool <code>0x4585fe77225b41b697c938b018e2ac67ac5a20c0</code></td></tr><tr><td><code>uniswapv3_dai_usdc</code></td><td>Short horizon forecasting of Uniswap v3 data for the DAI:USDC 0.01% pool <code>0x5777d92f208679db4b9778590fa3cab3ac9e2168</code></td></tr></tbody></table>
-
-#### Sample request payload
-
-```json
-{
-    "model_id": "uniswapv3_usdc_eth",
-    "return_lookback_data": true
-}
-```
-
-#### Requirements and limitations
-
-* An API key is required for all predictions.
 
 {% swagger method="post" path="/v0.1/predictions" baseUrl="https://data.spiceai.io" summary="Perform prediction with AI model" %}
 {% swagger-description %}
@@ -40,7 +23,7 @@ The id of a pre-trained model
 Set to true to include the historical lookback data that the model used to make its prediction.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="api_key" type="String" %}
+{% swagger-parameter in="query" name="api_key" type="String" required="true" %}
 The API Key for your Spice app
 {% endswagger-parameter %}
 
@@ -87,3 +70,20 @@ The API Key for your Spice app
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+#### Sample request payload
+
+```json
+{
+    "model_id": "uniswapv3_usdc_eth",
+    "return_lookback_data": true
+}
+```
+
+**Available models**
+
+<table><thead><tr><th width="259">Model Id</th><th>Description</th></tr></thead><tbody><tr><td><code>uniswapv3_usdc_eth</code></td><td>Short horizon forecasting of Uniswap v3 data for the USDC:ETH 0.05% pool <code>0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640</code></td></tr><tr><td><code>uniswapv3_eth_usdt</code></td><td>Short horizon forecasting of Uniswap v3 data for the ETH:USDT 0.05% pool <code>0x11b815efb8f581194ae79006d24e0d814b7697f6</code></td></tr><tr><td><code>uniswapv3_wbtc_eth</code></td><td>Short horizon forecasting of Uniswap v3 data for the WBTC/ETH 0.05% pool <code>0x4585fe77225b41b697c938b018e2ac67ac5a20c0</code></td></tr></tbody></table>
+
+#### Requirements and limitations
+
+* An API key is required for all predictions.
