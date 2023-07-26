@@ -40,6 +40,9 @@
 
 * [Apps](portal/apps/README.md)
   * [Transfer an App](portal/apps/app-transfer.md)
+  * [Link GitHub repository (beta)](portal/apps/link-github-repository-beta.md)
+  * [Datasets (beta)](portal/apps/datasets-beta.md)
+  * [Functions (beta)](portal/apps/functions-beta.md)
 * [Organizations](portal/organizations.md)
 * [Query Editor](portal/query-editor.md)
 
