@@ -1,3 +1,7 @@
+---
+description: Connect your Spice.xyz to a GitHub repository (Beta)
+---
+
 # Connect GitHub repository
 
 {% hint style="info" %}

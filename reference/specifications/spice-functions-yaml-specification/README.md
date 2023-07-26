@@ -2,6 +2,8 @@
 
 Spice Functions configuration and metadata is defined in YAML. To create a Spice Function, add a `function.yaml` manifest file to a connected [GitHub repository](../../../portal/apps/link-github-repository-beta.md).
 
+`function.yaml` should be co-located with the function code in a subdirectory from the root of the repository.
+
 ### YAML Schema Reference
 
 **`output_dataset`**

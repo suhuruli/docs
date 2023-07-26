@@ -1,6 +1,6 @@
 # SQL Query Editor
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Spice.xyz Query Editor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Spice.xyz Query Editor</p></figcaption></figure>
 
 Open the SQL editor by navigating to an app and clicking **SQL Query** in the sidebar.
 

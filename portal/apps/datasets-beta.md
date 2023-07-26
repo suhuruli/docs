@@ -34,13 +34,13 @@ See the [Dataset & View YAML Specification](../../reference/specifications/spice
 
 Once the manifest file is committed to the GitHub repository, navigate to the **Datasets** section of the **Hub**, and click **Sync with GitHub**. The newly defined dataset will appear in the datasets list.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>List of synced Datasets in the Hub.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>List of synced Datasets in the Hub.</p></figcaption></figure>
 
 ### Deploy the Dataset
 
 Click the dataset **Deploy** button. Because this dataset was Firecache enabled, the firecache status will now turn to **Ready.**
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Deployed dataset eth.recent_blocks is now firecache Ready.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Deployed dataset eth.recent_blocks is now firecache Ready.</p></figcaption></figure>
 
 ### View Dataset details
 
