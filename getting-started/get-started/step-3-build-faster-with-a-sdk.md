@@ -1,4 +1,4 @@
-# Step 3 - Build Faster with a SDK
+# Step 3 - Leverage a SDK
 
 ### Build Faster with a SDK
 

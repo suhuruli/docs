@@ -1,6 +1,6 @@
 # Dataset & View YAML Specification
 
-Spice Datasets and Views are defined in YAML. The create a Dataset or View, add a dataset YAML to the `.spice/datasets` path of the connected [GitHub repository](../../portal/apps/link-github-repository-beta.md).
+Spice Datasets and Views are defined in YAML. The create a Dataset or View, add a dataset YAML to the `.spice/datasets` path of the connected [GitHub repository](../../../portal/apps/link-github-repository-beta.md).
 
 ### **YAML Schema Reference**
 
@@ -21,7 +21,7 @@ The dataset type. Supported values are:
 
 An ordered list of SQL migrations to execute to create or update this dataset.
 
-[**`firecache`**](dataset-and-view-yaml-specification/firecache.md)
+[**`firecache`**](firecache.md)
 
 Specifies the Spice Firecache properties of this dataset.
 
