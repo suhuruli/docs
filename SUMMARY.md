@@ -39,9 +39,9 @@
 ## 👨💻 👨💻 Portal
 
 * [Apps](portal/apps/README.md)
-  * [Connect GitHub repository](portal/apps/connect-github-repository.md)
-  * [Datasets and Views](portal/apps/datasets-and-views.md)
-  * [Spice Functions](portal/apps/spice-functions.md)
+  * [Connect GitHub repository](portal/apps/link-github-repository-beta.md)
+  * [Datasets and Views](portal/apps/datasets-beta.md)
+  * [Spice Functions](portal/apps/functions-beta.md)
   * [Transfer an App](portal/apps/app-transfer.md)
 * [Organizations](portal/organizations.md)
 * [Query Editor](portal/query-editor.md)

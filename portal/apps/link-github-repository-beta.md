@@ -10,7 +10,7 @@ Connecting your app to a GitHub repository is in beta for Design Partners. Get i
 
 ## Overview
 
-Connecting your Spice.xyz app to a GitHub repository allows you to create custom [Datasets and Views](datasets-and-views.md), add datasets to Spice Firecache, author [Spice Functions](spice-functions.md), and train AI Models.
+Connecting your Spice.xyz app to a GitHub repository allows you to create custom [Datasets and Views](datasets-beta.md), add datasets to Spice Firecache, author [Spice Functions](functions-beta.md), and train AI Models.
 
 ## Prerequisites
 
