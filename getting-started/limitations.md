@@ -11,7 +11,7 @@ In beta, Spice.xyz has a number of limitations, including:
 * 10 apps per account.
 * 10 request-per-second (rps).
 * 90-second request/query timeout.
-* 500 row limit for HTTP API results (use the [Apache Arrow API](api/sql-query-api/apache-arrow-flight-api.md) or the [Async HTTP API](api/sql-query-api/http-api-1.md) for no limit).
+* 500 row limit for HTTP API results (use the [Apache Arrow API](../api/sql-query-api/apache-arrow-flight-api.md) or the [Async HTTP API](../api/sql-query-api/http-api-1.md) for no limit).
 
 #### Guest API Limits - No API Key
 
