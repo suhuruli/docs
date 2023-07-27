@@ -46,6 +46,7 @@
 
 * [Apps](portal/apps/README.md)
   * [Connect GitHub repository](portal/apps/link-github-repository-beta.md)
+  * [🔥 Spice Firecache](portal/apps/spice-firecache.md)
   * [Datasets and Views](portal/apps/datasets-beta.md)
   * [Spice Functions](portal/apps/functions-beta.md)
   * [Transfer an App](portal/apps/app-transfer.md)

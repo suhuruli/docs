@@ -25,6 +25,8 @@ See the [Python SDK page](../../sdks/python-sdk.md#m1-macs) for installation ste
 #### Connecting to the endpoint
 
 * Use the gRPC + TLS URL: `grpc+tls://flight.spiceai.io`
+* For Firecache use the gRPC + TLS URL: `grpc+tls://firecache.spiceai.io`
+  * For documentation on the Spice Firecache see [firecache.md](../../reference/specifications/dataset-and-view-yaml-specification/firecache.md "mention")
 * Use basic authentication
   * Username can be set to an empty string
   * Password should be set to the API key of your app
