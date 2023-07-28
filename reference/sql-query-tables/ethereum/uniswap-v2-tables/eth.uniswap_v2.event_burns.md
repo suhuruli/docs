@@ -8,15 +8,15 @@ description: >-
 
 Ethereum Uniswap-V2 burn events.
 
-| Column Name        | Data Type         |
-| ------------------ | ----------------- |
-| `address`          | CHARACTER VARYING |
-| `log_index`        | BIGINT            |
-| `amount0`          | CHARACTER VARYING |
-| `amount1`          | CHARACTER VARYING |
-| `sender`           | CHARACTER VARYING |
-| `to_address`       | CHARACTER VARYING |
-| `transaction_hash` | CHARACTER VARYING |
-| `block_timestamp`  | BIGINT            |
-| `block_number`     | BIGINT            |
-| `block_hash`       | CHARACTER VARYING |
+| Column Name        | Data Type         | Description                                                          |
+| ------------------ | ----------------- | -------------------------------------------------------------------- |
+| `address`          | CHARACTER VARYING | The address of the contract that defines this pool.                  |
+| `log_index`        | BIGINT            | The index of this burn transaction in the block.                     |
+| `amount0`          | CHARACTER VARYING | The amount of the first token that is being burned out of the pool.  |
+| `amount1`          | CHARACTER VARYING | The amount of the second token that is being burned out of the pool. |
+| `sender`           | CHARACTER VARYING | The address of the burner.                                           |
+| `to_address`       | CHARACTER VARYING | The address of the recipient of burned collateral.                   |
+| `transaction_hash` | CHARACTER VARYING | The hash of the transaction in which this burn occurred.             |
+| `block_timestamp`  | BIGINT            | The timestamp of the block in which this burn occurred.              |
+| `block_number`     | BIGINT            | The number of the block in which this burn occurred.                 |
+| `block_hash`       | CHARACTER VARYING | The number of the block in which this burn occurred.                 |

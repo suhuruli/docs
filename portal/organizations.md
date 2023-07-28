@@ -20,7 +20,7 @@ All the organizations you have access to are listed.
 
 Click the **Settings** button to view information about the organization, including members and apps within the organization.
 
-![](<../.gitbook/assets/image (1) (2).png>)
+![](<../.gitbook/assets/image (1) (2) (1).png>)
 
 #### Adding organization members
 

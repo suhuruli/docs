@@ -9,13 +9,13 @@ description: >-
 
 Ethereum Uniswap-V3 increase observation cardinality next events.
 
-| Column Name                        | Data Type         |
-| ---------------------------------- | ----------------- |
-| `address`                          | CHARACTER VARYING |
-| `log_index`                        | BIGINT            |
-| `observation_cardinality_next_old` | INTEGER           |
-| `observation_cardinality_next_new` | INTEGER           |
-| `transaction_hash`                 | CHARACTER VARYING |
-| `block_timestamp`                  | BIGINT            |
-| `block_number`                     | BIGINT            |
-| `block_hash`                       | CHARACTER VARYING |
+| Column Name                        | Data Type         | Description                                               |
+| ---------------------------------- | ----------------- | --------------------------------------------------------- |
+| `address`                          | CHARACTER VARYING | The address of the contract that defines this pool.       |
+| `log_index`                        | BIGINT            | The index of this event in the block.                     |
+| `observation_cardinality_next_old` | INTEGER           |                                                           |
+| `observation_cardinality_next_new` | INTEGER           |                                                           |
+| `transaction_hash`                 | CHARACTER VARYING | The hash of the transaction in which this event occurred. |
+| `block_timestamp`                  | BIGINT            | The timestamp of the block in which this event occurred.  |
+| `block_number`                     | BIGINT            | The number of the block in which this event occurred.     |
+| `block_hash`                       | CHARACTER VARYING | The hash of the block in which this event occurred.       |

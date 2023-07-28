@@ -40,11 +40,11 @@ Once the manifest file is committed to the GitHub repository, navigate to the **
 
 Click the dataset **Deploy** button. Because this dataset was Firecache enabled, the firecache status will now turn to **Ready.**
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Deployed dataset eth.recent_blocks is now firecache Ready.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Deployed dataset eth.recent_blocks is now firecache Ready.</p></figcaption></figure>
 
 ### View Dataset details
 
 Clicking the dataset will show its details along with it's deployments.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Dataset details page.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Dataset details page.</p></figcaption></figure>
 

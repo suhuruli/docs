@@ -8,15 +8,15 @@ description: >-
 
 Ethereum Uniswap-V3 collect protocol events.
 
-| Column Name        | Data Type         |
-| ------------------ | ----------------- |
-| `address`          | CHARACTER VARYING |
-| `log_index`        | BIGINT            |
-| `amount0`          | CHARACTER VARYING |
-| `amount1`          | CHARACTER VARYING |
-| `sender`           | CHARACTER VARYING |
-| `recipient`        | CHARACTER VARYING |
-| `transaction_hash` | CHARACTER VARYING |
-| `block_timestamp`  | BIGINT            |
-| `block_number`     | BIGINT            |
-| `block_hash`       | CHARACTER VARYING |
+| Column Name        | Data Type         | Description                                                    |
+| ------------------ | ----------------- | -------------------------------------------------------------- |
+| `address`          | CHARACTER VARYING | The address of the contract that defines this pool.            |
+| `log_index`        | BIGINT            | The index of this collect event in the block.                  |
+| `amount0`          | CHARACTER VARYING | The amount of the first token being collected.                 |
+| `amount1`          | CHARACTER VARYING | The amount of the second token being collected.                |
+| `sender`           | CHARACTER VARYING | The address initiating this collection.                        |
+| `recipient`        | CHARACTER VARYING | The address of the recipient of this collection.               |
+| `transaction_hash` | CHARACTER VARYING | The hash of the transaction in which this collection occurred. |
+| `block_timestamp`  | BIGINT            | The timestamp of the block in which this collection occurred.  |
+| `block_number`     | BIGINT            | The number of the block in which this collection occurred.     |
+| `block_hash`       | CHARACTER VARYING | The hash of the block in which this collection occurred.       |

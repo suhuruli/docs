@@ -8,15 +8,15 @@ description: >-
 
 Ethereum Uniswap-V3 set fee protocol events.
 
-| Column Name         | Data Type         |
-| ------------------- | ----------------- |
-| `address`           | CHARACTER VARYING |
-| `log_index`         | BIGINT            |
-| `fee_protocol0_old` | INTEGER           |
-| `fee_protocol0_new` | INTEGER           |
-| `fee_protocol1_old` | INTEGER           |
-| `fee_protocol1_new` | INTEGER           |
-| `transaction_hash`  | CHARACTER VARYING |
-| `block_timestamp`   | BIGINT            |
-| `block_number`      | BIGINT            |
-| `block_hash`        | CHARACTER VARYING |
+| Column Name         | Data Type         | Description                                                 |
+| ------------------- | ----------------- | ----------------------------------------------------------- |
+| `address`           | CHARACTER VARYING | The address of the contract that defines this pool.         |
+| `log_index`         | BIGINT            | The index of this burn transaction in the block.            |
+| `fee_protocol0_old` | INTEGER           | The previous value of the fee protocol on the first token.  |
+| `fee_protocol0_new` | INTEGER           | The new value of the fee protocol on the first token.       |
+| `fee_protocol1_old` | INTEGER           | The previous value of the fee protocol on the second token. |
+| `fee_protocol1_new` | INTEGER           | The new value of the fee protocol on the second token.      |
+| `transaction_hash`  | CHARACTER VARYING | The hash of the transaction in which this event occurred.   |
+| `block_timestamp`   | BIGINT            | The timestamp of the block in which this event occurred.    |
+| `block_number`      | BIGINT            | The number of the block in which this event occurred.       |
+| `block_hash`        | CHARACTER VARYING | The hash of the block in which this event occurred.         |
