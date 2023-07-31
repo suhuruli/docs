@@ -8,13 +8,13 @@ description: >-
 
 Ethereum Sushiswap sync events.
 
-| Column Name        | Data Type         |
-| ------------------ | ----------------- |
-| `address`          | CHARACTER VARYING |
-| `log_index`        | BIGINT            |
-| `reserve0`         | CHARACTER VARYING |
-| `reserve1`         | CHARACTER VARYING |
-| `transaction_hash` | CHARACTER VARYING |
-| `block_timestamp`  | BIGINT            |
-| `block_number`     | BIGINT            |
-| `block_hash`       | CHARACTER VARYING |
+| Column Name        | Data Type         | Description                                                                                                                       |
+| ------------------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `address`          | CHARACTER VARYING | The address of the contract that defines this pool.                                                                               |
+| `log_index`        | BIGINT            | The index of this sync transaction in the block.                                                                                  |
+| `reserve0`         | CHARACTER VARYING | <p>The amount of liquidity of the first token staked in this pool.</p><p></p><p>Provided as a convenience, but may overflow.</p>  |
+| `reserve1`         | CHARACTER VARYING | <p>The amount of liquidity of the second token staked in this pool.</p><p></p><p>Provided as a convenience, but may overflow.</p> |
+| `transaction_hash` | CHARACTER VARYING | The hash of the transaction in which this sync occurred.                                                                          |
+| `block_timestamp`  | BIGINT            | The timestamp of the block in which this sync occurred.                                                                           |
+| `block_number`     | BIGINT            | The number of the block in which this sync occurred.                                                                              |
+| `block_hash`       | CHARACTER VARYING | The hash of the block in which this sync occurred.                                                                                |

@@ -19,4 +19,4 @@ Ethereum Uniswap-V2 burn events.
 | `transaction_hash` | CHARACTER VARYING | The hash of the transaction in which this burn occurred.             |
 | `block_timestamp`  | BIGINT            | The timestamp of the block in which this burn occurred.              |
 | `block_number`     | BIGINT            | The number of the block in which this burn occurred.                 |
-| `block_hash`       | CHARACTER VARYING | The number of the block in which this burn occurred.                 |
+| `block_hash`       | CHARACTER VARYING | The hash of the block in which this burn occurred.                   |
