@@ -44,7 +44,7 @@ WebSocket support is available for [Design Partners](https://www.craft.do/s/bgJF
 
 ### Do you support alerting?
 
-Not yet, but it is on our roadmap. You can also build your own custom alerting using [Spice Functions](portal/apps/functions-beta.md).
+Not yet, but it is on our roadmap. You can also build your own custom alerting using [Spice Functions](portal/apps/spice-functions/).
 
 ### Do you support JDBC/ODBC/ADBC?
 
