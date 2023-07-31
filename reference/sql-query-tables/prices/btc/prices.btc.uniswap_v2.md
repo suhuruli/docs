@@ -6,7 +6,7 @@ description: SQL table schema for prices.btc.uniswap_v2
 
 HLOC values for BTC at 1 minute granularity from Uniswap.
 
-| Column Name | Data Type |                                                                |
+| Column Name | Data Type | Description                                                    |
 | ----------- | --------- | -------------------------------------------------------------- |
 | `timestamp` | TIMESTAMP | The timestamp of this pricing valuation.                       |
 | `usd_high`  | DECIMAL   | The highest price, in USD, during the aggregated time period.  |

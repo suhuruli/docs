@@ -6,7 +6,7 @@ description: SQL table schema for eth.withdrawals and eth.recent_withdrawals
 
 Ethereum Block withdrawals.
 
-| Column Name        | Data Type         |                                                                         |
+| Column Name        | Data Type         | Description                                                             |
 | ------------------ | ----------------- | ----------------------------------------------------------------------- |
 | `withdrawal_index` | DOUBLE            | Unique identifier of the withdrawal (within the withdrawal table).      |
 | `validator_index`  | DOUBLE            | Unique identifier of the validator (within the validator table).        |
