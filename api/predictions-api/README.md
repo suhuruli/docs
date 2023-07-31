@@ -82,7 +82,7 @@ The API Key for your Spice app
 
 **Available models**
 
-<table><thead><tr><th width="259">Model Id</th><th>Description</th></tr></thead><tbody><tr><td><code>uniswapv3_usdc_eth</code></td><td>Short horizon forecasting of Uniswap v3 data for the USDC:ETH 0.05% pool <code>0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640</code></td></tr><tr><td><code>uniswapv3_eth_usdt</code></td><td>Short horizon forecasting of Uniswap v3 data for the ETH:USDT 0.05% pool <code>0x11b815efb8f581194ae79006d24e0d814b7697f6</code></td></tr><tr><td><code>uniswapv3_wbtc_eth</code></td><td>Short horizon forecasting of Uniswap v3 data for the WBTC/ETH 0.05% pool <code>0x4585fe77225b41b697c938b018e2ac67ac5a20c0</code></td></tr></tbody></table>
+<table><thead><tr><th width="259">Model Id</th><th>Description</th></tr></thead><tbody><tr><td><code>uniswapv3_usdc_eth</code></td><td>Short horizon forecasting of Uniswap v3 data for the USDC:ETH 0.05% pool <code>0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640</code></td></tr><tr><td><code>uniswapv3_eth_usdt</code></td><td>Short horizon forecasting of Uniswap v3 data for the ETH:USDT 0.05% pool <code>0x11b815efb8f581194ae79006d24e0d814b7697f6</code></td></tr><tr><td><code>uniswapv3_wbtc_eth</code></td><td>Short horizon forecasting of Uniswap v3 data for the WBTC/ETH 0.05% pool <code>0x4585fe77225b41b697c938b018e2ac67ac5a20c0</code></td></tr><tr><td><code>gasfees_v1</code></td><td>A new Ethereum gas fee prediction model.</td></tr></tbody></table>
 
 #### Requirements and limitations
 
