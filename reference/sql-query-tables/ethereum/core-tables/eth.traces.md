@@ -12,8 +12,8 @@ All Ethereum call frames executed during a transaction, also known as internal t
 | `transaction_index` | BIGINT            | The position of the trace's transaction in its block.                   |
 | `from_address`      | CHARACTER VARYING | Address of sender, signing transaction                                  |
 | `to_address`        | CHARACTER VARYING | The receiving address, a contract or externally-owned.                  |
-| `value`             | DECIMAL           | The amount of Wei to sent in the transaction.                           |
-| `input`             | CHARACTER VARYING | optional, arbitrary input data of the transaction                       |
+| `value`             | DECIMAL           | The amount of Wei sent in the transaction.                              |
+| `input`             | CHARACTER VARYING | Optional, arbitrary input data of the transaction                       |
 | `output`            | CHARACTER VARYING | The data returned by the contract function call.                        |
 | `trace_type`        | CHARACTER VARYING | Indicates the type of trace represented.                                |
 | `call_type`         | CHARACTER VARYING | For traces representing EVM  call operations, the type of call.         |

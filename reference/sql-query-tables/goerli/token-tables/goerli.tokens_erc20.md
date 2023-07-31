@@ -6,13 +6,13 @@ description: SQL table schema for goerli.tokens_erc20
 
 Goerli ERC-20 token contracts.
 
-| Column Name       | Data Type         |
-| ----------------- | ----------------- |
-| `address`         | CHARACTER VARYING |
-| `name`            | CHARACTER VARYING |
-| `symbol`          | CHARACTER VARYING |
-| `decimals`        | INTEGER           |
-| `total_supply`    | CHARACTER VARYING |
-| `block_number`    | BIGINT            |
-| `block_timestamp` | BIGINT            |
-| `block_hash`      | CHARACTER VARYING |
+| Column Name       | Data Type         | Description                                                                                |
+| ----------------- | ----------------- | ------------------------------------------------------------------------------------------ |
+| `address`         | CHARACTER VARYING | The address of the contract that defines this token.                                       |
+| `name`            | CHARACTER VARYING | The human-readable name of this token, eg. "AliceInWonderland".                            |
+| `symbol`          | CHARACTER VARYING | The human-readable short symbol of this token, eg. "ALICE".                                |
+| `decimals`        | INTEGER           | The number of decimal places that this token uses to represent fixed point values/amounts. |
+| `total_supply`    | CHARACTER VARYING | The total number of unique instances of this token.                                        |
+| `block_number`    | BIGINT            | The number of the block in which this token was first defined.                             |
+| `block_timestamp` | BIGINT            | The timestamp of the block in which this token was first defined.                          |
+| `block_hash`      | CHARACTER VARYING | The hash of the block in which this token was first defined.                               |

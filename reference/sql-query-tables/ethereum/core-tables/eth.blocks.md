@@ -24,12 +24,12 @@ Ethereum [Block Headers](https://ethereum.org/vi/developers/docs/blocks).
 | `parent_hash`       | CHARACTER VARYING | Parent block's hash                                |
 | `nonce`             | CHARACTER VARYING | Hash of the generated proof of work                |
 | `sha3_uncles`       | CHARACTER VARYING | SHA3 of the uncles data in the block               |
-| `logs_bloom`        | CHARACTER VARYING | The bloom filter  for the logs of the block        |
+| `logs_bloom`        | CHARACTER VARYING | The bloom filter for the logs of the block         |
 | `transactions_root` | CHARACTER VARYING | The root for the transaction trie of the block     |
 | `state_root`        | CHARACTER VARYING | The root for the final state trie of the block     |
 | `receipts_root`     | CHARACTER VARYING | The root for the receipts trie of the block        |
 | `miner`             | CHARACTER VARYING | The miner address rewarded for this block          |
-| `difficulty`        | DECIMAL           | The dificulty of the block, as an integer          |
+| `difficulty`        | DECIMAL           | The difficulty of the block, as an integer         |
 | `total_difficulty`  | DECIMAL           | The total difficulty of the chain until this block |
 | `size`              | BIGINT            | The size of the block, in bytes                    |
 | `extra_data`        | CHARACTER VARYING | Extra data pertaining to the block                 |
