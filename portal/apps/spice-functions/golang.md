@@ -46,12 +46,13 @@ go get github.com/spiceai/spice-functions-go
 package main
 
 import (
+	"database/sql"
 	"fmt"
 	"github.com/spiceai/spice-functions-go/function"
 	"github.com/spiceai/gospice/v2"
 )
 
-func hello(ctx *function.FunctionCtx, duckDb *sql.DB, spice_client *gospice.SpiceClient) error {
+func hello(ctx *function.FunctionCtx, duckDb *sql.DB, spiceClient *gospice.SpiceClient) error {
 	fmt.Println("Hello Spice Functions!")
 	return nil
 }
@@ -64,12 +65,12 @@ func main() {
 A Go invocation handler method has the following signature:
 
 ```go
-func hello(ctx *function.FunctionCtx, duckDb *sql.DB, spice_client *gospice.SpiceClient) error
+func hello(ctx *function.FunctionCtx, duckDb *sql.DB, spiceClient *gospice.SpiceClient) error
 ```
 
 * `ctx`: A `context.Context` struct with additional getter funcs, E.g. `BlockNumber()` and `BlockHash()`
 * `duckDb`: A connection to the Spice Function's DuckDB instance.
-* `spice_client`: A [spicepy](https://github.com/spiceai/spicepy) client that is pre-initialized with the Spice app's API Key.
+* `spiceClient`: A [gospice](https://github.com/spiceai/gospice) client that is pre-initialized with the Spice app's API Key.
 
 The handler method will be called on each triggered event.
 
@@ -78,21 +79,38 @@ The handler method will be called on each triggered event.
 An example Go function:
 
 ```go
-// main.go
 package main
 
 import (
+	"database/sql"
 	"fmt"
-	"github.com/spiceai/spice-functions-go/function"
+
 	"github.com/spiceai/gospice/v2"
+	"github.com/spiceai/spice-functions-go/function"
 )
 
-func hello(ctx *function.FunctionCtx, duckDb *sql.DB, spice_client *gospice.SpiceClient) error {
-	fmt.Println("Hello Spice Functions!")
+func HelloWorldGo(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospice.SpiceClient) error {
+	fmt.Println("Hello from Spice Go runtime!")
+
+	// Temporary step
+	_, err := duckDb.ExecContext(ctx, `
+	create table output.hello_world_golang (
+		block_number bigint,
+		greeting TEXT
+	);`)
+	if err != nil {
+		return err
+	}
+
+	_, err = duckDb.ExecContext(ctx, "INSERT INTO output.hello_world_golang (block_number, greeting) VALUES ($1, $2);", ctx.BlockNumber(), "Hello from Spice Go runtime!")
+	if err != nil {
+		return err
+	}
+
 	return nil
 }
 
 func main() {
-	function.Run(hello)
+	function.Run(HelloWorldGo)
 }
 ```
