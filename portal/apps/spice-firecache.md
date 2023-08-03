@@ -8,7 +8,7 @@ description: Firecache (beta)
 Spice Firecache is in beta for Design Partners. Get in touch for more info.
 {% endhint %}
 
-Spice Firecache is a real-time SQL cache that enables developers to cache Spice datasets for high concurrency, blazing fast SQL query up to 10x the performance of general SQL query.
+Spice Firecache is a real-time, in-memory SQL cache based on [DuckDB](https://duckdb.org/) that enables developers to cache Spice datasets for high concurrency, blazing fast SQL query up to 10x the performance of general SQL query.
 
 The Spice platform completely manages the Spice Firecache data lifecycle, ensuring datasets are real-time updated on triggers like new blocks and with stale data being automatically evicted.
 
@@ -27,7 +27,7 @@ firecache:
   time_column: block_timestamp
 ```
 
-Datasets with the `recent_` prefix are elegible to be self-serviced Firecached. If you would like other datasets to be cached, contact us.
+Datasets with the `recent_` prefix are eligible to be self-serviced Firecached. If you would like other datasets to be cached, contact us.
 
 Once enabled, the dataset must be deployed for the Firecache to be initialized.
 
