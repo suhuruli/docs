@@ -4,6 +4,57 @@ description: Spice.xyz Release notes
 
 # Release notes
 
+### July 2023
+
+The July release enables new compute over data capability with [Spice Functions](../portal/apps/spice-functions/) including application data storage, the ability to define and create custom datasets, and deep integration with GitHub.
+
+#### Spice Functions
+
+{% hint style="info" %}
+Spice Functions is in beta and initially available for Design Partners. Get in touch for more info.
+{% endhint %}
+
+[Spice Functions](../portal/apps/spice-functions/) is a hosted compute experience that enables developers to write code in their preferred language and run it on the Spice platform, co-located with Spice data.
+
+See [spice-functions](../portal/apps/spice-functions/ "mention") for full documentation on creating and deploying Spice Functions.
+
+#### Spice Firecache
+
+{% hint style="info" %}
+Spice Firecache is in beta and initially available for Design Partners. Get in touch for more info.
+{% endhint %}
+
+[Spice Firecache](../portal/apps/spice-firecache.md) is a real-time SQL cache that enables developers to cache Spice datasets for high concurrency, blazing fast SQL query up to 10x the performance of general SQL query.
+
+The Spice platform completely manages the Spice Firecache data lifecycle, ensuring datasets are real-time updated on triggers like new blocks and with stale data being automatically evicted.
+
+See [spice-firecache.md](../portal/apps/spice-firecache.md "mention") for full documentation on deploying datasets to the Spice Firecache.
+
+#### Custom Datasets
+
+Spice now supports the definition and creation of your own private Datasets and Views, which can then be queried with SQL, cached in Spice Firecache, and published publicly to be shared with others.
+
+See [datasets-beta.md](../portal/apps/datasets-beta.md "mention") for full documentation on creating private Datasets and Views.
+
+#### Connecting Github Repos
+
+Connecting your Spice.xyz app to a GitHub repository allows you to create custom Datasets and Views, add datasets to Spice Firecache, author Spice Functions, and train AI Models.
+
+See [link-github-repository-beta.md](../portal/apps/link-github-repository-beta.md "mention") for full documentation on connecting your Github Repo to a Spice App.
+
+**New In this Release**
+
+1. \[Platform/Portal] Support for compute over data with Spice Functions&#x20;
+2. \[Platform/Portal] Real-time SQL caching through Spice Firecache
+3. \[Platform/Portal] Support for custom datasets and views beyond those curated by Spice
+4. \[Portal] Connect your Github repo to manage all your Spice code with version control
+5. \[Flow] RPCs can now be sent to the Spice Flow node using the [Flow Access API](https://developers.flow.com/concepts/nodes/access-api)
+6. \[Flow] Added datasets detailing transfers of NFTs and tokens on the Flow blockchain, for more details see [token-nft-tables](sql-query-tables/flow/token-nft-tables/ "mention")
+
+**Changes**
+
+1. \[Portal] Any users you add to your org that is on a Pro or Partner plan will now automatically be activated and removed from the Spice.xyz waitlist.
+
 ### June 2023
 
 The June release includes new datasets for Ethereum/Goerli wallet balances + Flow core/nft datasets, additional platform performance upgrades along with several usability and user-experience improvements.
