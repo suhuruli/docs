@@ -10,7 +10,6 @@ The current roadmap (subject to change) is as follows:
 
 * Fine-grained execution status.
 * Output datasets support [Firecache](../../../reference/specifications/dataset-and-view-yaml-specification/firecache.md).
-* Golang as a supported runtime.
 * Manual function management.
   * Manual triggers, pause/restart of execution, etc.
 * Local Development and Debugging experience.
@@ -20,3 +19,5 @@ The current roadmap (subject to change) is as follows:
 * Cron triggers
 * Rewind/replay/backfill support v2 - versioning/snapshotting
 * Streaming logs
+* Node.js runtime
+* Rust runtime

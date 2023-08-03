@@ -12,6 +12,8 @@ Spice Functions is a hosted compute experience that enables developers to write 
 
 Spice Functions enables new use-cases for developers building intelligent applications with time-series and blockchain data, including flexible data transformation and aggregations, AI/ML data preparation, alerting, filtering, and integrations with other services.
 
+Functions can be implemented in [Python](python.md) or [Go](golang.md), with support for Node.js and Rust coming.
+
 See the [Spice Functions Roadmap](roadmap.md) for upcoming features.
 
 ## Creating an output dataset
@@ -74,7 +76,7 @@ See [Spice Functions YAML Specification](../../../reference/specifications/spice
 
 ### Function Handlers
 
-A Python invocation handler method has the following signature:
+A [Python](python.md) invocation handler method has the following signature:
 
 ```python
 def process(context: dict, 
@@ -87,6 +89,8 @@ def process(context: dict,
 * `spice_client`: A [spicepy](https://github.com/spiceai/spicepy) client that is pre-initialized with the Spice app's API Key.
 
 The handler method will be called on each triggered event.
+
+See [Golang](golang.md) for defining a Go function handler.
 
 Each Spice Function is provisioned with a private, dedicated, and persisted DuckDB instance accessed by the `duckdb` parameter. The DuckDB instance can be used to query, persist, process, and analyze data across function invocations.
 
@@ -112,16 +116,7 @@ The staging `output.{output_dataset}` table is reset upon each function invocati
 Rows inserted into the duckdb **`output.{output_dataset}`** table with an existing primary key value will be updated in-place.
 {% endhint %}
 
-Python dependencies can be specified by placing a `requirements.txt` adjacent to the code importing the dependencies. Currently, Python modules that depend on compiled C extensions are not supported.
-
-The Python function runtime comes pre-loaded with these modules:
-
-* [spicepy](https://github.com/spiceai/spicepy)
-* [pyarrow](https://pypi.org/project/pyarrow/)
-* [duckdb](https://duckdb.org/docs/api/python/overview)
-* [pandas](https://pypi.org/project/pandas/)
-* [numpy](https://pypi.org/project/numpy/)
-* [pyyaml](https://pypi.org/project/PyYAML/)
+See [Python](python.md) and [Go](golang.md) for full example code.
 
 ## Sync with GitHub
 
@@ -160,26 +155,3 @@ Click on the UUID of a function execution to view the logs from a function execu
 If data was inserted into the output dataset, upon successful function execution, it will be available for query in the `datasets."{your_org_name}".{your_dataset_name}` path.
 
 <figure><img src="../../../.gitbook/assets/function_output_query.png" alt=""><figcaption><p>Querying for hello_world's output</p></figcaption></figure>
-
-## Example Function
-
-An example Python function that will produce the same outputs shown above:
-
-```python
-# hello_world/spice_function.py
-import duckdb
-import spicepy
-
-def process(context: dict, 
-            duckdb: duckdb.DuckDBPyConnection, 
-            spice_client: spicepy.Client):
-  # Temporary step
-  duckdb.sql("""CREATE TABLE IF NOT EXISTS output.hello_world (
-    block_number BIGINT,
-    greeting TEXT
-    )""")
-
-  duckdb.sql(f"INSERT INTO output.hello_world VALUES ({context['block_number']}, 'Hello!')")
-
-  print("Hello, World!")
-```

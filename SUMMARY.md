@@ -50,6 +50,8 @@
   * [Datasets and Views](portal/apps/datasets-beta.md)
   * [Spice Functions](portal/apps/spice-functions/README.md)
     * [Roadmap](portal/apps/spice-functions/roadmap.md)
+    * [Python](portal/apps/spice-functions/python.md)
+    * [Golang](portal/apps/spice-functions/golang.md)
   * [Transfer an App](portal/apps/app-transfer.md)
 * [Organizations](portal/organizations.md)
 * [SQL Query Editor](portal/sql-query-editor.md)
