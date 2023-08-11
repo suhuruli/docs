@@ -24,7 +24,7 @@ In addition to supporting standard web3 **JSON RPC**, Spice provides querying fo
 
 
 
-Take it for a spin, and try out the [getting started guide](getting-started/get-started/).
+Take it for a spin, and try out the [getting started guide](get-started/).
 
 {% hint style="info" %}
 Feel free to ask any questions or queries to the team in [<mark style="color:purple;">Discord</mark>](https://discord.gg/kZnTfneP5u).

@@ -3,12 +3,12 @@
 ## 🌟 Getting Started
 
 * [Welcome to Spice](README.md)
-* [Quickstart](getting-started/get-started/README.md)
+* [Quickstart](get-started/README.md)
   * [Step 1 - Portal Login](getting-started/get-started/portal-login.md)
   * [Step 2 - SQL Query](getting-started/get-started/step-3-make-a-basic-sql-query.md)
   * [Step 3 - Leverage a SDK](getting-started/get-started/step-3-leverage-a-sdk.md)
   * [Next Steps](getting-started/get-started/next-steps.md)
-* [Datasets](getting-started/datasets.md)
+* [Datasets](datasets.md)
 * [Core Concepts](getting-started/core-concepts/README.md)
   * [Organizations](getting-started/core-concepts/organizations.md)
   * [Duration Literals](getting-started/core-concepts/duration-literals.md)
@@ -69,6 +69,7 @@
 ## 🔌 Integrations
 
 * [Grafana](integrations/grafana.md)
+* [Grafana Dashboard Examples](integrations/grafana-dashboard-examples.md)
 
 ## 🎓 Tutorials
 
@@ -525,6 +526,7 @@
     * [Token/NFT Datasets](reference/example-flow-sql-queries/token-nft-datasets.md)
   * [Example Cross-Chain Queries](reference/example-cross-chain-queries.md)
   * [Arrow Flight Samples](reference/arrow-flight-samples.md)
+* [Data Science & Machine Learning](reference/data-science-and-machine-learning.md)
 * [Kaggle Notebooks](reference/kaggle-notebooks.md)
 * [Release notes](reference/release-notes.md)
 

@@ -8,7 +8,7 @@ description: Datasets and Views (Beta)
 Self-managed Datasets and Views is in beta for Design Partners. Get in touch for more info.
 {% endhint %}
 
-The Spice.xyz platform comes pre-loaded with a variety of web3 [datasets](../../getting-started/datasets.md).
+The Spice.xyz platform comes pre-loaded with a variety of web3 [datasets](../../datasets.md).
 
 In addition, you can define and create your own private Datasets and Views, which can then be queried with SQL, cached in Spice Firecache, and published publicly to be shared with others.
 
