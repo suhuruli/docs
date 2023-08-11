@@ -4,6 +4,26 @@ description: Currency/Token Prices HTTP API documentation
 
 # Prices API
 
+## Supported Pairs
+
+The **`/v0.1/prices/pairs`** API returns a list of price pairs supported by the Spice.xyz platform.
+
+{% hint style="info" %}
+The **/prices/pairs** endpoint only returns pairs natively where Spice is the data provider. The price quote APIs below aggregate data from other providers (e.g. CoinMarketCap) and support significantly more pairs not listed by this endpoint.
+{% endhint %}
+
+{% swagger method="get" path="/v0.1/prices/pairs" baseUrl="https://data.spiceai.io" summary="Get supported price pairs" %}
+{% swagger-description %}
+Returns a list of token/currency Spice provided price pairs.
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="Pairs successfully returned" %}
+```json
+["BTC-USD", "ETH-USD", "LTC-USD"]
+```
+{% endswagger-response %}
+{% endswagger %}
+
 ## Spot/Latest Prices
 
 The **`/v0.1/prices`** API returns the spot (latest) prices of popular token/currency pairs for several exchanges, such as Binance, Coinbase, and Gemini, and the min, max, and average price across them.

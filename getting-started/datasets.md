@@ -100,12 +100,16 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 #### [Prices datasets](../reference/sql-query-tables/prices/)
 
-Query for BTC, ETH and LTC prices in SQL with data sourced from several sources
+Query for historical OHLC token prices at 1 minute granularity. We offer data for thousands of token pairs sourced from the highest volume exchanges with new pairs added daily.&#x20;
 
-<table><thead><tr><th width="375.5"></th><th></th></tr></thead><tbody><tr><td>ETH prices (OHLC @ 1 min granularity)</td><td><code>prices.eth</code></td></tr><tr><td>BTC prices (OHLC @ 1 min granularity)</td><td><code>prices.btc</code></td></tr><tr><td>LTC prices (OHLC @ 1 min granularity)</td><td><code>prices.ltc</code></td></tr></tbody></table>
+To see all pairs available for query:
+
+```sql
+SHOW TABLES IN prices;
+```
 
 {% hint style="info" %}
-For access to spot/historical prices on thousands of pairs, try our [time-series Prices API](../api/prices.md).
+For access at any granularity, try our [time-series Prices API](../api/prices.md).
 {% endhint %}
 
 #### [Chainlink datasets](../reference/sql-query-tables/ethereum/chainlink-tables/)
@@ -119,7 +123,7 @@ For access to spot/historical prices on thousands of pairs, try our [time-series
 * [Ethereum blocks](https://docs.spice.xyz/api/ethereum/blocks)
 * [Ethereum gas fees](https://docs.spice.xyz/api/ethereum/gas-fees)
 
-#### [Spot/latest and historical prices](../api/prices.md)
+#### [Spot and historical Prices](../api/prices.md)
 
 * Binance
   * Spot/latest prices for all pairs traded on Binance.
