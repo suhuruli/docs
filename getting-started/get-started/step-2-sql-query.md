@@ -13,7 +13,7 @@ It includes:
 
 ### Make a basic SQL query using cURL
 
-Once you've set up a [Portal account](portal-login.md), replace `[API-KEY]` in the sample below with your API Key from the Spice app.
+Once you've set up a [Portal account](../../get-started/portal-login.md), replace `[API-KEY]` in the sample below with your API Key from the Spice app.
 
 {% tabs %}
 {% tab title="cURL" %}
@@ -30,3 +30,9 @@ curl --request POST \
 {% hint style="info" %}
 Visit the [FAQ](../../faq.md) page for more details.
 {% endhint %}
+
+### Call the API
+
+To get an API key, set up a [Portal account](../../get-started/portal-login.md).
+
+Your API key also unlocks custom visualizations via [Grafana Plugin](../../integrations/grafana.md).&#x20;

@@ -1,5 +1,5 @@
 ---
-description: Get started with Spice Data
+description: Follow this guide to get started with Spice.
 ---
 
 # Quickstart

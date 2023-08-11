@@ -4,17 +4,21 @@
 
 * [Welcome to Spice](README.md)
 * [Quickstart](get-started/README.md)
-  * [Step 1 - Portal Login](getting-started/get-started/portal-login.md)
-  * [Step 2 - SQL Query](getting-started/get-started/step-3-make-a-basic-sql-query.md)
+  * [Step 1 - Portal Login](get-started/portal-login.md)
+  * [Step 2 - SQL Query](getting-started/get-started/step-2-sql-query.md)
   * [Step 3 - Leverage a SDK](getting-started/get-started/step-3-leverage-a-sdk.md)
   * [Next Steps](getting-started/get-started/next-steps.md)
 * [Datasets](datasets.md)
-* [Core Concepts](getting-started/core-concepts/README.md)
-  * [Organizations](getting-started/core-concepts/organizations.md)
-  * [Duration Literals](getting-started/core-concepts/duration-literals.md)
-* [Best Practices](getting-started/best-practices.md)
-* [Limitations](getting-started/limitations.md)
+* [Core Concepts](core-concepts/README.md)
+  * [Organizations](core-concepts/organizations.md)
+  * [Duration Literals](core-concepts/duration-literals.md)
+* [Best Practices](best-practices.md)
+* [Limitations](limitations.md)
 * [FAQ](faq.md)
+
+***
+
+* [Release notes](release-notes.md)
 
 ## 💻 API
 
@@ -528,7 +532,6 @@
   * [Arrow Flight Samples](reference/arrow-flight-samples.md)
 * [Data Science & Machine Learning](reference/data-science-and-machine-learning.md)
 * [Kaggle Notebooks](reference/kaggle-notebooks.md)
-* [Release notes](reference/release-notes.md)
 
 ## 🆘 Support
 
