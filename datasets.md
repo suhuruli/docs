@@ -1,16 +1,16 @@
 ---
-description: All data currently available in Spice
+description: All data and datasets currently available in Spice
 ---
 
 # Datasets
 
 {% hint style="success" %}
-We add datasets every week, so this list is just the start. Get in touch on Discord to suggest more. **We're just getting started!**
+New datasets are added every week, so this list is just the start. Get in touch on Discord to suggest more. **We're just getting started!**
 {% endhint %}
 
 ### Datasets for SQL Query
 
-Explore our SQL datasets organized by chain and data type, each with a representative table. Click the section header links for more information and complete table listings.
+Explore SQL-queryable datasets organized by chain and data type, each with representative tables. Click the section header links for more information and complete table listings.
 
 #### [Ethereum datasets](reference/sql-query-tables/ethereum/)
 
@@ -100,7 +100,7 @@ Explore our SQL datasets organized by chain and data type, each with a represent
 
 #### [Prices datasets](reference/sql-query-tables/prices/)
 
-Query for historical OHLC token prices at 1 minute granularity. We offer data for thousands of token pairs sourced from the highest volume exchanges with new pairs added daily.&#x20;
+Historical OHLC cryptocurrency and token prices are available for SQL query at 1 minute granularity. \~2,000 token pairs are currently available sourced from centralized exchanges like Coinbase, Gemini, and Binance, and decentralized exchanges like Uniswap and Sushiswap. More pais are automatically added each day as they are listed on the exchanges.
 
 To see all pairs available for query:
 
@@ -109,7 +109,7 @@ SHOW TABLES IN prices;
 ```
 
 {% hint style="info" %}
-For access at any granularity, try our [time-series Prices API](api/prices.md).
+For historical price exchange data to tick level granularity, try the [time-series Prices API](api/prices.md).
 {% endhint %}
 
 #### [Chainlink datasets](reference/sql-query-tables/ethereum/chainlink-tables/)
