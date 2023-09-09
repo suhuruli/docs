@@ -12,15 +12,15 @@ Get started with the following guide.
 
 Spice includes a growing set of web3 data, including blockchain data, cryptocurrency and token prices, ENS domains, and more.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt="" width="375"><figcaption><p>The dataset reference in the SQL Playground.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>The dataset reference in the SQL Playground.</p></figcaption></figure>
 
-Explore the full list of [**datasets**](../datasets.md) for an overview and see [**SQL Query Tables**](sql-query-tables/) for schemas and details.
+Explore the full list of [**datasets**](../getting-started/datasets.md) for an overview and see [**SQL Query Tables**](sql-query-tables/) for schemas and details.
 
 ### 2. Query datasets using SQL
 
 Querying datasets is as easy as querying data from any SQL database. Try SQL from your browser at [**Spice.xyz**](https://spice.xyz/).
 
-<figure><img src="../.gitbook/assets/image (11).png" alt="" width="563"><figcaption><p>Querying datasets with SQL in the Playground.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>Querying datasets with SQL in the Playground.</p></figcaption></figure>
 
 Reference [**SQL best practices**](https://docs.spice.xyz/best-practices) for tips and the best query performance.
 
@@ -28,7 +28,7 @@ Reference [**SQL best practices**](https://docs.spice.xyz/best-practices) for ti
 
 Spice uses an [**Apache Calcite**](https://calcite.apache.org) based query engine, which supports **ANSI SQL** with additional SQL **dialect**.&#x20;
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>The SQL Reference at docs.spice.xyz</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The SQL Reference at docs.spice.xyz</p></figcaption></figure>
 
 Refer to the [**SQL reference**](sql-reference/) for dialect specific data types, functions, and commands. SQL keywords are also indexed in search for quick lookup.
 
@@ -36,7 +36,7 @@ Refer to the [**SQL reference**](sql-reference/) for dialect specific data types
 
 Import Spice data in notebooks like Kaggle, Jupyter Notebooks, Google Colab, Anaconda Notebook, etc. with [**3 lines of Python code**](https://docs.spice.xyz/sdks/python-sdk#usage).
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Querying Spice from Python in 3 lines of code.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Querying Spice from Python in 3 lines of code.</p></figcaption></figure>
 
 ### 5. Use familiar data science tools and libraries
 

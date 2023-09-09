@@ -22,7 +22,7 @@ Spice currently supports **Ethereum**, **Bitcoin**, **Polygon,** and **Flow** bl
 
 Spice also includes high-RPS hosted **RPC Nodes**.
 
-Take it for a spin, and try out the [getting started guide](get-started/).
+Take it for a spin, and try out the [getting started guide](getting-started/get-started/).
 
 {% hint style="info" %}
 Feel free to ask any questions or queries to the team in [<mark style="color:purple;">Discord</mark>](https://discord.gg/kZnTfneP5u).

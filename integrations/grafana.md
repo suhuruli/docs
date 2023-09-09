@@ -36,14 +36,14 @@ Create new Grafana panel and select `Spice.xyz` data source, edit the query and 
 
 Visit [Grafana Docs](https://grafana.com/docs/grafana/latest/panels-visualizations/) for more information about panels visualisations, and also check spice queries examples for reference:
 
-[example-ethereum-sql-queries](../reference/example-ethereum-sql-queries/ "mention")
+[example-ethereum-sql-queries](../reference/samples-and-examples/example-ethereum-sql-queries/ "mention")
 
-[example-ethereum-beacon-sql-queries](../reference/example-ethereum-beacon-sql-queries/ "mention")
+[example-ethereum-beacon-sql-queries](../reference/samples-and-examples/example-ethereum-beacon-sql-queries/ "mention")
 
-[example-dex-queries](../reference/example-dex-queries/ "mention")
+[example-dex-queries](../reference/samples-and-examples/example-dex-queries/ "mention")
 
-[example-bitcoin-queries](../reference/example-bitcoin-queries/ "mention")
+[example-bitcoin-queries](../reference/samples-and-examples/example-bitcoin-queries/ "mention")
 
-[example-flow-sql-queries](../reference/example-flow-sql-queries/ "mention")
+[example-flow-sql-queries](../reference/samples-and-examples/example-flow-sql-queries/ "mention")
 
-[example-cross-chain-queries.md](../reference/example-cross-chain-queries.md "mention")
+[example-cross-chain-queries.md](../reference/samples-and-examples/example-cross-chain-queries.md "mention")

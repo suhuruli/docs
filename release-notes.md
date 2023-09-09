@@ -4,6 +4,32 @@ description: Spice.xyz Release notes
 
 # Release notes
 
+### August 2023
+
+The August release expands the functionality of [Spice Functions](portal/apps/spice-functions/) (beta) and [Datasets and Views](portal/apps/datasets-and-views.md).
+
+#### Spice Functions
+
+{% hint style="info" %}
+Spice Functions is in beta and initially available for Design Partners. Get in touch for more info.
+{% endhint %}
+
+Developers can now author [Spice Functions](portal/apps/spice-functions/) in [Golang](portal/apps/spice-functions/golang.md) with the Go1.x runtime in addition to [Python](portal/apps/spice-functions/python.md).
+
+Combine Spice Functions with expanded Datasets and Views support to generate custom datasets "ETL-less" in the Spice platform that can be kept private or shared with others.
+
+#### Datasets and Views
+
+Spice now supports SQL migrations to enable creation of custom user-authored datasets and views.
+
+**New In this Release**
+
+1. \[Spice Functions] Add Go1.x runtime.
+2. \[Datasets and Views] Add SQL migrations.
+3. \[Datasets and Views] Add sharing and publishing.
+4. \[Portal] Add basic charting for SQL and Firecache results.
+5. \[Portal] Bugfixes and minor improvements to the UI.
+
 ### July 2023
 
 The July release enables new compute over data capability with [Spice Functions](portal/apps/spice-functions/) including application data storage, the ability to define and create custom datasets, and deep integration with GitHub.
@@ -34,13 +60,13 @@ See [spice-firecache.md](portal/apps/spice-firecache.md "mention") for full docu
 
 Spice now supports the definition and creation of your own private Datasets and Views, which can then be queried with SQL, cached in Spice Firecache, and published publicly to be shared with others.
 
-See [datasets-beta.md](portal/apps/datasets-beta.md "mention") for full documentation on creating private Datasets and Views.
+See [datasets-and-views.md](portal/apps/datasets-and-views.md "mention") for full documentation on creating private Datasets and Views.
 
 #### Connecting Github Repos
 
 Connecting your Spice.xyz app to a GitHub repository allows you to create custom Datasets and Views, add datasets to Spice Firecache, author Spice Functions, and train AI Models.
 
-See [link-github-repository-beta.md](portal/apps/link-github-repository-beta.md "mention") for full documentation on connecting your Github Repo to a Spice App.
+See [connect-github-repository.md](portal/apps/connect-github-repository.md "mention") for full documentation on connecting your Github Repo to a Spice App.
 
 **New In this Release**
 
@@ -112,9 +138,9 @@ Portal UX improvements include the ability to search the dataset reference for s
 
 The May release includes significant platform performance upgrades with the rollout of Spice AI's **second generation platform architecture (Gen. 2)** along with several usability and user-experience improvements.
 
-[Ethereum](reference/sql-query-tables/ethereum/) and [Polygon](reference/sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](reference/example-ethereum-sql-queries/nfts.md), [ENS](reference/sql-query-tables/ethereum/token-tables-1/), [Uniswap](reference/example-dex-queries/uniswap.md), and [Sushiswap](reference/example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
+[Ethereum](reference/sql-query-tables/ethereum/) and [Polygon](reference/sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](reference/samples-and-examples/example-ethereum-sql-queries/nfts.md), [ENS](reference/sql-query-tables/ethereum/token-tables-1/), [Uniswap](reference/samples-and-examples/example-dex-queries/uniswap.md), and [Sushiswap](reference/samples-and-examples/example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption><p><a href="reference/example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p><a href="reference/samples-and-examples/example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
 
 Portal UX improvements include the ability to collapse the sidebar, resize the SQL query input and results pane, and expand to a fullscreen focus mode. SQL query errors are now highlighted with red underline swiggles along with a more readable error pane. Finally, results render faster and app switching is faster.
 
@@ -176,7 +202,7 @@ from eth_withdrawn
 
 <figure><img src=".gitbook/assets/Screen Shot 2023-05-10 at 10.20.00 PM.png" alt=""><figcaption><p>Get ETH withdrawn after the Ethereum Shanghai upgrade, sample output</p></figcaption></figure>
 
-Explore detailed sample SQL queries for [DEX](reference/example-dex-queries/), [Cross-Chain](reference/example-cross-chain-queries.md), [Ethereum](reference/example-ethereum-sql-queries/), [Beacon](reference/example-ethereum-beacon-sql-queries/), and [Bitcoin](reference/example-bitcoin-queries/) in the Spice Docs.\
+Explore detailed sample SQL queries for [DEX](reference/samples-and-examples/example-dex-queries/), [Cross-Chain](reference/samples-and-examples/example-cross-chain-queries.md), [Ethereum](reference/samples-and-examples/example-ethereum-sql-queries/), [Beacon](reference/samples-and-examples/example-ethereum-beacon-sql-queries/), and [Bitcoin](reference/samples-and-examples/example-bitcoin-queries/) in the Spice Docs.\
 
 
 **Goerli Testnet:** Full support for the Goerli testnet has been added, including hosted beacon and execution nodes, and fully indexed datasets, helping developers test their applications before mainnet launch.&#x20;
@@ -290,7 +316,7 @@ If you are waitlisted, you can now instantly enable your account by signing up f
 
 **Improved monitoring:** you can now track requests, their status code, and duration to Spice, in addition to the existing usage monitoring metrics dashboard. Start by going to your app, under the Monitor sidebar, select API Requests. You can then toggle between Metrics and Logs views. Within Logs, you can select to retrieve API requests from the past 1 hour, 8 hours, 24 hours, and up to the past 3 days.
 
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 **Ethereum Beacon Chain Dataset (Preview):** The Ethereum beacon chain is the central coordination and consensus layer for the Ethereum 2.0 upgrade, which aims to improve scalability, security, and sustainability. Now you can query and access beacon chain dataset with `eth.beacon`, `eth.beacon.validators`, `eth.beacon.withdrawals` and more.
 
@@ -311,11 +337,11 @@ Sample Queries
 2.  Number of Weekly Attester Slashings \
 
 
-    <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 3.  Top 10 most frequent block proposers\
 
 
-    <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 By leveraging beacon chain capabilities, developers can create scalable decentralized applications that can handle a large volume of transactions, while also participating in network governance and incentivization through its Proof of Stake consensus mechanism. You can learn more about the chain [here](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain).&#x20;
 
@@ -568,7 +594,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/).
   * `btc.transactions` / `btc.recent_transactions`
   * `btc.transaction_inputs` / `btc.recent_transaction_inputs`
   * `btc.transaction_outputs` / `btc.recent_transaction_outputs`
-* [example-bitcoin-queries](reference/example-bitcoin-queries/ "mention") for querying Bitcoin data.
+* [example-bitcoin-queries](reference/samples-and-examples/example-bitcoin-queries/ "mention") for querying Bitcoin data.
 
 #### Resources
 
@@ -580,7 +606,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/).
 
 ### June 2022
 
-This update includes a new [Javascript/Typescript SDK](sdks/node.js-sdk/) for Node.js, an improved [Python SDK](sdks/python-sdk.md), and performance improvements for Ethereum tokens and NFT datasets.
+This update includes a new [Javascript/Typescript SDK](sdks/node.js-sdk/) for Node.js, an improved [Python SDK](sdks/python-sdk/), and performance improvements for Ethereum tokens and NFT datasets.
 
 [Ethereum Name Service (ENS)](reference/sql-query-tables/ethereum/token-tables-1/) support is also available in beta with the new `ens.domains` dataset.
 
@@ -589,7 +615,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/spice-xyz-june-upda
 **Changes**
 
 * New [Node.js SDK](sdks/node.js-sdk/)
-* Improved [Python SDK](sdks/python-sdk.md)
+* Improved [Python SDK](sdks/python-sdk/)
 * ENS support in beta
   * `ens.domains`
 * Improved performance for `eth.tokens_` and `eth.nft_` prefixed tables
@@ -606,7 +632,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/spice-xyz-june-upda
 
 Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](reference/sql-query-tables/ethereum/token-tables/).
 
-Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](api/sql-query-api/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](sdks/python-sdk.md) for production use though.
+Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](api/sql-query-api/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](sdks/python-sdk/) for production use though.
 
 WebSocket support is now available in private preview to Design Partners - get in touch if you are interested in custom limits, early access features, and dedicated support.
 

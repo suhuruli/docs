@@ -1,6 +1,6 @@
 # Organizations
 
-[**Organizations**](../core-concepts/organizations.md) enable you to share apps, datasets, users, billing, and settings with your team members. Organization administrators can set who has access to their organization's resources and data on the web3 data and AI platform.
+[**Organizations**](../getting-started/core-concepts/organizations.md) enable you to share apps, datasets, users, billing, and settings with your team members. Organization administrators can set who has access to their organization's resources and data on the web3 data and AI platform.
 
 {% hint style="info" %}
 Organizations are currently in preview and only available to create beyond your personal organization to Spice Design Partners. To get in touch regarding the Design Partner program mail [hey@spice.ai](mailto:hey@spice.ai).
@@ -14,13 +14,13 @@ To view your organizations, click your profile image and select **Your organizat
 
 All the organizations you have access to are listed.
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (6).png>)
 
 ### Organization Management
 
 Click the **Settings** button to view information about the organization, including members and apps within the organization.
 
-![](<../.gitbook/assets/image (1) (2).png>)
+![](<../.gitbook/assets/image (12).png>)
 
 #### Adding organization members
 

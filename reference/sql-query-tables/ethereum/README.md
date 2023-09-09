@@ -12,7 +12,7 @@ description: Ethereum data tables available in SQL query
 * [ENS Tables](token-tables-1/)
 * [Uniswap v2 Tables](uniswap-v3-tables/)
 * [Uniswap v3 Tables](uniswap-v3-tables/)
-* [Sushiswap Tables](../../example-dex-queries/sushiswap.md)
+* [Sushiswap Tables](../../samples-and-examples/example-dex-queries/sushiswap.md)
 * [Chainlink Tables](chainlink-tables/)
 * [Aave v2 Tables](aave-v2-tables/)
 

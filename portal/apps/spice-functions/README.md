@@ -18,9 +18,9 @@ See the [Spice Functions Roadmap](roadmap.md) for upcoming features.
 
 ## Creating an output dataset
 
-Spice Functions currently requires a designated [dataset](../datasets-beta.md) to store function output.
+Spice Functions currently requires a designated [dataset](../datasets-and-views.md) to store function output.
 
-Follow the [Datasets and Views](../datasets-beta.md) guide to create a new dataset. In addition, add a migration to define the dataset schema and create the table.
+Follow the [Datasets and Views](../datasets-and-views.md) guide to create a new dataset. In addition, add a migration to define the dataset schema and create the table.
 
 <details>
 
@@ -45,7 +45,7 @@ Optionally specifying a primary key will help enforce data integrity and enables
 
 Datasets defined in a Spice app will be available and queryable from all apps in the [organization](../../organizations.md).
 
-Once you've created the YAML and committed to your repository, follow the same steps outlined in [Datasets and Views](../datasets-beta.md) to sync from GitHub and deploy the dataset to the Spice platform.
+Once you've created the YAML and committed to your repository, follow the same steps outlined in [Datasets and Views](../datasets-and-views.md) to sync from GitHub and deploy the dataset to the Spice platform.
 
 ## Creating a function
 
