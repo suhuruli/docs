@@ -36,3 +36,37 @@ Examples of using the SQL suggestions:
   * Type `SELECT * FROM eth.recent_blocks WHERE "`. The editor will list the fields in the table.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-01-09 at 10.27.43 AM.png" alt=""><figcaption><p>The available fields for <code>eth.recent_blocks</code> along with their type.</p></figcaption></figure>
+
+### Chart Playground (Preview)
+
+Chart Playground is an in-browser charting interface to quickly generate visualizations from queried data, such as **time-series trends, variable relationships, and data distributions**.
+
+1. Click the chart bar icon to access the Chart Playground and view a **recommended chart** upon entry.
+2. Use dropdown menus to change x-axis, y-axis, chart style. **Bar, line, dot** chart style are currently supported. Choosing only x or only y will default to a "bar style" distribution plot.
+3. **Resize** the chart by dragging the **handles** at the top and right.
+4. Download the chart by clicking the **download button** in the top-right corner.
+
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Chart Playground Overview</p></figcaption></figure>
+
+{% hint style="warning" %}
+The Chart Playground relies on an [in-browser DuckDB instance](https://uwdata.github.io/mosaic/core/#mosaic-core) with limited capacity. Try to reduce the size of the data if no chart is displayed.
+{% endhint %}
+
+### AI Charting (Preview)
+
+AI Charting is a **conversational** chart interface that offers an **AI-enhanced** experience for visualizing queried data.
+
+By asking a question about queried data, an **interactive chart** will be generated.
+
+1. Click the chat bubble icon to enter the AI Charting interface.
+2. Enter a question of the queried data in the input box. **Specify variables and styles** to get most ideal chart result. Hit enter or click submit button to generate the chart.
+3. Utilize interactive features including **hovering, zooming, box-select**, etc.
+4. If a question entered is not valid for the data, a recommended question will be shown. Click and try the recommended question or ask another question to generate a new chart.
+
+<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Overview of AI Charting</p></figcaption></figure>
+
+{% hint style="warning" %}
+Questions requiring complex data manipulation or irrelevant to the data may not be displayable.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption><p>Invalid question leads to failure chart generation</p></figcaption></figure>
