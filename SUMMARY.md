@@ -541,3 +541,4 @@
 
 * [Privacy Policy](legal/privacy.md)
 * [Terms](legal/terms.md)
+* [Website Terms of Use](legal/terms-of-use.md)
