@@ -14,6 +14,8 @@
   * [Duration Literals](getting-started/core-concepts/duration-literals.md)
 * [Best Practices](getting-started/best-practices.md)
 * [Limitations](getting-started/limitations.md)
+* [Pricing](getting-started/pricing/README.md)
+  * [Community Edition](getting-started/pricing/community-edition.md)
 * [FAQ](getting-started/faq.md)
 
 ***
@@ -540,6 +542,6 @@
 ## ⚖ Legal
 
 * [Privacy Policy](legal/privacy.md)
-* [Terms](legal/terms.md)
-* [Website Terms of Use](legal/terms-of-use.md)
+* [Website Terms of Use](legal/terms.md)
+* [Terms of Service](legal/terms-of-service.md)
 * [End User License Agreement](legal/eula.md)
