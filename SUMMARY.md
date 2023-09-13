@@ -542,3 +542,4 @@
 * [Privacy Policy](legal/privacy.md)
 * [Terms](legal/terms.md)
 * [Website Terms of Use](legal/terms-of-use.md)
+* [End User License Agreement](legal/end-user-license-agreement.md)
