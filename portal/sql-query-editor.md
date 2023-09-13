@@ -66,7 +66,7 @@ By asking a question about queried data, an **interactive chart** will be genera
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Overview of AI Charting</p></figcaption></figure>
 
 {% hint style="warning" %}
-Questions requiring complex data manipulation or irrelevant to the data may not be displayable.
+Chart generation may fail if the question requires complex data manipulation or is not relevant to the data, as shown below.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption><p>Invalid question leads to failure chart generation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption><p>Chart generation failure due to invalid question.</p></figcaption></figure>
