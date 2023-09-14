@@ -1,6 +1,6 @@
 # Example Bitcoin Queries
 
-[Blocks](blocks.md)
+[Blocks](../../example-bitcoin-queries/blocks.md)
 
 [Transaction Fees](transactions.md)
 

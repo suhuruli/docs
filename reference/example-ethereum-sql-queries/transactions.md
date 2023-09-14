@@ -1,4 +1,10 @@
+---
+description: Example queries that use the Ethereum and Polygon Transactions datasets
+---
+
 # Transactions
+
+Querying the Transactions datasets enable use cases monitoring all the transactions that involve a single address for security and reward alerts, and tracking the transaction that involved the largest transfer of Ethereum at a specific date. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
 
 ### All Transactions From/To an Address
 

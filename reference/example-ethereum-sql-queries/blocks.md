@@ -1,4 +1,10 @@
+---
+description: Example queries that use the Ethereum and Polygon Blocks datasets
+---
+
 # Blocks
+
+Perform essential queries like retrieving blocks information from the last x hours to derive usable insights for your apps and research. Querying the Ethereum and Polygon Blocks datasets enable use cases like getting the latest block number, getting a list of the blocks with the highest amount of Ethereum burned and blocks with the highest number of transactions. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
 
 ### Get Latest Block Number
 
@@ -27,7 +33,7 @@ FROM polygon.recent_blocks
 Gets basic information for the blocks of the last 4 hours in the chain.
 
 {% hint style="info" %}
-To get access to more than 500 results, use the [Apache Arrow Flight API](broken-reference/).
+To get access to more than 500 results, use the [Apache Arrow Flight API](https://github.com/spicehq/cloud-docs/blob/trunk/reference/example-ethereum-sql-queries/broken-reference/README.md).
 {% endhint %}
 
 **Typical query time**: 2 seconds

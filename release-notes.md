@@ -138,9 +138,9 @@ Portal UX improvements include the ability to search the dataset reference for s
 
 The May release includes significant platform performance upgrades with the rollout of Spice AI's **second generation platform architecture (Gen. 2)** along with several usability and user-experience improvements.
 
-[Ethereum](reference/sql-query-tables/ethereum/) and [Polygon](reference/sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](reference/samples-and-examples/example-ethereum-sql-queries/nfts.md), [ENS](reference/sql-query-tables/ethereum/token-tables-1/), [Uniswap](reference/samples-and-examples/example-dex-queries/uniswap.md), and [Sushiswap](reference/samples-and-examples/example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
+[Ethereum](reference/sql-query-tables/ethereum/) and [Polygon](reference/sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](reference/example-ethereum-sql-queries/nfts.md), [ENS](reference/sql-query-tables/ethereum/token-tables-1/), [Uniswap](reference/samples-and-examples/example-dex-queries/uniswap.md), and [Sushiswap](reference/samples-and-examples/example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
 
-<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p><a href="reference/samples-and-examples/example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption><p><a href="reference/samples-and-examples/example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
 
 Portal UX improvements include the ability to collapse the sidebar, resize the SQL query input and results pane, and expand to a fullscreen focus mode. SQL query errors are now highlighted with red underline swiggles along with a more readable error pane. Finally, results render faster and app switching is faster.
 
@@ -202,7 +202,7 @@ from eth_withdrawn
 
 <figure><img src=".gitbook/assets/Screen Shot 2023-05-10 at 10.20.00 PM.png" alt=""><figcaption><p>Get ETH withdrawn after the Ethereum Shanghai upgrade, sample output</p></figcaption></figure>
 
-Explore detailed sample SQL queries for [DEX](reference/samples-and-examples/example-dex-queries/), [Cross-Chain](reference/samples-and-examples/example-cross-chain-queries.md), [Ethereum](reference/samples-and-examples/example-ethereum-sql-queries/), [Beacon](reference/samples-and-examples/example-ethereum-beacon-sql-queries/), and [Bitcoin](reference/samples-and-examples/example-bitcoin-queries/) in the Spice Docs.\
+Explore detailed sample SQL queries for [DEX](reference/samples-and-examples/example-dex-queries/), [Cross-Chain](reference/samples-and-examples/example-cross-chain-queries.md), [Ethereum](reference/example-ethereum-sql-queries/), [Beacon](reference/samples-and-examples/example-ethereum-beacon-sql-queries/), and [Bitcoin](reference/samples-and-examples/example-bitcoin-queries/) in the Spice Docs.\
 
 
 **Goerli Testnet:** Full support for the Goerli testnet has been added, including hosted beacon and execution nodes, and fully indexed datasets, helping developers test their applications before mainnet launch.&#x20;
@@ -316,7 +316,7 @@ If you are waitlisted, you can now instantly enable your account by signing up f
 
 **Improved monitoring:** you can now track requests, their status code, and duration to Spice, in addition to the existing usage monitoring metrics dashboard. Start by going to your app, under the Monitor sidebar, select API Requests. You can then toggle between Metrics and Logs views. Within Logs, you can select to retrieve API requests from the past 1 hour, 8 hours, 24 hours, and up to the past 3 days.
 
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Ethereum Beacon Chain Dataset (Preview):** The Ethereum beacon chain is the central coordination and consensus layer for the Ethereum 2.0 upgrade, which aims to improve scalability, security, and sustainability. Now you can query and access beacon chain dataset with `eth.beacon`, `eth.beacon.validators`, `eth.beacon.withdrawals` and more.
 
@@ -337,11 +337,11 @@ Sample Queries
 2.  Number of Weekly Attester Slashings \
 
 
-    <figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 3.  Top 10 most frequent block proposers\
 
 
-    <figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 By leveraging beacon chain capabilities, developers can create scalable decentralized applications that can handle a large volume of transactions, while also participating in network governance and incentivization through its Proof of Stake consensus mechanism. You can learn more about the chain [here](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain).&#x20;
 

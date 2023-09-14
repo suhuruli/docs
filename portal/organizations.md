@@ -14,13 +14,13 @@ To view your organizations, click your profile image and select **Your organizat
 
 All the organizations you have access to are listed.
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 ### Organization Management
 
 Click the **Settings** button to view information about the organization, including members and apps within the organization.
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (1) (2).png>)
 
 #### Adding organization members
 
