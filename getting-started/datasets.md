@@ -98,7 +98,7 @@ Explore SQL-queryable datasets organized by chain and data type, each with repre
 
 <table data-header-hidden><thead><tr><th width="239.5"></th><th></th><th></th></tr></thead><tbody><tr><td>NFTs</td><td><code>flow.nfts</code></td><td></td></tr><tr><td>NFT Transfers</td><td><code>flow.nft_transfers</code></td><td><code>flow.recent_nft_transfers</code></td></tr><tr><td>Fungible Token Transfers</td><td><code>flow.token_transfers</code></td><td><code>flow.recent_token_transfers</code></td></tr></tbody></table>
 
-#### [Prices datasets](../reference/sql-query-tables/prices/)
+#### [Prices datasets](../reference/sql-query-tables/prices.md)
 
 Historical OHLC cryptocurrency and token prices are available for SQL query at 1 minute granularity. \~2,000 token pairs are currently available sourced from centralized exchanges like Coinbase, Gemini, and Binance, and decentralized exchanges like Uniswap and Sushiswap. More pais are automatically added each day as they are listed on the exchanges.
 
@@ -106,6 +106,12 @@ To see all pairs available for query:
 
 ```sql
 SHOW TABLES IN prices;
+```
+
+Or access all pairs in a single table:
+
+```sql
+SELECT DISTINCT pair FROM prices.all_pairs;
 ```
 
 {% hint style="info" %}

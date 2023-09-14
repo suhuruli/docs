@@ -14,6 +14,6 @@
 [bitcoin](bitcoin/)
 {% endcontent-ref %}
 
-{% content-ref url="prices/" %}
-[prices](prices/)
+{% content-ref url="prices.md" %}
+[prices.md](prices.md)
 {% endcontent-ref %}

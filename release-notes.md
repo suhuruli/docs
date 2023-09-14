@@ -140,7 +140,7 @@ The May release includes significant platform performance upgrades with the roll
 
 [Ethereum](reference/sql-query-tables/ethereum/) and [Polygon](reference/sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](reference/example-ethereum-sql-queries/nfts.md), [ENS](reference/sql-query-tables/ethereum/token-tables-1/), [Uniswap](reference/samples-and-examples/example-dex-queries/uniswap.md), and [Sushiswap](reference/samples-and-examples/example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption><p><a href="reference/samples-and-examples/example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p><a href="reference/samples-and-examples/example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
 
 Portal UX improvements include the ability to collapse the sidebar, resize the SQL query input and results pane, and expand to a fullscreen focus mode. SQL query errors are now highlighted with red underline swiggles along with a more readable error pane. Finally, results render faster and app switching is faster.
 
@@ -316,7 +316,7 @@ If you are waitlisted, you can now instantly enable your account by signing up f
 
 **Improved monitoring:** you can now track requests, their status code, and duration to Spice, in addition to the existing usage monitoring metrics dashboard. Start by going to your app, under the Monitor sidebar, select API Requests. You can then toggle between Metrics and Logs views. Within Logs, you can select to retrieve API requests from the past 1 hour, 8 hours, 24 hours, and up to the past 3 days.
 
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 **Ethereum Beacon Chain Dataset (Preview):** The Ethereum beacon chain is the central coordination and consensus layer for the Ethereum 2.0 upgrade, which aims to improve scalability, security, and sustainability. Now you can query and access beacon chain dataset with `eth.beacon`, `eth.beacon.validators`, `eth.beacon.withdrawals` and more.
 
@@ -337,11 +337,11 @@ Sample Queries
 2.  Number of Weekly Attester Slashings \
 
 
-    <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 3.  Top 10 most frequent block proposers\
 
 
-    <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 By leveraging beacon chain capabilities, developers can create scalable decentralized applications that can handle a large volume of transactions, while also participating in network governance and incentivization through its Proof of Stake consensus mechanism. You can learn more about the chain [here](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain).&#x20;
 
@@ -506,7 +506,7 @@ Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
 
 **Changes**
 
-* [Prices dataset](reference/sql-query-tables/prices/) now out of preview
+* [Prices dataset](reference/sql-query-tables/prices.md) now out of preview
 * Added export to CSV results format in addition to existing formats [JSON](api/ethereum/json-rpc-methods.md) and [Apache Arrow](api/sql-query-api/apache-arrow-flight-api.md), for easy use with apps, ML, or libraries like NumPy and Pandas
 * Added performance improvements for faster queries across existing datasets including `eth.traces`&#x20;
 
@@ -520,7 +520,7 @@ Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
 
 ### October 2022
 
-Spice now has [prices dataset](reference/sql-query-tables/prices/) in preview.&#x20;
+Spice now has [prices dataset](reference/sql-query-tables/prices.md) in preview.&#x20;
 
 * Query historical High-Low-Open-Close (HILO) prices to minute precision
 * Join with other real-time and historical web3 data to do calculations and conversions back to USD
