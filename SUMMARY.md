@@ -80,6 +80,7 @@
 ## 🎓 Tutorials
 
 * [Tokens & NFTs](tutorials/tokens-and-nfts.md)
+* [Asset Transfer Valuations](tutorials/asset-transfer-valuations.md)
 
 ## 📚 REFERENCE
 
