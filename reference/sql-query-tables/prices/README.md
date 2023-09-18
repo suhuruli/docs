@@ -1,9 +1,27 @@
 ---
-description: Tables containing historical prices of tokens
+description: Price data tables available in SQL query
 ---
 
 # Prices
 
+### Aggregate price base type tables available to query
+
+| View Name                                          | Description                                      |
+| -------------------------------------------------- | ------------------------------------------------ |
+| [`spiceai.trades_detailed`](trades\_detailed.md)    | Detailed trade data                              |
+| [`spiceai.trades`](trades.md)                      | Trade data                                       |
+| [`spiceai.assets`](assets.md)                      | Asset data                                       |
+| [`spiceai.prices`](prices.md)                      | Price data                                       |
+
+The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
+
+```sql
+/* Show the columns available */
+DESCRIBE spiceai.prices;
+DESCRIBE spiceai.assets;
+```
+
+### Per-pair price base type tables available to query
 Historical prices data is available in both pair specific tables named `prices.[Token0]_[Token2]` (e.g. prices.btc\_usdt) or in a single table containing all pairs named `prices.all_pairs`, which has an extra `pair` column to. For better performance, we recommend using the pair specific tables when you know the pairs that need to be queried at compile time and using the single table of all pairs when the pairs that need to be queried are determined dynamically at runtime.
 
 Prices are available in High-Low-Open-Close (HLOC) format.
