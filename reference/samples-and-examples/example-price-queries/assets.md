@@ -1,12 +1,12 @@
 ---
-description: Example queries that use the SpiceAI Assets dataset
+description: Example queries that use the SpiceAI assets dataset
 ---
 
 ## Assets
 
 ### Find ID for supported Ethereum token
 
-Finds the asset_id to use in SpiceAI for an ethereum token.
+Finds the related `asset_id` of an ethereum token, to query against SpiceAI data. 
 
 **Typical query time**: 30 millisecond
 
@@ -21,7 +21,7 @@ Or find all ethereum tokens
 **Typical query time**: 40 millisecond
 
 ```sql
-SELECT asset_id
+SELECT asset_id, name
 FROM spiceai.assets
 WHERE eth_address IS NOT NULL
 ```

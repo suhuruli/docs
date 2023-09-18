@@ -8,10 +8,10 @@ description: Price data tables available in SQL query
 
 | View Name                                          | Description                                      |
 | -------------------------------------------------- | ------------------------------------------------ |
-| [`spiceai.trades_detailed`](trades\_detailed.md)    | Detailed trade data                              |
-| [`spiceai.trades`](trades.md)                      | Trade data                                       |
-| [`spiceai.assets`](assets.md)                      | Asset data                                       |
-| [`spiceai.prices`](prices.md)                      | Price data                                       |
+| [`spiceai.trades`](trades.md)                      | Raw trade data from exchanges                    |
+| [`spiceai.trades_detailed`](trades\_detailed.md)   | Trade data with additional columns               |
+| [`spiceai.assets`](assets.md)                      | Tokens supported on Spice AI with metadata       |
+| [`spiceai.prices`](prices.md)                      | Per-minute price data for tokens pairs           |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 
@@ -19,6 +19,7 @@ The columns and their schema available for each table can be viewed with the `de
 /* Show the columns available */
 DESCRIBE spiceai.prices;
 DESCRIBE spiceai.assets;
+-- etc.
 ```
 
 ### Per-pair price base type tables available to query

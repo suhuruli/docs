@@ -4,11 +4,11 @@ description: Example queries that use the SpiceAI token trade datasets
 
 ## Trades
 
-### Get all tokens trades of a given pair today
+### Get all trades of a given token pair today
 Get per-minute price data for a trading pair, e.g. BTC-ETH, using the end of minute price (`close`, other options available), in the last two hours.
 
 ```sql
-SELECT "close"
+SELECT "close" as price
 FROM spiceai.prices
 WHERE pair='BTC-ETH'
 AND "timestamp" > TIMESTAMPADD(HOUR, -2, CURRENT_TIMESTAMP())

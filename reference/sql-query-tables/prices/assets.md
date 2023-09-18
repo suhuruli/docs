@@ -8,7 +8,7 @@ All assets verified and useable within SpiceAI.
 
 | Column Name     | Data Type         | Description                                                         |
 | --------------- | ----------------- | ------------------------------------------------------------------- |
-| asset_id        | CHARACTER VARYING | Unique identifier for the asset                                     |
-| display_name    | CHARACTER VARYING | Display name of the asset                                           |
-| eth_address     | CHARACTER VARYING | Ethereum address associated with the asset                          |
-| polygon_address | CHARACTER VARYING | Polygon (previously Matic) address of the asset                     |
+| asset_id        | CHARACTER VARYING | Unique identifier for the asset across SpiceAI platform             |
+| name            | CHARACTER VARYING | Human readable name of the underlying asset/token                   |
+| eth_address     | CHARACTER VARYING | Ethereum address associated with the asset, otherwise NULL          |
+| polygon_address | CHARACTER VARYING | Polygon address associated with the asset, otherwise NULL           |
