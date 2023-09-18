@@ -11,13 +11,13 @@ description: Price data tables available in SQL query
 | [`prices.trades`](trades.md)                       | Raw trade data from exchanges                    |
 | [`prices.trades_detailed`](trades\_detailed.md)    | Trade data with additional columns               |
 | [`prices.assets`](assets.md)                       | Tokens supported on Spice AI with metadata       |
-| [`spiceai.prices`](prices.md)                      | Per-minute price data for tokens pairs           |
+| [`prices.minute_resolution`](prices.md)                      | Per-minute price data for tokens pairs           |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 
 ```sql
 /* Show the columns available */
-DESCRIBE spiceai.prices;
+DESCRIBE prices.minute_resolution;
 DESCRIBE prices.assets;
 -- etc.
 ```

@@ -1,5 +1,5 @@
 ---
- description: SQL table schema for spiceai.prices
+ description: SQL table schema for prices.minute_resolution
 ---
  
 # Price data
