@@ -12,7 +12,7 @@ Finds the related `asset_id` of an ethereum token, to query against SpiceAI data
 
 ```sql
 SELECT asset_id
-FROM spiceai.assets
+FROM prices.assets
 WHERE eth_address='0xaa379c2aa72529d5ec0da8a41e2f41ed7fe4b48c' -- `polygon_address` also supported
 ```
 
@@ -22,6 +22,6 @@ Or find all ethereum tokens
 
 ```sql
 SELECT asset_id, name
-FROM spiceai.assets
+FROM prices.assets
 WHERE eth_address IS NOT NULL
 ```

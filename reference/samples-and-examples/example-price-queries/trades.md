@@ -21,7 +21,7 @@ Get the amount of trade volume for a given pair, per day over the trailing last 
 
 ```sql
 SELECT TO_DATE(trades.timestamp_ms/1000) AS trade_date, count(pair) AS trade_count
-FROM spiceai.trades
+FROM prices.trades
 WHERE pair='XRP-USDT'
 AND trades.timestamp_ms > 1000*(UNIX_TIMESTAMP() - 86400*30)
 GROUP BY trade_date
@@ -29,13 +29,13 @@ ORDER BY trade_date DESC;
 ```
 
 ## Get the most frequently traded pairs on Coinbase today.
-Get the most traded pairs from Coinbase today. Note, requires `spiceai.trades_detailed` not `spiceai.trades`.
+Get the most traded pairs from Coinbase today. Note, requires `prices.trades_detailed` not `prices.trades`.
 
 **Typical query time**: ~1.5 seconds
 
 ```sql
 SELECT pair, count(pair)
-FROM spiceai.trades_detailed
+FROM prices.trades_detailed
 WHERE exchange='coinbase'
 AND trades.timestamp_ms > 1000*(UNIX_TIMESTAMP()  - 86400)
 GROUP BY pair

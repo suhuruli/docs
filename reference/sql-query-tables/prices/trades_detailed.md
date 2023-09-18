@@ -1,5 +1,5 @@
 ---
-description: SQL table schema for spiceai.trades_detailed
+description: SQL table schema for prices.trades_detailed
 ---
 
 # Trade data

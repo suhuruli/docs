@@ -1,5 +1,5 @@
 ---
-description: SQL table schema for spiceai.assets
+description: SQL table schema for prices.assets
 ---
 
 # Asset data

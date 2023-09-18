@@ -1,10 +1,10 @@
 ---
-description: SQL table schema for spiceai.trades
+description: SQL table schema for prices.trades
 ---
 
 # Trade data
 
-All trades from centralised exchanges (e.g. Coinbase), and SpiceAI computed trades. For a more detailed view, see [`spiceai.trades_detailed`](trades\_detailed.md).
+All trades from centralised exchanges (e.g. Coinbase), and SpiceAI computed trades. For a more detailed view, see [`prices.trades_detailed`](trades\_detailed.md).
 
 | Column Name        | Data Type          | Description                                                         |
 | ------------------ | ------------------ | ------------------------------------------------------------------- |
