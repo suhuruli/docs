@@ -95,10 +95,10 @@ example api query
   console.log(res);
 ```
 
-**getMultiplePrices**(convert?: string, symbols: string\[]) => LatestPrice\[]
+**getMultiplePrices**(convert?: string, symbols: string[]) => LatestPrice[]
 
-* `convert`: Conversion currency/token symbol, for example: "AUD". If not provided defaults to "USD".
-* `symbols`: (string\[], required): Currency/token symbols whose prices will be fetched, for example \["cbETH", "stETH", "rETH"]
+* `convert`: Conversion currency/token symbol, for example: "AUD".  If not provided defaults to "USD".
+* `symbols`: (string[], required): Currency/token symbols whose prices will be fetched, for example ["cbETH", "stETH", "rETH"]
 
 `getMultiplePrices` returns an array of LatestPrice object
 
