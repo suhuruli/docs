@@ -28,7 +28,7 @@ Let's explore tokens and contracts and their Spice datasets before jumping into 
 
 ### Tokens vs Contracts
 
-The words tokens and contracts are often used interchangeably but according to the Ethereum Foundation they have specific definitions. A **contract** (or smart contract) is a program that runs on the Ethereum blockchain. It's a collection of code (its functions) and data (its state) that resides at a specific address on the Ethereum blockchain. A **token** is a crypto asset that can be utilized on blockchain ecosystems for economic, governance, or other purposes. <mark style="background-color:yellow;"></mark> A token contract is the implementation of a token.
+The words tokens and contracts are often used interchangeably but according to the Ethereum Foundation they have specific definitions. A **contract** (or smart contract) is a program that runs on the Ethereum blockchain. It's a collection of code (its functions) and data (its state) that resides at a specific address on the Ethereum blockchain. A **token** is a crypto asset that can be utilized on blockchain ecosystems for economic, governance, or other purposes. A token contract is the implementation of a token.
 
 Some tokens have an entire contract dedicated to their implementation, as with ERC-20 tokens. Other contract implementations may include many different tokens, such as with the ERC-721 and ERC-1155 standards.
 
@@ -117,7 +117,7 @@ order by count(*) desc
 
 ### Who are the current owners of all \~60M+ NFTs?
 
-It is possible to use Spice to get all \~60M owners of all NFTs that exist using the `eth.nft_owners` table. This can be useful for performing your own data science on the data in your own systems. The HTTP API that the Spice.xyz portal uses is limited to 500 rows, so you will need to use one of the Spice SDKs ([Python](../sdks/python-sdk.md), [Node.js](../sdks/node.js-sdk/)) to run the query and retrieve all of the results.
+It is possible to use Spice to get all \~60M owners of all NFTs that exist using the `eth.nft_owners` table. This can be useful for performing your own data science on the data in your own systems. The HTTP API that the Spice.xyz portal uses is limited to 500 rows, so you will need to use one of the Spice SDKs ([Python](../sdks/python-sdk/), [Node.js](../sdks/node.js-sdk/)) to run the query and retrieve all of the results.
 
 Spice also has a limitation of 90 seconds for a single query. To get all 60M owners, you will need to paginate through the data using a combination of `ORDER BY`, `LIMIT` and `OFFSET`. Here is an example:
 

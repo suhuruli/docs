@@ -6,3 +6,6 @@ When you create an account on Spice.xyz, a single member organization of the sam
 
 <figure><img src="../.gitbook/assets/image (3).png" alt="Organizations"><figcaption><p>Organizations in Spice.xyz</p></figcaption></figure>
 
+{% hint style="info" %}
+Learn how to [add and remove organization members](../portal/organizations.md).&#x20;
+{% endhint %}

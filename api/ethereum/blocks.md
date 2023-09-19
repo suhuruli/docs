@@ -24,7 +24,7 @@ The beginning of the historical period. Will default to 24h ago if not provided.
 {% swagger-parameter in="query" name="period" required="false" %}
 The period specified as a
 
-[Duration Literal](../../core-concepts/duration-literals.md)
+[Duration Literal](../../getting-started/core-concepts/duration-literals.md)
 
 . E.g. 5d. If not specified, will default from start until now, or 24 hours if start is also not provided.
 {% endswagger-parameter %}

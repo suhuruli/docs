@@ -1,17 +1,21 @@
-# Portal Login
+---
+description: >-
+  A step-by-step guide to login to your Spice.xyz account, connect with your
+  Github organizations, and create your first app.
+---
 
-## From Website
+# Step 1 - Portal Login
 
-1. Go to [spice.xyz](https://www.spice.xyz) and click on Login or Getting Started in the top right corner.
-2. You can also navigate by URL via [spice.xyz/login](https://spice.xyz/login) or /\*insertyourusername\*
+### From the Spice.xyz website
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-01-24 at 14.07.06@2x.png" alt=""><figcaption></figcaption></figure>
+1. Go to [spice.xyz](https://www.spice.xyz) and click on **Login** or **Getting Started** in the top right corner.
+2. You can also navigate directly by URL to [spice.xyz/login](https://spice.xyz/login).
 
-3\.   Click **Continue with GitHub** to grant authorization to Spice AI\*
+<figure><img src="../.gitbook/assets/CleanShot 2023-01-24 at 14.07.06@2x.png" alt=""><figcaption><p>Login via the Spice.xyz website</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-01-24 at 14.00.46@2x.png" alt=""><figcaption></figcaption></figure>
+3\.   Click **Continue with GitHub** to grant authorization to login with your GitHub account.
 
-
+<figure><img src="../.gitbook/assets/CleanShot 2023-01-24 at 14.00.46@2x.png" alt=""><figcaption><p>Login with GitHub</p></figcaption></figure>
 
 4\.   \*Spice now features [Organization Support](../portal/organizations.md). If you have a pre-existing account, you may be prompted to reauthorize with your GitHub.&#x20;
 
@@ -21,10 +25,10 @@
 
 <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Congrats, you're ready to create your first app!**
+**Congrats, you're ready to create your first** [**app**](../portal/apps/)**!**
 
 
 
 {% hint style="info" %}
-Raise issues or feedback with our team on Discord [here](https://discord.gg/PUCapX22En).&#x20;
+Raise issues or feedback with our team on [Discord](https://discord.gg/kZnTfneP5u).
 {% endhint %}

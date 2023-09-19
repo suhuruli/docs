@@ -6,17 +6,17 @@ description: SQL table schema for polygon.token_transfers
 
 Polygon ERC-20, ERC-721, and ERC-1155 token transfers.
 
-| Column Name        | Data Type         |
-| ------------------ | ----------------- |
-| `token_address`    | CHARACTER VARYING |
-| `from_address`     | CHARACTER VARYING |
-| `to_address`       | CHARACTER VARYING |
-| `token_id`         | CHARACTER VARYING |
-| `token_standard`   | CHARACTER VARYING |
-| `value`            | CHARACTER VARYING |
-| `transaction_hash` | CHARACTER VARYING |
-| `log_index`        | BIGINT            |
-| `block_timestamp`  | BIGINT            |
-| `block_number`     | BIGINT            |
-| `block_hash`       | CHARACTER VARYING |
-| `batch_index`      | BIGINT            |
+| Column Name        | Data Type         | Description                                  |
+| ------------------ | ----------------- | -------------------------------------------- |
+| `token_address`    | CHARACTER VARYING | Address of the token                         |
+| `from_address`     | CHARACTER VARYING | Address of the sender                        |
+| `to_address`       | CHARACTER VARYING | Address of the receiver                      |
+| `token_id`         | CHARACTER VARYING | Token id of the token transferred            |
+| `token_standard`   | CHARACTER VARYING | One of erc20, erc721, erc1155                |
+| `value`            | CHARACTER VARYING | Amount of token transferred                  |
+| `transaction_hash` | CHARACTER VARYING | Transaction hash                             |
+| `log_index`        | BIGINT            | Log index in transaction receipt             |
+| `block_timestamp`  | BIGINT            | Block timestamp where the transaction was in |
+| `block_number`     | BIGINT            | Block number where the transaction was in    |
+| `block_hash`       | CHARACTER VARYING | Block hash where the transaction was in      |
+| `batch_index`      | BIGINT            | Batch index of token transfer transaction    |

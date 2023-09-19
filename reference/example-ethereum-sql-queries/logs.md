@@ -1,4 +1,10 @@
+---
+description: Example queries that use the Ethereum and Polygon Logs datasets
+---
+
 # Logs
+
+Querying the logs datasets enable use cases like finding smart contract event filtered by topics and finding the busiest time of the Opensea Seaport marketplace contract to optimize actions. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
 
 ### Find arbitrary smart contract events
 
@@ -27,3 +33,21 @@ WHERE address = '0x00000000006c3852cbef3e08e8df289169ede581' -- OpenSea Seaport 
 ```
 {% endtab %}
 {% endtabs %}
+
+### Find the busiest time of Opensea seaport contract
+
+Seaport is a marketplace contract for safely and efficiently creating and fulfilling orders for ERC721 and ERC1155 items.
+
+{% tabs %}
+{% tab title="Ethereum" %}
+```sql
+SELECT DATE_TRUNC('MINUTE', to_timestamp(block_timestamp)) 
+    AS "time", COUNT(*) AS frequency
+FROM eth.logs
+WHERE address = '0x00000000006c3852cbef3e08e8df289169ede581' -- OpenSea Seaport Contract
+GROUP BY "time"
+ORDER BY "time"
+```
+{% endtab %}
+{% endtabs %}
+

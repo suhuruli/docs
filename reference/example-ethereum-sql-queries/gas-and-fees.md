@@ -1,4 +1,10 @@
+---
+description: Example queries that use the Ethereum Gas & Fees datasets
+---
+
 # Gas & Fees
+
+Querying the Gas & Fees datasets enable use cases like tracking the average transaction fees for recent blocks in Ethereum, calculating the total amount of Ethereum paid in fees for all of the transactions in each block, and monitoring the average amount of gas used for a transaction. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
 
 ### Average Gas Used by Transactions per Block
 

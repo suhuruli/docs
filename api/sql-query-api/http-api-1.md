@@ -4,7 +4,7 @@ description: Query web3 data with SQL via the async HTTP API
 
 # Async HTTP API
 
-Blockchain and contract data may be queried by posting SQL to the `/v0.1/sql` API. See [Tables](broken-reference/) for a list of tables to query or browse the example queries listed in the menu.
+Blockchain and contract data may be queried by posting SQL to the `/v0.1/sql` API. See [Tables](https://github.com/spicehq/cloud-docs/blob/trunk/api/sql-query-api/broken-reference/README.md) for a list of tables to query or browse the example queries listed in the menu.
 
 By posting a JSON payload specifying list of query completion `notifications` results can be fetched asynchronously once the query has completed.
 

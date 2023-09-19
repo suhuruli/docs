@@ -47,6 +47,7 @@ console.log(baseFeeGwei?.toJSON())
 * `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
 
 `getPrice` returns a LatestPrice object
+
 ```javascript
 LatestPrice {
   pair: string;
@@ -71,6 +72,7 @@ example api query
 * `granularity`: valid [duration](https://docs.spice.xyz/core-concepts/duration-literals)
 
 `getPrices` returns a HistoricalPrices object
+
 ```javascript
 HistoricalPrices {
   pair: string;
@@ -80,6 +82,7 @@ HistoricalPrices {
   }[];
 }
 ```
+
 example api query
 
 ```javascript
@@ -98,6 +101,7 @@ example api query
 * `symbols`: (string[], required): Currency/token symbols whose prices will be fetched, for example ["cbETH", "stETH", "rETH"]
 
 `getMultiplePrices` returns an array of LatestPrice object
+
 ```javascript
 LatestPrice {
   pair: string;
@@ -106,6 +110,7 @@ LatestPrice {
   avePrice: string;
 }
 ```
+
 example api query
 
 ```javascript

@@ -4,6 +4,8 @@ description: Spice AI, Inc.
 
 # Privacy Policy
 
+Last updated: September 13, 2023
+
 **Spice AI, Inc.**, a Delaware corporation, including its affiliates ("**Company**”, “**we**”, “**us**”, or “**our**”) is committed to maintaining robust privacy protections for you, whether personally or on behalf of an entity (“**you**” or “**user**”).\
 \
 **Our Privacy Policy (“Privacy Policy” or this “Agreement”) is designed to help you understand how we collect, use, and safeguard the information you provide to us and to assist you in making informed decisions when using our Service. For purposes of this Agreement, “Site” refers to our website, blogs, social media accounts, or apps in which Company’s service can be accessed in** which users can view the website and subscribe to and use our software, products, and/or services (each a “**Service**,” and collectively the “**Services**”).
@@ -71,9 +73,7 @@ If you are a California resident, you may have additional privacy rights. For a 
 ### IX. CONTACT US
 
 \
-If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us by sending an email to [privacy@spiceai.io](mailto:privacy@spiceai.io).\
-\
-This Privacy Policy was last updated on Jan 24, 2022.
+If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us by sending an email to [privacy@spice.ai](mailto:privacy@spice.ai).
 
 \[End of Privacy Policy.]
 

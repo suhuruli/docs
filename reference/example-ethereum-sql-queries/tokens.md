@@ -1,4 +1,10 @@
+---
+description: Example queries that use the Ethereum and Polygon Tokens datasets
+---
+
 # Tokens
+
+Querying the Tokens datasets enable use cases like finding a token's recent token transfers and the token standard information, and getting Spice's confidence (as a score from 0 to 1) on whether a smart contract implements the given token standard. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
 
 ### Get Token Transfers with Token Standard
 

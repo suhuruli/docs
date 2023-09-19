@@ -24,11 +24,11 @@ Getting the balance of a wallet becomes a simple act of querying the absolute ba
 
 ```sql
 WITH ranked_balances AS (
-    SELECT address, balance_gwei, ROW_NUMBER() OVER (PARTITION BY address ORDER BY block_number DESC) AS rn
+    SELECT address, balance_gwei, balance_usd, ROW_NUMBER() OVER (PARTITION BY address ORDER BY block_number DESC) AS rn
     FROM eth.wallet_balances
 )
 
-SELECT address, balance_gwei
+SELECT address, balance_gwei, balance_usd
 FROM ranked_balances WHERE rn = 1 and address = LOWER('0x28c6c06298d514db089934071355e5743bf21d60')
 ```
 

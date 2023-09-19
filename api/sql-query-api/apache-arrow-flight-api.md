@@ -10,7 +10,7 @@ Arrow Flight is a data protocol built on the high-performance, open-source [gRPC
 
 This enables high-speed access to your data in [Python](https://arrow.apache.org/docs/python/index.html), [Go](https://pkg.go.dev/github.com/apache/arrow/go/v8), [C++](https://arrow.apache.org/docs/cpp/index.html), [C#](https://github.com/apache/arrow/blob/master/csharp/README.md), and [Rust](https://docs.rs/arrow-flight/latest/arrow\_flight/), and makes it easy to use libraries like [Pandas](https://arrow.apache.org/docs/python/pandas.html) and [NumPy](https://arrow.apache.org/docs/python/numpy.html?highlight=numpy).
 
-We recommend using our SDKs to connect and query this endpoint. SDKs are available for [Python](../../sdks/python-sdk.md), [Node.js](../../sdks/node.js-sdk/), and [Go](../../sdks/go.md) with more coming soon. In Python, the query results from the SDK can be easily converted to Pandas or NumPy format.
+We recommend using our SDKs to connect and query this endpoint. SDKs are available for [Python](../../sdks/python-sdk/), [Node.js](../../sdks/node.js-sdk/), and [Go](../../sdks/go.md) with more coming soon. In Python, the query results from the SDK can be easily converted to Pandas or NumPy format.
 
 You may also use Apache's `pyarrow` library directly.
 
@@ -19,23 +19,25 @@ You may also use Apache's `pyarrow` library directly.
 
 `The spicepy/pyarrow` installation requires [miniforge](https://github.com/conda-forge/miniforge).
 
-See the [Python SDK page](../../sdks/python-sdk.md#m1-macs) for installation steps.
+See the [Python SDK page](../../sdks/python-sdk/#m1-macs) for installation steps.
 {% endhint %}
 
 #### Connecting to the endpoint
 
 * Use the gRPC + TLS URL: `grpc+tls://flight.spiceai.io`
+* For Firecache use the gRPC + TLS URL: `grpc+tls://firecache.spiceai.io`
+  * For documentation on the Spice Firecache see [firecache.md](../../reference/specifications/dataset-and-view-yaml-specification/firecache.md "mention")
 * Use basic authentication
   * Username can be set to an empty string
   * Password should be set to the API key of your app
 
 #### Requirements
 
-* [Table](broken-reference/) names must be fully-qualified. For example `eth.blocks`
+* [Table](https://github.com/spicehq/cloud-docs/blob/trunk/api/sql-query-api/broken-reference/README.md) names must be fully-qualified. For example `eth.blocks`
 
 #### Samples
 
-Find code samples in Python in [Arrow Flight Samples](../../reference/arrow-flight-samples.md).
+Find code samples in Python in [Arrow Flight Samples](../../reference/samples-and-examples/arrow-flight-samples.md).
 
 ### Troubleshooting
 

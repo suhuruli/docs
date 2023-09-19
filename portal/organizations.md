@@ -1,6 +1,6 @@
 # Organizations
 
-[**Organizations**](../core-concepts/organizations.md) enable you to share apps, datasets, users, billing, and settings with your team members. Organization administrators can set who has access to their organization's resources and data on the web3 data and AI platform.
+[**Organizations**](../getting-started/core-concepts/organizations.md) enable you to share apps, datasets, users, billing, and settings with your team members. Organization administrators can set who has access to their organization's resources and data on the web3 data and AI platform.
 
 {% hint style="info" %}
 Organizations are currently in preview and only available to create beyond your personal organization to Spice Design Partners. To get in touch regarding the Design Partner program mail [hey@spice.ai](mailto:hey@spice.ai).
@@ -14,30 +14,38 @@ To view your organizations, click your profile image and select **Your organizat
 
 All the organizations you have access to are listed.
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (6).png>)
 
 ### Organization Management
 
 Click the **Settings** button to view information about the organization, including members and apps within the organization.
 
-![](<../.gitbook/assets/image (1) (2).png>)
+![](<../.gitbook/assets/image (12).png>)
 
 #### Adding organization members
 
-{% hint style="warning" %}
-Only existing Spice.xyz users can be added as members to your organization. Before adding a new member, ensure they have signed up for Spice.xyz and have logged into the portal at least once.
-{% endhint %}
-
-To add a member to an organization:
+**To add an existing Spice.xyz user to an organization:**
 
 1. Navigate to the organization's settings.
 2. Click the **Add Member** button.
-3. Enter the Spice.xyz username of the user you wish to invite to the organization.
+3. Enter the Spice.xyz username of the user you wish to add to the organization.
 4. Click the **Add Member** button to confirm.
 
-![](<../.gitbook/assets/image (4) (1).png>)
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-11 at 09.00.45@2x.png" alt=""><figcaption><p>Adding the Spice.xyz user lukekim to the my-spice-org organization.</p></figcaption></figure>
 
-The invited user will be added to the organization and they will receive an email notifying them of their membership.
+The user will be added to the organization and they will receive an email notifying them of the new membership.
+
+**To add any GitHub user to a Spice.xyz organization:**
+
+1. Enter the GitHub username of the user you wish to invite to the organization, and select the user from the search results.
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-11 at 08.55.48@2x.png" alt=""><figcaption><p>Searching for a GitHub user to invite to the my-spice-org organization.</p></figcaption></figure>
+
+2. Provide the user's **work email address** and click **Send invite**.
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-11 at 08.57.04@2x.png" alt=""><figcaption><p>Sending an invitation to a GitHub user via their work email address.</p></figcaption></figure>
+
+The invited user will receive an invitation link. Once they accept the invitation, they will be granted access to the organization.
 
 #### Removing organization members
 

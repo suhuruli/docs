@@ -1,30 +1,41 @@
 ---
 description: SQL table schema for eth.blocks and eth.recent_blocks
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # eth.blocks
 
 Ethereum [Block Headers](https://ethereum.org/vi/developers/docs/blocks).
 
-| Column Name         | Data Type         |
-| ------------------- | ----------------- |
-| `number`            | BIGINT            |
-| `hash`              | CHARACTER VARYING |
-| `parent_hash`       | CHARACTER VARYING |
-| `nonce`             | CHARACTER VARYING |
-| `sha3_uncles`       | CHARACTER VARYING |
-| `logs_bloom`        | CHARACTER VARYING |
-| `transactions_root` | CHARACTER VARYING |
-| `state_root`        | CHARACTER VARYING |
-| `receipts_root`     | CHARACTER VARYING |
-| `miner`             | CHARACTER VARYING |
-| `difficulty`        | DECIMAL           |
-| `total_difficulty`  | DECIMAL           |
-| `size`              | BIGINT            |
-| `extra_data`        | CHARACTER VARYING |
-| `gas_limit`         | BIGINT            |
-| `gas_used`          | BIGINT            |
-| `timestamp`         | BIGINT            |
-| `transaction_count` | BIGINT            |
-| `base_fee_per_gas`  | BIGINT            |
-| `withdrawals_root`  | CHARACTER VARYING |
+| Column Name         | Data Type         | Description                                        |
+| ------------------- | ----------------- | -------------------------------------------------- |
+| `number`            | BIGINT            | The block number                                   |
+| `hash`              | CHARACTER VARYING | Block hash                                         |
+| `parent_hash`       | CHARACTER VARYING | Parent block's hash                                |
+| `nonce`             | CHARACTER VARYING | Hash of the generated proof of work                |
+| `sha3_uncles`       | CHARACTER VARYING | SHA3 of the uncles data in the block               |
+| `logs_bloom`        | CHARACTER VARYING | The bloom filter for the logs of the block         |
+| `transactions_root` | CHARACTER VARYING | The root for the transaction trie of the block     |
+| `state_root`        | CHARACTER VARYING | The root for the final state trie of the block     |
+| `receipts_root`     | CHARACTER VARYING | The root for the receipts trie of the block        |
+| `miner`             | CHARACTER VARYING | The miner address rewarded for this block          |
+| `difficulty`        | DECIMAL           | The difficulty of the block, as an integer         |
+| `total_difficulty`  | DECIMAL           | The total difficulty of the chain until this block |
+| `size`              | BIGINT            | The size of the block, in bytes                    |
+| `extra_data`        | CHARACTER VARYING | Extra data pertaining to the block                 |
+| `gas_limit`         | BIGINT            | The maximum gas for this block                     |
+| `gas_used`          | BIGINT            | The net gas used in transactions in this block     |
+| `timestamp`         | BIGINT            | Timestamp of the block being collated              |
+| `transaction_count` | BIGINT            | The number of transactions in the block            |
+| `base_fee_per_gas`  | BIGINT            | The base fee per gas burnt                         |
+| `withdrawals_root`  | CHARACTER VARYING | The root hash of the withdrawals in the payload    |

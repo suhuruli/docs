@@ -6,12 +6,12 @@ description: SQL table schema for eth.tokens_erc721
 
 Ethereum Token tables ERC-721 token contracts.
 
-| Column Name       | Data Type         |
-| ----------------- | ----------------- |
-| `address`         | CHARACTER VARYING |
-| `name`            | CHARACTER VARYING |
-| `symbol`          | CHARACTER VARYING |
-| `total_supply`    | CHARACTER VARYING |
-| `block_number`    | BIGINT            |
-| `block_timestamp` | BIGINT            |
-| `block_hash`      | CHARACTER VARYING |
+| Column Name       | Data Type         | Description                                                       |
+| ----------------- | ----------------- | ----------------------------------------------------------------- |
+| `address`         | CHARACTER VARYING | The address of the contract that defines this token.              |
+| `name`            | CHARACTER VARYING | The human-readable name of this token, eg. "AliceInWonderland".   |
+| `symbol`          | CHARACTER VARYING | The human-readable short symbol of this token, eg. "ALICE".       |
+| `total_supply`    | CHARACTER VARYING | The total number of unique instances of this token.               |
+| `block_number`    | BIGINT            | The number of the block in which this token was first defined.    |
+| `block_timestamp` | BIGINT            | The timestamp of the block in which this token was first defined. |
+| `block_hash`      | CHARACTER VARYING | The hash of the block in which this token was first defined.      |
