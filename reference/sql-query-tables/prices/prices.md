@@ -1,10 +1,10 @@
 ---
- description: SQL table schema for prices.minute_resolution
+ description: SQL table schema for prices.all_pairs
 ---
  
 # Price data
 
-Aggregated price data for all tokens, bucketed per minute.
+Aggregated OHLC price data for all tokens, per minute resolution.
 
 | Column Name  | Data Type         | Description                                                         |
 | ------------ | ----------------- | ------------------------------------------------------------------- |

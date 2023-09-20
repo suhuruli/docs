@@ -10,7 +10,7 @@ Get per-minute price data for a trading pair, e.g. BTC-ETH, using the end of min
 
 ```sql
 SELECT "close"
-FROM prices.minute_resolution
+FROM prices.all_pairs
 WHERE pair='BTC-ETH'
 AND "timestamp" > TIMESTAMPADD(HOUR, -2, CURRENT_TIMESTAMP())
 ```

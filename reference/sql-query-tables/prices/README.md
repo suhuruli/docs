@@ -6,18 +6,16 @@ description: Price data tables available in SQL query
 
 ### Aggregate price base type tables available to query
 
-| View Name                                          | Description                                      |
-| -------------------------------------------------- | ------------------------------------------------ |
-| [`prices.trades`](trades.md)                       | Raw trade data from exchanges                    |
-| [`prices.trades_detailed`](trades\_detailed.md)    | Trade data with additional columns               |
-| [`prices.assets`](assets.md)                       | Tokens supported on Spice AI with metadata       |
-| [`prices.minute_resolution`](prices.md)            | Per-minute price data for tokens pairs           |
+| View Name                          | Description                                      |
+| ---------------------------------- | ------------------------------------------------ |
+| [`prices.all_pairs`](prices.md)    | Per-minute price data for tokens pairs           |
+| [`prices.assets`](assets.md)       | Tokens supported on Spice AI with metadata       |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:
 
 ```sql
 /* Show the columns available */
-DESCRIBE prices.minute_resolution;
+DESCRIBE prices.all_pairs;
 DESCRIBE prices.assets;
 -- etc.
 ```
