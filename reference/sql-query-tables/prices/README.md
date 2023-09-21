@@ -8,7 +8,7 @@ description: Price data tables available in SQL query
 
 | View Name                          | Description                                      |
 | ---------------------------------- | ------------------------------------------------ |
-| [`prices.all_pairs`](prices.md)    | Per-minute price data for tokens pairs           |
+| [`prices.all_pairs`](prices.md)    | Per-minute price data for supported token pairs           |
 | [`prices.assets`](assets.md)       | Tokens supported on Spice AI with metadata       |
 
 The columns and their schema available for each table can be viewed with the `describe <table>` command. For example:

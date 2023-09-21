@@ -4,7 +4,7 @@
  
 # Price data
 
-Aggregated OHLC price data for all tokens, per minute resolution.
+Aggregated OHLC price data for all supported tokens, per minute resolution.
 
 | Column Name  | Data Type         | Description                                                         |
 | ------------ | ----------------- | ------------------------------------------------------------------- |
