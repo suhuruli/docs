@@ -4,11 +4,11 @@ description: Ethereum Gas Fees API documentation
 
 # Gas Fees
 
-The **`/eth/v0.1/gasfees`** API returns an estimate of the next block gas fees in Gwei.
+The **`/eth/v1/gasfees`** API returns an estimate of the next block gas fees in Gwei.
 
 It determines this based on the calculated next block base fee and a linear regression prediction based on the last 5 blocks of fees.
 
-{% swagger baseUrl="https://data.spiceai.io" path="/eth/v0.1/gasfees" method="get" summary="Get Gas Fee Estimates" %}
+{% swagger baseUrl="https://data.spiceai.io" path="/eth/v1/gasfees" method="get" summary="Get Gas Fee Estimates" %}
 {% swagger-description %}
 Returns an estimate of the next block Ethereum gas fees.
 {% endswagger-description %}
@@ -40,9 +40,9 @@ API key for higher rate limits.
 {% endswagger-response %}
 {% endswagger %}
 
-The **`/eth/v0.1/gasfees?price=usd`** API returns an estimate of the next block gas fees in Gwei and the current price in the specified currency or token.
+The **`/eth/v1/gasfees?price=usd`** API returns an estimate of the next block gas fees in Gwei and the current price in the specified currency or token.
 
-{% swagger method="get" path="/eth/v0.1/gasfees?price=usd" baseUrl="https://data.spiceai.io" summary="Get Gas Fee Estimates With Price" %}
+{% swagger method="get" path="/eth/v1/gasfees?price=usd" baseUrl="https://data.spiceai.io" summary="Get Gas Fee Estimates With Price" %}
 {% swagger-description %}
 Returns an estimate of the next block Ethereum gas fees with price in the given currency or token.
 {% endswagger-description %}
@@ -93,9 +93,9 @@ Currently support USD.
 {% endswagger-response %}
 {% endswagger %}
 
-The `/eth/v0.1/gasfees?period=1d` API returns the historical gas used ratio and gas fees **by block** over the specified time period. If a period is not specified, it will default to 24 hours.
+The `/eth/v1/gasfees?period=1d` API returns the historical gas used ratio and gas fees **by block** over the specified time period. If a period is not specified, it will default to 24 hours.
 
-{% swagger method="get" path="/eth/v0.1/gasfees?period=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees by Block" %}
+{% swagger method="get" path="/eth/v1/gasfees?period=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees by Block" %}
 {% swagger-description %}
 Returns historical gas used and fees over time.
 
@@ -182,9 +182,9 @@ The granularity of aggregation specified as a
 {% endswagger-response %}
 {% endswagger %}
 
-The `/eth/v0.1/gasfees?period=1w&granularity=1d` API returns the historical gas used ratio and gas fees **by time granularity** over the specified time period. If a period is not specified, it will default to 24 hours.
+The `/eth/v1/gasfees?period=1w&granularity=1d` API returns the historical gas used ratio and gas fees **by time granularity** over the specified time period. If a period is not specified, it will default to 24 hours.
 
-{% swagger method="get" path="/eth/v0.1/gasfees?period=7d&granularity=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees by Time Granularity" %}
+{% swagger method="get" path="/eth/v1/gasfees?period=7d&granularity=1d" baseUrl="https://data.spiceai.io" summary="Get Historical Gas Used and Fees by Time Granularity" %}
 {% swagger-description %}
 Returns historical gas used and fees over time.
 
