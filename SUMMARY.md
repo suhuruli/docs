@@ -18,10 +18,6 @@
   * [Community Edition](getting-started/pricing/community-edition.md)
 * [FAQ](getting-started/faq.md)
 
-***
-
-* [Release notes](release-notes.md)
-
 ## 💻 API
 
 * [SQL Query API](api/sql-query-api/README.md)
@@ -523,10 +519,16 @@
   * [Arrow Flight Samples](reference/samples-and-examples/arrow-flight-samples.md)
 * [Data Science & Machine Learning](reference/data-science-and-machine-learning.md)
 * [Kaggle Notebooks](reference/kaggle-notebooks.md)
+* [Release notes](reference/release-notes.md)
 
 ## 🆘 Support
 
 * [Support](support/support.md)
+
+## 🔐 Security
+
+* [Security at Spice AI](security/security.md)
+* [Report a vulnerability](security/report.md)
 
 ## ⚖ Legal
 

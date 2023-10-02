@@ -36,7 +36,7 @@ Create new Grafana panel and select `Spice.xyz` data source, edit the query and 
 
 Visit [Grafana Docs](https://grafana.com/docs/grafana/latest/panels-visualizations/) for more information about panels visualisations, and also check spice queries examples for reference:
 
-[example-ethereum-sql-queries](../reference/example-ethereum-sql-queries/ "mention")
+[Broken link](broken-reference "mention")
 
 [example-ethereum-beacon-sql-queries](../reference/samples-and-examples/example-ethereum-beacon-sql-queries/ "mention")
 

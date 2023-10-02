@@ -115,7 +115,7 @@ SELECT DISTINCT pair FROM prices.all_pairs;
 ```
 
 {% hint style="info" %}
-For historical price exchange data to tick level granularity, try the [time-series Prices API](../api/prices.md).
+For historical price exchange data to tick level granularity, try the [time-series Prices API](broken-reference).
 {% endhint %}
 
 #### [Chainlink datasets](../reference/sql-query-tables/ethereum/chainlink-tables/)
@@ -129,7 +129,7 @@ For historical price exchange data to tick level granularity, try the [time-seri
 * [Ethereum blocks](https://docs.spice.xyz/api/ethereum/blocks)
 * [Ethereum gas fees](https://docs.spice.xyz/api/ethereum/gas-fees)
 
-#### [Spot and historical Prices](../api/prices.md)
+#### [Spot and historical Prices](broken-reference)
 
 * Binance
   * Spot/latest prices for all pairs traded on Binance.

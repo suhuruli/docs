@@ -8,11 +8,11 @@ description: Frequently asked questions
 
 Spice currently supports [**Ethereum**](../reference/sql-query-tables/) (including [**Beacon**](../reference/sql-query-tables/goerli/beacon-chain-tables/) & [**Goerli**](../reference/sql-query-tables/goerli/)), [**Bitcoin**](../reference/sql-query-tables/bitcoin/), and [**Polygon**](../reference/sql-query-tables/polygon/) blockchain data along with [**ENS**](../reference/sql-query-tables/ethereum/token-tables-1/), **DeFi/DEX** ([**Sushiswap**](../reference/sql-query-tables/ethereum/sushiswap-tables/)**,** [**Uniswap-V2**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Uniswap-V3**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Aave**](../reference/sql-query-tables/ethereum/aave-v2-tables/)), [**NFT**](broken-reference) and [**token**](../reference/sql-query-tables/ethereum/token-tables/) specific data.
 
-Digital asset/cryptocurrency [spot/latest](../api/prices.md) and full [historical prices](../api/prices.md) data is available from leading exchanges including Coinbase, Gemini, and Binance.
+Digital asset/cryptocurrency [spot/latest](broken-reference) and full [historical prices](broken-reference) data is available from leading exchanges including Coinbase, Gemini, and Binance.
 
 We are adding more chains and contracts prioritized by user feedback every month.
 
-For the all-up list, see [Datasets](datasets.md) and follow the [Release notes](../release-notes.md) for updates.
+For the all-up list, see [Datasets](datasets.md) and follow the [Release notes](../reference/release-notes.md) for updates.
 
 ### How much does Spice cost?
 
