@@ -4,9 +4,9 @@ description: Goerli Blocks API
 
 # Blocks
 
-The **`/goerli/v0.1/blocks/range`** API returns the start and end block numbers for a given time range.
+The **`/goerli/v1/blocks/range`** API returns the start and end block numbers for a given time range.
 
-{% swagger method="get" path="/goerli/v0.1/blocks/range?start=8930280" baseUrl="https://data.spiceai.io" summary="Get Block Numbers By Time Range" %}
+{% swagger method="get" path="/goerli/v1/blocks/range?start=8930280" baseUrl="https://data.spiceai.io" summary="Get Block Numbers By Time Range" %}
 {% swagger-description %}
 Returns the start and end block numbers by time range and the count of blocks in the range.
 

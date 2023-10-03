@@ -19,7 +19,7 @@ Once you've set up a [Portal account](portal-login.md), replace `[API-KEY]` in t
 {% tab title="cURL" %}
 ```bash
 curl --request POST \
-  --url 'https://data.spiceai.io/v0.1/sql' \
+  --url 'https://data.spiceai.io/v1/sql' \
   --header 'Content-Type: text/plain' \
   --header 'X-API-KEY: [API-KEY]'
   --data 'select * from eth.recent_blocks order by "timestamp" desc'

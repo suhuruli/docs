@@ -41,7 +41,6 @@
 * [Prices API](api/prices-api.md)
 * [Predictions API](api/predictions-api/README.md)
   * [Predictions API Terms and Conditions](api/predictions-api/predictions-api-terms-and-conditions.md)
-* [Spicepods API](api/spicepods-api.md)
 * [Health API](api/health.md)
 
 ## 👨💻 Portal
