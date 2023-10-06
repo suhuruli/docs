@@ -507,7 +507,7 @@ Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
 **Changes**
 
 * [Prices dataset](sql-query-tables/prices.md) now out of preview
-* Added export to CSV results format in addition to existing formats [JSON](../api/ethereum/json-rpc-methods.md) and [Apache Arrow](../api/sql-query-api/apache-arrow-flight-api.md), for easy use with apps, ML, or libraries like NumPy and Pandas
+* Added export to CSV results format in addition to existing formats [JSON](../api/ethereum/json-rpc-methods.md) and [Apache Arrow](../api/sql-query/apache-arrow-flight-api.md), for easy use with apps, ML, or libraries like NumPy and Pandas
 * Added performance improvements for faster queries across existing datasets including `eth.traces`&#x20;
 
 #### Resources
@@ -632,7 +632,7 @@ Read more on the [Spice AI blog](https://medium.com/spice-ai/spice-xyz-june-upda
 
 Spice now has some of the best automated token standard detection for erc20, erc721, and erc1155 tokens available. Tokens are detected by their signatures and as they emit events over time, so Spice provides a probability of standards compliance to each contract. Along with this support are now token-specific tables like `eth.tokens_erc1155` and `eth.token_transfers_erc20`. See the entire list [Tokens Tables](sql-query-tables/ethereum/token-tables/).
 
-Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](../api/sql-query-api/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](../sdks/python-sdk/) for production use though.
+Performance is now even better, especially for larger queries, and for results over the HTTP API. We still recommend the [Apache Arrow Flight API](../api/sql-query/apache-arrow-flight-api.md) that's easily accessible via the [Python SDK](../sdks/python-sdk/) for production use though.
 
 WebSocket support is now available in private preview to Design Partners - get in touch if you are interested in custom limits, early access features, and dedicated support.
 

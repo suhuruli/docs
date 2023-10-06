@@ -20,10 +20,10 @@
 
 ## 💻 API
 
-* [SQL Query API](api/sql-query-api/README.md)
-  * [HTTP API](api/sql-query-api/http-api.md)
-  * [Async HTTP API](api/sql-query-api/http-api-1.md)
-  * [Apache Arrow Flight API](api/sql-query-api/apache-arrow-flight-api.md)
+* [SQL Query API](api/sql-query/README.md)
+  * [HTTP API](api/sql-query/http-api.md)
+  * [Async HTTP API](api/sql-query/http-api-1.md)
+  * [Apache Arrow Flight API](api/sql-query/apache-arrow-flight-api.md)
 * [Ethereum API](api/ethereum/README.md)
   * [JSON RPC Methods](api/ethereum/json-rpc-methods.md)
   * [Beacon HTTP API](api/ethereum/beacon-http-api.md)
@@ -38,9 +38,9 @@
   * [Gas Fees](api/goerli/gas-fees.md)
 * [Polygon API](api/polygon/README.md)
   * [JSON RPC Methods](api/polygon/json-rpc-methods.md)
-* [Prices API](api/prices-api.md)
-* [Predictions API](api/predictions-api/README.md)
-  * [Predictions API Terms and Conditions](api/predictions-api/predictions-api-terms-and-conditions.md)
+* [Prices API](api/prices.md)
+* [Predictions API](api/predictions/README.md)
+  * [Predictions API Terms and Conditions](api/predictions/predictions-api-terms-and-conditions.md)
 * [Health API](api/health.md)
 
 ## 👨💻 Portal

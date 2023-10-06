@@ -4,7 +4,7 @@ description: Getting started with data science and ML workflow
 
 # Data Science & Machine Learning
 
-Built with technologies like [Apache Arrow](../api/sql-query-api/apache-arrow-flight-api.md), Spice is designed from the ground-up for data-driven apps, data science and machine learning.
+Built with technologies like [Apache Arrow](../api/sql-query/apache-arrow-flight-api.md), Spice is designed from the ground-up for data-driven apps, data science and machine learning.
 
 Get started with the following guide.
 

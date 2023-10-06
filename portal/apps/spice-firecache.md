@@ -51,12 +51,12 @@ See [sql-query-editor.md](../sql-query-editor.md "mention") for further document
 
 ### Apache Arrow Flight API&#x20;
 
-For production applications, leveraging the high-performance [Apache Arrow Flight](../../api/sql-query-api/apache-arrow-flight-api.md) endpoint is recommended. The Spice SDKs always access SQL queries and Firecache queries using Arrow Flight.
+For production applications, leveraging the high-performance [Apache Arrow Flight](../../api/sql-query/apache-arrow-flight-api.md) endpoint is recommended. The Spice SDKs always access SQL queries and Firecache queries using Arrow Flight.
 
-See [apache-arrow-flight-api.md](../../api/sql-query-api/apache-arrow-flight-api.md "mention") for further documentation on using Apache Arrow Flight APIs.&#x20;
+See [apache-arrow-flight-api.md](../../api/sql-query/apache-arrow-flight-api.md "mention") for further documentation on using Apache Arrow Flight APIs.&#x20;
 
 ### HTTP API
 
 Spice Firecache is also accessible via a standard HTTP API.
 
-See [http-api.md](../../api/sql-query-api/http-api.md "mention") for further documentation on using the HTTP SQL API.
+See [http-api.md](../../api/sql-query/http-api.md "mention") for further documentation on using the HTTP SQL API.

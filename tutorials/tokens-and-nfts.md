@@ -8,7 +8,7 @@ _Estimated time to complete: \~10 minutes_
 
 ## Overview
 
-Spice makes it easy to use bulk Ethereum token and NFT data. Traditional RESTful APIs usually limit results to 100s per page. Spice supports the high-performance, vectorized binary format [Apache Arrow](../api/sql-query-api/apache-arrow-flight-api.md) that enables retrieving millions of rows in a single request.
+Spice makes it easy to use bulk Ethereum token and NFT data. Traditional RESTful APIs usually limit results to 100s per page. Spice supports the high-performance, vectorized binary format [Apache Arrow](../api/sql-query/apache-arrow-flight-api.md) that enables retrieving millions of rows in a single request.
 
 Spice has automated, on-chain token detection for ERC-20, ERC-721, and ERC-1155 tokens generating [token-specific](https://docs.spice.xyz/reference/sql-query-tables/token-tables) and [NFT](https://docs.spice.xyz/reference/sql-query-tables/nft-tables) datasets in real-time.
 
