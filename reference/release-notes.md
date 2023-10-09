@@ -75,7 +75,7 @@ See [connect-github-repository.md](../portal/apps/connect-github-repository.md "
 3. \[Platform/Portal] Support for custom datasets and views beyond those curated by Spice
 4. \[Portal] Connect your Github repo to manage all your Spice code with version control
 5. \[Flow] RPCs can now be sent to the Spice Flow node using the [Flow Access API](https://developers.flow.com/concepts/nodes/access-api)
-6. \[Flow] Added datasets detailing transfers of NFTs and tokens on the Flow blockchain, for more details see [token-nft-tables](sql-query-tables/flow/token-nft-tables/ "mention")
+6. \[Flow] Added datasets detailing transfers of NFTs and tokens on the Flow blockchain, for more details see [Broken link](broken-reference "mention")
 
 **Changes**
 
@@ -98,18 +98,18 @@ Wallet Balances datasets do not yet have full historical data.
 
 #### Flow Datasets
 
-[Flow](sql-query-tables/flow/) is a fast, decentralized, and developer-friendly blockchain, designed as the foundation for a new generation of games, apps, and the digital assets that power them. Supercharge your Flow apps with these datasets indexed by Spice.xyz.
+[Flow](broken-reference) is a fast, decentralized, and developer-friendly blockchain, designed as the foundation for a new generation of games, apps, and the digital assets that power them. Supercharge your Flow apps with these datasets indexed by Spice.xyz.
 
 {% hint style="info" %}
 Flow support is in preview. Contact us to let us know if Flow support is important to you!
 {% endhint %}
 
-* [`flow.blocks`](sql-query-tables/flow/core-tables/flow.blocks.md)
-* [`flow.transactions`](sql-query-tables/flow/core-tables/flow.transactions.md)
-* [`flow.events`](sql-query-tables/flow/core-tables/flow.events.md)
-* [`flow.nfts`](sql-query-tables/flow/token-nft-tables/flow.nfts.md)
-* [`flow.nft_transfers`](sql-query-tables/flow/token-nft-tables/flow.nft\_transfers.md)
-* [`flow.token_transfers`](sql-query-tables/flow/token-nft-tables/flow.token\_transfers.md)
+* [`flow.blocks`](broken-reference)
+* [`flow.transactions`](broken-reference)
+* [`flow.events`](broken-reference)
+* [`flow.nfts`](broken-reference)
+* [`flow.nft_transfers`](broken-reference)
+* [`flow.token_transfers`](broken-reference)
 
 #### Portal
 

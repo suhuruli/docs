@@ -44,6 +44,6 @@ Visit [Grafana Docs](https://grafana.com/docs/grafana/latest/panels-visualizatio
 
 [example-bitcoin-queries](../reference/samples-and-examples/example-bitcoin-queries/ "mention")
 
-[example-flow-sql-queries](../reference/samples-and-examples/example-flow-sql-queries/ "mention")
+[Broken link](broken-reference "mention")
 
 [example-cross-chain-queries.md](../reference/samples-and-examples/example-cross-chain-queries.md "mention")
