@@ -16,3 +16,6 @@ Emitted when a new deposit occurs on behalf of `depositor`.
 | `block_hash`       | CHARACTER VARYING | The hash of the block that contains the transaction which contains this event.               |
 | `block_timestamp`  | BIGINT            | The timestamp of the block that contains the transaction which contains this event.          |
 | `block_number`     | BIGINT            | The block number in the blockchain that contains the transaction which contains this event.  |
+| `caller`           | CHARACTER VARYING | The address of the caller on the StrategyManager contract                                    |
+| `token_amount`     | DECIMAL           | The number of tokens deposited                                                               |
+| `token_amount_hex` | CHARACTER VARYING | The number of tokens deposited as a hexadecimal string.                                      |
