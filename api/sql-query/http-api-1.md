@@ -4,7 +4,7 @@ description: Query web3 data with SQL via the async HTTP API
 
 # Async HTTP API
 
-Blockchain and contract data may be queried by posting SQL to the `/v1/sql` API. See [Tables](https://github.com/spicehq/cloud-docs/blob/trunk/api/sql-query-api/broken-reference/README.md) for a list of tables to query or browse the example queries listed in the menu.
+Blockchain and contract data may be queried by posting SQL to the `/v0.1/sql` API. See [Tables](https://github.com/spicehq/cloud-docs/blob/trunk/api/sql-query-api/broken-reference/README.md) for a list of tables to query or browse the example queries listed in the menu.
 
 By posting a JSON payload specifying list of query completion `notifications` results can be fetched asynchronously once the query has completed.
 
@@ -33,7 +33,7 @@ Results will only be available for fetching for 20 mins after the query was made
 * Results are limited to 500 rows. Use `offset` and `limit` to page through results.
 * Requests are limited to 90 seconds.
 
-{% swagger method="post" path="/v1/sql" baseUrl="https://data.spiceai.io" summary="Perform an async SQL query" %}
+{% swagger method="post" path="/v0.1/sql" baseUrl="https://data.spiceai.io" summary="Perform an async SQL query" %}
 {% swagger-description %}
 The SQL query should be sent in the JSON payload along with the list of notification configs.
 {% endswagger-description %}
@@ -90,7 +90,7 @@ Array of notification objects.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/v1/sql/{query_id}" baseUrl="https://data.spiceai.io" summary="Fetch SQL query results" %}
+{% swagger method="get" path="/v0.1/sql/{query_id}" baseUrl="https://data.spiceai.io" summary="Fetch SQL query results" %}
 {% swagger-description %}
 Use the queryId returned from the query request or from the body of the webhook notification to fetch the results.
 {% endswagger-description %}

@@ -4,7 +4,7 @@ description: Query web3 data with SQL via the HTTP API
 
 # HTTP API
 
-Blockchain and contract data may be queried by posting SQL to the `/v1/sql` API and `/v1/firesql` API for Firecached data. For documentation on the Spice Firecache see [firecache.md](../../reference/specifications/dataset-and-view-yaml-specification/firecache.md "mention").
+Blockchain and contract data may be queried by posting SQL to the `/v0.1/sql` API and `/v0.1/[org_name]/[app_name]/sql` API for Firecached data. For documentation on the Spice Firecache see [firecache.md](../../reference/specifications/dataset-and-view-yaml-specification/firecache.md "mention").
 
 See [Tables](https://github.com/spicehq/cloud-docs/blob/trunk/api/sql-query-api/broken-reference/README.md) for a list of tables to query or browse the example queries listed in the menu.
 
@@ -14,7 +14,7 @@ See [Tables](https://github.com/spicehq/cloud-docs/blob/trunk/api/sql-query-api/
 * Results are limited to 500 rows. Use the [Apache Arrow Flight API](https://github.com/spicehq/cloud-docs/blob/trunk/api/sql-query-api/broken-reference/README.md) to fetch up to 1M rows in a single query or the [Async HTTP API](http-api-1.md) to fetch results with paging.
 * Requests are limited to 90 seconds.
 
-{% swagger method="post" path="/v1/sql" baseUrl="https://data.spiceai.io" summary="Perform a SQL query" %}
+{% swagger method="post" path="/v0.1/sql" baseUrl="https://data.spiceai.io" summary="Perform a SQL query" %}
 {% swagger-description %}
 The SQL query should be sent in the body of the request as plain text
 {% endswagger-description %}
@@ -56,7 +56,7 @@ The API Key for your Spice app
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger baseUrl="https://data.spiceai.io" path="/v1/sql/[org_name]/[app_name]/sql" method="post" summary="Perform a Firecache SQL Query" %}
+{% swagger baseUrl="https://data.spiceai.io" path="/v0.1/sql/[org_name]/[app_name]/sql" method="post" summary="Perform a Firecache SQL Query" %}
 {% swagger-description %}
 The SQL query should be sent in the body of the request as plain text
 {% endswagger-description %}
@@ -90,7 +90,7 @@ The API Key for your Spice app
 {% tab title="cURL" %}
 ```bash
 curl --request POST \
-  --url https://data.spiceai.io/v1/sql \
+  --url https://data.spiceai.io/v0.1/sql \
   --header 'Content-Type: text/plain' \
   --header 'X-API-Key: [api-key]' \
   --data 'select count(number) from eth.recent_blocks'
@@ -106,7 +106,7 @@ select count(number) as num_blocks
 from eth.recent_blocks
 `;
 
-const res = await fetch("https://data.spiceai.io/v1/sql", {
+const res = await fetch("https://data.spiceai.io/v0.1/sql", {
   method: "POST",
   headers: {
     "Content-Type": "text/plain",

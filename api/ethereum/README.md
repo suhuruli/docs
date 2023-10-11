@@ -4,7 +4,7 @@ description: Ethereum HTTP API documentation
 
 # Ethereum API
 
-Ethereum data APIs. Available at **/eth/v1.**
+Ethereum data APIs. Available at **/eth/v0.1.**
 
 Includes:
 

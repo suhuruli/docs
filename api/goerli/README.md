@@ -4,7 +4,7 @@ description: Goerli HTTP API documentation
 
 # Goerli API
 
-Goerli testnet data APIs. Available at **/goerli/v1.**
+Goerli testnet data APIs. Available at **/goerli/v0.1.**
 
 Includes:
 

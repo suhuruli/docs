@@ -10,7 +10,7 @@ The Spice AI Predictions API is made available for research purposes only. By ac
 
 Spice AI has trained a number of AI models for predictions on blockchain data. These models come with data included, so all you need to get a glimpse of the future is a simple API request.
 
-{% swagger method="post" path="/v1/predictions" baseUrl="https://data.spiceai.io" summary="Perform prediction with AI model" %}
+{% swagger method="post" path="/v0.1/predictions" baseUrl="https://data.spiceai.io" summary="Perform prediction with AI model" %}
 {% swagger-description %}
 The model id should be sent in the JSON payload along with an optional Boolean if you want the historical data returned in the response.
 {% endswagger-description %}

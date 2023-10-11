@@ -4,11 +4,11 @@ description: Goerli Gas Fees API documentation
 
 # Gas Fees
 
-The **`/goerli/v1/gasfees`** API returns an estimate of the next block gas fees in Gwei.
+The **`/goerli/v0.1/gasfees`** API returns an estimate of the next block gas fees in Gwei.
 
 It determines this based on the calculated next block base fee and a linear regression prediction based on the last 5 blocks of fees.
 
-{% swagger baseUrl="https://data.spiceai.io" path="/goerli/v1/gasfees" method="get" summary="Get Gas Fee Estimates" %}
+{% swagger baseUrl="https://data.spiceai.io" path="/goerli/v0.1/gasfees" method="get" summary="Get Gas Fee Estimates" %}
 {% swagger-description %}
 Returns an estimate of the next block Goerli gas fees.
 {% endswagger-description %}

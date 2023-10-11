@@ -4,9 +4,9 @@ description: Ethereum Contracts API
 
 # Contracts
 
-The **`/eth/v1/contracts`** API returns a list of known contract names and addresses.
+The **`/eth/v0.1/contracts`** API returns a list of known contract names and addresses.
 
-{% swagger method="get" path="/eth/v1/contracts" baseUrl="https://data.spiceai.io" summary="Get Contracts" %}
+{% swagger method="get" path="/eth/v0.1/contracts" baseUrl="https://data.spiceai.io" summary="Get Contracts" %}
 {% swagger-description %}
 Returns a list of known contracts with their name, address, and tx hash.
 {% endswagger-description %}
@@ -37,7 +37,7 @@ Returns a list of known contracts with their name, address, and tx hash.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/eth/v1/contracts/{contract_name}" baseUrl="https://data.spiceai.io" summary="Get Contract" %}
+{% swagger method="get" path="/eth/v0.1/contracts/{contract_name}" baseUrl="https://data.spiceai.io" summary="Get Contract" %}
 {% swagger-description %}
 Returns the known contract with the given name.
 {% endswagger-description %}
