@@ -38,7 +38,7 @@
   * [Gas Fees](api/goerli/gas-fees.md)
 * [Polygon API](api/polygon/README.md)
   * [JSON RPC Methods](api/polygon/json-rpc-methods.md)
-* [Prices API](api/prices-api.md)
+* [Prices API](api/prices/README.md)
 * [Predictions API](api/predictions-api/README.md)
   * [Predictions API Terms and Conditions](api/predictions-api/predictions-api-terms-and-conditions.md)
 * [Spicepods API](api/spicepods-api.md)
