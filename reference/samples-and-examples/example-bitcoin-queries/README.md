@@ -2,11 +2,13 @@
 
 [Blocks](blocks.md)
 
-[Transaction Fees](transactions.md)
+[Transaction](transactions.md)
+
+[Transaction Fees](transaction-fees.md)
 
 [Transaction Inputs/Outputs](transaction-inputs-outputs.md)
 
-`btc.blocks` \
+`btc.blocks`\
 `btc.flattened_transaction_inputs`\
 `btc.flattened_transaction_outputs`\
 `btc.recent_blocks`\

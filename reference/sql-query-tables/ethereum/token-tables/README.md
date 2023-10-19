@@ -7,9 +7,9 @@ description: Ethereum Token tables available to query via SQL
 **Links**
 
 * [Ethereum Token Standards](https://ethereum.org/en/developers/docs/standards/tokens/)
-* [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) Fungible tokens
-* [ERC-721](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/) NFTs
-* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) Multi-Token Standard
+* [ERC-20 Fungible tokens](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
+* [ERC-721 NFTs](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/)
+* [ERC-1155 Multi-Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/)
 
 #### Token specific tables
 

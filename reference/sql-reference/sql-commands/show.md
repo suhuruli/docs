@@ -22,12 +22,12 @@ SHOW TABLES;
 
 {% code title="Show an existing table with the exact name." %}
 ```sql
-SHOW TABLES LIKE 'protect_ssn';
+SHOW TABLES LIKE 'eth.recent_blocks';
 ```
 {% endcode %}
 
 {% code title="Show all existing tables with names that start with protect_." %}
 ```sql
-SHOW TABLES LIKE 'protect_%';
+SHOW TABLES LIKE 'eth.recent_%';
 ```
 {% endcode %}
