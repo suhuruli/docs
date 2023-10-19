@@ -10,7 +10,7 @@ _Estimated time to complete: \~5 minutes_
 
 ## Overview
 
-Spice offers historical, high-low-open-close (HLOC) prices data for [thousands of cryptocurrency and fiat pairs](../reference/sql-query-tables/prices.md), accessible via SQL Query and REST APIs.
+Spice offers historical, high-low-open-close (HLOC) prices data for [thousands of cryptocurrency and fiat pairs](../reference/sql-query-tables/prices/), accessible via SQL Query and REST APIs.
 
 In this tutorial, we'll explore how we can combine Spice prices data with asset transfer data to determine the value of a transfer converted to fiat (or another cryptocurrency) _at the time the transfer was made_.
 
@@ -109,6 +109,6 @@ Now we're really talking! We have a complete list of every asset transfer we've 
 
 Congratulations on making it this far! 🎉
 
-You now have an idea of the powerful information available to you by augmenting Spice datasets with Spice [prices data](../reference/sql-query-tables/prices.md).
+You now have an idea of the powerful information available to you by augmenting Spice datasets with Spice [prices data](../reference/sql-query-tables/prices/).
 
 Let us know what cool insights you find on [Discord](https://discord.gg/PUCapX22En).

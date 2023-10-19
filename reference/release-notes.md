@@ -506,7 +506,7 @@ Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
 
 **Changes**
 
-* [Prices dataset](sql-query-tables/prices.md) now out of preview
+* [Prices dataset](sql-query-tables/prices/) now out of preview
 * Added export to CSV results format in addition to existing formats [JSON](../api/ethereum/json-rpc-methods.md) and [Apache Arrow](../api/sql-query/apache-arrow-flight-api.md), for easy use with apps, ML, or libraries like NumPy and Pandas
 * Added performance improvements for faster queries across existing datasets including `eth.traces`&#x20;
 
@@ -520,7 +520,7 @@ Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
 
 ### October 2022
 
-Spice now has [prices dataset](sql-query-tables/prices.md) in preview.&#x20;
+Spice now has [prices dataset](sql-query-tables/prices/) in preview.&#x20;
 
 * Query historical High-Low-Open-Close (HILO) prices to minute precision
 * Join with other real-time and historical web3 data to do calculations and conversions back to USD
