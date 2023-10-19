@@ -13,7 +13,7 @@ It determines this based on the calculated next block base fee and a linear regr
 Returns an estimate of the next block Goerli gas fees.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" required="false" %}
+{% swagger-parameter in="query" name="api_key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 

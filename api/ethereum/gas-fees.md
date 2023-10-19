@@ -13,7 +13,7 @@ It determines this based on the calculated next block base fee and a linear regr
 Returns an estimate of the next block Ethereum gas fees.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" required="false" %}
+{% swagger-parameter in="query" name="api_key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 
@@ -47,7 +47,7 @@ The **`/eth/v1/gasfees?price=usd`** API returns an estimate of the next block ga
 Returns an estimate of the next block Ethereum gas fees with price in the given currency or token.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" required="false" %}
+{% swagger-parameter in="query" name="api_key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 
@@ -102,7 +102,7 @@ Returns historical gas used and fees over time.
 One of `start` or `period` is required.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" required="false" %}
+{% swagger-parameter in="query" name="api_key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 
@@ -191,7 +191,7 @@ Returns historical gas used and fees over time.
 One of `start` or `period` is required. `granularity` is required.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" required="false" %}
+{% swagger-parameter in="query" name="api_key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 

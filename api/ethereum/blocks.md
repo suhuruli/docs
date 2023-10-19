@@ -13,7 +13,7 @@ Returns the start and end block numbers by time range and the count of blocks in
 One of `start` or `period` is required.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="key" required="false" %}
+{% swagger-parameter in="query" name="api_key" required="false" %}
 API key for higher rate limits.
 {% endswagger-parameter %}
 

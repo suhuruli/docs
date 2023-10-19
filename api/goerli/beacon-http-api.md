@@ -1,6 +1,6 @@
 # Beacon HTTP API
 
-The **`https://data.spiceai.io/goerli/beacon`** API is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).
+The **`https://data.spiceai.io/goerli/beacon`** API is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/#/Beacon).
 
 #### Authentication
 
@@ -21,7 +21,7 @@ curl https://data.spiceai.io/goerli/beacon/goerli/v1/beacon/genesis?api_key=[api
 {% endtab %}
 {% endtabs %}
 
-#### Beacon APIs&#x20;
+#### Beacon APIs
 
 {% swagger src="../../.gitbook/assets/beacon-node-goerli-oapi.json" path="/eth/v1/beacon/genesis" method="get" %}
 [beacon-node-goerli-oapi.json](../../.gitbook/assets/beacon-node-goerli-oapi.json)

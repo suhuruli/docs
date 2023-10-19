@@ -1,6 +1,6 @@
 # Beacon HTTP API
 
-The **`https://data.spiceai.io/eth/beacon`** API is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).
+The **`https://data.spiceai.io/eth/beacon`** API is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/#/Beacon).
 
 #### Authentication
 
