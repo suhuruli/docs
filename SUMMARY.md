@@ -409,6 +409,7 @@
     * [Aave V2 Tables](reference/sql-query-tables/ethereum/aave-v2-tables/README.md)
       * [eth.aave\_v2.loans](reference/sql-query-tables/ethereum/aave-v2-tables/eth.aave\_v2.loans.md)
       * [eth.aave\_v2.collateral](reference/sql-query-tables/ethereum/aave-v2-tables/eth.aave\_v2.collateral.md)
+    * [EigenLayer Tables](reference/sql-query-tables/ethereum/eigenlayer-tables.md)
   * [Goerli](reference/sql-query-tables/goerli/README.md)
     * [Core Tables](reference/sql-query-tables/goerli/goerli/README.md)
       * [goerli.blocks](reference/sql-query-tables/goerli/goerli/goerli.blocks.md)

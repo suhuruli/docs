@@ -15,5 +15,4 @@ description: Ethereum data tables available in SQL query
 * [Sushiswap Tables](../../samples-and-examples/example-dex-queries/sushiswap.md)
 * [Chainlink Tables](chainlink-tables/)
 * [Aave v2 Tables](aave-v2-tables/)
-* [Eigenlayer Tables](eigenlayer-tables/)
-
+* [Eigenlayer Tables](eigenlayer-tables.md)
