@@ -1,6 +1,6 @@
 # Apps
 
-**Apps** are self-contained sets of SQL, datasets, monitoring, and configuration that run on the Spice.xyz platform.
+**Apps** are self-contained sets of SQL, datasets, monitoring, and configuration that run on the Spice.ai platform.
 
 Each app has a unique API Key and can be owned individual accounts or [**organizations**](../../getting-started/core-concepts/organizations.md).
 

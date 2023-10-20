@@ -4,7 +4,7 @@ description: Example queries that use the Ethereum and Polygon Blocks datasets
 
 # Blocks
 
-Perform essential queries like retrieving blocks information from the last x hours to derive usable insights for your apps and research. Querying the Ethereum and Polygon Blocks datasets enable use cases like getting the latest block number, getting a list of the blocks with the highest amount of Ethereum burned and blocks with the highest number of transactions. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
+Perform essential queries like retrieving blocks information from the last x hours to derive usable insights for your apps and research. Querying the Ethereum and Polygon Blocks datasets enable use cases like getting the latest block number, getting a list of the blocks with the highest amount of Ethereum burned and blocks with the highest number of transactions. Copy example queries directly into your Spice.ai Playground to get started in seconds.&#x20;
 
 ### Get Latest Block Number
 

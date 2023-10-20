@@ -1,5 +1,5 @@
 ---
-description: Comparison of Spice.xyz Pricing Plans
+description: Comparison of Spice.ai Pricing Plans
 ---
 
 # Pricing

@@ -1,5 +1,5 @@
 ---
-description: Connect your Spice.xyz to a GitHub repository (Beta)
+description: Connect your Spice.ai to a GitHub repository (Beta)
 ---
 
 # Connect GitHub repository
@@ -8,15 +8,15 @@ description: Connect your Spice.xyz to a GitHub repository (Beta)
 Connecting Spice apps to GitHub repositories is in beta for Design Partners. Get in touch for more info.
 {% endhint %}
 
-Connecting your Spice.xyz app to a GitHub repository allows you to create custom [Datasets and Views](datasets-beta.md), add datasets to Spice Firecache, author [Spice Functions](spice-functions/), and train AI Models.
+Connecting your Spice.ai app to a GitHub repository allows you to create custom [Datasets and Views](datasets-beta.md), add datasets to Spice Firecache, author [Spice Functions](spice-functions/), and train AI Models.
 
 ## Prepare the repository
 
 Before connecting:
 
-* **Admin access**: Ensure you have administrative access to the GitHub repository. This level of access is required to [install the Spice.xyz GitHub app](https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-organizations#requirements-to-install-a-github-app-on-an-organization).
-* **Matching repository name**: The Spice.xyz app and the GitHub repository names must match. For example:
-  * **Spice.xyz app**: [spice.xyz/spiceai/demo](https://spice.xyz/spiceai/demo)
+* **Admin access**: Ensure you have administrative access to the GitHub repository. This level of access is required to [install the Spice.ai GitHub app](https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-organizations#requirements-to-install-a-github-app-on-an-organization).
+* **Matching repository name**: The Spice.ai app and the GitHub repository names must match. For example:
+  * **Spice.ai app**: [spice.ai/spiceai/demo](https://spice.ai/spiceai/demo)
   * **GitHub repository**: [github.com/spiceai/demo](https://github.com/spiceai/demo)
 
 To quickly set up a new repository, use the [spice-app-template](https://github.com/spiceai/spice-app-template) as a starting point:
@@ -28,13 +28,13 @@ To quickly set up a new repository, use the [spice-app-template](https://github.
 1. Ensure the repository is set up as per instructions above.
 2. In the context of the Spice app to connect, navigate to the **Hub**, and click the **Connect** button.
 
-<figure><img src="../../.gitbook/assets/CleanShot 2023-07-26 at 12.12.24@2x.png" alt=""><figcaption><p>Connecting a Spice.xyz app to a GitHub repository.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-07-26 at 12.12.24@2x.png" alt=""><figcaption><p>Connecting a Spice.ai app to a GitHub repository.</p></figcaption></figure>
 
 2. Follow GitHub App installation instructions
 
 > Ensure that you select all repositories or specifically the repository you intend to connect.
 
-<figure><img src="../../.gitbook/assets/CleanShot 2023-07-26 at 12.12.34@2x.png" alt=""><figcaption><p>Installing the Spice.xyz GitHub app.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-07-26 at 12.12.34@2x.png" alt=""><figcaption><p>Installing the Spice.ai GitHub app.</p></figcaption></figure>
 
 3. Finally, link the repository
 

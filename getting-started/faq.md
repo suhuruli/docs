@@ -16,7 +16,7 @@ For the all-up list, see [Datasets](datasets.md) and follow the [Release notes](
 
 ### How much does Spice cost?
 
-Spice is currently in beta and it's free to [get an API key](https://spice.xyz), although due to demand there is waitlist.
+Spice is currently in beta and it's free to [get an API key](https://spice.ai), although due to demand there is waitlist.
 
 We plan to always have a free tier and offer free APIs, like the [Gas Fees API](../api/ethereum/gas-fees.md).
 

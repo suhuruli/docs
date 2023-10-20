@@ -24,18 +24,18 @@ Click the **Settings** button to view information about the organization, includ
 
 #### Adding organization members
 
-**To add an existing Spice.xyz user to an organization:**
+**To add an existing Spice.ai user to an organization:**
 
 1. Navigate to the organization's settings.
 2. Click the **Add Member** button.
-3. Enter the Spice.xyz username of the user you wish to add to the organization.
+3. Enter the Spice.ai username of the user you wish to add to the organization.
 4. Click the **Add Member** button to confirm.
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-08-11 at 09.00.45@2x.png" alt=""><figcaption><p>Adding the Spice.xyz user lukekim to the my-spice-org organization.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-11 at 09.00.45@2x.png" alt=""><figcaption><p>Adding the Spice.ai user lukekim to the my-spice-org organization.</p></figcaption></figure>
 
 The user will be added to the organization and they will receive an email notifying them of the new membership.
 
-**To add any GitHub user to a Spice.xyz organization:**
+**To add any GitHub user to a Spice.ai organization:**
 
 1. Enter the GitHub username of the user you wish to invite to the organization, and select the user from the search results.
 

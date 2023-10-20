@@ -35,13 +35,13 @@ See [datasets-and-views.md](datasets-and-views.md "mention") for full documentat
 
 ## Querying Firecache
 
-Once Firecache enabled datasets have been deployed, they can be queried by the same interfaces as general SQL query, including with the SQL Query Editor in the [Spice.xyz](https://spice.xyz) portal, the HTTP API, and the Apache Arrow Flight API.
+Once Firecache enabled datasets have been deployed, they can be queried by the same interfaces as general SQL query, including with the SQL Query Editor in the [Spice.ai](https://spice.ai) portal, the HTTP API, and the Apache Arrow Flight API.
 
 The Spice SDKs also have `Firequery()` methods in addition to the standard `Query()` to target Firecache.
 
 ### SQL Query Editor
 
-The SQL Query Editor is the fastest way to get started with Spice Firecache queries, debugging queries, and iterating quickly. The Firecache SQL Query Editor be accessed by clicking on the **Firecache** tab after selecting **SQL Query** in the Spice.xyz sidebar.
+The SQL Query Editor is the fastest way to get started with Spice Firecache queries, debugging queries, and iterating quickly. The Firecache SQL Query Editor be accessed by clicking on the **Firecache** tab after selecting **SQL Query** in the Spice.ai sidebar.
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption><p>The Firecache SQL Query Editor.</p></figcaption></figure>
 

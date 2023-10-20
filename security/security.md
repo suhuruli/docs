@@ -2,7 +2,7 @@
 
 **Last updated:** Aug 22, 2023
 
-Spice AI's approach to security when providing services including Spice.xyz, data.spiceai.io, and spicerack.org.
+Spice AI's approach to security when providing services including Spice.ai, data.spiceai.io, and spicerack.org.
 
 To report a vulnerability see: [report.md](report.md "mention")
 

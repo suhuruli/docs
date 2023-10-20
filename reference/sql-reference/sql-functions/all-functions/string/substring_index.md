@@ -18,7 +18,7 @@ description: >-
 
 {% code title="SUBSTRING_INDEX example" %}
 ```sql
-SELECT SUBSTRING_INDEX('spice.xyz', '.', 2)
+SELECT SUBSTRING_INDEX('spice.ai', '.', 2)
 -- EXPR$0
 -- spice
 ```
@@ -26,9 +26,9 @@ SELECT SUBSTRING_INDEX('spice.xyz', '.', 2)
 
 {% code title="SUBSTRING_INDEX example" %}
 ```sql
-SELECT SUBSTRING_INDEX('spice.xyz', '.', -2)
+SELECT SUBSTRING_INDEX('spice.ai', '.', -2)
 -- EXPR$0
--- spice.xyz
+-- spice.ai
 ```
 {% endcode %}
 

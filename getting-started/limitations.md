@@ -4,7 +4,7 @@
 For higher limits become a [Design Partner](https://www.craft.do/s/bgJFtYzSZwuFXD)
 {% endhint %}
 
-In beta, Spice.xyz has a number of limitations, including:
+In beta, Spice.ai has a number of limitations, including:
 
 #### Global API Limits
 

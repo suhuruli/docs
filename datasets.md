@@ -120,8 +120,8 @@ For historical price exchange data to tick level granularity, try the [time-seri
 
 ### Time-series Datasets
 
-* [Ethereum blocks](https://docs.spice.xyz/api/ethereum/blocks)
-* [Ethereum gas fees](https://docs.spice.xyz/api/ethereum/gas-fees)
+* [Ethereum blocks](https://docs.spice.ai/api/ethereum/blocks)
+* [Ethereum gas fees](https://docs.spice.ai/api/ethereum/gas-fees)
 
 #### [Spot and historical Prices](api/prices.md)
 

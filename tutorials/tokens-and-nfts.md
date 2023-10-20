@@ -10,7 +10,7 @@ _Estimated time to complete: \~10 minutes_
 
 Spice makes it easy to use bulk Ethereum token and NFT data. Traditional RESTful APIs usually limit results to 100s per page. Spice supports the high-performance, vectorized binary format [Apache Arrow](../api/sql-query/apache-arrow-flight-api.md) that enables retrieving millions of rows in a single request.
 
-Spice has automated, on-chain token detection for ERC-20, ERC-721, and ERC-1155 tokens generating [token-specific](https://docs.spice.xyz/reference/sql-query-tables/token-tables) and [NFT](https://docs.spice.xyz/reference/sql-query-tables/nft-tables) datasets in real-time.
+Spice has automated, on-chain token detection for ERC-20, ERC-721, and ERC-1155 tokens generating [token-specific](https://docs.spice.ai/reference/sql-query-tables/token-tables) and [NFT](https://docs.spice.ai/reference/sql-query-tables/nft-tables) datasets in real-time.
 
 In this tutorial, we'll explore how to use these datasets to answer the following questions:
 
@@ -117,7 +117,7 @@ order by count(*) desc
 
 ### Who are the current owners of all \~60M+ NFTs?
 
-It is possible to use Spice to get all \~60M owners of all NFTs that exist using the `eth.nft_owners` table. This can be useful for performing your own data science on the data in your own systems. The HTTP API that the Spice.xyz portal uses is limited to 500 rows, so you will need to use one of the Spice SDKs ([Python](../sdks/python-sdk/), [Node.js](../sdks/node.js-sdk/)) to run the query and retrieve all of the results.
+It is possible to use Spice to get all \~60M owners of all NFTs that exist using the `eth.nft_owners` table. This can be useful for performing your own data science on the data in your own systems. The HTTP API that the Spice.ai portal uses is limited to 500 rows, so you will need to use one of the Spice SDKs ([Python](../sdks/python-sdk/), [Node.js](../sdks/node.js-sdk/)) to run the query and retrieve all of the results.
 
 Spice also has a limitation of 90 seconds for a single query. To get all 60M owners, you will need to paginate through the data using a combination of `ORDER BY`, `LIMIT` and `OFFSET`. Here is an example:
 
