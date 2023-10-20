@@ -35,4 +35,4 @@ SHOW TABLES IN eth.eigenlayer
 
 **Improving query performance - indexed columns**
 
-Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns. All Eigenlayer tables have an implicit index on `block_number`.
+Query performance can be significantly improved by adding `WHERE` clauses to your query on specific indexed columns. All Eigenlayer tables have an index on `block_number`.
