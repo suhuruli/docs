@@ -1,4 +1,4 @@
-# eth.eigenlayer.withdrawal_router_balances
+# eth.eigenlayer.withdrawal\_router\_balances
 
 This table has a row that contains the current Ether balance on each block for the [Ethereum mainnet DelayedWithdrawalRouter](https://etherscan.io/address/0x7fe7e9cc0f274d2435ad5d56d5fa73e47f6a23d8).
 

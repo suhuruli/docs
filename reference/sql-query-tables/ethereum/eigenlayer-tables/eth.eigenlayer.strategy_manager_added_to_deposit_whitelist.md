@@ -1,4 +1,4 @@
-# eth.eigenlayer.strategy_manager_added_to_deposit_whitelist
+# eth.eigenlayer.strategy\_manager\_added\_to\_deposit\_whitelist
 
 Decoded table for [StrategyAddedToDepositWhitelist](https://github.com/Layr-Labs/eigenlayer-contracts/blob/e80a45c5595dd7d2e31e06c021bad2ca7db0abc7/src/contracts/core/StrategyManager.sol#L85) events from the [StrategyManager](https://etherscan.io/address/0x858646372cc42e1a627fce94aa7a7033e7cf075a) contract on Ethereum mainnet.
 

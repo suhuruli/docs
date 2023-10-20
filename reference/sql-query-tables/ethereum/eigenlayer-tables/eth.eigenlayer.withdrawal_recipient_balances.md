@@ -1,4 +1,4 @@
-# eth.eigenlayer.withdrawal_recipient_balances
+# eth.eigenlayer.withdrawal\_recipient\_balances
 
 This table has a row that contains the current Ether balance on each block for each recipient of an eigenpod withdrawal from the DelayedWithdrawalRouter.
 

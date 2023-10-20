@@ -1,4 +1,4 @@
-# eth.eigenlayer.eigenpod_balances
+# eth.eigenlayer.eigenpod\_balances
 
 This table has a row for each wallet balance change for all eigenpods. It's possible for a row to have a `balance_delta` of 0, if the balance didn't change between blocks but our logic for detecting balance changes still triggered.
 

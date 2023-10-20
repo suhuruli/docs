@@ -1,4 +1,4 @@
-# eth.eigenlayer.withdrawal_router_created
+# eth.eigenlayer.withdrawal\_router\_created
 
 Decoded table for [DelayedWithdrawalCreated](https://github.com/Layr-Labs/eigenlayer-contracts/blob/e80a45c5595dd7d2e31e06c021bad2ca7db0abc7/src/contracts/pods/DelayedWithdrawalRouter.sol#L33) events from the [DelayedWithdrawalRouter](https://etherscan.io/address/0x7fe7e9cc0f274d2435ad5d56d5fa73e47f6a23d8) contract on Ethereum mainnet.
 
