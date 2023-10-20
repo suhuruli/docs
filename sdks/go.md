@@ -1,10 +1,10 @@
 ---
-description: Golang SDK for Spice.xyz
+description: Golang SDK for Spice.ai
 ---
 
 # 🆕 Go SDK
 
-The [Go SDK](https://github.com/spiceai/gospice) `gospice` is the easiest way to query [Spice.xyz](https://spice.xyz) from Go.
+The [Go SDK](https://github.com/spiceai/gospice) `gospice` is the easiest way to query [Spice.ai](https://spice.ai) from Go.
 
 It uses [Apache Arrow Flight](https://arrow.apache.org/docs/format/Flight.html) to efficiently stream data to the client and [Apache Arrow](https://arrow.apache.org/) Records as data frames.
 
@@ -24,7 +24,7 @@ go get github.com/spiceai/gospice
 
 ### Usage
 
-1\. Create a SpiceClient passing in your API key. Get your free API key at [spice.xyz](https://spice.xyz/).
+1\. Create a SpiceClient passing in your API key. Get your free API key at [spice.ai](https://spice.ai/).
 
 ```go
 spice := gospice.NewSpiceClient()

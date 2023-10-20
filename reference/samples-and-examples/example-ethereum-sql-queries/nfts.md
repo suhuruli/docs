@@ -4,7 +4,7 @@ description: Example queries that use the Ethereum and Polygon NFTs datasets
 
 # NFTs
 
-Querying the NFTs datasets enable use cases like tracking recent transfer of NFTs, referencing all NFTs from a single collection like from Bored Ape or Aavegotchi, and finding all current owners of Bored Apes. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
+Querying the NFTs datasets enable use cases like tracking recent transfer of NFTs, referencing all NFTs from a single collection like from Bored Ape or Aavegotchi, and finding all current owners of Bored Apes. Copy example queries directly into your Spice.ai Playground to get started in seconds.&#x20;
 
 ### Recent NFT Transfers
 

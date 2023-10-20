@@ -47,8 +47,8 @@ OFFSET 1000000
 
 Examples of indexed columns:
 
-* [Ethereum core tables](https://docs.spice.xyz/reference/sql-query-tables#improving-query-performance-indexed-columns)
-* [NFT tables](https://docs.spice.xyz/reference/sql-query-tables/nft-tables#improving-query-performance-indexed-columns)
+* [Ethereum core tables](https://docs.spice.ai/reference/sql-query-tables#improving-query-performance-indexed-columns)
+* [NFT tables](https://docs.spice.ai/reference/sql-query-tables/nft-tables#improving-query-performance-indexed-columns)
 
 ### Use the Apache Arrow API and SDKs
 

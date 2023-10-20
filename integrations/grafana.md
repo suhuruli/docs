@@ -1,6 +1,6 @@
 # Grafana
 
-Create custom dashboards and visualisations using the Spice.xyz data source plugin for Grafana. This plugin can be found in [Grafana plugins catalog](https://grafana.com/grafana/plugins/spiceai-spicexyz-datasource/), and is also available on [GitHub](https://github.com/spiceai/grafana-spice.xyz-datasource/).
+Create custom dashboards and visualisations using the Spice.ai data source plugin for Grafana. This plugin can be found in [Grafana plugins catalog](https://grafana.com/grafana/plugins/spiceai-spicexyz-datasource/), and is also available on [GitHub](https://github.com/spiceai/grafana-spice.xyz-datasource/).
 
 ## Installation
 
@@ -22,15 +22,15 @@ GF_INSTALL_PLUGINS="spiceai-spicexyz-datasource"
 
 ## Configuration
 
-After installing a plugin, go to connections -> your connections -> data sources, and search for Spice.xyz.
+After installing a plugin, go to connections -> your connections -> data sources, and search for Spice.ai.
 
-Set API Key from your Spice.xyz application and click **Save & test**:
+Set API Key from your Spice.ai application and click **Save & test**:
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-07-18 at 16.04.58@2x.png" alt=""><figcaption></figcaption></figure>
 
 ## Creating visualisations
 
-Create new Grafana panel and select `Spice.xyz` data source, edit the query and configure visualisation.
+Create new Grafana panel and select `Spice.ai` data source, edit the query and configure visualisation.
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-07-18 at 16.08.00@2x.png" alt=""><figcaption></figcaption></figure>
 

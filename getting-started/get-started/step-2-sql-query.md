@@ -2,7 +2,7 @@
 
 ### Make a basic SQL query in the Playground
 
-Use the Spice.xyz [Playground](broken-reference) to experiment with SQL queries, APIs, and models directly in app.&#x20;
+Use the Spice.ai [Playground](broken-reference) to experiment with SQL queries, APIs, and models directly in app.&#x20;
 
 It includes:
 

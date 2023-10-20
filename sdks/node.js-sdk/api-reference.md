@@ -2,7 +2,7 @@
 
 ## SpiceClient(apiKey, url)
 
-The top-level object that connects to Spice.xyz
+The top-level object that connects to Spice.ai
 
 * `apiKey`(string, required): API key to authenticate with the endpoint
 * `url`(string, optional): URL of the endpoint to use (default: flight.spiceai.io:443)
@@ -69,7 +69,7 @@ example api query
 * `pair`: (string, required): The crypto/currency pair, for example "BTC-USD"
 * `startTime`: start time milliseconds since Unix Epoch
 * `endTime`: end time milliseconds since Unix Epoch
-* `granularity`: valid [duration](https://docs.spice.xyz/core-concepts/duration-literals)
+* `granularity`: valid [duration](https://docs.spice.ai/core-concepts/duration-literals)
 
 `getPrices` returns a HistoricalPrices object
 

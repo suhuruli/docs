@@ -1,6 +1,6 @@
 # SQL Query Editor
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Spice.xyz Query Editor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Spice.ai Query Editor</p></figcaption></figure>
 
 Open the SQL editor by navigating to an app and clicking **SQL Query** in the sidebar.
 
@@ -20,7 +20,7 @@ Use AI to help you write your Spice SQL queries.
 
 ### SQL table, column, and keyword suggestions
 
-The Spice.xyz Query Editor will suggest table and column names along with keywords as you type. You can manually prompt for a suggestion by pressing **ctrl+space**.
+The Spice.ai Query Editor will suggest table and column names along with keywords as you type. You can manually prompt for a suggestion by pressing **ctrl+space**.
 
 1. Start typing a SQL command, such as `SELECT * FROM`
 2. As you type, the Query Editor will suggest possible completions based on the query context. You can use the arrow keys or mouse to select a completion, and then press **Enter** or **Tab** to insert it into the editor.

@@ -11,4 +11,4 @@ WHERE val.withdrawal_credentials IN (
 )
 ```
 
-See [goerli.beacon.validators](https://docs.spice.xyz/reference/sql-query-tables/ethereum/beacon-chain-tables/eth.beacon.validators) for the schema and column definitions.
+See [goerli.beacon.validators](https://docs.spice.ai/reference/sql-query-tables/ethereum/beacon-chain-tables/eth.beacon.validators) for the schema and column definitions.

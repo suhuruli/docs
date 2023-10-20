@@ -1,17 +1,17 @@
 ---
 description: >-
-  A step-by-step guide to login to your Spice.xyz account, connect with your
+  A step-by-step guide to login to your Spice.ai account, connect with your
   Github organizations, and create your first app.
 ---
 
 # Step 1 - Portal Login
 
-### From the Spice.xyz website
+### From the Spice.ai website
 
-1. Go to [spice.xyz](https://www.spice.xyz) and click on **Login** or **Getting Started** in the top right corner.
-2. You can also navigate directly by URL to [spice.xyz/login](https://spice.xyz/login).
+1. Go to [spice.ai](https://www.spice.ai) and click on **Login** or **Getting Started** in the top right corner.
+2. You can also navigate directly by URL to [spice.ai/login](https://spice.ai/login).
 
-<figure><img src="../../.gitbook/assets/CleanShot 2023-01-24 at 14.07.06@2x.png" alt=""><figcaption><p>Login via the Spice.xyz website</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-01-24 at 14.07.06@2x.png" alt=""><figcaption><p>Login via the Spice.ai website</p></figcaption></figure>
 
 3\.   Click **Continue with GitHub** to grant authorization to login with your GitHub account.
 

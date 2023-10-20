@@ -4,7 +4,7 @@ description: Example queries that use the Ethereum Name Service Domains datasets
 
 # ENS Domains
 
-Querying the ENS Domains datasets enable use cases like retrieving the Ethereum address of a domain or subdomain, and listing Ethereum addresses with the most ENS names. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
+Querying the ENS Domains datasets enable use cases like retrieving the Ethereum address of a domain or subdomain, and listing Ethereum addresses with the most ENS names. Copy example queries directly into your Spice.ai Playground to get started in seconds.&#x20;
 
 ### Retrieve an Ethereum address
 

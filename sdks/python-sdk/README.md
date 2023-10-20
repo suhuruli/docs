@@ -1,6 +1,6 @@
 # Python SDK
 
-The [Python SDK](https://github.com/spiceai/spicepy) `spicepy` is the easiest way to use and query [Spice.xyz](https://spice.xyz) in Python.
+The [Python SDK](https://github.com/spiceai/spicepy) `spicepy` is the easiest way to use and query [Spice.ai](https://spice.ai) in Python.
 
 The Python SDK uses [Apache Apache Flight](https://arrow.apache.org/docs/format/Flight.html) to efficiently stream data to the client and [Apache Arrow](https://arrow.apache.org/) Records as data frames which are then easily converted to Pandas data frames.
 
@@ -64,7 +64,7 @@ block_data = client.query('SELECT * FROM eth.recent_blocks LIMIT 10;').read_pand
 transaction_Data = client.query('SELECT * FROM eth.recent_transactions LIMIT 10;').read_pandas()
 ```
 
-Querying data is done through a `Client` object that initializes the connection with the Spice.xyz endpoint. `Client` has the following arguments:
+Querying data is done through a `Client` object that initializes the connection with the Spice.ai endpoint. `Client` has the following arguments:
 
 * **api\_key** (string, required): API key to authenticate with the endpoint.
 * **url** (string, optional): URL of the endpoint to use (default: grpc+tls://flight.spiceai.io)

@@ -18,23 +18,23 @@ Explore the full list of [**datasets**](../getting-started/datasets.md) for an o
 
 ### 2. Query datasets using SQL
 
-Querying datasets is as easy as querying data from any SQL database. Try SQL from your browser at [**Spice.xyz**](https://spice.xyz/).
+Querying datasets is as easy as querying data from any SQL database. Try SQL from your browser at [**Spice.ai**](https://spice.ai/).
 
 <figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>Querying datasets with SQL in the Playground.</p></figcaption></figure>
 
-Reference [**SQL best practices**](https://docs.spice.xyz/best-practices) for tips and the best query performance.
+Reference [**SQL best practices**](https://docs.spice.ai/best-practices) for tips and the best query performance.
 
 ### 3. Refer to the SQL reference
 
 Spice uses an [**Apache Calcite**](https://calcite.apache.org) based query engine, which supports **ANSI SQL** with additional SQL **dialect**.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The SQL Reference at docs.spice.xyz</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The SQL Reference at docs.spice.ai</p></figcaption></figure>
 
 Refer to the [**SQL reference**](sql-reference/) for dialect specific data types, functions, and commands. SQL keywords are also indexed in search for quick lookup.
 
 ### 4. Use the Python SDK
 
-Import Spice data in notebooks like Kaggle, Jupyter Notebooks, Google Colab, Anaconda Notebook, etc. with [**3 lines of Python code**](https://docs.spice.xyz/sdks/python-sdk#usage).
+Import Spice data in notebooks like Kaggle, Jupyter Notebooks, Google Colab, Anaconda Notebook, etc. with [**3 lines of Python code**](https://docs.spice.ai/sdks/python-sdk#usage).
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Querying Spice from Python in 3 lines of code.</p></figcaption></figure>
 

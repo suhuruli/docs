@@ -4,7 +4,7 @@ description: Example queries that use the Ethereum Wallet Balances datasets
 
 # Wallet Balances
 
-Perform complex queries joining wallet balances with other datasets such as ENS names to derive usable insights for your apps and research. Querying the Wallet Balances datasets enable use cases like monitoring aggregate changes in wallet balances to track rewards sent to users, analyzing transaction trends for specific wallets week over week, and identifying the active "whale" wallets with their ENS names during major market events. Copy example queries directly into your Spice.xyz Playground to get started in seconds.&#x20;
+Perform complex queries joining wallet balances with other datasets such as ENS names to derive usable insights for your apps and research. Querying the Wallet Balances datasets enable use cases like monitoring aggregate changes in wallet balances to track rewards sent to users, analyzing transaction trends for specific wallets week over week, and identifying the active "whale" wallets with their ENS names during major market events. Copy example queries directly into your Spice.ai Playground to get started in seconds.&#x20;
 
 ### Wallets with top balances, identified with their ENS names and balance change in gwei&#x20;
 
