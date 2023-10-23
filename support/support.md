@@ -1,5 +1,7 @@
 # Support
 
-**Spice** was created by the team at [**Spice AI**](https://spiceai.io).
+**Spice.ai** was created by the **Spice AI** team.
 
-Get free support on [<mark style="color:purple;">**Discord**</mark>](https://discord.gg/kZnTfneP5u)<mark style="color:purple;">.</mark>
+An Enterprise SLA and Premium support is available for [Enterprise Plans](../getting-started/pricing/).
+
+Get free community support on [<mark style="color:purple;">**Discord**</mark>](https://discord.gg/kZnTfneP5u)<mark style="color:purple;">.</mark>
