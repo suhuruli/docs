@@ -9,7 +9,7 @@ description: Currency/Token Prices HTTP API documentation
 The **`/v1/prices/pairs`** API returns a list of price pairs supported by the Spice.ai platform (non-exhaustive).
 
 {% hint style="info" %}
-The **/prices/pairs** endpoint only returns pairs provided directly from SpiceAI data. Price APIs aggregate data from other providers (decentralised exchanges e.g. Uniswap, centralised aggregators e.g. CoinMarketCap) and support significantly more pairs not listed by this endpoint.
+The **/prices/pairs** endpoint only returns pairs provided directly from SpiceAI data. Price APIs aggregate data from other providers (decentralized exchanges e.g. Uniswap, centralized aggregators e.g. CoinMarketCap) and support significantly more pairs not listed by this endpoint.
 {% endhint %}
 
 {% swagger method="get" path="/v1/prices/pairs" baseUrl="https://data.spiceai.io" summary="Get supported price pairs" %}
