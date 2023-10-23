@@ -8,11 +8,11 @@ The [Go SDK](https://github.com/spiceai/gospice) `gospice` is the easiest way to
 
 It uses [Apache Arrow Flight](https://arrow.apache.org/docs/format/Flight.html) to efficiently stream data to the client and [Apache Arrow](https://arrow.apache.org/) Records as data frames.
 
-GoDocs available at [pkg.go.dev/github.com/spiceai/gospice](https://pkg.go.dev/github.com/spiceai/gospice).
+GoDocs available at [pkg.go.dev/github.com/spiceai/gospice](https://pkg.go.dev/github.com/spiceai/gospice/v3).
 
 ### Requirements
 
-* [Go 1.19](https://go.dev/doc/go1.19) (or later)
+* [Go 1.20](https://go.dev/doc/go1.20) (or later)
 
 ### Installation
 
