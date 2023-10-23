@@ -8,5 +8,5 @@ Each app has a unique API Key and can be owned individual accounts or [**organiz
 
 * [Transfer an app to another organization](app-transfer.md)
 * [Connect an app with your existing GitHub repository](connect-github-repository.md)
-* [Create and toggle custom dataset and views (beta)](datasets-and-views.md)
-* [Build and run your Spice Functions](spice-functions/)
+* [Create and toggle custom dataset and views (beta)](../../building-blocks/datasets-and-views.md)
+* [Build and run your Spice Functions](../../building-blocks/spice-functions/)

@@ -6,9 +6,9 @@ description: Frequently asked questions
 
 ### What data sources do you have?
 
-Spice currently supports [**Ethereum**](../reference/sql-query-tables/) (including [**Beacon**](../reference/sql-query-tables/goerli/beacon-chain-tables/) & [**Goerli**](../reference/sql-query-tables/goerli/)), [**Bitcoin**](../reference/sql-query-tables/bitcoin/), and [**Polygon**](../reference/sql-query-tables/polygon/) blockchain data along with [**ENS**](../reference/sql-query-tables/ethereum/token-tables-1/), **DeFi/DEX** ([**Sushiswap**](../reference/sql-query-tables/ethereum/sushiswap-tables/)**,** [**Uniswap-V2**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Uniswap-V3**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Aave**](../reference/sql-query-tables/ethereum/aave-v2-tables/)), [**NFT**](broken-reference) and [**token**](../reference/sql-query-tables/ethereum/token-tables/) specific data.
+Spice currently supports [**Ethereum**](../reference/sql-query-tables/) (including [**Beacon**](../reference/sql-query-tables/goerli/beacon-chain-tables/) & [**Goerli**](../reference/sql-query-tables/goerli/)), [**Bitcoin**](../reference/sql-query-tables/bitcoin/), and [**Polygon**](../reference/sql-query-tables/polygon/) blockchain data along with [**ENS**](../reference/sql-query-tables/ethereum/token-tables-1/), **DeFi/DEX** ([**Sushiswap**](../reference/sql-query-tables/ethereum/sushiswap-tables/)**,** [**Uniswap-V2**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Uniswap-V3**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Aave**](../reference/sql-query-tables/ethereum/aave-v2-tables/)), [**NFT**](broken-reference/) and [**token**](../reference/sql-query-tables/ethereum/token-tables/) specific data.
 
-Digital asset/cryptocurrency [spot/latest](broken-reference) and full [historical prices](broken-reference) data is available from leading exchanges including Coinbase, Gemini, and Binance.
+Digital asset/cryptocurrency [spot/latest](broken-reference/) and full [historical prices](broken-reference/) data is available from leading exchanges including Coinbase, Gemini, and Binance.
 
 We are adding more chains and contracts prioritized by user feedback every month.
 
@@ -20,7 +20,7 @@ Spice is currently in beta and it's free to [get an API key](https://spice.ai), 
 
 We plan to always have a free tier and offer free APIs, like the [Gas Fees API](../api/ethereum/gas-fees.md).
 
-For customers who need higher request or query limits, service guarantees, or priority support we  offer high-value paid tiers based on usage.
+For customers who need higher request or query limits, service guarantees, or priority support we offer high-value paid tiers based on usage.
 
 ### What level of support do you offer?
 
@@ -44,7 +44,7 @@ WebSocket support is available for [Design Partners](https://www.craft.do/s/bgJF
 
 ### Do you support alerting?
 
-Not yet, but it is on our roadmap. You can also build your own custom alerting using [Spice Functions](../portal/apps/spice-functions/).
+Not yet, but it is on our roadmap. You can also build your own custom alerting using [Spice Functions](../building-blocks/spice-functions/).
 
 ### Do you support JDBC/ODBC/ADBC?
 

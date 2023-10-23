@@ -43,13 +43,13 @@ migrations:
 
 Optionally specifying a primary key will help enforce data integrity and enables the dataset rows to be updatable.
 
-Datasets defined in a Spice app will be available and queryable from all apps in the [organization](../../organizations.md).
+Datasets defined in a Spice app will be available and queryable from all apps in the [organization](../../portal/organizations.md).
 
 Once you've created the YAML and committed to your repository, follow the same steps outlined in [Datasets and Views](../datasets-and-views.md) to sync from GitHub and deploy the dataset to the Spice platform.
 
 ## Creating a function
 
-A Spice Function is defined by creating a directory in the Spice app's connected GitHub repository and adding a [`function.yaml`](../../../reference/specifications/spice-functions-yaml-specification/) file.
+A Spice Function is defined by creating a directory in the Spice app's connected GitHub repository and adding a [`function.yaml`](../../reference/specifications/spice-functions-yaml-specification/) file.
 
 In the `function.yaml` , code execution runtime and invocation handler is defined.
 
@@ -72,7 +72,7 @@ handler: spice_function.process
 
 </details>
 
-See [Spice Functions YAML Specification](../../../reference/specifications/spice-functions-yaml-specification/) for the full YAML schema.
+See [Spice Functions YAML Specification](../../reference/specifications/spice-functions-yaml-specification/) for the full YAML schema.
 
 ### Function Handlers
 
@@ -122,19 +122,19 @@ See [Python](python.md) and [Go](golang.md) for full example code.
 
 Once your function is committed to the GitHub repository, navigate to the **Functions** section of the **Hub**, and click **Sync with GitHub**. The newly defined function will appear in the functions list.
 
-<figure><img src="../../../.gitbook/assets/function_deploy.png" alt=""><figcaption><p>List of synced Functions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/function_deploy.png" alt=""><figcaption><p>List of synced Functions</p></figcaption></figure>
 
 ## Deploy the Function
 
 Click the function **Deploy** button. It may take a few moments as the code is packaged and deployed for use within the platform.
 
-<figure><img src="../../../.gitbook/assets/function_deployed.png" alt=""><figcaption><p>Deployed function hello_world is now running.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/function_deployed.png" alt=""><figcaption><p>Deployed function hello_world is now running.</p></figcaption></figure>
 
 ## View Function details
 
 Clicking the function name will show its details along with it's deployments.
 
-<figure><img src="../../../.gitbook/assets/function_details.png" alt=""><figcaption><p>Function details page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/function_details.png" alt=""><figcaption><p>Function details page</p></figcaption></figure>
 
 
 
@@ -142,16 +142,16 @@ Clicking the function name will show its details along with it's deployments.
 
 Clicking the Executions tab in the Function details page will show the recent function executions.
 
-<figure><img src="../../../.gitbook/assets/function_executions.png" alt=""><figcaption><p>Function executions page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/function_executions.png" alt=""><figcaption><p>Function executions page</p></figcaption></figure>
 
 ## View Function execution logs
 
 Click on the UUID of a function execution to view the logs from a function execution, including its standard output, standard error and exit code.
 
-<figure><img src="../../../.gitbook/assets/function_execution_logs.png" alt=""><figcaption><p>Logs from a function execution</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/function_execution_logs.png" alt=""><figcaption><p>Logs from a function execution</p></figcaption></figure>
 
 ## Query the Function output dataset
 
 If data was inserted into the output dataset, upon successful function execution, it will be available for query in the `datasets."{your_org_name}".{your_dataset_name}` path.
 
-<figure><img src="../../../.gitbook/assets/function_output_query.png" alt=""><figcaption><p>Querying for hello_world's output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/function_output_query.png" alt=""><figcaption><p>Querying for hello_world's output</p></figcaption></figure>

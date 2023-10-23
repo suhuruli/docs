@@ -18,6 +18,15 @@
   * [Community Edition](getting-started/pricing/community-edition.md)
 * [FAQ](getting-started/faq.md)
 
+## 🧱 Building Blocks
+
+* [Datasets and Views](building-blocks/datasets-and-views.md)
+* [🔥 Spice Firecache](building-blocks/spice-firecache.md)
+* [Spice Functions](building-blocks/spice-functions/README.md)
+  * [Roadmap](building-blocks/spice-functions/roadmap.md)
+  * [Python](building-blocks/spice-functions/python.md)
+  * [Golang](building-blocks/spice-functions/golang.md)
+
 ## 💻 API
 
 * [SQL Query API](api/sql-query/README.md)
@@ -47,12 +56,6 @@
 
 * [Apps](portal/apps/README.md)
   * [Connect GitHub repository](portal/apps/connect-github-repository.md)
-  * [🔥 Spice Firecache](portal/apps/spice-firecache.md)
-  * [Datasets and Views](portal/apps/datasets-and-views.md)
-  * [Spice Functions](portal/apps/spice-functions/README.md)
-    * [Roadmap](portal/apps/spice-functions/roadmap.md)
-    * [Python](portal/apps/spice-functions/python.md)
-    * [Golang](portal/apps/spice-functions/golang.md)
   * [Transfer an App](portal/apps/app-transfer.md)
 * [Organizations](portal/organizations.md)
 * [SQL Query Editor](portal/sql-query-editor.md)

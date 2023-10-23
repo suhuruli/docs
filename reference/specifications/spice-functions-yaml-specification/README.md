@@ -8,7 +8,7 @@ Spice Functions configuration and metadata is defined in YAML. To create a Spice
 
 **`output_dataset`**
 
-The [Dataset](../../../portal/apps/datasets-and-views.md) this function's output will populate.
+The [Dataset](../../../building-blocks/datasets-and-views.md) this function's output will populate.
 
 **`runtime`**
 

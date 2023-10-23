@@ -6,7 +6,7 @@ description: Spice.ai Release notes
 
 ### August 2023
 
-The August release expands the functionality of [Spice Functions](../portal/apps/spice-functions/) (beta) and [Datasets and Views](../portal/apps/datasets-and-views.md).
+The August release expands the functionality of [Spice Functions](../building-blocks/spice-functions/) (beta) and [Datasets and Views](../building-blocks/datasets-and-views.md).
 
 #### Spice Functions
 
@@ -14,7 +14,7 @@ The August release expands the functionality of [Spice Functions](../portal/apps
 Spice Functions is in beta and initially available for Design Partners. Get in touch for more info.
 {% endhint %}
 
-Developers can now author [Spice Functions](../portal/apps/spice-functions/) in [Golang](../portal/apps/spice-functions/golang.md) with the Go1.x runtime in addition to [Python](../portal/apps/spice-functions/python.md).
+Developers can now author [Spice Functions](../building-blocks/spice-functions/) in [Golang](../building-blocks/spice-functions/golang.md) with the Go1.x runtime in addition to [Python](../building-blocks/spice-functions/python.md).
 
 Combine Spice Functions with expanded Datasets and Views support to generate custom datasets "ETL-less" in the Spice platform that can be kept private or shared with others.
 
@@ -32,7 +32,7 @@ Spice now supports SQL migrations to enable creation of custom user-authored dat
 
 ### July 2023
 
-The July release enables new compute over data capability with [Spice Functions](../portal/apps/spice-functions/) including application data storage, the ability to define and create custom datasets, and deep integration with GitHub.
+The July release enables new compute over data capability with [Spice Functions](../building-blocks/spice-functions/) including application data storage, the ability to define and create custom datasets, and deep integration with GitHub.
 
 #### Spice Functions
 
@@ -40,9 +40,9 @@ The July release enables new compute over data capability with [Spice Functions]
 Spice Functions is in beta and initially available for Design Partners. Get in touch for more info.
 {% endhint %}
 
-[Spice Functions](../portal/apps/spice-functions/) is a hosted compute experience that enables developers to write code in their preferred language and run it on the Spice platform, co-located with Spice data.
+[Spice Functions](../building-blocks/spice-functions/) is a hosted compute experience that enables developers to write code in their preferred language and run it on the Spice platform, co-located with Spice data.
 
-See [spice-functions](../portal/apps/spice-functions/ "mention") for full documentation on creating and deploying Spice Functions.
+See [spice-functions](../building-blocks/spice-functions/ "mention") for full documentation on creating and deploying Spice Functions.
 
 #### Spice Firecache
 
@@ -50,17 +50,17 @@ See [spice-functions](../portal/apps/spice-functions/ "mention") for full docume
 Spice Firecache is in beta and initially available for Design Partners. Get in touch for more info.
 {% endhint %}
 
-[Spice Firecache](../portal/apps/spice-firecache.md) is a real-time SQL cache that enables developers to cache Spice datasets for high concurrency, blazing fast SQL query up to 10x the performance of general SQL query.
+[Spice Firecache](../building-blocks/spice-firecache.md) is a real-time SQL cache that enables developers to cache Spice datasets for high concurrency, blazing fast SQL query up to 10x the performance of general SQL query.
 
 The Spice platform completely manages the Spice Firecache data lifecycle, ensuring datasets are real-time updated on triggers like new blocks and with stale data being automatically evicted.
 
-See [spice-firecache.md](../portal/apps/spice-firecache.md "mention") for full documentation on deploying datasets to the Spice Firecache.
+See [spice-firecache.md](../building-blocks/spice-firecache.md "mention") for full documentation on deploying datasets to the Spice Firecache.
 
 #### Custom Datasets
 
 Spice now supports the definition and creation of your own private Datasets and Views, which can then be queried with SQL, cached in Spice Firecache, and published publicly to be shared with others.
 
-See [datasets-and-views.md](../portal/apps/datasets-and-views.md "mention") for full documentation on creating private Datasets and Views.
+See [datasets-and-views.md](../building-blocks/datasets-and-views.md "mention") for full documentation on creating private Datasets and Views.
 
 #### Connecting Github Repos
 
