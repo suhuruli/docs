@@ -1,8 +1,8 @@
 ---
-description: All data and datasets currently available in Spice
+description: All Web3 data and datasets currently available in Spice
 ---
 
-# Datasets
+# Web3 Data
 
 {% hint style="success" %}
 New datasets are added every week, so this list is just the start. Get in touch on Discord to suggest more. **We're just getting started!**
@@ -111,7 +111,7 @@ SELECT DISTINCT pair FROM prices.all_pairs;
 ```
 
 {% hint style="info" %}
-For historical price exchange data to tick level granularity, try the [time-series Prices API](broken-reference/).
+For historical price exchange data to tick level granularity, try the [time-series Prices API](../getting-started/broken-reference/).
 {% endhint %}
 
 #### [Chainlink datasets](../reference/sql-query-tables/ethereum/chainlink-tables/)
@@ -125,7 +125,7 @@ For historical price exchange data to tick level granularity, try the [time-seri
 * [Ethereum blocks](https://docs.spice.ai/api/ethereum/blocks)
 * [Ethereum gas fees](https://docs.spice.ai/api/ethereum/gas-fees)
 
-#### [Spot and historical Prices](broken-reference/)
+#### [Spot and historical Prices](../getting-started/broken-reference/)
 
 * Binance
   * Spot/latest prices for all pairs traded on Binance.

@@ -12,7 +12,7 @@ Digital asset/cryptocurrency [spot/latest](broken-reference/) and full [historic
 
 We are adding more chains and contracts prioritized by user feedback every month.
 
-For the all-up list, see [Datasets](datasets.md) and follow the [Release notes](../reference/release-notes.md) for updates.
+For the all-up list, see [Datasets](../building-blocks/datasets.md) and follow the [Release notes](../reference/release-notes.md) for updates.
 
 ### How much does Spice cost?
 

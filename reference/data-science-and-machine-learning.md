@@ -14,7 +14,7 @@ Spice includes a growing set of web3 data, including blockchain data, cryptocurr
 
 <figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>The dataset reference in the SQL Playground.</p></figcaption></figure>
 
-Explore the full list of [**datasets**](../getting-started/datasets.md) for an overview and see [**SQL Query Tables**](sql-query-tables/) for schemas and details.
+Explore the full list of [**datasets**](../building-blocks/datasets.md) for an overview and see [**SQL Query Tables**](sql-query-tables/) for schemas and details.
 
 ### 2. Query datasets using SQL
 
@@ -26,7 +26,7 @@ Reference [**SQL best practices**](https://docs.spice.ai/best-practices) for tip
 
 ### 3. Refer to the SQL reference
 
-Spice uses an [**Apache Calcite**](https://calcite.apache.org) based query engine, which supports **ANSI SQL** with additional SQL **dialect**.&#x20;
+Spice uses an [**Apache Calcite**](https://calcite.apache.org) based query engine, which supports **ANSI SQL** with additional SQL **dialect**.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The SQL Reference at docs.spice.ai</p></figcaption></figure>
 
@@ -42,4 +42,4 @@ Import Spice data in notebooks like Kaggle, Jupyter Notebooks, Google Colab, Ana
 
 Easily use Python libraries like **numpy, pandas, pyplot, sklearn, xgboost, and more** to perform **exploratory data analysis (EDA),** create articulate **visualizations**, and build dynamic **machine learning models.**
 
-See sample Kaggle Notebooks on the next page --> \
+See sample Kaggle Notebooks on the next page --> \\

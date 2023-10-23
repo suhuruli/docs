@@ -8,7 +8,6 @@
   * [Step 2 - SQL Query](getting-started/get-started/step-2-sql-query.md)
   * [Step 3 - Leverage a SDK](getting-started/get-started/step-3-leverage-a-sdk.md)
   * [Next Steps](getting-started/get-started/next-steps.md)
-* [Datasets](getting-started/datasets.md)
 * [Core Concepts](getting-started/core-concepts/README.md)
   * [Organizations](getting-started/core-concepts/organizations.md)
   * [Duration Literals](getting-started/core-concepts/duration-literals.md)
@@ -20,6 +19,7 @@
 
 ## 🧱 Building Blocks
 
+* [Web3 Data](building-blocks/datasets.md)
 * [Datasets and Views](building-blocks/datasets-and-views.md)
 * [🔥 Spice Firecache](building-blocks/spice-firecache.md)
 * [Spice Functions](building-blocks/spice-functions/README.md)
