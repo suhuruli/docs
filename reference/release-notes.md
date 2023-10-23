@@ -1,5 +1,5 @@
 ---
-description: Spice.xyz Release notes
+description: Spice.ai Release notes
 ---
 
 # Release notes
