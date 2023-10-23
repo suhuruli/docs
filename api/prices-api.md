@@ -4,17 +4,15 @@ description: Currency/Token Prices HTTP API documentation
 
 # Prices API
 
-## Prices API
+## Supported Pairs
 
-### Supported Pairs
-
-The **`/v0.1/prices/pairs`** API returns a list of price pairs supported by the Spice.ai platform.
+The **`/v1/prices/pairs`** API returns a list of price pairs supported by the Spice.ai platform (non-exhaustive).
 
 {% hint style="info" %}
-The **/prices/pairs** endpoint only returns pairs natively where Spice is the data provider. The price quote APIs below aggregate data from other providers (e.g. CoinMarketCap) and support significantly more pairs not listed by this endpoint.
+The **/prices/pairs** endpoint only returns pairs provided directly from SpiceAI data. Price APIs aggregate data from other providers (decentralized exchanges e.g. Uniswap, centralized aggregators e.g. CoinMarketCap) and support significantly more pairs not listed by this endpoint.
 {% endhint %}
 
-{% swagger method="get" path="/v0.1/prices/pairs" baseUrl="https://data.spiceai.io" summary="Get supported price pairs" %}
+{% swagger method="get" path="/v1/prices/pairs" baseUrl="https://data.spiceai.io" summary="Get supported price pairs" %}
 {% swagger-description %}
 Returns a list of token/currency Spice provided price pairs.
 {% endswagger-description %}
@@ -26,203 +24,102 @@ Returns a list of token/currency Spice provided price pairs.
 {% endswagger-response %}
 {% endswagger %}
 
-### Spot/Latest Prices
+## Latest Prices
+The **`/v1/prices/{pair}`** API returns the spot (latest) prices of specified token/currency pairs from several exchanges (e.g. Binance, Coinbase, and Gemini), and aggregrates price measures (e.g. average, minimum).
 
-The **`/v0.1/prices`** API returns the spot (latest) prices of popular token/currency pairs for several exchanges, such as Binance, Coinbase, and Gemini, and the min, max, and average price across them.
+{% swagger method="get" path="/v1/prices/{pair}" baseUrl="https://data.spiceai.io" summary="Get latest prices for symbol(s)" expanded="false" %}
 
-{% swagger method="get" path="/v0.1/prices" baseUrl="https://data.spiceai.io" summary="Get exchange prices for a symbol/currency" expanded="false" %}
 {% swagger-description %}
-Returns token/currency pairs for several exchanges, such as Coinbase, and Gemini and the min, max, and average price across them.
+For pair(s), returns the latest prices from several exchanges (e.g. Binance, Coinbase, and Gemini), and aggregrate price measures (e.g. average, minimum).
 {% endswagger-description %}
+
+{% swagger-parameter in="path" name="pair" type="String" required="false" %}
+One currency/token pair symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. Multiple pairs can be provided by query parameters instead, see below.
+{% endswagger-parameter %}
+
+
+{% swagger-parameter in="query" name="pairs" type="String" required="false" %}
+One or more currency/token pairs symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. Multiple pairs can be provided in any of the following formats: `?pairs=BTC-ETH,ETH-SOL` or `?pairs=BTC-ETH&pairs=ETH-SOL`. If a `pair` is provided in the path, no token pairs from the query parameter(s) are used (i.e. the path variable is not additional, it overrides the values in the query parameter).
+
+{% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Prices successfully returned." %}
 ```javascript
-[
-	{
-		"pair": "BTCUSD",
+{
+    "BTC-USDC": {
 		"prices": {
-			"coinbase": "41818.02",
+			"spiceai": "41818.02",
 			"gemini": "41918.76"
 		},
 		"minPrice": "41818.02",
 		"maxPrice": "41918.76",
 		"meanPrice": "41868.39"
-	},
-	{
-		"pair": "LTCUSD",
+	}, "LTC-USDT" : {
 		"prices": {
 			"coinbase": "128.07",
-			"gemini": "129.12"
+			"spiceai": "129.12"
 		},
 		"minPrice": "128.07",
 		"maxPrice": "129.12",
 		"meanPrice": "128.595"
-	},
-	{
-		"pair": "ETHUSD",
-		"prices": {
+	}, "ETH-BTC": { 
+    "prices": {
 			"coinbase": "3108.88",
 			"gemini": "3132.97"
 		},
 		"minPrice": "3108.88",
 		"maxPrice": "3132.97",
 		"meanPrice": "3120.925"
-	},
-	{
-		"pair": "LRCUSD",
-		"prices": {
-			"coinbase": "1.4611",
-			"gemini": "1.47834"
-		},
-		"minPrice": "1.4611",
-		"maxPrice": "1.47834",
-		"meanPrice": "1.46972"
 	}
-]
-```
-{% endswagger-response %}
-{% endswagger %}
-
-To fetch the price of multiple currency/tokens in a single request, `POST` to the `/v0.1/prices` endpoint.
-
-{% swagger method="post" path="/v0.1/prices" baseUrl="https://data.spiceai.io" summary="Get exchange prices for multiple symbols/currencies" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="symbols" type="String[]" required="true" %}
-An array of one or more currency/token symbols. E.g.
-
-`"symbols": ["cbETH", "stETH", "rETH"]`
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="convert" type="String" required="false" %}
-An optional conversion currency/token symbol. E.g.
-
-`"convert": "AUD"`
-
-If not provided defaults to "USD".
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="An array of price pairs for each of the symbols provided to the conversion symbol" %}
-```json
-[
-	{
-		"pair": "CBETH-USD",
-		"prices": {
-			"coinmarketcap": "1958.4909298141743"
-		},
-		"minPrice": "1958.49093",
-		"maxPrice": "1958.49093",
-		"avePrice": "1958.49093"
-	},
-	{
-		"pair": "STETH-USD",
-		"prices": {
-			"coinmarketcap": "1865.1506855247744"
-		},
-		"minPrice": "1865.150686",
-		"maxPrice": "1865.150686",
-		"avePrice": "1865.150686"
-	},
-	{
-		"pair": "RETH-USD",
-		"prices": {
-			"coinmarketcap": "2024.2628747010635"
-		},
-		"minPrice": "2024.262875",
-		"maxPrice": "2024.262875",
-		"avePrice": "2024.262875"
-	}
-]
-```
-{% endswagger-response %}
-{% endswagger %}
-
-The **`/v0.1/prices/[pair]`** API returns spot prices of the specified token/currency pair.
-
-E.g. `/v0.1/prices/btc-aud` will return the price of BTC in AUD.
-
-The API will default to **USD** as the base currency if one is not provided.
-
-E.g. `/v0.1/prices/btc` will return the price of BTC in USD.
-
-{% swagger method="get" path="/v0.1/prices/[pair]" baseUrl="https://data.spiceai.io" summary="Get exchange prices for a specific currency/token pair" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="pair" required="true" %}
-The currency/token pair
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Prices for the pair successfully returned." %}
-```javascript
-{
-	"pair": "ETH-AUD",
-	"prices": {
-		"coinbase": "2405.566348377514821804",
-		"gemini": ""
-	},
-	"minPrice": "2405.566348",
-	"maxPrice": "2405.566348",
-	"avePrice": "2405.566348"
 }
 ```
 {% endswagger-response %}
 {% endswagger %}
 
-### Historical Prices (Preview)
 
-The **`/v0.1/prices/[pair]`** API returns historical prices of the specified token/currency pair.
+## Historical Prices
+The **`/v1/prices/historical/{pair}`** API returns historical prices of the specified token/currency pair(s).
 
-**NOTE: This method is in Preview. It's definition may change in non-backwards compatible ways.**
-
-{% swagger method="get" path="/v0.1/prices/[pair]?preview=true" baseUrl="https://data.spiceai.io" summary="Get Historical Prices" %}
+{% swagger method="get" path="/v1/prices/historical/{pair}" baseUrl="https://data.spiceai.io" summary="Get Historical Prices" %}
 {% swagger-description %}
-Returns historical prices of the specified token/currency pair.
+Returns historical prices of the specified token/currency pair(s).
 
 Providing both `start` and `end` will return all prices between the two timestamps at the provided `granularity`, however this must not be more than 10,000 prices.
 
-If no `start` or `end` is provided then the 10 most recent prices based on the provided `granularity` will be returned.
+If no `start` or `end` is provided then the 10 most recent prices based on the provided `granularity` will be returned.&#x20;
 
 If only `start` is provided, then `end` will default to the current UNIX timestamp. If only `end` is provided then the 10 most recent prices before `end` will be returned.
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="pair" type="String" required="false" %}
-The token/currency pair to return prices for
+One currency/token pair symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. Multiple pairs can be provided by query parameters instead, see below.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="preview" type="Bool" required="true" %}
-Must be present and set to
+{% swagger-parameter in="query" name="pairs" type="String" required="false" %}
+One or more currency/token pairs symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. Multiple pairs can be provided in any of the following formats: `?pairs=BTC-ETH,ETH-SOL` or `?pairs=BTC-ETH&pairs=ETH-SOL`. If a `pair` is provided in the path, no token pairs from the query parameter are used (i.e. the path variable is not additional, it overrides the values in the query parameter).
 
-`true`
-
-to retrieve historical prices
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="start" type="Int" required="false" %}
+{% swagger-parameter in="query" name="start" type="Int" %}
 UNIX timestamp of the start of the range to retrieve historical prices, cannot be before 12 months ago
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="end" type="Int" required="false" %}
+{% swagger-parameter in="query" name="end" type="Int" %}
 UNIX timestamp of the end of the range to retrieve historical prices, cannot be before 12 months ago
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="granularity" type="String" required="false" %}
-Duration between each price returned (e.g.
+{% swagger-parameter in="query" name="granularity" type="String" %}
+Duration between each price returned (e.g. 
 
 `5m`
 
-,
+, 
 
 `1h`
 
-,
+, 
 
 `7d`
 
-), default is
+), default is 
 
 `5m`
 {% endswagger-parameter %}
@@ -230,8 +127,7 @@ Duration between each price returned (e.g.
 {% swagger-response status="200: OK" description="Prices successfully returned." %}
 ```javascript
 {
-  "pair": "BTC-USD",
-  "prices": [
+  "BTC-USD": [
     {
       "timestamp": "2023-03-15T15:45:00Z",
       "price": 24629.61,
@@ -263,55 +159,41 @@ Duration between each price returned (e.g.
       "low": 24443.34,
       "open": 24515.43,
       "close": 24529.87
-    },
-    {
-      "timestamp": "2023-03-15T16:05:00Z",
-      "price": 24460.3,
-      "high": 24584,
-      "low": 24396.8,
-      "open": 24534.23,
-      "close": 24460.3
-    },
-    {
-      "timestamp": "2023-03-15T16:10:00Z",
-      "price": 24427.57,
-      "high": 24528.9,
-      "low": 24388,
-      "open": 24415.61,
-      "close": 24427.57
-    },
-    {
-      "timestamp": "2023-03-15T16:15:00Z",
-      "price": 24311.13,
-      "high": 24431.47,
-      "low": 24183.75,
-      "open": 24411.63,
-      "close": 24311.13
-    },
-    {
-      "timestamp": "2023-03-15T16:20:00Z",
-      "price": 24376.97,
-      "high": 24394.36,
-      "low": 24250,
-      "open": 24286.56,
-      "close": 24376.97
-    },
-    {
-      "timestamp": "2023-03-15T16:25:00Z",
-      "price": 24345.7,
-      "high": 24428.51,
-      "low": 24287.47,
-      "open": 24295.9,
-      "close": 24345.7
-    },
-    {
-      "timestamp": "2023-03-15T16:30:00Z",
-      "price": 24369.92,
-      "high": 24393.88,
-      "low": 24283.84,
-      "open": 24329.97,
-      "close": 24369.92
     }
+  ], 
+  "FLOW-USDT": [
+    {
+        "timestamp": "2023-09-18T00:05:00Z",
+        "price": 0.441,
+        "high": 0.445,
+        "low": 0.436,
+        "open": 0.436,
+        "close": 0.441
+    },
+    {
+        "timestamp": "2023-09-18T00:10:00Z",
+        "price": 0.444,
+        "high": 0.445,
+        "low": 0.441,
+        "open": 0.441,
+        "close": 0.444
+    },
+    {
+        "timestamp": "2023-09-18T00:15:00Z",
+        "price": 0.44,
+        "high": 0.443,
+        "low": 0.439,
+        "open": 0.443,
+        "close": 0.44
+    },
+    {
+        "timestamp": "2023-09-18T00:20:00Z",
+        "price": 0.445,
+        "high": 0.445,
+        "low": 0.442,
+        "open": 0.443,
+        "close": 0.445
+    },
   ]
 }
 ```
