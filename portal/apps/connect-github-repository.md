@@ -21,23 +21,23 @@ Before connecting:
 
 To quickly set up a new repository, use the [spice-app-template](https://github.com/spiceai/spice-app-template) as a starting point:
 
-<figure><img src="../../.gitbook/assets/CleanShot 2023-07-26 at 12.14.05@2x.png" alt=""><figcaption><p>Creating a new repository using the spice-app-template</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-10-24 at 9 .18.45@2x.png" alt=""><figcaption><p>Creating a new repository using the spice-app-template</p></figcaption></figure>
 
 ## Connect
 
 1. Ensure the repository is set up as per instructions above.
-2. In the context of the Spice app to connect, navigate to the **Hub**, and click the **Connect** button.
+2. In the context of the Spice app to connect, navigate to the **Settings (GitHub tab)** and click the **Connect** button.
 
-<figure><img src="../../.gitbook/assets/CleanShot 2023-07-26 at 12.12.24@2x.png" alt=""><figcaption><p>Connecting a Spice.ai app to a GitHub repository.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-10-24 at 9 .15.44@2x.png" alt=""><figcaption><p>Connecting a Spice.ai app to a GitHub repository.</p></figcaption></figure>
 
 2. Follow GitHub App installation instructions
 
 > Ensure that you select all repositories or specifically the repository you intend to connect.
 
-<figure><img src="../../.gitbook/assets/CleanShot 2023-07-26 at 12.12.34@2x.png" alt=""><figcaption><p>Installing the Spice.ai GitHub app.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-10-24 at 9 .17.22@2x.png" alt=""><figcaption><p>Installing the Spice.ai GitHub app.</p></figcaption></figure>
 
 3. Finally, link the repository
 
-<figure><img src="../../.gitbook/assets/CleanShot 2023-07-26 at 12.30.08@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-10-24 at 9 .20.37@2x.png" alt=""><figcaption><p>Linking Spice.ai to Github repository</p></figcaption></figure>
 
 ##
