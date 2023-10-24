@@ -29,7 +29,7 @@ Examples of using the SQL suggestions:
 
 ### AI SQL Completion (Preview)
 
-<figure><img src="../.gitbook/assets/SQL Autocompletion new UI.gif" alt=""><figcaption><p>Use AI to help you write your Spice SQL queries.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SQL Autocompletion new UI-2.gif" alt=""><figcaption><p>Use AI to help you write your Spice SQL queries.</p></figcaption></figure>
 
 1. Ensure the **AI SQL Completion** button is toggled on.
 2. Write a SQL comment describing your desired query:\
