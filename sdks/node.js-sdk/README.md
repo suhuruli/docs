@@ -6,7 +6,7 @@ It uses [Apache Apache Flight](https://arrow.apache.org/docs/format/Flight.html)
 
 ### Requirements
 
-* [Node.js 16+](https://nodejs.org/)
+* [Node.js 18+](https://nodejs.org/)
 
 ### Installation
 
