@@ -1,22 +1,12 @@
+---
+description: Use the Playground's SQL editor to easily explore data
+---
+
 # SQL Query Editor
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Spice.ai Query Editor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-24 at 12.16.04 AM.png" alt=""><figcaption><p>Spice.ai Query Editor</p></figcaption></figure>
 
 Open the SQL editor by navigating to an app and clicking **SQL Query** in the sidebar.
-
-### AI SQL Completion (Preview)
-
-{% embed url="https://youtu.be/UQ5cb6Nku3w" %}
-Use AI to help you write your Spice SQL queries.
-{% endembed %}
-
-1. Ensure the **AI SQL Completion** button is toggled on.
-2. Write a SQL comment describing your desired query: \
-   E.g.  `-- Return the Ethereum block number that had the most cumulative gas fees paid from the past hour`
-3. Press **Enter** to move the cursor to the next line - this will trigger the auto-completion. It may take a few seconds to generate.
-4. Press **Tab** to accept the AI-generated completion.
-
-<figure><img src="../.gitbook/assets/Screenshot 2023-01-11 at 7.28.38 PM.png" alt=""><figcaption><p>AI generated query recommendation</p></figcaption></figure>
 
 ### SQL table, column, and keyword suggestions
 
@@ -30,12 +20,24 @@ Examples of using the SQL suggestions:
 * Select the `btc.blocks` table:
   * Type `SELECT * FROM btc` and press Tab. The editor will suggest `btc.blocks` as a possible table. Press Enter to insert it into the query.
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-01-09 at 10.24.15 AM.png" alt=""><figcaption><p>A list of datasets available in Spice</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-24 at 12.23.05 AM.png" alt=""><figcaption><p>A list of datasets available in Spice</p></figcaption></figure>
 
 * Show the fields in the `eth.recent_blocks` table:
   * Type `SELECT * FROM eth.recent_blocks WHERE "`. The editor will list the fields in the table.
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-01-09 at 10.27.43 AM.png" alt=""><figcaption><p>The available fields for <code>eth.recent_blocks</code> along with their type.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-24 at 12.25.29 AM.png" alt=""><figcaption><p>The available fields for <code>eth.recent_blocks</code> along with their type.</p></figcaption></figure>
+
+### AI SQL Completion (Preview)
+
+<figure><img src="../.gitbook/assets/SQL Autocompletion new UI.gif" alt=""><figcaption><p>Use AI to help you write your Spice SQL queries.</p></figcaption></figure>
+
+1. Ensure the **AI SQL Completion** button is toggled on.
+2. Write a SQL comment describing your desired query:\
+   E.g. `-- Return the Ethereum block number that had the most cumulative gas fees paid from the past hour`
+3. Press **Enter** to move the cursor to the next line - this will trigger the auto-completion. It may take a few seconds to generate.
+4. Press **Tab** to accept the AI-generated completion.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-01-11 at 7.28.38 PM.png" alt=""><figcaption><p>AI generated query recommendation</p></figcaption></figure>
 
 ### Chart Playground (Preview)
 
