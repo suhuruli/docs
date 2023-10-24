@@ -2,7 +2,7 @@
 
 ## 🌟 Getting Started
 
-* [Welcome to Spice](README.md)
+* [Welcome to Spice.ai](README.md)
 * [Quickstart](getting-started/get-started/README.md)
   * [Step 1 - Portal Login](getting-started/get-started/portal-login.md)
   * [Step 2 - SQL Query](getting-started/get-started/step-2-sql-query.md)

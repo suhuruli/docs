@@ -1,28 +1,44 @@
 ---
-description: Welcome to the Spice documentation!
+description: Welcome to the Spice.ai documentation!
 ---
 
-# Welcome to Spice
+# Welcome to Spice.ai
 
-**Spice** is a high-performance web3 data provider and platform for applications, machine learning (ML), and data science. It's built and supported by the team at [**Spice AI**](https://spice.ai).
+**Spice.ai** is a data and time-series AI application platform; an AI-backend-as-a-service comprising of composable, ready-to-use data and AI infrastructure pre-loaded with web3 data.
 
-**Obtaining blockchain and smart-contract data is hard**.
+Spice.ai provides a set of building blocks for creating intelligent applications by bringing together real-time and historical time-series and Web3 data, custom ETL and compute, machine learning training and inferencing, through a community-centric developer experience, all in one place.
 
-For data in a format and quantities that's useful, you have to:
+**Building and operating data and AI infrastructure is painful.**&#x20;
 
-* 😓 build and operate archive node and data infrastructure
+You have to:
+
+* 😓 build and operate archive node and data and AI infrastructure
 * 😓 understand and call JSON RPC APIs and smart-contract ABIs
 * 😓 manage 10s of TBs of data
 
-**Spice makes it easy.**
+**Spice.ai makes it easy.**
 
-With **Spice,** you can query real-time and historical blockchain data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for easy use with apps, ML, or libraries like **NumPy** and **Pandas**.
+![](<.gitbook/assets/screenshot 2 - Hub.png>)![](<.gitbook/assets/screenshot 3 - Query.png>)![](<.gitbook/assets/screenshot 4 - GitHub (1).png>)![](<.gitbook/assets/screenshot 5 - Public Forks.png>)
 
-Spice currently supports **Ethereum**, **Bitcoin**, **Polygon,** and **Flow** blockchains along with datasets for NFTs, DeFi, DEXs, ENS, Prices, and more.
+With **Spice.ai,** you can:
 
-Spice also includes high-RPS hosted **RPC Nodes**.
+* query 100TB+ of real-time and historical data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for easy use with applications, ML, or libraries like **NumPy** and **Pandas**.
+* collaborate on datasets, ML models, and applications in one place through the new community-centric developer hub.
+* create, fork, and curate your own hosted datasets and ML models to share and build with the community.
+* define and manage custom datasets in GitHub along with your application code.
 
-Take it for a spin, and try out the [getting started guide](getting-started/get-started/).
+Spice.ai is preloaded with community data from the **Ethereum**, **Bitcoin**, **Polygon,** and **EigenLayer** ecosystems along with enriched datasets for NFTs, DeFi, DEXs, ENS, Prices, and more. Most datasets are open-source and are available at [github.com/spiceai/datasets](https://github.com/spiceai/datasets).
+
+Building blocks available in the Spice.ai platform today include:
+
+* Cloud Data Platform preloaded with [Web3 Data](building-blocks/datasets.md)
+* [Datasets and Views](building-blocks/datasets-and-views.md)
+* [Spice Firecache](building-blocks/spice-firecache.md)
+* [Spice Functions](building-blocks/spice-functions/)
+* ML Models (in Preview)
+* [AI Predictions](api/predictions/) (in Preview)
+
+Take it for a spin by starting with the [getting started guide](getting-started/get-started/).
 
 {% hint style="info" %}
 Feel free to ask any questions or queries to the team in [<mark style="color:purple;">Discord</mark>](https://discord.gg/kZnTfneP5u).

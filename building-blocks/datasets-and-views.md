@@ -12,6 +12,8 @@ The Spice.ai platform comes pre-loaded with a variety of web3 [datasets](dataset
 
 In addition, you can define and create your own custom and private Datasets and Views, which can then be queried with SQL, cached in Spice Firecache, and published publicly to be shared with others.
 
+<figure><img src="../.gitbook/assets/screenshot 4 - GitHub.png" alt=""><figcaption></figcaption></figure>
+
 ### Defining a Dataset
 
 To define a dataset, first ensure your Spice app is connected to a [GitHub repository](../portal/apps/connect-github-repository.md), then add a [dataset manifest](../reference/specifications/dataset-and-view-yaml-specification/) file to the GitHub repository in the `.spice/datasets` path.
