@@ -14,7 +14,8 @@ In the `function.yaml` , code execution runtime and invocation handler is define
 
 ```yaml
 # hello_world/function.yaml
-output_dataset: hello_world
+output_datasets: 
+  - {orgName}.{appName}.hello_world
 # This will trigger the function to execute on every new Ethereum block.
 triggers:
   - path: eth
@@ -25,9 +26,11 @@ runtime: python3.11
 handler: spice_function.process
 ```
 
+Replace `{orgName}` and `{appName}` with the values for your specific org and app.
+
 </details>
 
-See [Spice Functions YAML Specification](../../../reference/specifications/spice-functions-yaml-specification/) for the full YAML schema.
+See [Spice Functions YAML Specification](../../reference/specifications/spice-functions-yaml-specification/) for the full YAML schema.
 
 ### Function Handlers
 
@@ -72,12 +75,6 @@ import spicepy
 def process(context: dict, 
             duckdb: duckdb.DuckDBPyConnection, 
             spice_client: spicepy.Client):
-  # Temporary step
-  duckdb.sql("""CREATE TABLE IF NOT EXISTS output.hello_world (
-    block_number BIGINT,
-    greeting TEXT
-    )""")
-
   duckdb.sql(f"INSERT INTO output.hello_world VALUES ({context['block_number']}, 'Hello!')")
 
   print("Hello, World!")

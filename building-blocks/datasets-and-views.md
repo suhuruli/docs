@@ -28,22 +28,18 @@ firecache:
   time_column: timestamp
 ```
 
-See the [Dataset & View YAML Specification](../reference/specifications/spice-functions-yaml-specification/) for the full YAML schema.
+Once the manifest file is committed to the GitHub repository, navigate to the **Datasets** section. The newly defined dataset will appear in the datasets list.
 
-### Sync with GitHub
-
-Once the manifest file is committed to the GitHub repository, navigate to the **Datasets** section of the **Hub**, and click **Sync with GitHub**. The newly defined dataset will appear in the datasets list.
-
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>List of synced Datasets in the Hub.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-24 at 5.03.22 PM.png" alt=""><figcaption><p>List of synced Datasets.</p></figcaption></figure>
 
 ### Deploy the Dataset
 
 Click the dataset **Deploy** button. Because this dataset was Firecache enabled, the firecache status will now turn to **Ready.**
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption><p>Deployed dataset eth.recent_blocks is now firecache Ready.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-24 at 5.48.15 PM.png" alt=""><figcaption><p>Deployed dataset eth.recent_blocks is now firecache Ready.</p></figcaption></figure>
 
 ### View Dataset details
 
 Clicking the dataset will show its details along with it's deployments.
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p>Dataset details page.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-24 at 5.48.49 PM.png" alt=""><figcaption><p>Dataset details page.</p></figcaption></figure>

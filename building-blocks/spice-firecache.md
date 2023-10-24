@@ -43,7 +43,7 @@ The Spice SDKs also have `Firequery()` methods in addition to the standard `Quer
 
 The SQL Query Editor is the fastest way to get started with Spice Firecache queries, debugging queries, and iterating quickly. The Firecache SQL Query Editor be accessed by clicking on the **Firecache** tab after selecting **Playground** in the Spice.ai app navigation bar.
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-10-24 at 11 .39.11@2x.png" alt=""><figcaption><p>The Firecache SQL Query Editor.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-24 at 5.53.08 PM.png" alt=""><figcaption><p>The Firecache SQL Query Editor.</p></figcaption></figure>
 
 The Dataset Reference pane will only list datasets available for query in Firecache.
 

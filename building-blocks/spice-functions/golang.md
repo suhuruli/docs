@@ -14,7 +14,8 @@ In the `function.yaml` , code execution runtime and invocation handler is define
 
 ```yaml
 # hello_world/function.yaml
-output_dataset: hello_world
+output_datasets: 
+  - {orgName}.{appName}.hello_world
 # This will trigger the function to execute on every new Ethereum block.
 triggers:
   - path: eth
@@ -25,9 +26,11 @@ runtime: go1.x
 handler: spice_function.go
 ```
 
+Replace `{orgName}` and `{appName}` with the values for your specific org and app.
+
 </details>
 
-See [Spice Functions YAML Specification](../../../reference/specifications/spice-functions-yaml-specification/) for the full YAML schema.
+See [Spice Functions YAML Specification](../../reference/specifications/spice-functions-yaml-specification/) for the full YAML schema.
 
 ### Function Handlers
 
@@ -49,7 +52,7 @@ import (
 	"database/sql"
 	"fmt"
 	"github.com/spiceai/spice-functions-go/function"
-	"github.com/spiceai/gospice/v2"
+	"github.com/spiceai/gospice/v3"
 )
 
 func hello(ctx *function.FunctionCtx, duckDb *sql.DB, spiceClient *gospice.SpiceClient) error {
@@ -85,22 +88,12 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/spiceai/gospice/v2"
+	"github.com/spiceai/gospice/v3"
 	"github.com/spiceai/spice-functions-go/function"
 )
 
 func HelloWorldGo(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospice.SpiceClient) error {
 	fmt.Println("Hello from Spice Go runtime!")
-
-	// Temporary step
-	_, err := duckDb.ExecContext(ctx, `
-	create table output.hello_world_golang (
-		block_number bigint,
-		greeting TEXT
-	);`)
-	if err != nil {
-		return err
-	}
 
 	_, err = duckDb.ExecContext(ctx, "INSERT INTO output.hello_world_golang (block_number, greeting) VALUES ($1, $2);", ctx.BlockNumber(), "Hello from Spice Go runtime!")
 	if err != nil {

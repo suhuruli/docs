@@ -23,7 +23,7 @@ The execution runtime for the function. Supported runtimes are:
 
 The entry point file/module and code function/method that handles triggered executions.
 
-<table><thead><tr><th width="145.33333333333331">Runtime</th><th>Format</th><th>Example</th></tr></thead><tbody><tr><td>Python</td><td><code>filename.function_name</code></td><td><code>my_python_fle.process</code></td></tr><tr><td>Go</td><td><code>main()</code> in <code>main.go</code></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="145.33333333333331">Runtime</th><th>Format</th><th>Example</th></tr></thead><tbody><tr><td>Python</td><td><code>filename.function_name</code></td><td><code>my_python_file.process</code></td></tr><tr><td>Go</td><td><code>main()</code> in <code>main.go</code></td><td></td></tr></tbody></table>
 
 [**`triggers`**](triggers.md)
 

@@ -28,16 +28,18 @@ Follow the [Datasets and Views](../datasets-and-views.md) guide to create a new 
 
 ```yaml
 # .spice/datasets/hello_world.yml
-name: hello_world
+name: {orgName}.{appName}.hello_world
 type: append
 migrations:
   - name: create_table
     sql: |
-      CREATE TABLE IF NOT EXISTS hello_world (
+      CREATE TABLE IF NOT EXISTS {orgName}.{appName}.hello_world (
         block_number BIGINT PRIMARY KEY,
         greeting TEXT
       )
 ```
+
+Replace `{orgName}` and `{appName}` with the values for your specific org and app.
 
 </details>
 
@@ -59,7 +61,8 @@ In the `function.yaml` , code execution runtime and invocation handler is define
 
 ```yaml
 # hello_world/function.yaml
-output_dataset: hello_world
+output_datasets: 
+  - {orgName}.{appName}.hello_world
 # This will trigger the function to execute on every new Ethereum block.
 triggers:
   - path: eth
@@ -69,6 +72,8 @@ runtime: python3.11
 # The below will invoke a method `process` in a file `spice_function.py`.
 handler: spice_function.process
 ```
+
+Replace `{orgName}` and `{appName}` with the values for your specific org and app.
 
 </details>
 
@@ -120,38 +125,42 @@ See [Python](python.md) and [Go](golang.md) for full example code.
 
 ## Sync with GitHub
 
-Once your function is committed to the GitHub repository, navigate to the **Functions** section of the **Hub**, and click **Sync with GitHub**. The newly defined function will appear in the functions list.
+Once your function is committed to the GitHub repository, navigate to the **Functions** section of your Spice app. The newly defined function will appear in the functions list.
 
-<figure><img src="../../.gitbook/assets/function_deploy.png" alt=""><figcaption><p>List of synced Functions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-24 at 6.13.27 PM.png" alt=""><figcaption><p>List of synced Functions</p></figcaption></figure>
 
 ## Deploy the Function
 
 Click the function **Deploy** button. It may take a few moments as the code is packaged and deployed for use within the platform.
 
-<figure><img src="../../.gitbook/assets/function_deployed.png" alt=""><figcaption><p>Deployed function hello_world is now running.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-24 at 9.10.58 PM.png" alt=""><figcaption><p>Deployed function hello_world is now running.</p></figcaption></figure>
 
 ## View Function details
 
-Clicking the function name will show its details along with it's deployments.
+Clicking the function name will show its details along with it's recent deployments.
 
-<figure><img src="../../.gitbook/assets/function_details.png" alt=""><figcaption><p>Function details page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-24 at 9.11.55 PM.png" alt=""><figcaption><p>Function details page</p></figcaption></figure>
 
+## View Function deployments
 
+To view the history of deployments for this function, navigate to the Deployments tab.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-24 at 9.13.28 PM.png" alt=""><figcaption><p>Function deployments</p></figcaption></figure>
 
 ## View Function executions
 
 Clicking the Executions tab in the Function details page will show the recent function executions.
 
-<figure><img src="../../.gitbook/assets/function_executions.png" alt=""><figcaption><p>Function executions page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-24 at 9.14.09 PM.png" alt=""><figcaption><p>Function executions page</p></figcaption></figure>
 
 ## View Function execution logs
 
 Click on the UUID of a function execution to view the logs from a function execution, including its standard output, standard error and exit code.
 
-<figure><img src="../../.gitbook/assets/function_execution_logs.png" alt=""><figcaption><p>Logs from a function execution</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-24 at 9.14.48 PM.png" alt=""><figcaption><p>Logs from a function execution</p></figcaption></figure>
 
 ## Query the Function output dataset
 
-If data was inserted into the output dataset, upon successful function execution, it will be available for query in the `datasets."{your_org_name}".{your_dataset_name}` path.
+If data was inserted into the output dataset, upon successful function execution, it will be available for query in the Playground from the output dataset you defined for your function, i.e. `"{orgName}".{appName}.hello_world`.
 
-<figure><img src="../../.gitbook/assets/function_output_query.png" alt=""><figcaption><p>Querying for hello_world's output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-24 at 9.16.28 PM.png" alt=""><figcaption><p>Querying for hello_world's output</p></figcaption></figure>
