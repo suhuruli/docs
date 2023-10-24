@@ -4,6 +4,31 @@ description: Spice.ai Release notes
 
 # Release notes
 
+### September 2023
+
+In the September release, Crypto/Token Prices data has been significantly expanded and improved upon.
+
+Historical and latest prices are available via [REST API](../api/prices-api.md) and [SQL Query](sql-query-tables/prices/).
+
+The number of token pairs supported by the REST API has greatly increased. In addition, if a pair does not have swap data, the platform will attempt to calculate a synthetic price for the pair, routed via swaps across different exchanges. For example, if a price for the pair BAO-AUD does not exist, but the pairs BAO-USDT and USDT-AUD do, then the API will calculate the routed price across the two swaps to determine a synthetic price, which will be returned in the payload as the `spiceai` price. The API will use data cross both centralized and decentralized exchanges. This enables pricing data where it was not possible before.
+
+Additional tables have been added for token prices and assets.
+
+* [prices.assets](sql-query-tables/prices/prices.assets.md) list all assets tracked and available via SQL Query. 8,856 assets are currently available.
+* [prices.all\_pairs](sql-query-tables/prices/prices.all\_pairs.md) list all the token pairs with prices available via SQL Query. 3,342 pairs are currently available.
+
+In addition to the existing [prices.\[tokenA-tokenB\]](sql-query-tables/ethereum/chainlink-tables/prices-tables/) a table of prices for each token pair.
+
+Note: In both cases, the list is a subset of what is available via the REST API.
+
+**New In this Release**
+
+1. \[SQL Query] Added `prices.assets` table.
+2. \[SQL Query] Added `prices.all_pairs` table.
+3. \[Prices API] Added swap routed token pricing.
+4. \[Prices API] Enhanced coverage of token pairs.
+5. \[Portal] Bugfixes and minor improvements to the UI.
+
 ### August 2023
 
 The August release expands the functionality of [Spice Functions](../building-blocks/spice-functions/) (beta) and [Datasets and Views](../building-blocks/datasets-and-views.md).
