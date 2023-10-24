@@ -69,7 +69,8 @@
   * [Streaming](sdks/node.js-sdk/streaming.md)
   * [API Reference](sdks/node.js-sdk/api-reference.md)
   * [Converting Large Numbers](sdks/node.js-sdk/converting-large-numbers.md)
-* [🆕 Go SDK](sdks/go.md)
+* [Go SDK](sdks/go.md)
+* [🆕 Rust SDK](sdks/rust-sdk.md)
 
 ## 🔌 Integrations
 
