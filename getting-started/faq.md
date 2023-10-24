@@ -36,7 +36,7 @@ We currently use an [Apache Calcite](https://calcite.apache.org/) based query en
 
 ### Can you add \<table> / dataset or index a specific on-chain contract?
 
-Most likely, yes! Hit us up on Discord and we can work with you to add new views/tables or index new contracts. The ability to create private custom tables is on our roadmap.
+Most likely, yes! Hit us up on [Discord](https://discord.gg/kZnTfneP5u) and we can work with you to add new views/tables or index new contracts. The ability to create private custom tables is on our roadmap.
 
 ### Do you support WebSockets or other streaming?
 

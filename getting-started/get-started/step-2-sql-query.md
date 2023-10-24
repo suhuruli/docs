@@ -2,14 +2,14 @@
 
 ### Make a basic SQL query in the Playground
 
-Use the Spice.ai [Playground](broken-reference) to experiment with SQL queries, APIs, and models directly in app.&#x20;
+Use the Spice.ai [Playground](broken-reference/) to experiment with SQL queries, APIs, and models directly in app.
 
 It includes:
 
 * A [SQL Query Editor](../../portal/sql-query-editor.md) for experimentation.
 * Interactive API clients and sample code.
 
-<figure><img src="../../.gitbook/assets/Screen Recording 2023-07-26 at 1.12.12 AM (2).gif" alt=""><figcaption><p>SQL Query Editor: querying for UniswapV2 Pool Liquidity Stats</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Recording 2023-10-18 at 8.20.24 PM.gif" alt=""><figcaption><p>SQL Query Editor: querying for UniswapV2 Pool Liquidity Stats</p></figcaption></figure>
 
 ### Make a basic SQL query using cURL
 
@@ -35,4 +35,4 @@ Visit the [FAQ](../faq.md) page for more details.
 
 To get an API key, set up a [Portal account](portal-login.md).
 
-Your API key also unlocks custom visualizations via [Grafana Plugin](../../integrations/grafana.md).&#x20;
+Your API key also unlocks custom visualizations via [Grafana Plugin](../../integrations/grafana.md).

@@ -14,7 +14,7 @@
 * [Best Practices](getting-started/best-practices.md)
 * [Limitations](getting-started/limitations.md)
 * [Pricing](getting-started/pricing/README.md)
-  * [Community Edition](getting-started/pricing/community-edition.md)
+  * [🆕 Community Edition](getting-started/pricing/community-edition.md)
 * [FAQ](getting-started/faq.md)
 
 ## 🧱 Building Blocks
@@ -54,6 +54,7 @@
 
 ## 👨💻 Portal
 
+* [Monitoring and Request Logs](portal/monitoring-and-request-logs.md)
 * [Apps](portal/apps/README.md)
   * [Connect GitHub repository](portal/apps/connect-github-repository.md)
   * [Transfer an App](portal/apps/app-transfer.md)
