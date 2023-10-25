@@ -4,34 +4,37 @@ description: Welcome to the Spice.ai documentation!
 
 # Welcome to Spice.ai
 
-**Spice.ai** is a data and time-series AI application platform; an AI-backend-as-a-service comprising of composable, ready-to-use data and AI infrastructure pre-loaded with web3 data.
+**Spice.ai** is a data and time-series AI application platform; an AI-backend-as-a-service comprising of composable, ready-to-use data and AI building blocks, preloaded with 100TB+ of ready-to-use web3 data.
 
-Spice.ai provides a set of building blocks for creating intelligent applications by bringing together real-time and historical time-series and Web3 data, custom ETL and compute, machine learning training and inferencing, through a community-centric developer experience, all in one place.
+Spice.ai connects real-time and historical time-series data, SQL query, ETL, serverless compute, machine learning training and inferencing, in a unified cloud platform and developer-focused community hub.
 
-**Building and operating data and AI infrastructure is painful.**&#x20;
+**Operating data and AI infrastructure can be painful.** You have to:
 
-You have to:
+😓 Maintain expensive and often error prone ETL, data, query, and ML infrastructure.
 
-* 😓 build and operate archive node and data and AI infrastructure
-* 😓 understand and call JSON RPC APIs and smart-contract ABIs
-* 😓 manage 10s of TBs of data
+😓 Constantly monitor data, training, and inferencing for errors, correctness, changes, and bottlenecks.
+
+😓 comply with governance, compliance, and privacy concerns.
 
 **Spice.ai makes it easy.**
 
-![](<.gitbook/assets/screenshot 2 - Hub.png>)![](<.gitbook/assets/screenshot 3 - Query.png>)![](<.gitbook/assets/screenshot 4 - GitHub (1).png>)![](<.gitbook/assets/screenshot 5 - Public Forks.png>)
+\
+![](<.gitbook/assets/screenshot 2 - hub.png>)![](<.gitbook/assets/screenshot 4 - github.png>)
+
+![](<.gitbook/assets/screenshot 3.1 - ai predictions.png>)![](<.gitbook/assets/screenshot 3 - query.png>)
 
 With **Spice.ai,** you can:
 
-* query 100TB+ of real-time and historical data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for easy use with applications, ML, or libraries like **NumPy** and **Pandas**.
-* collaborate on datasets, ML models, and applications in one place through the new community-centric developer hub.
-* create, fork, and curate your own hosted datasets and ML models to share and build with the community.
-* define and manage custom datasets in GitHub along with your application code.
+* Query 100TB+ of real-time and historical data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for use with applications, ML, or libraries like **NumPy** and **Pandas**.
+* Collaborate on datasets, ML models, and applications in one place through the new community-centric developer hub.
+* Create, fork, and curate your own hosted datasets and ML models to share and build with the community.
+* Define and manage custom datasets in GitHub along with your application code.
 
-Spice.ai is preloaded with community data from the **Ethereum**, **Bitcoin**, **Polygon,** and **EigenLayer** ecosystems along with enriched datasets for NFTs, DeFi, DEXs, ENS, Prices, and more. Most datasets are open-source and are available at [github.com/spiceai/datasets](https://github.com/spiceai/datasets).
+Spice.ai is preloaded with community data from ecosystems including **Ethereum**, **Bitcoin**, **Polygon,** and **EigenLayer** along with enriched datasets for NFTs, DeFi, DEXs, ENS, Prices, and more. Most datasets are open-source and available at [github.com/spiceai/datasets](https://github.com/spiceai/datasets).
 
 Building blocks available in the Spice.ai platform today include:
 
-* Cloud Data Platform preloaded with [Web3 Data](building-blocks/datasets.md)
+* Petabyte-scale Cloud Data Platform preloaded with [Web3 Data](building-blocks/datasets.md)
 * [Datasets and Views](building-blocks/datasets-and-views.md)
 * [Spice Firecache](building-blocks/spice-firecache.md)
 * [Spice Functions](building-blocks/spice-functions/)
