@@ -14,21 +14,22 @@ Spice.ai connects real-time and historical time-series data, SQL query, ETL, ser
 
 😓 Constantly monitor data, training, and inferencing for errors, correctness, changes, and bottlenecks.
 
-😓 comply with governance, compliance, and privacy concerns.
+😓 Comply with governance, compliance, and privacy concerns.
 
 **Spice.ai makes it easy.**
 
 \
 ![](<.gitbook/assets/screenshot 2 - hub.png>)![](<.gitbook/assets/screenshot 4 - github.png>)
 
-![](<.gitbook/assets/screenshot 3.1 - ai predictions.png>)![](<.gitbook/assets/screenshot 3 - query.png>)
+![](<.gitbook/assets/screenshot 4 - ai predictions.png>)![](<.gitbook/assets/screenshot 3 - query.png>)
 
 With **Spice.ai,** you can:
 
-* Query 100TB+ of real-time and historical data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for use with applications, ML, or libraries like **NumPy** and **Pandas**.
+* Query real-time and historical data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for use with applications, ML, or libraries like **NumPy** and **Pandas**.
 * Collaborate on datasets, ML models, and applications in one place through the new community-centric developer hub.
 * Create, fork, and curate your own hosted datasets and ML models to share and build with the community.
 * Define and manage custom datasets in GitHub along with your application code.
+* Bring your own data or leverage the 100TB+ of preloaded Web3 and Prices data.
 
 Spice.ai is preloaded with community data from ecosystems including **Ethereum**, **Bitcoin**, **Polygon,** and **EigenLayer** along with enriched datasets for NFTs, DeFi, DEXs, ENS, Prices, and more. Most datasets are open-source and available at [github.com/spiceai/datasets](https://github.com/spiceai/datasets).
 
