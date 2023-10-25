@@ -8,7 +8,7 @@ description: Welcome to the Spice documentation!
 
 Spice.ai connects real-time and historical time-series data, SQL query, ETL, serverless compute, machine learning training and inferencing, in a unified cloud platform and developer-focused community hub.
 
-**Operating data and AI infrastructure can be painful.** You have to:
+**Operating data and AI infrastructure can be painful.**&#x20;
 
 😓 Maintain expensive and often error prone ETL, data, query, and ML infrastructure.
 
