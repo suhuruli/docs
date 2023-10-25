@@ -70,7 +70,8 @@
   * [API Reference](sdks/node.js-sdk/api-reference.md)
   * [Converting Large Numbers](sdks/node.js-sdk/converting-large-numbers.md)
 * [Go SDK](sdks/go.md)
-* [🆕 Rust SDK](sdks/rust-sdk.md)
+* [🆕 Rust SDK](sdks/rust-sdk/README.md)
+  * [API Reference](sdks/rust-sdk/api-reference.md)
 
 ## 🔌 Integrations
 
