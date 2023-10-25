@@ -1,5 +1,5 @@
 ---
-description: Welcome to the Spice.ai documentation!
+description: Welcome to the Spice documentation!
 ---
 
 # Welcome to Spice.ai
@@ -40,6 +40,7 @@ Building blocks available in the Spice.ai platform today include:
 * [Spice Functions](building-blocks/spice-functions/)
 * ML Models (in Preview)
 * [AI Predictions](api/predictions/) (in Preview)
+* [Hosted Blockchain Nodes](building-blocks/blockchain-nodes.md)
 
 Take it for a spin by starting with the [getting started guide](getting-started/get-started/).
 
