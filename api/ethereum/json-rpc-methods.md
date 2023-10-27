@@ -37,4 +37,5 @@ Spice supported methods are:
 * `eth_getUncleByBlockNumberAndIndex`
 * `eth_getWork`
 * `eth_feeHistory`
+* `eth_maxPriorityFeePerGas`
 * `web3_clientVersion`
