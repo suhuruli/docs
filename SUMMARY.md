@@ -20,6 +20,7 @@
 ## 🧱 Building Blocks
 
 * [Web3 Data](building-blocks/datasets.md)
+* [External Data Sources](building-blocks/external-data-sources.md)
 * [Datasets and Views](building-blocks/datasets-and-views.md)
 * [🔥 Spice Firecache](building-blocks/spice-firecache.md)
 * [Spice Functions](building-blocks/spice-functions/README.md)
@@ -55,12 +56,12 @@
 
 ## 👨💻 Portal
 
-* [Monitoring and Request Logs](portal/monitoring-and-request-logs.md)
 * [Apps](portal/apps/README.md)
   * [Connect GitHub repository](portal/apps/connect-github-repository.md)
   * [Transfer an App](portal/apps/app-transfer.md)
 * [Organizations](portal/organizations.md)
 * [SQL Query Editor](portal/sql-query-editor.md)
+* [Monitoring and Request Logs](portal/monitoring-and-request-logs.md)
 
 ## 🔗 SDKs
 
