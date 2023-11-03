@@ -4,6 +4,32 @@ description: Spice.ai Release notes
 
 # Release notes
 
+### October 2023
+
+Spice.ai is now generally available! [Read the announcement](https://blog.spice.ai/spice-ai-is-generally-available-d76c4289960c).
+
+General Availability launches a brand-new collaborative developer experience, v1 APIs and SDKs, over [100 open-source community](https://github.com/spiceai/datasets) and [EigenLayer](sql-query-tables/ethereum/eigenlayer-tables/) datasets, and a removal of the waitlist. Any developer can now sign-up and use Spice.ai with one of the new [pricing plans](../getting-started/pricing/), including the $99 developer plan and the complementary [Community Edition](../getting-started/pricing/community-edition.md).
+
+**New In this Release**
+
+1. \[HTTP API] Add v1 API:
+   1. [SQL Query API ](../api/sql-query/http-api.md)
+   2. [Prices API](../api/prices-api.md)
+   3. [Gas Fees API](../api/ethereum/gas-fees.md)
+   4. [Predictions API](../api/predictions/)
+2. \[Portal] New Portal and developer experience, without waitlist limitations.
+3. \[Portal] New pricing plans are available, [learn more](https://docs.spice.ai/getting-started/pricing).
+4. \[Portal] Datasets and Views generally available, [learn more](release-notes.md#datasets-and-views).
+5. \[Firecache] Upgraded to DuckDB 0.91.
+6. \[Functions] Upgraded to DuckDB 0.91.
+7. \[Ethereum] Added support for `eth_maxPriorityFeePerGas` and `trace_filter` to JSON RPC API.
+8. \[Ethereum] Expanded Node client diversity by adding [Reth](https://github.com/paradigmxyz/reth) support.
+9. \[Ethereum] Expanded Polygon client diversity by adding Erigon support.
+10. \[Python SDK] v1.0.0 released, [learn more](https://github.com/spiceai/spicepy/releases/tag/v1.0.0).
+11. \[Go SDK] v3.0.0 released, [learn more](https://github.com/spiceai/gospice/releases/tag/v3.0.0).
+12. \[Node.js SDK] v1.0.0 released, [learn more](https://github.com/spiceai/spice.js/releases).
+13. \[Rust SDK] v1.0.1 released, [learn more](https://github.com/spiceai/spice-rs/releases/tag/v1.0.1).
+
 ### September 2023
 
 In the September release, Crypto/Token Prices data has been significantly expanded and improved upon.
