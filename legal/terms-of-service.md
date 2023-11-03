@@ -1,7 +1,3 @@
----
-description: 'Last Revised: January 24, 2022'
----
-
 # Terms of Service
 
 Last Updated: September 13, 2023
