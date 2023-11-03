@@ -1,10 +1,10 @@
 # Website Terms of Use
 
-Last Updated: September 13, 2023
+Last Updated: November 3, 2023
 
 ### Acceptance of the Terms of Use
 
-These Terms of Use are entered into by and between you and Spice AI, Inc., a Delaware corporation ("Company," "we," or "us"). The following terms and conditions, (the "Terms of Use"), govern your access to and use of [spice.ai](http://www.spice.ai) and [spice.ai](https://spice.ai), including any content, functionality, and services offered on or through spice.ai and spice.ai or any related subdomain (the "Website"), whether as a guest or a registered user.
+These Terms of Use are entered into by and between you and Spice AI, Inc., a Delaware corporation ("Company," "we," or "us"). The following terms and conditions, (the "Terms of Use"), govern your access to and use of [spice.ai](http://www.spice.ai), [spice.xyz](https://spice.xyz), and [spicerack.org](https://spicerack.org), including any content, functionality, and services offered on or through spice.ai, spice.xyz, and spicerack.org, or any related subdomain (the "Website"), whether as a guest or a registered user.
 
 Please read the Terms of Use carefully before you start to use the Website. **By using the Website, you accept and agree to be bound and abide by these Terms of Use and our** [**Privacy Policy**](privacy.md)**, incorporated herein by reference.** If you do not want to agree to these Terms of Use or the Privacy Policy, you must not access or use the Website.
 
