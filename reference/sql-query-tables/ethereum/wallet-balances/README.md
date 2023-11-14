@@ -1,10 +1,10 @@
 ---
-description: Ethereum Wallet Balance tables available to query via SQL, in Preview
+description: Ethereum Native Wallet Balance tables available to query via SQL
 ---
 
 # Wallet Balances
 
-**Wallet Balance specific tables**
+**Native Wallet Balance specific tables**
 
 | Table Name                                       | Description                                                      |
 | ------------------------------------------------ | ---------------------------------------------------------------- |
@@ -34,7 +34,7 @@ FROM ranked_balances WHERE rn = 1 and address = LOWER('0x28c6c06298d514db0899340
 
 This dataset contains the `balance_gwei` (Ether balance, in gwei) at the block in question, as well as an estimated `balance_usd` in USD. In cases where the gwei balance is too large to represent efficiently, the full value can be extracted programmatically from the hexadecimal string representation in the `balance_hex` column.
 
-We are indexing a growing accumulation of historical data too:
+Historical wallet balance data can also be queried:
 
 ```sql
 -- get the net peak-to-peak balance change for a wallet over the last week
@@ -45,9 +45,9 @@ AND block_timestamp > UNIX_TIMESTAMP() - 7*24*60*60*1000
 GROUP BY address
 ```
 
-Additionally, the most recent 30 minute's of wallet balance changes are also cached in a high performance recent table `eth.recent_wallet_balances`.
+Additionally, the most recent 30 minutes of wallet balance changes are cached in a high performance recent table `eth.recent_wallet_balances`.
 
-The above datasets combine to facilitate rich, performant, historical data access beyond the standard offerings in class. Going forward, we are considering additional SQL representations that would make other common access patterns even easier. Reach out on Discord if you have use cases not covered here.
+The above datasets combine to facilitate rich, performant, historical data access beyond the standard offerings in class. Going forward, additional SQL representations that would make other common access patterns even easier are being consider. Reach out on Discord if you have use cases not covered here.
 
 #### Improving query performance - indexed columns
 
