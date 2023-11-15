@@ -25,22 +25,20 @@ Returns a list of token/currency Spice provided price pairs.
 {% endswagger %}
 
 ## Latest Prices
+
 The **`/v1/prices/{pair}`** API returns the spot (latest) prices of specified token/currency pairs from several exchanges (e.g. Binance, Coinbase, and Gemini), and aggregrates price measures (e.g. average, minimum).
 
 {% swagger method="get" path="/v1/prices/{pair}" baseUrl="https://data.spiceai.io" summary="Get latest prices for symbol(s)" expanded="false" %}
-
 {% swagger-description %}
-For pair(s), returns the latest prices from several exchanges (e.g. Binance, Coinbase, and Gemini), and aggregrate price measures (e.g. average, minimum).
+For pair(s), returns the latest prices from several exchanges (e.g. Binance, Coinbase, and Gemini), and aggregate price measures (e.g. average, minimum).
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="pair" type="String" required="false" %}
 One currency/token pair symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. Multiple pairs can be provided by query parameters instead, see below.
 {% endswagger-parameter %}
 
-
 {% swagger-parameter in="query" name="pairs" type="String" required="false" %}
 One or more currency/token pairs symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. Multiple pairs can be provided in any of the following formats: `?pairs=BTC-ETH,ETH-SOL` or `?pairs=BTC-ETH&pairs=ETH-SOL`. If a `pair` is provided in the path, no token pairs from the query parameter(s) are used (i.e. the path variable is not additional, it overrides the values in the query parameter).
-
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Prices successfully returned." %}
@@ -76,8 +74,8 @@ One or more currency/token pairs symbols. Always upper-case. e.g. `BTC-ETH`, `ET
 {% endswagger-response %}
 {% endswagger %}
 
-
 ## Historical Prices
+
 The **`/v1/prices/historical/{pair}`** API returns historical prices of the specified token/currency pair(s).
 
 {% swagger method="get" path="/v1/prices/historical/{pair}" baseUrl="https://data.spiceai.io" summary="Get Historical Prices" %}
@@ -86,9 +84,9 @@ Returns historical prices of the specified token/currency pair(s).
 
 Providing both `start` and `end` will return all prices between the two timestamps at the provided `granularity`, however this must not be more than 10,000 prices.
 
-If no `start` or `end` is provided then the 10 most recent prices based on the provided `granularity` will be returned.&#x20;
+If no `start` or `end` is provided then the 10 most recent prices based on the provided `granularity` will be returned.
 
-If only `start` is provided, then `end` will default to the current UNIX timestamp. If only `end` is provided then the 10 most recent prices before `end` will be returned.
+If only `start` is provided then the next 10 subsequent prices after `start` will be returned. If only `end` is provided then the 10 most recent prices before `end` will be returned.
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="pair" type="String" required="false" %}
@@ -96,30 +94,31 @@ One currency/token pair symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. M
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="pairs" type="String" required="false" %}
-One or more currency/token pairs symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. Multiple pairs can be provided in any of the following formats: `?pairs=BTC-ETH,ETH-SOL` or `?pairs=BTC-ETH&pairs=ETH-SOL`. If a `pair` is provided in the path, no token pairs from the query parameter are used (i.e. the path variable is not additional, it overrides the values in the query parameter).
+One or more currency/token pairs symbols. Always upper-case. e.g. `BTC-ETH`, `ETH-SOL`. Multiple pairs can be provided in any of the following formats: `?pairs=BTC-ETH,ETH-SOL` or `?pairs=BTC-ETH&pairs=ETH-SOL`. If a `pair` is provided in the path, no token pairs from the query parameter(s) are used (i.e. the path variable is not additional, it overrides the values in the query parameter).
+{% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="start" type="Int" %}
+{% swagger-parameter in="query" name="start" type="Int" required="false" %}
 UNIX timestamp of the start of the range to retrieve historical prices, cannot be before 12 months ago
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="end" type="Int" %}
+{% swagger-parameter in="query" name="end" type="Int" required="false" %}
 UNIX timestamp of the end of the range to retrieve historical prices, cannot be before 12 months ago
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="granularity" type="String" %}
-Duration between each price returned (e.g. 
+{% swagger-parameter in="query" name="granularity" type="String" required="false" %}
+Duration between each price returned (e.g.
 
 `5m`
 
-, 
+,
 
 `1h`
 
-, 
+,
 
 `7d`
 
-), default is 
+), default is
 
 `5m`
 {% endswagger-parameter %}
