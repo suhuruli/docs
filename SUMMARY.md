@@ -379,6 +379,8 @@
       * [eth.nft\_owners](reference/sql-query-tables/ethereum/nft-tables/eth.nft\_owners.md)
       * [eth.recent\_nft\_transfers](reference/sql-query-tables/ethereum/nft-tables/eth.recent\_nft\_transfers.md)
       * [eth.nft\_airdrop\_transfers](reference/sql-query-tables/ethereum/nft-tables/eth.nft\_airdrop\_transfers.md)
+    * [Assets Tables](reference/sql-query-tables/ethereum/assets-tables/README.md)
+      * [eth.asset\_transfers](reference/sql-query-tables/ethereum/assets-tables/eth.asset\_transfers.md)
     * [Wallet Balances](reference/sql-query-tables/ethereum/wallet-balances/README.md)
       * [eth.wallet\_balances](reference/sql-query-tables/ethereum/wallet-balances/eth.wallet\_balances.md)
     * [ENS Tables](reference/sql-query-tables/ethereum/token-tables-1/README.md)
