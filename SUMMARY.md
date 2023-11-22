@@ -62,6 +62,7 @@
 * [Organizations](portal/organizations.md)
 * [SQL Query Editor](portal/sql-query-editor.md)
 * [Monitoring and Request Logs](portal/monitoring-and-request-logs.md)
+* [Profile Settings](portal/profile-settings.md)
 
 ## 🔗 SDKs
 
