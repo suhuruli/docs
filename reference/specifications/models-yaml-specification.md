@@ -118,7 +118,7 @@ The forecast size/window.
 # /models/gas_fees/model.yml
 name: v0.1
 family: gas_fees
-descruition: A Ethereum gas fee forecasting model.
+description: A Ethereum gas fee forecasting model.
 type: gasfees_v1
 handler: gas_fees.py
 training
