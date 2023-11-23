@@ -503,6 +503,7 @@
     * [Firecache](reference/specifications/dataset-and-view-yaml-specification/firecache.md)
   * [Spice Functions YAML Specification](reference/specifications/spice-functions-yaml-specification/README.md)
     * [Triggers](reference/specifications/spice-functions-yaml-specification/triggers.md)
+  * [Models YAML Specification](reference/specifications/models-yaml-specification.md)
 * [Samples and Examples](reference/samples-and-examples/README.md)
   * [Example Ethereum (EVM) SQL Queries](reference/samples-and-examples/example-ethereum-evm-sql-queries/README.md)
     * [Blocks](reference/samples-and-examples/example-ethereum-evm-sql-queries/blocks.md)
