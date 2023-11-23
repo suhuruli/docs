@@ -1,6 +1,10 @@
 # Profile Settings
 
-A light or dark mode theme can be set:
+
+
+### Dark Mode
+
+A light or dark mode portal theme can be set:
 
 1. Click the profile picture on the top right corner of the portal interface.
 2. From the dropdown menu, find and select the **Theme** option.
