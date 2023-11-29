@@ -6,7 +6,7 @@ description: Connect external data sources to Spice.ai
 
 Access and query external data sources in addition to community datasets including the ability to execute SQL joins across both by [creating custom datasets](datasets-and-views.md).
 
-External Data Sources initially supports connecting to [PostgreSQL](https://www.postgresql.org/) with more data sources coming soon.
+External Data Sources initially supports connecting to [PostgreSQL](https://www.postgresql.org/) and [MySQL](https://www.mysql.com/) with more data sources coming soon.
 
 ### Adding an External Data Source
 
