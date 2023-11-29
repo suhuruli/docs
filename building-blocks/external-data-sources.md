@@ -18,7 +18,7 @@ Navigate to the organization's **Settings** and then the **Data Sources** sectio
 
 Click **Add Data Source** to show the **New Data Source** dialog.
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-10-26 at 12.43.10 AM.png" alt=""><figcaption><p>List of available External Data Sources.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-11-29 at 3.22.26 PM.png" alt=""><figcaption><p>List of available External Data Sources.</p></figcaption></figure>
 
 Select the data source and then complete the required connection details.
 
