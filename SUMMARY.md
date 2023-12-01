@@ -384,6 +384,7 @@
       * [eth.asset\_transfers](reference/sql-query-tables/ethereum/assets-tables/eth.asset\_transfers.md)
     * [Wallet Balances](reference/sql-query-tables/ethereum/wallet-balances/README.md)
       * [eth.wallet\_balances](reference/sql-query-tables/ethereum/wallet-balances/eth.wallet\_balances.md)
+      * [eth.wallet\_lst\_balances](reference/sql-query-tables/ethereum/wallet-balances/eth.wallet\_lst\_balances.md)
     * [ENS Tables](reference/sql-query-tables/ethereum/token-tables-1/README.md)
       * [ens.domains](reference/sql-query-tables/ethereum/token-tables-1/ens.domains.md)
     * [Uniswap V2 Tables](reference/sql-query-tables/ethereum/uniswap-v2-tables/README.md)
