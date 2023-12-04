@@ -45,12 +45,11 @@ console.log(baseFeeGwei?.toJSON())
 **getLatestPrices**(pairs: string[]) => LatestPrices
 * `pairs`: (Array of string, required): The crypto/currency pairs, for example ["BTC-USD", "USD-ETH"]. 
 
-`getLatestPrices` returns a 
-
+`getLatestPrices` returns the latest prices for a list of asset pairs. `getLatestPrices` returns
 ```javascript
 LatestPrice {
-  [key: string]: {
-    prices?: { [key: string]: string };
+  [pair: string]: {
+    prices?: { [exchange: string]: string };
     minPrice?: string;
     maxPrice?: string;
     avePrice?: string;
@@ -63,7 +62,9 @@ Example API query
   let pairs = ["BTC-USD", "USD-ETH"]; 
   const price = await client.getLatestPrices([pairs]);
   pairs.forEach((v: string) => {
-    console.log(price[v])
+    price[v].prices.forEach((exchange: string) => {
+      console.log("pair=" + v, "exchange=" + exchange, price[v].prices[exchange])
+    })
   })
 ```
 
@@ -73,10 +74,10 @@ Example API query
 * `endTime`: end time milliseconds since Unix Epoch
 * `granularity`: valid [duration](https://docs.spice.ai/core-concepts/duration-literals)
 
-`getPrices` returns a 
+`getPrices` returns prices for a list of asset pairs for a given period of time. `getPrices` returns 
 ```javascript
 HistoricalPrices {
-  [key: string]: {
+  [pair: string]: {
     timestamp: string;
     price: number;
     high?: number;
