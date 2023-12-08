@@ -537,7 +537,7 @@
   * [Arrow Flight Samples](reference/samples-and-examples/arrow-flight-samples.md)
 * [Data Science & Machine Learning](reference/data-science-and-machine-learning.md)
 * [Kaggle Notebooks](reference/kaggle-notebooks.md)
-* [Release notes](reference/release-notes.md)
+* [Release Notes](reference/release-notes.md)
 
 ## 🆘 Support
 

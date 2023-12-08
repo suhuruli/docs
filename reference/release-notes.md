@@ -1,8 +1,30 @@
 ---
-description: Spice.ai Release notes
+description: Monthly release notes for Spice.ai.
 ---
 
-# Release notes
+# Release Notes
+
+### November 2023
+
+The November release focused on [External Data Sources](../building-blocks/external-data-sources.md) and overall performance improvements following the [General Availability (GA)](https://blog.spice.ai/spice-ai-is-generally-available-d76c4289960c) release in October.
+
+You can now connect external data sources like PostgreSQL and MySQL to Spice.ai, which are then available to query with SQL including joining with any other Spice.ai dataset in the Spice.ai platform.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>New Data Source dialog for connecting external data sources.</p></figcaption></figure>
+
+Navigation is also easier with the addition of the Command Bar. Simply use **Cmd+K** on Mac or **Windows+K** in Windows to quickly navigate the portal by keyboard! Give it a try!
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The new navigation command bar.</p></figcaption></figure>
+
+**New In this Release**
+
+1. \[Portal] Added PostgreSQL and MySQL external data sources. See the [docs](../building-blocks/external-data-sources.md) for details.
+2. \[Portal] Added Dark Mode! Configure via [Profile Settings](../portal/profile-settings.md#dark-mode).
+3. \[Portal] Added Command Bar navigation.
+4. \[Data] Added [`eth.wallet_lst_balances`](sql-query-tables/ethereum/wallet-balances/eth.wallet\_lst\_balances.md) including rETH, stETH, and cbETH LSTs.
+5. \[Firecache] Upgraded to DuckDB 0.92.
+6. \[Platform] Performance, reliability, and security improvements.
+7. \[Go SDK] Released v3.0.0, [learn more](https://github.com/spiceai/gospice/releases/tag/v3.0.0).
 
 ### October 2023
 
@@ -23,7 +45,7 @@ General Availability launches a brand-new collaborative developer experience, v1
 5. \[Firecache] Upgraded to DuckDB 0.91.
 6. \[Functions] Upgraded to DuckDB 0.91.
 7. \[Ethereum] Added support for `eth_maxPriorityFeePerGas` and `trace_filter` to JSON RPC API.
-8. \[Ethereum] Expanded Node client diversity by adding [Reth](https://github.com/paradigmxyz/reth) support.
+8. \[Ethereum] Expanded Ethereum client diversity by adding [Reth](https://github.com/paradigmxyz/reth) support.
 9. \[Ethereum] Expanded Polygon client diversity by adding Erigon support.
 10. \[Python SDK] v1.0.0 released, [learn more](https://github.com/spiceai/spicepy/releases/tag/v1.0.0).
 11. \[Go SDK] v3.0.0 released, [learn more](https://github.com/spiceai/gospice/releases/tag/v3.0.0).
