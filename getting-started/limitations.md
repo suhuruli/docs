@@ -10,7 +10,7 @@ Spice.ai has the following limitations:
 
 * 500 row limit for HTTP API results (use the [Apache Arrow API](../api/sql-query/apache-arrow-flight-api.md) or the [Async HTTP API](../api/sql-query/http-api-1.md) for no row limits).
 
-#### Firecahe Limits
+#### Firecache Limits
 
 * 60-second query timeout.
 
