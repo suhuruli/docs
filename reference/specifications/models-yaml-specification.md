@@ -34,6 +34,10 @@ The code file that contains the entry points for training and inferencing.
 
 E.g. `gas_fees.py`
 
+### **`epochs`**
+
+Training iterations count.
+
 ### `training`
 
 **Optional**. Defines training for the model.
@@ -78,7 +82,7 @@ training:
     - tensorboard
 ```
 
-### `inference`
+### `inferencing`
 
 **Optional**. Defines inferencing for the model.
 
@@ -121,10 +125,11 @@ family: gas_fees
 description: A Ethereum gas fee forecasting model.
 type: gasfees_v1
 handler: gas_fees.py
-training
+epochs: 1
+training:
   entry_point: gas_fees.train
   sql: 'WITH counts AS (    SELECT block_number, count(1) as "count" FROM eth.recent_transactions GROUP BY block_number  )  SELECT number as "ts", CAST(b.base_fee_per_gas / 1000000000.0 AS DOUBLE) as "y", CAST(c."count" AS DOUBLE) as "y2"  FROM eth.recent_blocks b  INNER JOIN counts c ON b.number = c.block_number  WHERE b.base_fee_per_gas IS NOT NULL ORDER BY block_number DESC LIMIT 500'
-inference
+inferencing:
   entry_point: gas_fees.infer
   sql: 'SELECT number as "ts", CAST(base_fee_per_gas / 1000000000.0 AS DOUBLE) as "y", CAST(transaction_count AS DOUBLE) as "y2" from eth.recent_blocks WHERE base_fee_per_gas IS NOT NULL ORDER BY ts DESC LIMIT 35'
   lookback_size: 30
