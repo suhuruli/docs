@@ -16,7 +16,7 @@ Firecaches are Spice app specific and only available to the Spice app they were 
 
 ## Enabling Firecache
 
-Firecache is enabled per Dataset using a [Dataset manifest](../reference/specifications/dataset-and-view-yaml-specification/firecache.md). E.g.
+Firecache is enabled per Dataset using a [Dataset manifest](../../reference/specifications/dataset-and-view-yaml-specification/firecache.md). E.g.
 
 ```yaml
 # .spice/datasets/eth.recent_blocks.yml
@@ -31,7 +31,7 @@ Datasets with the `recent_` prefix are eligible to be self-serviced Firecached. 
 
 Once enabled, the dataset must be deployed for the Firecache to be initialized.
 
-See [datasets-and-views.md](datasets-and-views.md "mention") for full documentation on defining, managing and deploying datasets.
+See [datasets-and-views.md](../datasets-and-views.md "mention") for full documentation on defining, managing and deploying datasets.
 
 ## Querying Firecache
 
@@ -43,20 +43,20 @@ The Spice SDKs also have `Firequery()` methods in addition to the standard `Quer
 
 The SQL Query Editor is the fastest way to get started with Spice Firecache queries, debugging queries, and iterating quickly. The Firecache SQL Query Editor be accessed by clicking on the **Firecache** tab after selecting **Playground** in the Spice.ai app navigation bar.
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-10-24 at 5.53.08 PM.png" alt=""><figcaption><p>The Firecache SQL Query Editor.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-24 at 5.53.08 PM.png" alt=""><figcaption><p>The Firecache SQL Query Editor.</p></figcaption></figure>
 
 The Dataset Reference pane will only list datasets available for query in Firecache.
 
-See [sql-query-editor.md](../portal/sql-query-editor.md "mention") for further documentation on using the SQL Query Editor.
+See [sql-query-editor.md](../../portal/sql-query-editor.md "mention") for further documentation on using the SQL Query Editor.
 
 ### Apache Arrow Flight API
 
-For production applications, leveraging the high-performance [Apache Arrow Flight](../api/sql-query/apache-arrow-flight-api.md) endpoint is recommended. The Spice SDKs always access SQL queries and Firecache queries using Arrow Flight.
+For production applications, leveraging the high-performance [Apache Arrow Flight](../../api/sql-query/apache-arrow-flight-api.md) endpoint is recommended. The Spice SDKs always access SQL queries and Firecache queries using Arrow Flight.
 
-See [apache-arrow-flight-api.md](../api/sql-query/apache-arrow-flight-api.md "mention") for further documentation on using Apache Arrow Flight APIs.
+See [apache-arrow-flight-api.md](../../api/sql-query/apache-arrow-flight-api.md "mention") for further documentation on using Apache Arrow Flight APIs.
 
 ### HTTP API
 
 Spice Firecache is also accessible via a standard HTTP API.
 
-See [http-api.md](../api/sql-query/http-api.md "mention") for further documentation on using the HTTP SQL API.
+See [http-api.md](../../api/sql-query/http-api.md "mention") for further documentation on using the HTTP SQL API.

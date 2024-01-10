@@ -123,11 +123,11 @@ See [spice-functions](../building-blocks/spice-functions/ "mention") for full do
 Spice Firecache is in beta and initially available for Design Partners. Get in touch for more info.
 {% endhint %}
 
-[Spice Firecache](../building-blocks/spice-firecache.md) is a real-time SQL cache that enables developers to cache Spice datasets for high concurrency, blazing fast SQL query up to 10x the performance of general SQL query.
+[Spice Firecache](../building-blocks/spice-firecache/) is a real-time SQL cache that enables developers to cache Spice datasets for high concurrency, blazing fast SQL query up to 10x the performance of general SQL query.
 
 The Spice platform completely manages the Spice Firecache data lifecycle, ensuring datasets are real-time updated on triggers like new blocks and with stale data being automatically evicted.
 
-See [spice-firecache.md](../building-blocks/spice-firecache.md "mention") for full documentation on deploying datasets to the Spice Firecache.
+See [spice-firecache](../building-blocks/spice-firecache/ "mention") for full documentation on deploying datasets to the Spice Firecache.
 
 #### Custom Datasets
 
