@@ -29,13 +29,13 @@ With **Spice.ai,** you can:
 * Collaborate on datasets, ML models, and applications in one place through the new community-centric developer hub.
 * Create, fork, and curate your own hosted datasets and ML models to share and build with the community.
 * Define and manage custom datasets in GitHub along with your application code.
-* Bring your own data or leverage the 100TB+ of preloaded Web3 and Prices data.
+* Bring your own data or leverage the 100TB+ of preloaded blockchain and Asset Prices data.
 
-Spice.ai is preloaded with community data from ecosystems including **Ethereum**, **Bitcoin**, **Polygon,** and **EigenLayer** along with enriched datasets for NFTs, DeFi, DEXs, ENS, Prices, and more. Most datasets are open-source and available at [github.com/spiceai/datasets](https://github.com/spiceai/datasets).
+Spice.ai is preloaded with community data from ecosystems including **Ethereum**, **Bitcoin,** and **EigenLayer** along with enriched datasets for NFTs, DeFi, DEXs, ENS, Prices, and more. Most datasets are open-source and available at [github.com/spiceai/datasets](https://github.com/spiceai/datasets).
 
 Building blocks available in the Spice.ai platform today include:
 
-* Petabyte-scale Cloud Data Platform preloaded with [Web3 Data](building-blocks/datasets.md)
+* Petabyte-scale Cloud Data Platform preloaded with [Blockchain Data](building-blocks/datasets.md)
 * [Datasets and Views](building-blocks/datasets-and-views.md)
 * [Spice Firecache](building-blocks/spice-firecache.md)
 * [Spice Functions](building-blocks/spice-functions/)

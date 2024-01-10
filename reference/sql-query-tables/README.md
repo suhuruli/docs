@@ -6,8 +6,8 @@
 [ethereum](ethereum/)
 {% endcontent-ref %}
 
-{% content-ref url="polygon/" %}
-[polygon](polygon/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="bitcoin/" %}

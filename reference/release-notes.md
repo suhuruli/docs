@@ -211,7 +211,7 @@ Portal UX improvements include the ability to search the dataset reference for s
 
 The May release includes significant platform performance upgrades with the rollout of Spice AI's **second generation platform architecture (Gen. 2)** along with several usability and user-experience improvements.
 
-[Ethereum](sql-query-tables/ethereum/) and [Polygon](sql-query-tables/polygon/) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](broken-reference), [ENS](sql-query-tables/ethereum/token-tables-1/), [Uniswap](samples-and-examples/example-dex-queries/uniswap.md), and [Sushiswap](samples-and-examples/example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
+[Ethereum](sql-query-tables/ethereum/) and [Polygon](broken-reference) block latency (the time to process a block and make it available for query) is now **subsecond** for core data like blocks, transactions, and logs, and less than **2.5 seconds** for enriched data like [NFTs](broken-reference), [ENS](sql-query-tables/ethereum/token-tables-1/), [Uniswap](samples-and-examples/example-dex-queries/uniswap.md), and [Sushiswap](samples-and-examples/example-dex-queries/sushiswap.md). Query execution speed is now **1.5x-10x faster!**
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p><a href="samples-and-examples/example-ethereum-beacon-sql-queries/">Example Queries</a> referenced in docs are now <strong>1.5x-10x faster!</strong></p></figcaption></figure>
 
@@ -540,7 +540,7 @@ Read the announcement post at [blog.spice.ai](https://blog.spice.ai/spice-xyz-ja
 
 ### December 2022
 
-Spice supports querying [Polygon data](sql-query-tables/polygon/) in addition to the existing [Ethereum](sql-query-tables/ethereum/) and [BItcoin](sql-query-tables/bitcoin/) datasets.
+Spice supports querying [Polygon data](broken-reference) in addition to the existing [Ethereum](sql-query-tables/ethereum/) and [BItcoin](sql-query-tables/bitcoin/) datasets.
 
 Read more on the [Spice AI Blog](https://blog.spice.ai/build-multi-chain-with-spice-ai-now-with-polygon-support-9db156f36d80).
 
@@ -619,7 +619,7 @@ Spice launches the `eth.traces` dataset for both Ethereum and Polygon. The Ether
 
 **Polygon Support (Preview)**
 
-Spice launches and tests [Polygon support](sql-query-tables/polygon/).
+Spice launches and tests [Polygon support](broken-reference).
 
 **Changes**
 

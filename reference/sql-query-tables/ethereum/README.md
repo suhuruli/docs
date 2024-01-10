@@ -7,7 +7,7 @@ description: Ethereum data tables available in SQL query
 * [Core Tables](core-tables/)
 * [Beacon Chain Tables](beacon-chain-tables/)
 * [Token Tables](token-tables/)
-* [NFT Tables](../polygon/nft-tables/)
+* [NFT Tables](broken-reference)
 * [Wallet Balance Tables](wallet-balances/)
 * [ENS Tables](token-tables-1/)
 * [Uniswap v2 Tables](uniswap-v2-tables/)
