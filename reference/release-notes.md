@@ -56,14 +56,14 @@ General Availability launches a brand-new collaborative developer experience, v1
 
 In the September release, Crypto/Token Prices data has been significantly expanded and improved upon.
 
-Historical and latest prices are available via [REST API](../api/prices-api.md) and [SQL Query](sql-query-tables/prices/).
+Historical and latest prices are available via [REST API](../api/prices-api.md) and [SQL Query](broken-reference).
 
 The number of token pairs supported by the REST API has greatly increased. In addition, if a pair does not have swap data, the platform will attempt to calculate a synthetic price for the pair, routed via swaps across different exchanges. For example, if a price for the pair BAO-AUD does not exist, but the pairs BAO-USDT and USDT-AUD do, then the API will calculate the routed price across the two swaps to determine a synthetic price, which will be returned in the payload as the `spiceai` price. The API will use data cross both centralized and decentralized exchanges. This enables pricing data where it was not possible before.
 
 Additional tables have been added for token prices and assets.
 
-* [prices.assets](sql-query-tables/prices/prices.assets.md) list all assets tracked and available via SQL Query. 8,856 assets are currently available.
-* [prices.all\_pairs](sql-query-tables/prices/prices.all\_pairs.md) list all the token pairs with prices available via SQL Query. 3,342 pairs are currently available.
+* [prices.assets](broken-reference) list all assets tracked and available via SQL Query. 8,856 assets are currently available.
+* [prices.all\_pairs](broken-reference) list all the token pairs with prices available via SQL Query. 3,342 pairs are currently available.
 
 In addition to the existing [prices.\[tokenA-tokenB\]](sql-query-tables/ethereum/chainlink-tables/prices-tables/) a table of prices for each token pair.
 
@@ -579,7 +579,7 @@ Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
 
 **Changes**
 
-* [Prices dataset](sql-query-tables/prices/) now out of preview
+* [Prices dataset](broken-reference) now out of preview
 * Added export to CSV results format in addition to existing formats [JSON](../api/ethereum/json-rpc-methods.md) and [Apache Arrow](../api/sql-query/apache-arrow-flight-api.md), for easy use with apps, ML, or libraries like NumPy and Pandas
 * Added performance improvements for faster queries across existing datasets including `eth.traces`&#x20;
 
@@ -593,7 +593,7 @@ Read more on the [Spice AI blog](https://blog.spice.ai/whats-new-b7f637897df8).
 
 ### October 2022
 
-Spice now has [prices dataset](sql-query-tables/prices/) in preview.&#x20;
+Spice now has [prices dataset](broken-reference) in preview.&#x20;
 
 * Query historical High-Low-Open-Close (HILO) prices to minute precision
 * Join with other real-time and historical web3 data to do calculations and conversions back to USD

@@ -84,7 +84,6 @@
 ## 🎓 Tutorials
 
 * [Tokens & NFTs](tutorials/tokens-and-nfts.md)
-* [Asset Transfer Valuations](tutorials/asset-transfer-valuations.md)
 
 ## 📚 REFERENCE
 
@@ -496,9 +495,6 @@
     * [btc.transactions](reference/sql-query-tables/bitcoin/btc.transactions.md)
     * [btc.transaction\_inputs](reference/sql-query-tables/bitcoin/btc.transaction\_inputs.md)
     * [btc.transaction\_outputs](reference/sql-query-tables/bitcoin/btc.transaction\_outputs.md)
-  * [Prices](reference/sql-query-tables/prices/README.md)
-    * [prices.all\_pairs](reference/sql-query-tables/prices/prices.all\_pairs.md)
-    * [prices.assets](reference/sql-query-tables/prices/prices.assets.md)
 * [Specifications](reference/specifications/README.md)
   * [Dataset & View YAML Specification](reference/specifications/dataset-and-view-yaml-specification/README.md)
     * [Firecache](reference/specifications/dataset-and-view-yaml-specification/firecache.md)

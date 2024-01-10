@@ -94,26 +94,6 @@ Explore SQL-queryable datasets organized by chain and data type, each with repre
 
 <table data-header-hidden><thead><tr><th width="240.5"></th><th></th><th></th></tr></thead><tbody><tr><td>Blocks</td><td><code>btc.blocks</code></td><td><code>btc.recent_blocks</code></td></tr><tr><td>Transactions</td><td><code>btc.transactions</code></td><td><code>btc.recent_transactions</code></td></tr><tr><td>Transaction Inputs</td><td><code>btc.transaction_inputs</code></td><td><code>btc.recent_transaction_inputs</code></td></tr><tr><td>Transaction Outputs</td><td><code>btc.transaction_outputs</code></td><td><code>btc.recent_transaction_outputs</code></td></tr></tbody></table>
 
-#### [Prices datasets](../reference/sql-query-tables/prices/)
-
-Historical OHLC cryptocurrency and token prices are available for SQL query at 1 minute granularity. \~2,000 token pairs are currently available sourced from centralized exchanges like Coinbase, Gemini, and Binance, and decentralized exchanges like Uniswap and Sushiswap. More pais are automatically added each day as they are listed on the exchanges.
-
-To see all pairs available for query:
-
-```sql
-SHOW TABLES IN prices;
-```
-
-Or access all pairs in a single table:
-
-```sql
-SELECT DISTINCT pair FROM prices.all_pairs;
-```
-
-{% hint style="info" %}
-For historical price exchange data to tick level granularity, try the [time-series Prices API](../getting-started/broken-reference/).
-{% endhint %}
-
 #### [Chainlink datasets](../reference/sql-query-tables/ethereum/chainlink-tables/)
 
 |                     |                        |                               |
