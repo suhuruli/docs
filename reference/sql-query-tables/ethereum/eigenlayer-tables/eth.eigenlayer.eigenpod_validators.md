@@ -1,6 +1,6 @@
 # eth.eigenlayer.eigenpod\_validators
 
-* This is the validator list, filtered to just the validators that have withdrawal\_credentials that match one of the deployed eigenpods.
+* This is the validator list, filtered to just the validators that have withdrawal\_credentials that match one of the deployed EigenPods.
 
 It is a view defined as:
 
