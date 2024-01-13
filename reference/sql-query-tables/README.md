@@ -6,14 +6,14 @@
 [ethereum](ethereum/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="goerli/" %}
+[goerli](goerli/)
 {% endcontent-ref %}
 
 {% content-ref url="bitcoin/" %}
 [bitcoin](bitcoin/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="holesky/" %}
+[holesky](holesky/)
 {% endcontent-ref %}
