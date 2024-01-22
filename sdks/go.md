@@ -63,4 +63,18 @@ for reader.Next() {
 
 Run `go run .` to execute a sample query and print the results to the console.
 
+### Connection retry
+
+The `SpiceClient` implements connection retry mechanism (3 attempts by default).
+The number of attempts can be configured via `SetMaxRetries`:
+
+```go
+spice := NewSpiceClient()
+spice.SetMaxRetries(5) // Setting to 0 will disable retries
+```
+
+Retries are performed for connection and system internal errors. It is the SDK user's responsibility to properly
+handle other errors, for example RESOURCE_EXHAUSTED (HTTP 429).
+
+
 See [client\_test.go](https://github.com/spiceai/gospice/blob/trunk/client\_test.go) for examples on querying Ethereum and Polygon blocks.
