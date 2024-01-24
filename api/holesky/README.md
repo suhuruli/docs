@@ -4,7 +4,11 @@ description: Holesky HTTP API documentation
 
 # Holesky API
 
-Holesky testnet data APIs. Available at **/holesky/v1.**
+{% hint style="info" %}
+Holesky is in preview.
+{% endhint %}
+
+Holesky testnet data APIs. Available at `/holesky/v1`
 
 Includes:
 
