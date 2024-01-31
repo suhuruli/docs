@@ -28,6 +28,7 @@
   * [Roadmap](building-blocks/spice-functions/roadmap.md)
   * [Python](building-blocks/spice-functions/python.md)
   * [Golang](building-blocks/spice-functions/golang.md)
+* [Spice Models](building-blocks/spice-models.md)
 * [Blockchain Nodes](building-blocks/blockchain-nodes.md)
 
 ## 💻 API
