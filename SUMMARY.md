@@ -19,17 +19,17 @@
 
 ## 🧱 Building Blocks
 
-* [Web3 Data](building-blocks/datasets.md)
-* [External Data Sources](building-blocks/external-data-sources.md)
 * [Datasets and Views](building-blocks/datasets-and-views.md)
 * [🔥 Spice Firecache](building-blocks/spice-firecache/README.md)
   * [DuckDB Export Database](building-blocks/spice-firecache/duckdb-export-database.md)
+* [External Data Sources](building-blocks/external-data-sources.md)
+* [Spice Models](building-blocks/spice-models.md)
 * [Spice Functions](building-blocks/spice-functions/README.md)
   * [Roadmap](building-blocks/spice-functions/roadmap.md)
   * [Python](building-blocks/spice-functions/python.md)
   * [Golang](building-blocks/spice-functions/golang.md)
-* [Spice Models](building-blocks/spice-models.md)
 * [Blockchain Nodes](building-blocks/blockchain-nodes.md)
+* [Web3 Data](building-blocks/datasets.md)
 
 ## 💻 API
 
