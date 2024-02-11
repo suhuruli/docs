@@ -4,7 +4,7 @@ description: Spice ML Models YAML manifest Specification v0.2 (beta)
 
 # Models YAML Specification
 
-Spice ML Models are defined in YAML. To create a Model, add a manifest YAML file to the `/models` path of a connected [GitHub repository](../../portal/apps/connect-github-repository.md).
+Spice ML Models are defined in YAML. To create a Model, add a manifest YAML file to the `/models` path of a connected [GitHub repository](../../../portal/apps/connect-github-repository.md).
 
 ### **YAML Schema Reference**
 
@@ -20,13 +20,13 @@ An optional description for the model.
 
 The model family.
 
-### **`type`** \[optional]
+### **`type`**
 
-The model type.
+The model type. For more details see [model-type-specification.md](model-type-specification.md "mention").
 
 ### **`metadata`**
 
-A key-value bag of metadata/parameters for the model.
+A key-value bag of metadata/parameters for the model. When `type` is `autogluon` or `darts`, `model`, is a reserved key to specify hyperparameters of the underlying model (see [model-type-specification.md](model-type-specification.md "mention"))
 
 ### **`handler`**
 
