@@ -1,6 +1,6 @@
 # Security at Spice AI
 
-**Last updated:** Aug 22, 2023
+**Last updated:** February 20, 2024
 
 Spice AI's approach to security when providing services including Spice.ai, data.spiceai.io, and spicerack.org.
 
@@ -22,7 +22,13 @@ Spice AI takes a principled approach to security. These principles include:
 
 ### Compliance
 
-Spice AI is in the process of being certified for SOC2-2017 Type II, which is expected to be complete by Jan 2024.
+Spice AI, Inc. has achieved SOC 2 Type II compliance in accordance with American Institute of Certified Public Accountants (AICPA) standards for SOC for Service Organizations also known as SSAE 18. Achieving this standard with an unqualified opinion serves as third-party industry validation that Spice AI, Inc. provides enterprise-level security for customer’s data secured in the Spice AI, Inc. System.
+
+Spice AI, Inc. was audited by [Prescient Assurance](http://www.prescientassurance.com/) , a leader in security and compliance attestation for B2B, SAAS companies worldwide. Prescient Assurance is a registered public accounting in the US and Canada and provides risk management and assurance services which includes but is not limited to SOC 2, PCI, ISO, NIST, GDPR, CCPA, HIPAA, and CSA STAR. For more information about Prescient Assurance, you may reach out them at [info@prescientassurance.com](mailto:info@prescientassurance.com).
+
+A copy of the SOC 2 Audit Report is available to customers subscribed to Enterprise plan upon request.
+
+<figure><img src="../.gitbook/assets/SOC 2.png" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Secure Access Control
 
