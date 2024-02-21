@@ -10,7 +10,7 @@ To report a vulnerability see: [report.md](report.md "mention")
 
 Spice AI takes a principled approach to security. These principles include:
 
-* **Compliance**: Certified compliance with industry standards.
+* **Compliance**: Certified SOC 2 Type II compliance.
 * **Secure-Access-Control:** All Spice AI systems are protected by Secure-Access-Controls including Authentication (AuthN), Authorization (AuthZ), and RBAC (Role-Based-Access-Control).
 * **Data Protection:** All secret and sensitive information is encrypted in-transit and at-rest.
 * **Multi-Factor-Authentication (MFA):** All authentication systems require and enforce Multi-Factor-Authentication (MFA).
