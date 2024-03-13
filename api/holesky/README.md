@@ -8,8 +8,6 @@ description: Holesky HTTP API documentation
 Holesky is in preview.
 {% endhint %}
 
-Holesky testnet data APIs. Available at `/holesky/v1`
-
 Includes:
 
 * [JSON RPC Methods](json-rpc-methods.md)

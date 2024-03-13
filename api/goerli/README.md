@@ -4,8 +4,6 @@ description: Goerli HTTP API documentation
 
 # Goerli API
 
-Goerli testnet data APIs. Available at **/goerli/v1.**
-
 Includes:
 
 * [JSON RPC Methods](json-rpc-methods.md)
