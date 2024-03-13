@@ -292,8 +292,8 @@ All [Goerli testnet data APIs](../api/goerli/) are available at **/goerli/v0.1**
 
 * [JSON RPC Methods](../api/goerli/json-rpc-methods.md)
 * [Beacon HTTP API](../api/goerli/beacon-http-api.md)
-* [Blocks](../api/goerli/blocks.md)
-* [Contracts](../api/goerli/contracts.md)
+* [Blocks](broken-reference)
+* [Contracts](broken-reference)
 * [Gas Fees](../api/goerli/gas-fees.md)
 
 **Ethereum Beacon API:** The [Ethereum API](../api/ethereum/) is now updated to support Beacon requests via the **`https://data.spiceai.io/eth/beacon`** API. This is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).&#x20;

@@ -40,14 +40,10 @@
 * [Ethereum API](api/ethereum/README.md)
   * [JSON RPC Methods](api/ethereum/json-rpc-methods.md)
   * [Beacon HTTP API](api/ethereum/beacon-http-api.md)
-  * [Blocks](api/ethereum/blocks.md)
-  * [Contracts](api/ethereum/contracts.md)
   * [Gas Fees](api/ethereum/gas-fees.md)
 * [Goerli API](api/goerli/README.md)
   * [JSON RPC Methods](api/goerli/json-rpc-methods.md)
   * [Beacon HTTP API](api/goerli/beacon-http-api.md)
-  * [Blocks](api/goerli/blocks.md)
-  * [Contracts](api/goerli/contracts.md)
   * [Gas Fees](api/goerli/gas-fees.md)
 * [Holesky API](api/holesky/README.md)
   * [JSON RPC Methods](api/holesky/json-rpc-methods.md)
@@ -58,7 +54,7 @@
   * [Predictions API Terms and Conditions](api/predictions/predictions-api-terms-and-conditions.md)
 * [Health API](api/health.md)
 
-## 👨💻 Portal
+## 👨‍💻 Portal
 
 * [Apps](portal/apps/README.md)
   * [Connect GitHub repository](portal/apps/connect-github-repository.md)
@@ -555,7 +551,7 @@
 * [Security at Spice AI](security/security.md)
 * [Report a vulnerability](security/report.md)
 
-## ⚖ Legal
+## ⚖️ Legal
 
 * [Privacy Policy](legal/privacy.md)
 * [Website Terms of Use](legal/terms.md)
