@@ -4,6 +4,30 @@ description: Monthly release notes for Spice.ai.
 
 # Release Notes
 
+### January 2024
+
+The January release added support for the Ethereum [Holesky](https://github.com/eth-clients/holesky) testnet in preview. Holesky data can be explored in the portal Playground, queried by [SQL](sql-query-tables/holesky/) and Firecache, and made available to applications by JSON-RPC [API](../api/holesky/). &#x20;
+
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption><p>Holesky Testnet APIs and datasets available in preview</p></figcaption></figure>
+
+**New in this release**
+
+1. \[Platform] Added Ethereum [Holesky](sql-query-tables/holesky/) testnet data and API's.
+2. \[Platform] Achieved [SOC 2 Type II compliance](../security/security.md).
+
+**Changes**
+
+1. \[Platform] Performance, reliability, and security improvements.
+2. \[Node JS SDK] [Released v1.0.2](https://github.com/spiceai/spice.js/releases/tag/v1.0.2).
+
+### December 2023
+
+The December release focused on stability and performance improvements.
+
+**Changes**
+
+1. \[Platform] Performance, reliability, and security improvements.
+
 ### November 2023
 
 The November release focused on [External Data Sources](../building-blocks/external-data-sources.md) and overall performance improvements following the [General Availability (GA)](https://blog.spice.ai/spice-ai-is-generally-available-d76c4289960c) release in October.
