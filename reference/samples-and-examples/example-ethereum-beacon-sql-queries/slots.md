@@ -49,3 +49,18 @@ ORDER BY
 LIMIT 10
 ```
 
+### Beacon Slots with Blob data&#x20;
+
+Beacon Slots with the highest number of blobs in the last 4 hours
+
+**Typical query time**: <5 seconds
+
+```sql
+SELECT 
+  block_slot, 
+  ARRAY_SIZE(blob_kzg_commitments) as num_blobs,
+  blob_gas_used
+FROM eth.beacon.slots 
+WHERE blob_gas_used > 0 and block_timestamp > UNIX_TIMESTAMP() - 4 * 60 * 60
+ORDER BY num_blobs DESC
+```

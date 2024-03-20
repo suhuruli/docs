@@ -1,7 +1,5 @@
 # Transactions
 
-### Popular Ethereum Contracts
-
 Get the 10 most used contracts over the last month
 
 **Typical query time**: \~60 seconds

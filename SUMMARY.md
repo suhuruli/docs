@@ -518,6 +518,7 @@
     * [Logs](reference/samples-and-examples/example-ethereum-evm-sql-queries/logs.md)
     * [ENS Domains](reference/samples-and-examples/example-ethereum-evm-sql-queries/ens-domains.md)
     * [Wallet Balances](reference/samples-and-examples/example-ethereum-sql-queries/wallet-balances.md)
+    * [Blobs](reference/samples-and-examples/example-ethereum-evm-sql-queries/blobs.md)
   * [🆕 Example Ethereum Beacon SQL Queries](reference/samples-and-examples/example-ethereum-beacon-sql-queries/README.md)
     * [Slots](reference/samples-and-examples/example-ethereum-beacon-sql-queries/slots.md)
     * [Attestations](reference/samples-and-examples/example-ethereum-beacon-sql-queries/attestations.md)
