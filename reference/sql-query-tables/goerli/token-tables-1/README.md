@@ -4,6 +4,10 @@ description: Goerli Wallet Balance tables available to query via SQL
 
 # Wallet Balance Tables
 
+{% hint style="info" %}
+The Goerli testnet has been deprecated on Spice.ai as of March 22, 2024.  Datasets are available but no longer updated.
+{% endhint %}
+
 **Links**
 
 * [Ethereum Wallet Balances](../../ethereum/wallet-balances/)

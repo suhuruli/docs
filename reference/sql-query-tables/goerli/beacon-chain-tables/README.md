@@ -4,6 +4,10 @@ description: Goerli Beacon Chain tables available to query via SQL
 
 # Beacon Chain Tables
 
+{% hint style="info" %}
+The Goerli testnet has been deprecated on Spice.ai as of March 22, 2024.  Datasets are available but no longer updated.
+{% endhint %}
+
 #### Goerli Beacon tables available to query
 
 | Table Name                                                                                      | Description                                                                                                                                                                              |

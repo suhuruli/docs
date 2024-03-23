@@ -4,6 +4,10 @@ description: Goerli base type tables available to query via SQL
 
 # Core Tables
 
+{% hint style="info" %}
+The Goerli testnet has been deprecated on Spice.ai as of March 22, 2024.  Datasets are available but no longer updated.
+{% endhint %}
+
 #### Goerli base type tables available to query
 
 | Table Name                                             | Description                                                                        |

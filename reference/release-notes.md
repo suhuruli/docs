@@ -312,13 +312,13 @@ For example, you can query from `goerli.beacon.validators` to retrieve recently 
 
 **Goerli Beacon API:** You can easily retrieve requests like "[get validator balances from state](https://docs.spice.xyz/api/goerli/beacon-http-api)" using the **`https://data.spiceai.io/goerli/beacon`** API, which is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).
 
-All [Goerli testnet data APIs](../api/goerli/) are available at **/goerli/v0.1** including the following:
+All [Goerli testnet data APIs](broken-reference) are available at **/goerli/v0.1** including the following:
 
-* [JSON RPC Methods](../api/goerli/json-rpc-methods.md)
-* [Beacon HTTP API](../api/goerli/beacon-http-api.md)
+* [JSON RPC Methods](broken-reference)
+* [Beacon HTTP API](broken-reference)
 * [Blocks](broken-reference)
 * [Contracts](broken-reference)
-* [Gas Fees](../api/goerli/gas-fees.md)
+* [Gas Fees](broken-reference)
 
 **Ethereum Beacon API:** The [Ethereum API](../api/ethereum/) is now updated to support Beacon requests via the **`https://data.spiceai.io/eth/beacon`** API. This is compatible with the read-only GET requests from the [Beacon Node API specification](https://ethereum.github.io/beacon-APIs/).&#x20;
 

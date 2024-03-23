@@ -4,6 +4,10 @@ description: Goerli Token tables available to query via SQL
 
 # Token Tables
 
+{% hint style="info" %}
+The Goerli testnet has been deprecated on Spice.ai as of March 22, 2024.  Datasets are available but no longer updated.
+{% endhint %}
+
 **Links**
 
 * [Ethereum Token Standards](https://ethereum.org/en/developers/docs/standards/tokens/)
