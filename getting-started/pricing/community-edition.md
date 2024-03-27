@@ -1,6 +1,6 @@
 # 🆕 Community Edition
 
-The Community Edition of the Spice AI Platform is currently provided without fees but with limitations. For higher limits, upgrade to a [paid plan](./).
+The Community Edition of the Spice.ai Platform is currently provided without fees but has certain limitations. For higher limits, upgrade to a [paid plan](./).
 
 ### Community Edition Limitations
 

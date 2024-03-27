@@ -2,7 +2,7 @@
 description: Rust SDK for Spice.ai
 ---
 
-# 🆕 Rust SDK
+# Rust SDK
 
 The [Rust SDK](https://github.com/spiceai/spice-rs) `spice-rs` is the easiest way to query [Spice.ai](https://spice.ai) from Rust.
 

@@ -29,7 +29,7 @@
   * [Python](building-blocks/spice-functions/python.md)
   * [Golang](building-blocks/spice-functions/golang.md)
 * [Blockchain Nodes](building-blocks/blockchain-nodes.md)
-* [Web3 Data](building-blocks/datasets.md)
+* [Community Data](building-blocks/datasets.md)
 
 ## 💻 API
 
@@ -45,7 +45,7 @@
   * [JSON RPC Methods](api/holesky/json-rpc-methods.md)
   * [Beacon HTTP API](api/holesky/beacon-http-api.md)
   * [Gas Fees](api/holesky/gas-fees.md)
-* [Prices API](api/prices-api.md)
+* [Asset Prices API](api/prices-api.md)
 * [Predictions API](api/predictions/README.md)
   * [Predictions API Terms and Conditions](api/predictions/predictions-api-terms-and-conditions.md)
 * [Health API](api/health.md)
@@ -69,7 +69,7 @@
   * [API Reference](sdks/node.js-sdk/api-reference.md)
   * [Converting Large Numbers](sdks/node.js-sdk/converting-large-numbers.md)
 * [Go SDK](sdks/go.md)
-* [🆕 Rust SDK](sdks/rust-sdk/README.md)
+* [Rust SDK](sdks/rust-sdk/README.md)
   * [API Reference](sdks/rust-sdk/api-reference.md)
 
 ## 🔌 Integrations

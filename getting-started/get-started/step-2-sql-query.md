@@ -1,6 +1,6 @@
 # Step 2 - SQL Query
 
-### Make a basic SQL query in the Playground
+### Execute a SQL query in the Playground
 
 Use the Spice.ai [Playground](broken-reference/) to experiment with SQL queries, APIs, and models directly in app.
 
@@ -11,7 +11,7 @@ It includes:
 
 <figure><img src="../../.gitbook/assets/uniswap.gif" alt=""><figcaption><p>SQL Query Editor: querying for UniswapV2 Pool Liquidity Stats</p></figcaption></figure>
 
-### Make a basic SQL query using cURL
+### Execute a SQL query using cURL
 
 Once you've set up a [Portal account](portal-login.md), replace `[API-KEY]` in the sample below with your API Key from the Spice app.
 
@@ -34,5 +34,3 @@ Visit the [FAQ](../faq.md) page for more details.
 ### Call the API
 
 To get an API key, set up a [Portal account](portal-login.md).
-
-Your API key also unlocks custom visualizations via [Grafana Plugin](../../integrations/grafana.md).

@@ -1,14 +1,10 @@
 ---
-description: All Web3 data and datasets currently available in Spice
+description: All community datasets currently available in Spice
 ---
 
-# Web3 Data
+# Community Data
 
-
-
-{% hint style="success" %}
-New datasets are added every week, so this list is just the start. Get in touch on Discord to suggest more. **We're just getting started!**
-{% endhint %}
+The Spice.ai platform includes a comprehensive set of read-to-query community, sample, and blockchain datasets.
 
 ### Datasets for SQL Query
 

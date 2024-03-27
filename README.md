@@ -1,14 +1,20 @@
 ---
-description: Welcome to the Spice documentation!
+description: Welcome to the Spice.ai Cloud Platform documentation!
 ---
 
 # Welcome to Spice.ai
 
-**Spice.ai** is a data and time-series AI application platform; an AI-backend-as-a-service comprising of composable, ready-to-use data and AI building blocks, preloaded with 100TB+ of ready-to-use web3 data.
+**Spice.ai** is a data and time-series AI application platform; an AI-backend-as-a-service comprising of composable, ready-to-use data and AI building blocks, including a managed [Spice.ai OSS](https://github.com/spiceai/spiceai) service, and  preloaded with 100TB+ of ready-to-use data.
 
-Spice.ai connects real-time and historical time-series data, SQL query, ETL, serverless compute, machine learning training and inferencing, in a unified cloud platform and developer-focused community hub.
+{% hint style="info" %}
+This is the Spice.ai Cloud Platform documentation. If you are looking for Spice.ai OSS documentation please visit [docs.spiceai.org](https://docs.spiceai.org).
+{% endhint %}
+
+Spice.ai connects real-time and historical time-series data, federated SQL query, ETL, serverless compute, machine learning training and inferencing, in a unified cloud platform and developer-focused community hub.
 
 **Operating data and AI infrastructure can be painful.**&#x20;
+
+😓 Query data from many sources and backends.
 
 😓 Maintain expensive and often error prone ETL, data, query, and ML infrastructure.
 
@@ -26,22 +32,23 @@ Spice.ai connects real-time and historical time-series data, SQL query, ETL, ser
 With **Spice.ai,** you can:
 
 * Query real-time and historical data **using SQL** in seconds and fetch results in **JSON** or **Apache Arrow** for use with applications, ML, or libraries like **NumPy** and **Pandas**.
-* Collaborate on datasets, ML models, and applications in one place through the new community-centric developer hub.
-* Create, fork, and curate your own hosted datasets and ML models to share and build with the community.
+* Collaborate on datasets and ML models in one place through the new community-centric developer hub.
+* Create, fork, and curate your own hosted datasets and ML models to share and build with the community indexed by the Spice.ai package manager, [spicerack.org](https://spicerack.org).
 * Define and manage custom datasets in GitHub along with your application code.
-* Bring your own data or leverage the 100TB+ of preloaded blockchain and Asset Prices data.
+* Bring and federate your own data or leverage 100TB+ of preloaded community data.
 
-Spice.ai is preloaded with community data from ecosystems including **Ethereum**, **Bitcoin,** and **EigenLayer** along with enriched datasets for NFTs, DeFi, DEXs, ENS, Prices, and more. Most datasets are open-source and available at [github.com/spiceai/datasets](https://github.com/spiceai/datasets).
+Spice.ai is preloaded with community data from ecosystems including **Ethereum**, **Bitcoin,** and **EigenLayer** along with enriched datasets for NFTs, DeFi, DEXs, ENS, Asset Prices, and more. Most datasets are open-source and available at [github.com/spiceai/datasets](https://github.com/spiceai/datasets).
 
 Building blocks available in the Spice.ai platform today include:
 
-* Petabyte-scale Cloud Data Platform preloaded with [Blockchain Data](building-blocks/datasets.md)
+* Petabyte-scale Cloud Data Platform
 * [Datasets and Views](building-blocks/datasets-and-views.md)
-* [Spice Firecache](building-blocks/spice-firecache/)
+* [Spice Firecache](building-blocks/spice-firecache/) (managed Spice.ai OSS)
 * [Spice Functions](building-blocks/spice-functions/)
 * [ML Models](building-blocks/spice-models.md) (in Preview)
 * [AI Predictions](api/predictions/) (in Preview)
 * [Hosted Blockchain Nodes](building-blocks/blockchain-nodes.md)
+* Community Data including [Blockchain Data](building-blocks/datasets.md)
 
 Take it for a spin by starting with the [getting started guide](getting-started/get-started/).
 

@@ -1,5 +1,5 @@
 ---
-description: Ethereum HTTP API documentation
+description: Ethereum (Mainnet) HTTP API documentation
 ---
 
 # Ethereum API

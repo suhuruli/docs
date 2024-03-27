@@ -1,5 +1,5 @@
 ---
-description: Firecache (beta)
+description: Spice Firecache (managed Spice.ai OSS) documentation.
 ---
 
 # 🔥 Spice Firecache
@@ -10,7 +10,9 @@ Spice Firecache is in beta for Design Partners. Get in touch for more info.
 
 Spice Firecache is a real-time, in-memory SQL cache based on [DuckDB](https://duckdb.org/) that enables developers to cache Spice datasets for high concurrency, blazing fast SQL query up to 10x the performance of general SQL query.
 
-The Spice platform completely manages the Spice Firecache data lifecycle, ensuring datasets are real-time updated on triggers like new blocks and with stale data being automatically evicted.
+Spice Firecache is a managed [Spice.ai OSS](https://github.com/spiceai/spiceai), cloud-hosted service.
+
+The Spice platform completely manages the Spice.ai OSS data lifecycle, ensuring datasets are real-time updated on triggers like new blocks and with stale data being automatically evicted.
 
 Firecaches are Spice app specific and only available to the Spice app they were deployed to.
 
