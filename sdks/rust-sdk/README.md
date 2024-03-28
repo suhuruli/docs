@@ -14,11 +14,10 @@ It uses [Apache Arrow Flight](https://arrow.apache.org/docs/format/Flight.html) 
 
 ### Installation
 
-Add the following to your `Cargo.toml`:
+Add Spice SDK
 
-```rust
-[dependencies]
-spice-rs = { git = "https://github.com/spiceai/spice-rs", tag = "v1.0.2" }
+```bash
+cargo add spiceai
 ```
 
 ### Usage
@@ -26,9 +25,12 @@ spice-rs = { git = "https://github.com/spiceai/spice-rs", tag = "v1.0.2" }
 1\. Create a `SpiceClient` by passing in your API key. Get your free API key at [spice.ai](https://spice.ai/).
 
 ```rust
-use spice_rs::Client;
+use spiceai::Client;
 
-let client = Client::new("API_KEY").await;
+#[tokio::main]
+async fn main() {
+  let mut client = Client::new("API_KEY").await.unwrap();
+}
 ```
 
 2\. Execute a query and get back an Apache Arrow [Flight Record Batch Stream](https://arrow.apache.org/rust/arrow\_flight/decode/struct.FlightRecordBatchStream.html).
