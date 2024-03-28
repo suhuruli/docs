@@ -48,7 +48,7 @@ While [Anaconda](https://www.anaconda.com/) can be used to install pyarrow, the 
 Install the `spicepy` package directly from the Spice Github Repository at [https://github.com/spiceai/spicepy](https://github.com/spiceai/spicepy):
 
 ```
-pip install git+https://github.com/spiceai/spicepy@v1.0.0
+pip install git+https://github.com/spiceai/spicepy@v1.0.1
 ```
 
 ### Usage
@@ -58,10 +58,11 @@ Import `spicepy` and create a `Client` by providing your API Key.
 You can then submit queries using the query function.
 
 ```python
-import spicepy
-client = spicepy.Client('API_KEY')
-block_data = client.query('SELECT * FROM eth.recent_blocks LIMIT 10;').read_pandas()
-transaction_Data = client.query('SELECT * FROM eth.recent_transactions LIMIT 10;').read_pandas()
+from spicepy import Client
+
+client = Client('API_KEY')
+data = client.query('SELECT * FROM eth.recent_blocks LIMIT 10;', timeout=5*60)
+pd = data.read_pandas()_pandas()
 ```
 
 Querying data is done through a `Client` object that initializes the connection with the Spice.ai endpoint. `Client` has the following arguments:
