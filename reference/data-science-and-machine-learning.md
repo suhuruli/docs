@@ -20,7 +20,7 @@ Explore the full list of [**datasets**](../building-blocks/datasets.md) for an o
 
 Querying datasets is as easy as querying data from any SQL database. Try SQL from your browser at [**Spice.ai**](https://spice.ai/).
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption><p>Querying datasets with SQL in the Playground.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption><p>Querying datasets with SQL in the Playground.</p></figcaption></figure>
 
 Reference [**SQL best practices**](https://docs.spice.ai/best-practices) for tips and the best query performance.
 

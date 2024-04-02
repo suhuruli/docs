@@ -497,6 +497,7 @@
     * [btc.transactions](reference/sql-query-tables/bitcoin/btc.transactions.md)
     * [btc.transaction\_inputs](reference/sql-query-tables/bitcoin/btc.transaction\_inputs.md)
     * [btc.transaction\_outputs](reference/sql-query-tables/bitcoin/btc.transaction\_outputs.md)
+  * [TPC-H](reference/sql-query-tables/tpc-h.md)
 * [Specifications](reference/specifications/README.md)
   * [Dataset & View YAML Specification](reference/specifications/dataset-and-view-yaml-specification/README.md)
     * [Firecache](reference/specifications/dataset-and-view-yaml-specification/firecache.md)
