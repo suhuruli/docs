@@ -6,6 +6,12 @@ description: All community datasets currently available in Spice
 
 The Spice.ai platform includes a comprehensive set of read-to-query community, sample, and blockchain datasets.
 
+### TPC-H
+
+Explore the [TPC-H Benchmark dataset](../reference/sql-query-tables/tpc-h.md). The dataset is widely used to evaluate the analytic query capabilities of databases.
+
+<table data-header-hidden><thead><tr><th width="230.5"></th><th width="235"></th></tr></thead><tbody><tr><td>Customer</td><td><code>tpch.customer</code></td></tr><tr><td>Lineitem</td><td><code>tpch.lineitem</code></td></tr><tr><td>Part</td><td><code>tpch.part</code></td></tr><tr><td>Partsupp</td><td><code>tpch.partsupp</code></td></tr><tr><td>Orders</td><td><code>tpch.orders</code></td></tr><tr><td>Nation</td><td><code>tpch.nation</code></td></tr><tr><td>Region</td><td><code>tpch.region</code></td></tr><tr><td>Supplier</td><td><code>tpch.supplier</code></td></tr></tbody></table>
+
 ### Datasets for SQL Query
 
 Explore SQL-queryable datasets organized by chain and data type, each with representative tables. Click the section header links for more information and complete table listings.
