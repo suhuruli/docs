@@ -24,10 +24,6 @@
   * [DuckDB Export Database](building-blocks/spice-firecache/duckdb-export-database.md)
 * [External Data Sources](building-blocks/external-data-sources.md)
 * [Spice Models](building-blocks/spice-models.md)
-* [Spice Functions](building-blocks/spice-functions/README.md)
-  * [Roadmap](building-blocks/spice-functions/roadmap.md)
-  * [Python](building-blocks/spice-functions/python.md)
-  * [Golang](building-blocks/spice-functions/golang.md)
 * [Blockchain Nodes](building-blocks/blockchain-nodes.md)
 * [Community Data](building-blocks/datasets.md)
 

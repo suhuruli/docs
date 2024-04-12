@@ -12,7 +12,7 @@ description: Frequently asked questions
 
 ### What data do you have?
 
-Spice.ai is preloaded with community data, including select blockchain datasets from [**Ethereum**](../reference/sql-query-tables/) (including [**Beacon**](../reference/sql-query-tables/goerli/beacon-chain-tables/) & [**Goerli**](../reference/sql-query-tables/goerli/)) and [**Bitcoin**](../reference/sql-query-tables/bitcoin/) blockchain data along with [**ENS**](../reference/sql-query-tables/ethereum/token-tables-1/), **DeFi/DEX** ([**Sushiswap**](../reference/sql-query-tables/ethereum/sushiswap-tables/)**,** [**Uniswap-V2**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Uniswap-V3**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Aave**](../reference/sql-query-tables/ethereum/aave-v2-tables/)), [**NFT**](broken-reference/) and [**token**](../reference/sql-query-tables/ethereum/token-tables/) specific data. Spice.ai also features a comprehensive set of [EigenLayer datasets](../reference/sql-query-tables/ethereum/eigenlayer-tables/).
+Spice.ai is preloaded with community data, including select blockchain datasets from [**Ethereum**](../reference/sql-query-tables/) (including [**Beacon**](../reference/sql-query-tables/goerli/beacon-chain-tables/)) and [**Bitcoin**](../reference/sql-query-tables/bitcoin/) blockchain data along with [**ENS**](../reference/sql-query-tables/ethereum/token-tables-1/), **DeFi/DEX** ([**Sushiswap**](../reference/sql-query-tables/ethereum/sushiswap-tables/)**,** [**Uniswap-V2**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Uniswap-V3**](../reference/sql-query-tables/ethereum/uniswap-v2-tables/)**,** [**Aave**](../reference/sql-query-tables/ethereum/aave-v2-tables/)), [**NFT**](broken-reference/) and [**token**](../reference/sql-query-tables/ethereum/token-tables/) specific data. Spice.ai also features a comprehensive set of [EigenLayer datasets](../reference/sql-query-tables/ethereum/eigenlayer-tables/).
 
 Digital asset/cryptocurrency [spot/latest](broken-reference/) and full [historical prices](broken-reference/) data is available from leading exchanges including Coinbase, Gemini, and Binance.
 
@@ -50,7 +50,7 @@ WebSocket support is available for [Enterprise](pricing/) customers. Apache Arro
 
 ### Do you support alerting?
 
-Not yet, but it is on our roadmap. You can also build your own custom alerting using [Spice Functions](../building-blocks/spice-functions/).
+Not yet, but it is on our roadmap.
 
 ### Do you support JDBC//ODBC/ADBC?
 

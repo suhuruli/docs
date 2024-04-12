@@ -44,7 +44,6 @@ Building blocks available in the Spice.ai platform today include:
 * Petabyte-scale Cloud Data Platform
 * [Datasets and Views](building-blocks/datasets-and-views.md)
 * [Spice Firecache](building-blocks/spice-firecache/) (managed Spice.ai OSS)
-* [Spice Functions](building-blocks/spice-functions/)
 * [ML Models](building-blocks/spice-models.md) (in Preview)
 * [AI Predictions](api/predictions/) (in Preview)
 * [Hosted Blockchain Nodes](building-blocks/blockchain-nodes.md)

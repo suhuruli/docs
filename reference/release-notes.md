@@ -103,7 +103,7 @@ Note: In both cases, the list is a subset of what is available via the REST API.
 
 ### August 2023
 
-The August release expands the functionality of [Spice Functions](../building-blocks/spice-functions/) (beta) and [Datasets and Views](../building-blocks/datasets-and-views.md).
+The August release expands the functionality of [Spice Functions](broken-reference) (beta) and [Datasets and Views](../building-blocks/datasets-and-views.md).
 
 #### Spice Functions
 
@@ -111,7 +111,7 @@ The August release expands the functionality of [Spice Functions](../building-bl
 Spice Functions is in beta and initially available for Design Partners. Get in touch for more info.
 {% endhint %}
 
-Developers can now author [Spice Functions](../building-blocks/spice-functions/) in [Golang](../building-blocks/spice-functions/golang.md) with the Go1.x runtime in addition to [Python](../building-blocks/spice-functions/python.md).
+Developers can now author [Spice Functions](broken-reference) in [Golang](broken-reference) with the Go1.x runtime in addition to [Python](broken-reference).
 
 Combine Spice Functions with expanded Datasets and Views support to generate custom datasets "ETL-less" in the Spice platform that can be kept private or shared with others.
 
@@ -129,7 +129,7 @@ Spice now supports SQL migrations to enable creation of custom user-authored dat
 
 ### July 2023
 
-The July release enables new compute over data capability with [Spice Functions](../building-blocks/spice-functions/) including application data storage, the ability to define and create custom datasets, and deep integration with GitHub.
+The July release enables new compute over data capability with [Spice Functions](broken-reference) including application data storage, the ability to define and create custom datasets, and deep integration with GitHub.
 
 #### Spice Functions
 
@@ -137,9 +137,9 @@ The July release enables new compute over data capability with [Spice Functions]
 Spice Functions is in beta and initially available for Design Partners. Get in touch for more info.
 {% endhint %}
 
-[Spice Functions](../building-blocks/spice-functions/) is a hosted compute experience that enables developers to write code in their preferred language and run it on the Spice platform, co-located with Spice data.
+[Spice Functions](broken-reference) is a hosted compute experience that enables developers to write code in their preferred language and run it on the Spice platform, co-located with Spice data.
 
-See [spice-functions](../building-blocks/spice-functions/ "mention") for full documentation on creating and deploying Spice Functions.
+See [Broken link](broken-reference "mention") for full documentation on creating and deploying Spice Functions.
 
 #### Spice Firecache
 
