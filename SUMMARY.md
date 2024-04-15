@@ -417,7 +417,6 @@
       * [eth.eigenlayer.strategy\_manager\_withdrawal\_completed](reference/sql-query-tables/ethereum/eigenlayer-tables/eth.eigenlayer.strategy\_manager\_withdrawal\_completed.md)
       * [eth.eigenlayer.withdrawal\_router\_claimed](reference/sql-query-tables/ethereum/eigenlayer-tables/eth.eigenlayer.withdrawal\_router\_claimed.md)
       * [eth.eigenlayer.withdrawal\_router\_balances](reference/sql-query-tables/ethereum/eigenlayer-tables/eth.eigenlayer.withdrawal\_router\_balances.md)
-      * [eth.eigenlayer.withdrawal\_recipient\_balances](reference/sql-query-tables/ethereum/eigenlayer-tables/eth.eigenlayer.withdrawal\_recipient\_balances.md)
       * [eth.eigenlayer.strategy\_manager\_added\_to\_deposit\_whitelist](reference/sql-query-tables/ethereum/eigenlayer-tables/eth.eigenlayer.strategy\_manager\_added\_to\_deposit\_whitelist.md)
       * [eth.eigenlayer.strategy\_manager\_withdrawal\_delay\_blocks\_set](reference/sql-query-tables/ethereum/eigenlayer-tables/eth.eigenlayer.strategy\_manager\_withdrawal\_delay\_blocks\_set.md)
       * [eth.eigenlayer.strategy\_manager\_withdrawal\_queued](reference/sql-query-tables/ethereum/eigenlayer-tables/eth.eigenlayer.strategy\_manager\_withdrawal\_queued.md)
